@@ -1,0 +1,51 @@
+item,item_type,item_type_auto,jaccard
+Pluto_p0,negated,negated,1.0
+Pluto_p1,single_fact,single_fact,1.0
+Pluto_p2,single_fact,single_fact,1.0
+Pluto_p3,single_fact,single_fact,0.5
+Pluto_p4,single_fact,single_fact,1.0
+Pluto_p5,inferential,single_fact,0.3333333333333333
+Pluto_p6,single_fact,single_fact,1.0
+Pluto_p7,negated,negated,0.5
+Pluto_p8,negated,negated,1.0
+Pluto_p9,negated,negated,1.0
+The Voynich Manuscript_p0,single_fact,single_fact,1.0
+The Voynich Manuscript_p1,negated,negated,1.0
+The Voynich Manuscript_p2,single_fact,single_fact,1.0
+The Voynich Manuscript_p3,single_fact,single_fact,1.0
+The Voynich Manuscript_p4,single_fact,single_fact,1.0
+The Voynich Manuscript_p5,single_fact,single_fact,1.0
+The Voynich Manuscript_p6,single_fact,single_fact,1.0
+The Voynich Manuscript_p7,inferential,inferential,0.75
+The Voynich Manuscript_p8,single_fact,single_fact,0.5
+The Voynich Manuscript_p9,single_fact,single_fact,1.0
+History of Film_p0,single_fact,single_fact,1.0
+History of Film_p1,negated,negated,1.0
+History of Film_p2,single_fact,single_fact,1.0
+History of Film_p3,single_fact,single_fact,1.0
+History of Film_p4,integrative,integrative,0.6666666666666666
+History of Film_p5,single_fact,single_fact,1.0
+History of Film_p6,single_fact,single_fact,0.5
+History of Film_p7,single_fact,single_fact,1.0
+History of Film_p8,integrative,single_fact,0.5
+History of Film_p9,single_fact,single_fact,1.0
+Serena Williams_p0,single_fact,single_fact,1.0
+Serena Williams_p1,single_fact,single_fact,1.0
+Serena Williams_p2,single_fact,single_fact,0.5
+Serena Williams_p3,negated,negated,1.0
+Serena Williams_p4,single_fact,single_fact,1.0
+Serena Williams_p5,single_fact,single_fact,0.5
+Serena Williams_p6,single_fact,single_fact,1.0
+Serena Williams_p7,single_fact,single_fact,1.0
+Serena Williams_p8,single_fact,single_fact,0.5
+Serena Williams_p9,negated,single_fact,0.0
+Prisoners Dilemma_p0,negated,negated,0.5
+Prisoners Dilemma_p1,negated,negated,0.75
+Prisoners Dilemma_p2,single_fact,negated,1.0
+Prisoners Dilemma_p3,negated,negated,0.5
+Prisoners Dilemma_p4,single_fact,inferential,0.3333333333333333
+Prisoners Dilemma_p5,single_fact,single_fact,0.75
+Prisoners Dilemma_p6,single_fact,single_fact,1.0
+Prisoners Dilemma_p7,single_fact,single_fact,1.0
+Prisoners Dilemma_p8,single_fact,single_fact,0.6666666666666666
+Prisoners Dilemma_p9,negated,negated,1.0

@@ -1,0 +1,22 @@
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
+
+# raw and intermediate data (see README: not redistributed here)
+data/
+zuco/task*_matlab/
+zuco/artifacts/frp/frp_*.npy
+
+# LaTeX build products
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.fdb_latexmk
+paper/*.fls
+paper/*.log
+paper/*.out
+paper/*.synctex.gz
+
+# stage figure side-outputs
+roamm/*/figures/

@@ -1,0 +1,42 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "n_items": 50,
+  "accuracy": {
+    "nopassage": 0.52,
+    "evidence": 0.84,
+    "fullpage": 0.84
+  },
+  "human_accuracy": 0.6181818181818182,
+  "chance": 0.25,
+  "by_item_type": {
+    "inferential": {
+      "nopassage_correct": 1.0,
+      "evidence_correct": 0.5,
+      "fullpage_correct": 1.0,
+      "human_acc": 0.659
+    },
+    "integrative": {
+      "nopassage_correct": 1.0,
+      "evidence_correct": 0.0,
+      "fullpage_correct": 0.0,
+      "human_acc": 0.364
+    },
+    "negated": {
+      "nopassage_correct": 0.333,
+      "evidence_correct": 0.583,
+      "fullpage_correct": 0.75,
+      "human_acc": 0.593
+    },
+    "single_fact": {
+      "nopassage_correct": 0.543,
+      "evidence_correct": 0.971,
+      "fullpage_correct": 0.886,
+      "human_acc": 0.632
+    }
+  },
+  "evidence_recovers_fullpage": 0.84,
+  "items_answerable_without_passage": 26,
+  "corr_nopassage_margin_with_human_acc": 0.29496001521695775,
+  "human_acc_on_items_llm_gets_without_passage": 0.638986013986014,
+  "human_acc_on_items_llm_fails_without_passage": 0.5956439393939393
+}

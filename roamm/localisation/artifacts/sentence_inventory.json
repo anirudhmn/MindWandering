@@ -1,0 +1,3276 @@
+{
+ "pluto|0": [
+  {
+   "sent_idx": 0,
+   "sentence_id": "pluto_0",
+   "sentence": "Pluto (minor-planet designation: 134340 Pluto) is a dwarf planet in the Kuiper belt, a ring of bodies beyond Neptune.",
+   "n_words": 19
+  },
+  {
+   "sent_idx": 1,
+   "sentence_id": "pluto_1",
+   "sentence": "It was the first Kuiper belt object to be discovered.",
+   "n_words": 10
+  },
+  {
+   "sent_idx": 2,
+   "sentence_id": "pluto_2",
+   "sentence": "It is the largest and second-most massive known dwarf planet in the Solar System and the ninth-largest and tenth-most-massive known object directly orbiting the Sun.",
+   "n_words": 25
+  },
+  {
+   "sent_idx": 3,
+   "sentence_id": "pluto_3",
+   "sentence": "It is the largest known trans-Neptunian object by volume but is less massive than Eris, a dwarf planet in the scattered disc.",
+   "n_words": 22
+  },
+  {
+   "sent_idx": 4,
+   "sentence_id": "pluto_4",
+   "sentence": "Like other Kuiper belt objects, Pluto is primarily made of ice and rock and is relatively small -- about one-sixth the mass of the Moon and one-third its volume.",
+   "n_words": 29
+  },
+  {
+   "sent_idx": 5,
+   "sentence_id": "pluto_5",
+   "sentence": "It has a moderately eccentric and inclined orbit during which it ranges from 30 to 49 astronomical units or AU (4.4-7.3 billion km) from the Sun.",
+   "n_words": 26
+  },
+  {
+   "sent_idx": 6,
+   "sentence_id": "pluto_6",
+   "sentence": "This means that Pluto periodically comes closer to the Sun than Neptune, but a stable orbital resonance with Neptune prevents them from colliding.",
+   "n_words": 23
+  },
+  {
+   "sent_idx": 7,
+   "sentence_id": "pluto_7",
+   "sentence": "In 2014, Pluto was 32.6 AU from the Sun.",
+   "n_words": 9
+  },
+  {
+   "sent_idx": 8,
+   "sentence_id": "pluto_8",
+   "sentence": "Light from the Sun takes about 5.5 hours to reach Pluto at its average distance (39.4 AU).",
+   "n_words": 17
+  },
+  {
+   "sent_idx": 9,
+   "sentence_id": "pluto_9",
+   "sentence": "Pluto was discovered in 1930 by Clyde Tombaugh, and it was originally considered the ninth planet from the Sun.",
+   "n_words": 19
+  },
+  {
+   "sent_idx": 10,
+   "sentence_id": "pluto_10",
+   "sentence": "After 1992, its status as a planet fell into question following the discovery of several objects of similar size in the Kuiper belt.",
+   "n_words": 23
+  },
+  {
+   "sent_idx": 11,
+   "sentence_id": "pluto_11",
+   "sentence": "In 2005, Eris, which is 27% more massive than Pluto, was discovered, which led the International Astronomical Union (IAU) to define the term \"planet\" formally for the first time the following year.",
+   "n_words": 1
+  }
+ ],
+ "pluto|1": [
+  {
+   "sent_idx": 0,
+   "sentence_id": "pluto_11",
+   "sentence": "In 2005, Eris, which is 27% more massive than Pluto, was discovered, which led the International Astronomical Union (IAU) to define the term \"planet\" formally for the first time the following year.",
+   "n_words": 31
+  },
+  {
+   "sent_idx": 1,
+   "sentence_id": "pluto_12",
+   "sentence": "This definition excluded Pluto and reclassified it as a member of the new \"dwarf planet\" category (and specifically as a plutoid).",
+   "n_words": 21
+  },
+  {
+   "sent_idx": 2,
+   "sentence_id": "pluto_13",
+   "sentence": "Some astronomers think Pluto and the other dwarf planets should be considered planets.",
+   "n_words": 13
+  },
+  {
+   "sent_idx": 3,
+   "sentence_id": "pluto_14",
+   "sentence": "Pluto has five known moons: Charon (the largest, with a diameter just over half that of Pluto), Styx, Nix, Kerberos, and Hydra.",
+   "n_words": 22
+  },
+  {
+   "sent_idx": 4,
+   "sentence_id": "pluto_15",
+   "sentence": "Pluto and Charon are sometimes considered a binary system because the center of their orbits does not lie within either body.",
+   "n_words": 21
+  },
+  {
+   "sent_idx": 5,
+   "sentence_id": "pluto_16",
+   "sentence": "The IAU has not formalized a definition for binary dwarf planets, and Charon is officially classified as a moon of Pluto.",
+   "n_words": 21
+  },
+  {
+   "sent_idx": 6,
+   "sentence_id": "pluto_17",
+   "sentence": "On 14 July 2015, the New Horizons spacecraft became the first spacecraft to fly by Pluto.",
+   "n_words": 16
+  },
+  {
+   "sent_idx": 7,
+   "sentence_id": "pluto_18",
+   "sentence": "During its brief flyby, New Horizons made detailed measurements and observations of Pluto and its moons.",
+   "n_words": 16
+  },
+  {
+   "sent_idx": 8,
+   "sentence_id": "pluto_19",
+   "sentence": "In the 1840s, Urbain Le Verrier used Newtonian mechanics to predict the position of the then-undiscovered planet Neptune after analyzing disturbances in the orbit of Uranus.",
+   "n_words": 26
+  },
+  {
+   "sent_idx": 9,
+   "sentence_id": "pluto_20",
+   "sentence": "Subsequent observations of Neptune in the late 19th century led astronomers to speculate that Uranus's orbit was being disturbed by another planet besides Neptune.",
+   "n_words": 18
+  }
+ ],
+ "pluto|2": [
+  {
+   "sent_idx": 0,
+   "sentence_id": "pluto_20",
+   "sentence": "Subsequent observations of Neptune in the late 19th century led astronomers to speculate that Uranus's orbit was being disturbed by another planet besides Neptune.",
+   "n_words": 6
+  },
+  {
+   "sent_idx": 1,
+   "sentence_id": "pluto_21",
+   "sentence": "In 1906, Percival Lowell -- a wealthy Bostonian who had founded the Lowell Observatory in Flagstaff, Arizona, in 1894 -- started an extensive project in search of a possible ninth planet, which he termed \"Planet X\".",
+   "n_words": 36
+  },
+  {
+   "sent_idx": 2,
+   "sentence_id": "pluto_22",
+   "sentence": "By 1909, Lowell and William H. Pickering had suggested several possible celestial coordinates for such a planet.",
+   "n_words": 17
+  },
+  {
+   "sent_idx": 3,
+   "sentence_id": "pluto_23",
+   "sentence": "Lowell and his observatory conducted his search until his death in 1916, but to no avail.",
+   "n_words": 16
+  },
+  {
+   "sent_idx": 4,
+   "sentence_id": "pluto_24",
+   "sentence": "Unknown to Lowell, his surveys had captured two faint images of Pluto on 19 March and 7 April 1915, but they were not recognized for what they were.",
+   "n_words": 28
+  },
+  {
+   "sent_idx": 5,
+   "sentence_id": "pluto_25",
+   "sentence": "There are fourteen other known prediscovery observations, with the oldest made by the Yerkes Observatory on 20 August 1909.",
+   "n_words": 19
+  },
+  {
+   "sent_idx": 6,
+   "sentence_id": "pluto_26",
+   "sentence": "Percival's widow, Constance Lowell, attempted to wrest the observatory's million- dollar portion of his legacy for herself.",
+   "n_words": 17
+  },
+  {
+   "sent_idx": 7,
+   "sentence_id": "pluto_27",
+   "sentence": "Because of that ten-year legal battle, the search for Planet X did not resume until 1929.",
+   "n_words": 16
+  },
+  {
+   "sent_idx": 8,
+   "sentence_id": "pluto_28",
+   "sentence": "Vesto Melvin Slipher, the observatory director, summarily handed the job of locating Planet X to 23-year-old Clyde Tombaugh, who had just arrived at the Lowell Observatory after Slipher had been impressed by a sample of his astronomical drawings.",
+   "n_words": 38
+  },
+  {
+   "sent_idx": 9,
+   "sentence_id": "pluto_29",
+   "sentence": "Tombaugh's task was to systematically image the night sky in pairs of photographs, then examine each pair and determine whether any objects had shifted position.",
+   "n_words": 21
+  }
+ ],
+ "pluto|3": [
+  {
+   "sent_idx": 0,
+   "sentence_id": "pluto_29",
+   "sentence": "Tombaugh's task was to systematically image the night sky in pairs of photographs, then examine each pair and determine whether any objects had shifted position.",
+   "n_words": 4
+  },
+  {
+   "sent_idx": 1,
+   "sentence_id": "pluto_30",
+   "sentence": "Using a blink comparator, he rapidly shifted back and forth between views of each of the plates to create the illusion of movement of any objects that had changed position or appearance between photographs.",
+   "n_words": 34
+  },
+  {
+   "sent_idx": 2,
+   "sentence_id": "pluto_31",
+   "sentence": "On 18 February 1930, after nearly a year of searching, Tombaugh discovered a possible moving object on photographic plates taken on 23 and 29 January of that year.",
+   "n_words": 28
+  },
+  {
+   "sent_idx": 3,
+   "sentence_id": "pluto_32",
+   "sentence": "A lesser-quality photograph taken on 21 January helped confirm the movement.",
+   "n_words": 11
+  },
+  {
+   "sent_idx": 4,
+   "sentence_id": "pluto_33",
+   "sentence": "After the observatory obtained further confirmatory photographs, news of the discovery was telegraphed to the Harvard College Observatory on 13 March 1930.",
+   "n_words": 22
+  },
+  {
+   "sent_idx": 5,
+   "sentence_id": "pluto_34",
+   "sentence": "The discovery made headlines around the globe.",
+   "n_words": 7
+  },
+  {
+   "sent_idx": 6,
+   "sentence_id": "pluto_35",
+   "sentence": "The Lowell Observatory, which had the right to name the new object, received more than 1,000 suggestions from all over the world, ranging from Atlas to Zymal.",
+   "n_words": 27
+  },
+  {
+   "sent_idx": 7,
+   "sentence_id": "pluto_36",
+   "sentence": "Tombaugh urged Slipher to suggest a name for the new object quickly before someone else did.",
+   "n_words": 16
+  },
+  {
+   "sent_idx": 8,
+   "sentence_id": "pluto_37",
+   "sentence": "Constance Lowell proposed Zeus, then Percival and finally Constance.",
+   "n_words": 9
+  },
+  {
+   "sent_idx": 9,
+   "sentence_id": "pluto_38",
+   "sentence": "These suggestions were disregarded.",
+   "n_words": 4
+  },
+  {
+   "sent_idx": 10,
+   "sentence_id": "pluto_39",
+   "sentence": "The name Pluto, after the god of the underworld, was proposed by Venetia Burney (1918-2009), a then eleven-year - old schoolgirl in Oxford, England, who was interested in classical mythology.",
+   "n_words": 30
+  },
+  {
+   "sent_idx": 11,
+   "sentence_id": "pluto_40",
+   "sentence": "She suggested it in a conversation with her grandfather Falconer Madan, a former librarian at the University of Oxford's Bodleian Library, who passed the name to astronomy professor Herbert Hall Turner, who cabled it to colleagues in the United States.",
+   "n_words": 14
+  }
+ ],
+ "pluto|4": [
+  {
+   "sent_idx": 0,
+   "sentence_id": "pluto_40",
+   "sentence": "She suggested it in a conversation with her grandfather Falconer Madan, a former librarian at the University of Oxford's Bodleian Library, who passed the name to astronomy professor Herbert Hall Turner, who cabled it to colleagues in the United States.",
+   "n_words": 26
+  },
+  {
+   "sent_idx": 1,
+   "sentence_id": "pluto_41",
+   "sentence": "The object was officially named on 24 March 1930.",
+   "n_words": 9
+  },
+  {
+   "sent_idx": 2,
+   "sentence_id": "pluto_42",
+   "sentence": "Each member of the Lowell Observatory was allowed to vote on a short-list of three: Minerva (which was already the name for an asteroid), Cronus (which had lost reputation through being proposed by the unpopular astronomer Thomas Jefferson Jackson See), and Pluto.",
+   "n_words": 42
+  },
+  {
+   "sent_idx": 3,
+   "sentence_id": "pluto_43",
+   "sentence": "Pluto received every vote.",
+   "n_words": 4
+  },
+  {
+   "sent_idx": 4,
+   "sentence_id": "pluto_44",
+   "sentence": "The name was announced on 1 May 1930.",
+   "n_words": 8
+  },
+  {
+   "sent_idx": 5,
+   "sentence_id": "pluto_45",
+   "sentence": "Upon the announcement, Madan gave Venetia 5 pounds (equivalent to 300 GBP, or 450 USD in 2015) as a reward.",
+   "n_words": 20
+  },
+  {
+   "sent_idx": 6,
+   "sentence_id": "pluto_46",
+   "sentence": "The final choice of name was helped in part by the fact that the first two letters of Pluto are the initials of Percival Lowell.",
+   "n_words": 25
+  },
+  {
+   "sent_idx": 7,
+   "sentence_id": "pluto_47",
+   "sentence": "Pluto's astronomical symbol was then created as a monogram constructed from the letters \"PL\".",
+   "n_words": 14
+  },
+  {
+   "sent_idx": 8,
+   "sentence_id": "pluto_48",
+   "sentence": "Pluto's astrological symbol resembles that of Neptune but has a circle in place of the middle prong of the trident.",
+   "n_words": 20
+  },
+  {
+   "sent_idx": 9,
+   "sentence_id": "pluto_49",
+   "sentence": "The name was soon embraced by wider culture.",
+   "n_words": 8
+  },
+  {
+   "sent_idx": 10,
+   "sentence_id": "pluto_50",
+   "sentence": "In 1930, Walt Disney was apparently inspired by it when he introduced for Mickey Mouse a canine companion named Pluto, although Disney animator Ben Sharpsteen could not confirm why the name was given.",
+   "n_words": 33
+  },
+  {
+   "sent_idx": 11,
+   "sentence_id": "pluto_51",
+   "sentence": "In 1941, Glenn T. Seaborg named the newly created element plutonium after Pluto, in keeping with the tradition of naming elements after newly discovered planets following uranium, which was named after Uranus, and neptunium, which was named after Neptune.",
+   "n_words": 14
+  }
+ ],
+ "pluto|5": [
+  {
+   "sent_idx": 0,
+   "sentence_id": "pluto_51",
+   "sentence": "In 1941, Glenn T. Seaborg named the newly created element plutonium after Pluto, in keeping with the tradition of naming elements after newly discovered planets following uranium, which was named after Uranus, and neptunium, which was named after Neptune.",
+   "n_words": 25
+  },
+  {
+   "sent_idx": 1,
+   "sentence_id": "pluto_52",
+   "sentence": "Most languages use the name \"Pluto\" in various transliterations.",
+   "n_words": 9
+  },
+  {
+   "sent_idx": 2,
+   "sentence_id": "pluto_53",
+   "sentence": "In Japanese, an astronomer suggested a translation meaning \"Star of the King (God) of the Underworld\", and this was borrowed into Chinese, Korean, and Vietnamese.",
+   "n_words": 25
+  },
+  {
+   "sent_idx": 3,
+   "sentence_id": "pluto_54",
+   "sentence": "Some Indian languages use the name Pluto, but others, such as Hindi, use the name of the Guardian of Hell in Hindu and Buddhist mythology.",
+   "n_words": 25
+  },
+  {
+   "sent_idx": 4,
+   "sentence_id": "pluto_55",
+   "sentence": "Polynesian languages also tend to use the name of their indigenous god of the underworld.",
+   "n_words": 15
+  },
+  {
+   "sent_idx": 5,
+   "sentence_id": "pluto_56",
+   "sentence": "Once found, Pluto's faintness and lack of a resolvable disc cast doubt on the idea that it was Lowell's Planet X. Estimates of Pluto's mass were revised downward throughout the 20th century.",
+   "n_words": 32
+  },
+  {
+   "sent_idx": 6,
+   "sentence_id": "pluto_57",
+   "sentence": "Astronomers initially calculated its mass based on its presumed effect on Neptune and Uranus.",
+   "n_words": 14
+  },
+  {
+   "sent_idx": 7,
+   "sentence_id": "pluto_58",
+   "sentence": "In 1931, Pluto was calculated to be roughly the mass of Earth with further calculations in 1948 bringing the mass down to roughly that of Mars.",
+   "n_words": 26
+  },
+  {
+   "sent_idx": 8,
+   "sentence_id": "pluto_59",
+   "sentence": "In 1976, Dale Cruikshank, Carl Pilcher and David Morrison of the University of Hawaii calculated Pluto's reflectance for the first time, finding that it matched methane ice's; this meant Pluto had to be exceptionally luminous for its size and therefore could not be more than 1 percent the mass of Earth. (",
+   "n_words": 39
+  }
+ ],
+ "pluto|6": [
+  {
+   "sent_idx": 0,
+   "sentence_id": "pluto_59",
+   "sentence": "In 1976, Dale Cruikshank, Carl Pilcher and David Morrison of the University of Hawaii calculated Pluto's reflectance for the first time, finding that it matched methane ice's; this meant Pluto had to be exceptionally luminous for its size and therefore could not be more than 1 percent the mass of Earth. (",
+   "n_words": 12
+  },
+  {
+   "sent_idx": 1,
+   "sentence_id": "pluto_60",
+   "sentence": "Pluto's reflectance is 1.4-1.9 times greater than that of Earth.)",
+   "n_words": 10
+  },
+  {
+   "sent_idx": 2,
+   "sentence_id": "pluto_61",
+   "sentence": "In 1978, the discovery of Pluto's moon Charon allowed the measurement of Pluto's mass for the first time: roughly 0.2% that of Earth, and far too small to account for the discrepancies in the orbit of Uranus.",
+   "n_words": 37
+  },
+  {
+   "sent_idx": 3,
+   "sentence_id": "pluto_62",
+   "sentence": "Subsequent searches for an alternative Planet X, notably by Robert Sutton Harrington, failed.",
+   "n_words": 13
+  },
+  {
+   "sent_idx": 4,
+   "sentence_id": "pluto_63",
+   "sentence": "In 1992, Myles Standish used data from Voyager 2's flyby of Neptune in 1989, which had revised the estimates of Neptune's mass downward by 0.5% -- an amount comparable to the mass of Mars -- to recalculate its gravitational effect on Uranus.",
+   "n_words": 42
+  },
+  {
+   "sent_idx": 5,
+   "sentence_id": "pluto_64",
+   "sentence": "With the new figures added in, the discrepancies, and with them the need for a Planet X, vanished.",
+   "n_words": 18
+  },
+  {
+   "sent_idx": 6,
+   "sentence_id": "pluto_65",
+   "sentence": "Today, the majority of scientists agree that Planet X, as Lowell defined it, does not exist.",
+   "n_words": 16
+  },
+  {
+   "sent_idx": 7,
+   "sentence_id": "pluto_66",
+   "sentence": "Lowell had made a prediction of Planet X's orbit and position in 1915 that was fairly close to Pluto's actual orbit and its position at that time; Ernest W. Brown concluded soon after Pluto's discovery that this was a coincidence, a view still held today.",
+   "n_words": 45
+  },
+  {
+   "sent_idx": 8,
+   "sentence_id": "pluto_67",
+   "sentence": "From 1992 onward, many bodies were discovered orbiting in the same area as Pluto, showing that Pluto is part of a population of objects called the Kuiper belt.",
+   "n_words": 28
+  },
+  {
+   "sent_idx": 9,
+   "sentence_id": "pluto_68",
+   "sentence": "This made its official status as a planet controversial, with many questioning whether Pluto should be considered together with or separately from its surrounding population.",
+   "n_words": 1
+  }
+ ],
+ "pluto|7": [
+  {
+   "sent_idx": 0,
+   "sentence_id": "pluto_68",
+   "sentence": "This made its official status as a planet controversial, with many questioning whether Pluto should be considered together with or separately from its surrounding population.",
+   "n_words": 24
+  },
+  {
+   "sent_idx": 1,
+   "sentence_id": "pluto_69",
+   "sentence": "Museum and planetarium directors occasionally created controversy by omitting Pluto from planetary models of the Solar System.",
+   "n_words": 17
+  },
+  {
+   "sent_idx": 2,
+   "sentence_id": "pluto_70",
+   "sentence": "The Hayden Planetarium reopened -- in February 2000, after renovation -- with a model of only eight planets, which made headlines almost a year later.",
+   "n_words": 25
+  },
+  {
+   "sent_idx": 3,
+   "sentence_id": "pluto_71",
+   "sentence": "As objects increasingly closer in size to Pluto were discovered in the region, it was argued that Pluto should be reclassified as one of the Kuiper belt objects, just as Ceres, Pallas, Juno and Vesta eventually lost their planet status after the discovery of many other asteroids.",
+   "n_words": 47
+  },
+  {
+   "sent_idx": 4,
+   "sentence_id": "pluto_72",
+   "sentence": "On 29 July 2005, Caltech astronomers announced the discovery of a new trans-Neptunian object, Eris, which was substantially more massive than Pluto and the most massive object discovered in the Solar System since Triton in 1846.",
+   "n_words": 36
+  },
+  {
+   "sent_idx": 5,
+   "sentence_id": "pluto_73",
+   "sentence": "Its discoverers and the press initially called it the tenth planet, although there was no official consensus at the time on whether to call it a planet.",
+   "n_words": 27
+  },
+  {
+   "sent_idx": 6,
+   "sentence_id": "pluto_74",
+   "sentence": "Others in the astronomical community considered the discovery the strongest argument for reclassifying Pluto as a minor planet.",
+   "n_words": 18
+  },
+  {
+   "sent_idx": 7,
+   "sentence_id": "pluto_75",
+   "sentence": "The debate came to a head on 24 August 2006 with an IAU resolution that created an official definition for the term \"planet\".",
+   "n_words": 17
+  }
+ ],
+ "pluto|8": [
+  {
+   "sent_idx": 0,
+   "sentence_id": "pluto_75",
+   "sentence": "The debate came to a head on 24 August 2006 with an IAU resolution that created an official definition for the term \"planet\".",
+   "n_words": 6
+  },
+  {
+   "sent_idx": 1,
+   "sentence_id": "pluto_76",
+   "sentence": "According to this resolution, there are three main conditions for an object to be considered a \"planet\": First, the object must be in orbit around the Sun.",
+   "n_words": 27
+  },
+  {
+   "sent_idx": 2,
+   "sentence_id": "pluto_77",
+   "sentence": "Second, the object must be massive enough to be rounded by its own gravity.",
+   "n_words": 14
+  },
+  {
+   "sent_idx": 3,
+   "sentence_id": "pluto_78",
+   "sentence": "More specifically, its own gravity should pull it into a shape of hydrostatic equilibrium.",
+   "n_words": 14
+  },
+  {
+   "sent_idx": 4,
+   "sentence_id": "pluto_79",
+   "sentence": "Third, it must have cleared the neighborhood around its orbit.",
+   "n_words": 10
+  },
+  {
+   "sent_idx": 5,
+   "sentence_id": "pluto_80",
+   "sentence": "Pluto fails to meet the third condition, because its mass is only 0.07 times that of the mass of the other objects in its orbit (Earth's mass, by contrast, is 1.7 million times the remaining mass in its own orbit).",
+   "n_words": 40
+  },
+  {
+   "sent_idx": 6,
+   "sentence_id": "pluto_81",
+   "sentence": "The IAU further decided that bodies that, like Pluto, meet criteria 1 and 2 but do not meet criterion 3 would be called dwarf planets.",
+   "n_words": 25
+  },
+  {
+   "sent_idx": 7,
+   "sentence_id": "pluto_82",
+   "sentence": "On 13 September 2006, the IAU included Pluto, and Eris and its moon Dysnomia, in their Minor Planet Catalogue, giving them the official minor planet designations \"(134340) Pluto\", \"(136199) Eris\", and \"(136199) Eris I Dysnomia\".",
+   "n_words": 35
+  },
+  {
+   "sent_idx": 8,
+   "sentence_id": "pluto_83",
+   "sentence": "Had Pluto been included on its discovery in 1930, it would have likely been designated \"(1164) Pluto\", following \"(1163) Saga\", which was discovered a month earlier.",
+   "n_words": 26
+  },
+  {
+   "sent_idx": 9,
+   "sentence_id": "pluto_84",
+   "sentence": "There has been some resistance within the astronomical community toward the reclassification.",
+   "n_words": 12
+  },
+  {
+   "sent_idx": 10,
+   "sentence_id": "pluto_85",
+   "sentence": "Alan Stern, principal investigator with NASA's New Horizons mission to Pluto, publicly derided the IAU resolution, stating that \"the definition stinks, for technical reasons\".",
+   "n_words": 9
+  }
+ ],
+ "pluto|9": [
+  {
+   "sent_idx": 0,
+   "sentence_id": "pluto_85",
+   "sentence": "Alan Stern, principal investigator with NASA's New Horizons mission to Pluto, publicly derided the IAU resolution, stating that \"the definition stinks, for technical reasons\".",
+   "n_words": 15
+  },
+  {
+   "sent_idx": 1,
+   "sentence_id": "pluto_86",
+   "sentence": "Stern's contention was that, by the terms of the new definition, Earth, Mars, Jupiter, and Neptune, all of which share their orbits with asteroids, would be excluded.",
+   "n_words": 27
+  },
+  {
+   "sent_idx": 2,
+   "sentence_id": "pluto_87",
+   "sentence": "He argued that all big spherical moons, including the Moon, should likewise be considered planets.",
+   "n_words": 15
+  },
+  {
+   "sent_idx": 3,
+   "sentence_id": "pluto_88",
+   "sentence": "His other claim was that because less than five percent of astronomers voted for it, the decision was not representative of the entire astronomical community.",
+   "n_words": 25
+  },
+  {
+   "sent_idx": 4,
+   "sentence_id": "pluto_89",
+   "sentence": "Marc W. Buie, then at Lowell Observatory, voiced his opinion on the new definition on his website and petitioned against the definition.",
+   "n_words": 22
+  },
+  {
+   "sent_idx": 5,
+   "sentence_id": "pluto_90",
+   "sentence": "Others have supported the IAU.",
+   "n_words": 5
+  },
+  {
+   "sent_idx": 6,
+   "sentence_id": "pluto_91",
+   "sentence": "Mike Brown, the astronomer who discovered Eris, said \"through this whole crazy circus-like procedure, somehow the right answer was stumbled on.",
+   "n_words": 21
+  },
+  {
+   "sent_idx": 7,
+   "sentence_id": "pluto_92",
+   "sentence": "It's been a long time coming.",
+   "n_words": 6
+  },
+  {
+   "sent_idx": 8,
+   "sentence_id": "pluto_93",
+   "sentence": "Science is self-correcting eventually, even when strong emotions are involved.\"",
+   "n_words": 10
+  },
+  {
+   "sent_idx": 9,
+   "sentence_id": "pluto_94",
+   "sentence": "Public reception to the IAU decision was mixed.",
+   "n_words": 8
+  },
+  {
+   "sent_idx": 10,
+   "sentence_id": "pluto_95",
+   "sentence": "Although many accepted the reclassification, some sought to overturn the decision with online petitions urging the IAU to consider reinstatement.",
+   "n_words": 20
+  },
+  {
+   "sent_idx": 11,
+   "sentence_id": "pluto_96",
+   "sentence": "A resolution introduced by some members of the California State Assembly facetiously called the IAU decision a \"scientific heresy\".",
+   "n_words": 19
+  }
+ ],
+ "the_voynich_manuscript|0": [
+  {
+   "sent_idx": 0,
+   "sentence_id": "the_voynich_manuscript_0",
+   "sentence": "The Voynich manuscript is an illustrated codex hand-written in an unknown writing system.",
+   "n_words": 13
+  },
+  {
+   "sent_idx": 1,
+   "sentence_id": "the_voynich_manuscript_1",
+   "sentence": "The paper in the book pages has been carbon-dated to the early 15th century and may have been composed in Northern Italy during the Italian Renaissance.",
+   "n_words": 26
+  },
+  {
+   "sent_idx": 2,
+   "sentence_id": "the_voynich_manuscript_2",
+   "sentence": "The manuscript is named after Wilfrid Voynich, a Polish book dealer who purchased it in 1912.",
+   "n_words": 16
+  },
+  {
+   "sent_idx": 3,
+   "sentence_id": "the_voynich_manuscript_3",
+   "sentence": "The Voynich manuscript has been studied by many professional and amateur cryptographers, including American and British codebreakers from both World War I and World War II.",
+   "n_words": 26
+  },
+  {
+   "sent_idx": 4,
+   "sentence_id": "the_voynich_manuscript_4",
+   "sentence": "No one has yet succeeded in deciphering the text, and it has become a famous case in the history of cryptography.",
+   "n_words": 21
+  },
+  {
+   "sent_idx": 5,
+   "sentence_id": "the_voynich_manuscript_5",
+   "sentence": "The mystery of the meaning and origin of the manuscript has excited the popular imagination, making the manuscript the subject of novels and speculation.",
+   "n_words": 24
+  },
+  {
+   "sent_idx": 6,
+   "sentence_id": "the_voynich_manuscript_6",
+   "sentence": "of the many hypotheses proposed over the last hundred years has yet been independently verified.",
+   "n_words": 16
+  },
+  {
+   "sent_idx": 7,
+   "sentence_id": "the_voynich_manuscript_7",
+   "sentence": "The Voynich manuscript was donated by Hans P. Kraus to Yale University's Beinecke Rare Book and Manuscript Library in 1969, where it is catalogued under call number MS 408.",
+   "n_words": 29
+  },
+  {
+   "sent_idx": 8,
+   "sentence_id": "the_voynich_manuscript_8",
+   "sentence": "The manuscript measures 23.5 by 16.2 by 5 centimeters (9.3 by 6.4 by 2.0 in), with hundreds of sheepskin pages collected into eighteen \"foldouts\".",
+   "n_words": 24
+  },
+  {
+   "sent_idx": 9,
+   "sentence_id": "the_voynich_manuscript_9",
+   "sentence": "The total number of pages is around 240, but the exact number depends on how the manuscript's unusual foldouts are counted.",
+   "n_words": 18
+  }
+ ],
+ "the_voynich_manuscript|1": [
+  {
+   "sent_idx": 0,
+   "sentence_id": "the_voynich_manuscript_9",
+   "sentence": "The total number of pages is around 240, but the exact number depends on how the manuscript's unusual foldouts are counted.",
+   "n_words": 3
+  },
+  {
+   "sent_idx": 1,
+   "sentence_id": "the_voynich_manuscript_10",
+   "sentence": "The foldouts have been numbered from 1 to 20 in various locations, with numerals consistent with the 1400s, and the top righthand corner of each righthand page has been numbered from 1 to 116.",
+   "n_words": 34
+  },
+  {
+   "sent_idx": 2,
+   "sentence_id": "the_voynich_manuscript_11",
+   "sentence": "From the various numbering gaps in the foldouts and pages, it seems likely that in the past the manuscript had at least 272 pages in 20 foldouts, some of which were already missing when Wilfrid Voynich acquired the manuscript in 1912.",
+   "n_words": 41
+  },
+  {
+   "sent_idx": 3,
+   "sentence_id": "the_voynich_manuscript_12",
+   "sentence": "There is strong evidence that many of the book's foldouts were reordered at various points in its history, and that the original page order may well have been quite different from what it is today.",
+   "n_words": 35
+  },
+  {
+   "sent_idx": 4,
+   "sentence_id": "the_voynich_manuscript_13",
+   "sentence": "The binding and covers are not original to the book, but were added during its possession by the Collegio Romano, known in English as the College of Rome.",
+   "n_words": 28
+  },
+  {
+   "sent_idx": 5,
+   "sentence_id": "the_voynich_manuscript_14",
+   "sentence": "Every page in the manuscript contains text, mostly in an unknown script, but some have extraneous writing in Latin script.",
+   "n_words": 20
+  },
+  {
+   "sent_idx": 6,
+   "sentence_id": "the_voynich_manuscript_15",
+   "sentence": "Many pages contain substantial drawings or charts which are colored with paint.",
+   "n_words": 12
+  },
+  {
+   "sent_idx": 7,
+   "sentence_id": "the_voynich_manuscript_16",
+   "sentence": "Based on modern analysis, it has been determined that a quill pen and iron ink were used for the text and figure outlines; the colored paint was applied (somewhat crudely) to the figures, possibly at a later date.",
+   "n_words": 38
+  },
+  {
+   "sent_idx": 8,
+   "sentence_id": "the_voynich_manuscript_17",
+   "sentence": "The bulk of the text in the manuscript is written in an unknown script, running left to right.",
+   "n_words": 17
+  }
+ ],
+ "the_voynich_manuscript|2": [
+  {
+   "sent_idx": 0,
+   "sentence_id": "the_voynich_manuscript_17",
+   "sentence": "The bulk of the text in the manuscript is written in an unknown script, running left to right.",
+   "n_words": 1
+  },
+  {
+   "sent_idx": 1,
+   "sentence_id": "the_voynich_manuscript_18",
+   "sentence": "Most of the characters are composed of one or two simple pen strokes.",
+   "n_words": 13
+  },
+  {
+   "sent_idx": 2,
+   "sentence_id": "the_voynich_manuscript_19",
+   "sentence": "While there is some dispute as to whether certain characters are distinct or not, a script of 20-25 characters would account for virtually all of the text; the exceptions are a few dozen rarer characters that occur only once or twice each.",
+   "n_words": 42
+  },
+  {
+   "sent_idx": 3,
+   "sentence_id": "the_voynich_manuscript_20",
+   "sentence": "There is no obvious punctuation.",
+   "n_words": 5
+  },
+  {
+   "sent_idx": 4,
+   "sentence_id": "the_voynich_manuscript_21",
+   "sentence": "Much of the text is written in a single column in the body of a page, with a slightly ragged right margin and paragraph divisions, and sometimes with stars in the left margin.",
+   "n_words": 33
+  },
+  {
+   "sent_idx": 5,
+   "sentence_id": "the_voynich_manuscript_22",
+   "sentence": "Other text occurs in charts or as labels associated with illustrations.",
+   "n_words": 11
+  },
+  {
+   "sent_idx": 6,
+   "sentence_id": "the_voynich_manuscript_23",
+   "sentence": "There are no indications of any errors or corrections made in the document.",
+   "n_words": 13
+  },
+  {
+   "sent_idx": 7,
+   "sentence_id": "the_voynich_manuscript_24",
+   "sentence": "The manuscript flows smoothly, suggesting that the symbols were not encoded, as there is no delay between characters as would normally be expected in written encoded text.",
+   "n_words": 27
+  },
+  {
+   "sent_idx": 8,
+   "sentence_id": "the_voynich_manuscript_25",
+   "sentence": "The text consists of over 170,000 characters, with spaces dividing the text into about 35,000 groups of varying length, usually referred to as words.",
+   "n_words": 24
+  },
+  {
+   "sent_idx": 9,
+   "sentence_id": "the_voynich_manuscript_26",
+   "sentence": "The structure of these words seems to follow consistent rules.",
+   "n_words": 10
+  },
+  {
+   "sent_idx": 10,
+   "sentence_id": "the_voynich_manuscript_27",
+   "sentence": "Certain characters must appear in each word (like English vowels), some characters never follow others, and some may be doubled or tripled but others may not.",
+   "n_words": 26
+  },
+  {
+   "sent_idx": 11,
+   "sentence_id": "the_voynich_manuscript_28",
+   "sentence": "The distribution of letters within words is also rather peculiar: some characters occur only at the beginning of a word, some only at the end, and some always in the middle section.",
+   "n_words": 20
+  }
+ ],
+ "the_voynich_manuscript|3": [
+  {
+   "sent_idx": 0,
+   "sentence_id": "the_voynich_manuscript_28",
+   "sentence": "The distribution of letters within words is also rather peculiar: some characters occur only at the beginning of a word, some only at the end, and some always in the middle section.",
+   "n_words": 12
+  },
+  {
+   "sent_idx": 1,
+   "sentence_id": "the_voynich_manuscript_29",
+   "sentence": "Many researchers have commented upon the highly regular structure of the words.",
+   "n_words": 12
+  },
+  {
+   "sent_idx": 2,
+   "sentence_id": "the_voynich_manuscript_30",
+   "sentence": "Some words occur only in certain sections, or in only a few pages; others occur throughout the manuscript.",
+   "n_words": 18
+  },
+  {
+   "sent_idx": 3,
+   "sentence_id": "the_voynich_manuscript_31",
+   "sentence": "There are very few repetitions among the thousand or so labels attached to the illustrations.",
+   "n_words": 15
+  },
+  {
+   "sent_idx": 4,
+   "sentence_id": "the_voynich_manuscript_32",
+   "sentence": "There are practically no words with fewer than two letters or more than ten.",
+   "n_words": 14
+  },
+  {
+   "sent_idx": 5,
+   "sentence_id": "the_voynich_manuscript_33",
+   "sentence": "There are instances where the same common word appears up to three times in a row.",
+   "n_words": 16
+  },
+  {
+   "sent_idx": 6,
+   "sentence_id": "the_voynich_manuscript_34",
+   "sentence": "Words that differ by only one letter also repeat with unusual frequency, causing single-substitution alphabet decipherings to yield babble- like text.",
+   "n_words": 21
+  },
+  {
+   "sent_idx": 7,
+   "sentence_id": "the_voynich_manuscript_35",
+   "sentence": "Elizebeth Friedman in 1962 described such attempts as doomed to utter frustration.",
+   "n_words": 12
+  },
+  {
+   "sent_idx": 8,
+   "sentence_id": "the_voynich_manuscript_36",
+   "sentence": "Various transcription alphabets have been created to equate the Voynich characters with Latin characters in order to help with cryptography analysis, such as the European Voynich Alphabet.",
+   "n_words": 27
+  },
+  {
+   "sent_idx": 9,
+   "sentence_id": "the_voynich_manuscript_37",
+   "sentence": "The first major transcription alphabet was created by cryptographer William F. Friedman in the 1940s, where each line of the manuscript was transcribed to an IBM punch card to make it machine readable.",
+   "n_words": 33
+  },
+  {
+   "sent_idx": 10,
+   "sentence_id": "the_voynich_manuscript_38",
+   "sentence": "Because the text cannot be read, the illustrations are conventionally used to divide most of the manuscript into six different sections.",
+   "n_words": 21
+  },
+  {
+   "sent_idx": 11,
+   "sentence_id": "the_voynich_manuscript_39",
+   "sentence": "Each section is typified by illustrations with different styles and supposed subject matter, except for the last section, in which the only drawings are small stars in the margin.",
+   "n_words": 5
+  }
+ ],
+ "the_voynich_manuscript|4": [
+  {
+   "sent_idx": 0,
+   "sentence_id": "the_voynich_manuscript_39",
+   "sentence": "Each section is typified by illustrations with different styles and supposed subject matter, except for the last section, in which the only drawings are small stars in the margin.",
+   "n_words": 24
+  },
+  {
+   "sent_idx": 1,
+   "sentence_id": "the_voynich_manuscript_40",
+   "sentence": "The following are the sections and their conventional names.",
+   "n_words": 9
+  },
+  {
+   "sent_idx": 2,
+   "sentence_id": "the_voynich_manuscript_41",
+   "sentence": "The first section is \"Herbal\".",
+   "n_words": 5
+  },
+  {
+   "sent_idx": 3,
+   "sentence_id": "the_voynich_manuscript_42",
+   "sentence": "In this section, each page displays one or two plants and a few paragraphs of text, a format typical of European medicinal books of the time.",
+   "n_words": 26
+  },
+  {
+   "sent_idx": 4,
+   "sentence_id": "the_voynich_manuscript_43",
+   "sentence": "Some parts of these drawings are larger and cleaner copies of sketches seen in the pharmaceutical section.",
+   "n_words": 17
+  },
+  {
+   "sent_idx": 5,
+   "sentence_id": "the_voynich_manuscript_44",
+   "sentence": "of the plants depicted are unambiguously identifiable.",
+   "n_words": 8
+  },
+  {
+   "sent_idx": 6,
+   "sentence_id": "the_voynich_manuscript_45",
+   "sentence": "The next section is \"Astronomical\", which contains circular diagrams, some of them with suns, moons, and stars, suggestive of astronomy or astrology.",
+   "n_words": 22
+  },
+  {
+   "sent_idx": 7,
+   "sentence_id": "the_voynich_manuscript_46",
+   "sentence": "One series of 12 diagrams depicts conventional symbols for the zodiacal constellations (two fish for Pisces, a bull for Taurus, a hunter with crossbow for Sagittarius, etc.).",
+   "n_words": 27
+  },
+  {
+   "sent_idx": 8,
+   "sentence_id": "the_voynich_manuscript_47",
+   "sentence": "Each of these has 30 female figures arranged in two or more concentric bands.",
+   "n_words": 14
+  },
+  {
+   "sent_idx": 9,
+   "sentence_id": "the_voynich_manuscript_48",
+   "sentence": "Most of the females are at least partly naked, and each holds what appears to be a labeled star or is shown with the star attached by what could be a tether or cord of some kind to either arm.",
+   "n_words": 40
+  },
+  {
+   "sent_idx": 10,
+   "sentence_id": "the_voynich_manuscript_49",
+   "sentence": "The last two pages of this section were lost, while Aries and Taurus are split into four paired diagrams with 15 women and 15 stars each.",
+   "n_words": 26
+  },
+  {
+   "sent_idx": 11,
+   "sentence_id": "the_voynich_manuscript_50",
+   "sentence": "Some of these diagrams are on fold-out pages.",
+   "n_words": 8
+  },
+  {
+   "sent_idx": 12,
+   "sentence_id": "the_voynich_manuscript_51",
+   "sentence": "The third section is \"Biological\".",
+   "n_words": 2
+  }
+ ],
+ "the_voynich_manuscript|5": [
+  {
+   "sent_idx": 0,
+   "sentence_id": "the_voynich_manuscript_51",
+   "sentence": "The third section is \"Biological\".",
+   "n_words": 3
+  },
+  {
+   "sent_idx": 1,
+   "sentence_id": "the_voynich_manuscript_52",
+   "sentence": "This section contains a dense continuous text interspersed with figures, mostly showing small naked women, some wearing crowns, bathing in pools or tubs connected by an elaborate network of pipes.",
+   "n_words": 30
+  },
+  {
+   "sent_idx": 2,
+   "sentence_id": "the_voynich_manuscript_53",
+   "sentence": "The fourth section, \"Cosmological\", contains more circular diagrams, but of an obscure nature.",
+   "n_words": 13
+  },
+  {
+   "sent_idx": 3,
+   "sentence_id": "the_voynich_manuscript_54",
+   "sentence": "This section also has foldouts; one of them spans six pages and contains a map or diagram, with nine \"islands\" or \"rosettes\" connected by \"causeways\" and containing castles, as well as what might be a volcano.",
+   "n_words": 36
+  },
+  {
+   "sent_idx": 4,
+   "sentence_id": "the_voynich_manuscript_55",
+   "sentence": "The fifth section, \"Pharmaceutical\", contains many labeled drawings of isolated plant parts (roots, leaves, etc.);",
+   "n_words": 15
+  },
+  {
+   "sent_idx": 5,
+   "sentence_id": "the_voynich_manuscript_56",
+   "sentence": "objects resembling medicine jars, ranging in style from the mundane to the fantastical; and a few text paragraphs.",
+   "n_words": 18
+  },
+  {
+   "sent_idx": 6,
+   "sentence_id": "the_voynich_manuscript_57",
+   "sentence": "In the final section, \"Recipes\", the text is broken into many short paragraphs, each marked with a star in the left margin.",
+   "n_words": 22
+  },
+  {
+   "sent_idx": 7,
+   "sentence_id": "the_voynich_manuscript_58",
+   "sentence": "The overall impression given by the surviving leaves of the manuscript is that it was meant to serve as a pharmacy book or to address topics in medieval or early modern medicine.",
+   "n_words": 32
+  },
+  {
+   "sent_idx": 8,
+   "sentence_id": "the_voynich_manuscript_59",
+   "sentence": "However, the puzzling details of illustrations have fueled theories about the book's origins, the contents of its text, and the purpose for which it was intended.",
+   "n_words": 26
+  },
+  {
+   "sent_idx": 9,
+   "sentence_id": "the_voynich_manuscript_60",
+   "sentence": "The first section of the book is almost certainly herbal, but attempts to identify the plants, either with actual specimens or with the stylized drawings of contemporary herbals, have largely failed.",
+   "n_words": 13
+  }
+ ],
+ "the_voynich_manuscript|6": [
+  {
+   "sent_idx": 0,
+   "sentence_id": "the_voynich_manuscript_60",
+   "sentence": "The first section of the book is almost certainly herbal, but attempts to identify the plants, either with actual specimens or with the stylized drawings of contemporary herbals, have largely failed.",
+   "n_words": 18
+  },
+  {
+   "sent_idx": 1,
+   "sentence_id": "the_voynich_manuscript_61",
+   "sentence": "Few of the plant drawings (such as a wild pansy and the maidenhair fern) can be identified with reasonable certainty.",
+   "n_words": 20
+  },
+  {
+   "sent_idx": 2,
+   "sentence_id": "the_voynich_manuscript_62",
+   "sentence": "Those herbal pictures that match pharmacological sketches appear to be clean copies of these, except that missing parts were completed with improbable-looking details.",
+   "n_words": 23
+  },
+  {
+   "sent_idx": 3,
+   "sentence_id": "the_voynich_manuscript_63",
+   "sentence": "In fact, many of the plant drawings in the herbal section seem to be composite: the roots of one species have been fastened to the leaves of another, with flowers from a third.",
+   "n_words": 33
+  },
+  {
+   "sent_idx": 4,
+   "sentence_id": "the_voynich_manuscript_64",
+   "sentence": "Hugh O'Neill believed that one illustration depicted a New World sunflower, which would help book the manuscript and open up intriguing possibilities for its origin; unfortunately, the identification is only speculative.",
+   "n_words": 31
+  },
+  {
+   "sent_idx": 5,
+   "sentence_id": "the_voynich_manuscript_65",
+   "sentence": "The basins and tubes in the \"biological\" section are sometimes interpreted as implying a connection to alchemy, yet bear little obvious resemblance to the alchemical equipment of the period.",
+   "n_words": 29
+  },
+  {
+   "sent_idx": 6,
+   "sentence_id": "the_voynich_manuscript_66",
+   "sentence": "Astrological considerations frequently played a prominent role in herb gathering, bloodletting and other medical procedures common during the likeliest dates of the manuscript.",
+   "n_words": 23
+  },
+  {
+   "sent_idx": 7,
+   "sentence_id": "the_voynich_manuscript_67",
+   "sentence": "However, apart from the obvious Zodiac symbols, and one diagram possibly showing the classical planets, interpretation remains speculative.",
+   "n_words": 18
+  }
+ ],
+ "the_voynich_manuscript|7": [
+  {
+   "sent_idx": 0,
+   "sentence_id": "the_voynich_manuscript_68",
+   "sentence": "Much of the early history of the book is unknown, though the text and illustrations are all characteristically European.",
+   "n_words": 19
+  },
+  {
+   "sent_idx": 1,
+   "sentence_id": "the_voynich_manuscript_69",
+   "sentence": "In 2009, University of Arizona researchers performed radiocarbon dating on the manuscript's paper.",
+   "n_words": 13
+  },
+  {
+   "sent_idx": 2,
+   "sentence_id": "the_voynich_manuscript_70",
+   "sentence": "The results of that test suggest that the manuscript was made between 1404 and 1438.",
+   "n_words": 15
+  },
+  {
+   "sent_idx": 3,
+   "sentence_id": "the_voynich_manuscript_71",
+   "sentence": "In addition, the McCrone Research Institute in Chicago found that the paints in the manuscript were of materials to be expected from that period of European history.",
+   "n_words": 27
+  },
+  {
+   "sent_idx": 4,
+   "sentence_id": "the_voynich_manuscript_72",
+   "sentence": "It has also been suggested that the McCrone Research Institute found that much of the ink was added not long after the creation of the parchment, but the official report contains no statement to this effect.",
+   "n_words": 36
+  },
+  {
+   "sent_idx": 5,
+   "sentence_id": "the_voynich_manuscript_73",
+   "sentence": "The earliest historical information about the manuscript comes from a letter found inside the cover -- written in 1666 to accompany the manuscript when it was sent by Johannes Marcus to Athanasius Kircher -- which claims that the book once belonged to Emperor Rudolf II (1552-1612), who paid 600 gold ducats (approximately 2.07 kg gold) for it.",
+   "n_words": 57
+  },
+  {
+   "sent_idx": 6,
+   "sentence_id": "the_voynich_manuscript_74",
+   "sentence": "The book was then given or lent to Jacobus Horcicky de Tepenecz, the head of Rudolf's botanical gardens in Prague.",
+   "n_words": 20
+  },
+  {
+   "sent_idx": 7,
+   "sentence_id": "the_voynich_manuscript_75",
+   "sentence": "The next confirmed owner is Georg Baresch, an obscure alchemist also in Prague.",
+   "n_words": 13
+  },
+  {
+   "sent_idx": 8,
+   "sentence_id": "the_voynich_manuscript_76",
+   "sentence": "Baresch apparently was just as puzzled as modern scientists about this \"Sphynx\" that had been \"taking up space uselessly in his library\" for many years.",
+   "n_words": 15
+  }
+ ],
+ "the_voynich_manuscript|8": [
+  {
+   "sent_idx": 0,
+   "sentence_id": "the_voynich_manuscript_76",
+   "sentence": "Baresch apparently was just as puzzled as modern scientists about this \"Sphynx\" that had been \"taking up space uselessly in his library\" for many years.",
+   "n_words": 10
+  },
+  {
+   "sent_idx": 1,
+   "sentence_id": "the_voynich_manuscript_77",
+   "sentence": "On learning that Athanasius Kircher, a Jesuit scholar from the Collegio Romano, had published a Coptic (Egyptian) dictionary and \"deciphered\" the Egyptian hieroglyphs, Baresch sent a sample copy of the script to Kircher in Rome (twice), asking for clues.",
+   "n_words": 39
+  },
+  {
+   "sent_idx": 2,
+   "sentence_id": "the_voynich_manuscript_78",
+   "sentence": "His 1639 letter to Kircher is the earliest confirmed mention of the manuscript that has been found so far.",
+   "n_words": 19
+  },
+  {
+   "sent_idx": 3,
+   "sentence_id": "the_voynich_manuscript_79",
+   "sentence": "It is not known whether Kircher answered the request, but apparently, he was interested enough to try to acquire the book, which Baresch refused to yield.",
+   "n_words": 26
+  },
+  {
+   "sent_idx": 4,
+   "sentence_id": "the_voynich_manuscript_80",
+   "sentence": "Upon Baresch's death, the manuscript passed to his friend Jan Marek Marci (1595-1667), who a few years later sent the book to Kircher, his longtime friend and correspondent.",
+   "n_words": 28
+  },
+  {
+   "sent_idx": 5,
+   "sentence_id": "the_voynich_manuscript_81",
+   "sentence": "Marci's 1666 cover letter (written in Latin) was still with the manuscript when Voynich purchased it.",
+   "n_words": 16
+  },
+  {
+   "sent_idx": 6,
+   "sentence_id": "the_voynich_manuscript_82",
+   "sentence": "There are no records of the book for the next 200 years, but in all likelihood it was stored with the rest of Kircher's correspondence in the library of the Collegio Romano.",
+   "n_words": 32
+  },
+  {
+   "sent_idx": 7,
+   "sentence_id": "the_voynich_manuscript_83",
+   "sentence": "It probably remained there until the troops of Victor Emmanuel II of Italy captured the city in 1870 and annexed the Papal States.",
+   "n_words": 23
+  },
+  {
+   "sent_idx": 8,
+   "sentence_id": "the_voynich_manuscript_84",
+   "sentence": "The new Italian government decided to confiscate many properties of the Church, including the library of the Collegio.",
+   "n_words": 18
+  },
+  {
+   "sent_idx": 9,
+   "sentence_id": "the_voynich_manuscript_85",
+   "sentence": "According to investigations by Xavier Ceccaldi and others, just before this happened, many books of the University's library were hastily transferred to the personal libraries of its faculty, which were exempt from confiscation.",
+   "n_words": 11
+  }
+ ],
+ "the_voynich_manuscript|9": [
+  {
+   "sent_idx": 0,
+   "sentence_id": "the_voynich_manuscript_85",
+   "sentence": "According to investigations by Xavier Ceccaldi and others, just before this happened, many books of the University's library were hastily transferred to the personal libraries of its faculty, which were exempt from confiscation.",
+   "n_words": 22
+  },
+  {
+   "sent_idx": 1,
+   "sentence_id": "the_voynich_manuscript_86",
+   "sentence": "Kircher's correspondence was among those books -- and so apparently was the Voynich manuscript, as it still bears the name plate of Petrus Beckx, head of the Jesuit order and the University's Rector at the time.",
+   "n_words": 36
+  },
+  {
+   "sent_idx": 2,
+   "sentence_id": "the_voynich_manuscript_87",
+   "sentence": "Around 1912, the Collegio Romano was short of money and decided to sell some of its holdings discreetly.",
+   "n_words": 18
+  },
+  {
+   "sent_idx": 3,
+   "sentence_id": "the_voynich_manuscript_88",
+   "sentence": "Wilfrid Voynich acquired 30 manuscripts, among them the manuscript that now bears his name.",
+   "n_words": 14
+  },
+  {
+   "sent_idx": 4,
+   "sentence_id": "the_voynich_manuscript_89",
+   "sentence": "He spent the next seven years attempting to interest scholars in deciphering the script while he worked to determine the origins of the manuscript.",
+   "n_words": 24
+  },
+  {
+   "sent_idx": 5,
+   "sentence_id": "the_voynich_manuscript_90",
+   "sentence": "In 1930, after Wilfrid's death, the manuscript was inherited by his widow, Ethel Voynich (known as the author of the novel The Gadfly and daughter of mathematician George Boole).",
+   "n_words": 29
+  },
+  {
+   "sent_idx": 6,
+   "sentence_id": "the_voynich_manuscript_91",
+   "sentence": "She died in 1960 and left the manuscript to her close friend, Anne Nill.",
+   "n_words": 14
+  },
+  {
+   "sent_idx": 7,
+   "sentence_id": "the_voynich_manuscript_92",
+   "sentence": "In 1961, Nill sold the book to another antique book dealer, Hans Kraus.",
+   "n_words": 13
+  },
+  {
+   "sent_idx": 8,
+   "sentence_id": "the_voynich_manuscript_93",
+   "sentence": "Unable to find a buyer, Kraus donated the manuscript to Yale University in 1969, where it was catalogued as \"MS 408\".",
+   "n_words": 21
+  },
+  {
+   "sent_idx": 9,
+   "sentence_id": "the_voynich_manuscript_94",
+   "sentence": "Many people have been proposed as possible authors of the Voynich manuscript, among them Roger Bacon, John Dee or Edward Kelley, Giovanni Fontana, and Voynich.",
+   "n_words": 25
+  }
+ ],
+ "history_of_film|0": [
+  {
+   "sent_idx": 0,
+   "sentence_id": "history_of_film_0",
+   "sentence": "The history of film began in the 1890s, with the invention of motion picture cameras and the establishment of film production companies.",
+   "n_words": 22
+  },
+  {
+   "sent_idx": 1,
+   "sentence_id": "history_of_film_1",
+   "sentence": "The films of the 1890s were under a minute long and until 1927, motion pictures were produced without sound.",
+   "n_words": 19
+  },
+  {
+   "sent_idx": 2,
+   "sentence_id": "history_of_film_2",
+   "sentence": "The first eleven years of motion pictures show the cinema moving from a novelty to an established large-scale entertainment industry.",
+   "n_words": 20
+  },
+  {
+   "sent_idx": 3,
+   "sentence_id": "history_of_film_3",
+   "sentence": "The films became several minutes long consisting of several shots.",
+   "n_words": 10
+  },
+  {
+   "sent_idx": 4,
+   "sentence_id": "history_of_film_4",
+   "sentence": "The first rotating camera for taking panning shots was built in 1897.",
+   "n_words": 12
+  },
+  {
+   "sent_idx": 5,
+   "sentence_id": "history_of_film_5",
+   "sentence": "The first film studios were built in 1897.",
+   "n_words": 8
+  },
+  {
+   "sent_idx": 6,
+   "sentence_id": "history_of_film_6",
+   "sentence": "Special effects were introduced and film continuity, involving action moving from one sequence into another, began to be used.",
+   "n_words": 19
+  },
+  {
+   "sent_idx": 7,
+   "sentence_id": "history_of_film_7",
+   "sentence": "In 1900, continuity of action across successive shots was achieved and the close-up shot was introduced.",
+   "n_words": 16
+  },
+  {
+   "sent_idx": 8,
+   "sentence_id": "history_of_film_8",
+   "sentence": "The first animation use in movies was in 1899.",
+   "n_words": 9
+  },
+  {
+   "sent_idx": 9,
+   "sentence_id": "history_of_film_9",
+   "sentence": "The first feature length multi-reel film was a 1906 Australian production.",
+   "n_words": 11
+  },
+  {
+   "sent_idx": 10,
+   "sentence_id": "history_of_film_10",
+   "sentence": "New film techniques that were introduced in this period include the use of artificial lighting, fire effects and low-key lighting for enhanced atmosphere during sinister scenes.",
+   "n_words": 26
+  },
+  {
+   "sent_idx": 11,
+   "sentence_id": "history_of_film_11",
+   "sentence": "As films grew longer, specialist writers were employed to simplify more complex stories derived from novels or plays into a form that could be contained on one reel and be easier to be understood by the audience, the audience that was new to this form.",
+   "n_words": 43
+  }
+ ],
+ "history_of_film|1": [
+  {
+   "sent_idx": 0,
+   "sentence_id": "history_of_film_11",
+   "sentence": "As films grew longer, specialist writers were employed to simplify more complex stories derived from novels or plays into a form that could be contained on one reel and be easier to be understood by the audience, the audience that was new to this form.",
+   "n_words": 2
+  },
+  {
+   "sent_idx": 1,
+   "sentence_id": "history_of_film_12",
+   "sentence": "Genres began to be used as categories; the main division was into comedy and drama, but these categories were further subdivided.",
+   "n_words": 21
+  },
+  {
+   "sent_idx": 2,
+   "sentence_id": "history_of_film_13",
+   "sentence": "The years of the First World War were a complex transitional period for the film industry.",
+   "n_words": 16
+  },
+  {
+   "sent_idx": 3,
+   "sentence_id": "history_of_film_14",
+   "sentence": "The exhibition of films changed from short one-reel programmed to feature films.",
+   "n_words": 12
+  },
+  {
+   "sent_idx": 4,
+   "sentence_id": "history_of_film_15",
+   "sentence": "Exhibition venues became larger and began charging higher prices.",
+   "n_words": 9
+  },
+  {
+   "sent_idx": 5,
+   "sentence_id": "history_of_film_16",
+   "sentence": "By 1914, continuity cinema was the established mode of commercial cinema.",
+   "n_words": 11
+  },
+  {
+   "sent_idx": 6,
+   "sentence_id": "history_of_film_17",
+   "sentence": "One of the advanced continuity techniques involved an accurate and smooth transition from one shot to another.",
+   "n_words": 17
+  },
+  {
+   "sent_idx": 7,
+   "sentence_id": "history_of_film_18",
+   "sentence": "The films of the 1890s were seen mostly via temporary storefront spaces and traveling exhibitors or as acts in theater programs.",
+   "n_words": 21
+  },
+  {
+   "sent_idx": 8,
+   "sentence_id": "history_of_film_19",
+   "sentence": "A film could be under a minute long and would usually present a single scene, authentic or staged, of everyday life, a public event, or a sporting event.",
+   "n_words": 28
+  },
+  {
+   "sent_idx": 9,
+   "sentence_id": "history_of_film_20",
+   "sentence": "There was little to no cinematic technique, usually no camera movement, and flat compositions reminiscent of the stage.",
+   "n_words": 18
+  },
+  {
+   "sent_idx": 10,
+   "sentence_id": "history_of_film_21",
+   "sentence": "The films were in black and white.",
+   "n_words": 7
+  },
+  {
+   "sent_idx": 11,
+   "sentence_id": "history_of_film_22",
+   "sentence": "Until 1927 motion pictures for films were produced without sound.",
+   "n_words": 10
+  },
+  {
+   "sent_idx": 12,
+   "sentence_id": "history_of_film_23",
+   "sentence": "This era is referred to as the silent era of film.",
+   "n_words": 11
+  },
+  {
+   "sent_idx": 13,
+   "sentence_id": "history_of_film_24",
+   "sentence": "To enhance the viewer's experience, silent films were commonly accompanied by live musicians in an orchestra, a theatre organ, and sometimes sound effects and even commentary spoken by the showman Or projectionist.",
+   "n_words": 30
+  }
+ ],
+ "history_of_film|2": [
+  {
+   "sent_idx": 0,
+   "sentence_id": "history_of_film_24",
+   "sentence": "To enhance the viewer's experience, silent films were commonly accompanied by live musicians in an orchestra, a theatre organ, and sometimes sound effects and even commentary spoken by the showman Or projectionist.",
+   "n_words": 2
+  },
+  {
+   "sent_idx": 1,
+   "sentence_id": "history_of_film_25",
+   "sentence": "In most countries, intertitles came to be use.",
+   "n_words": 8
+  },
+  {
+   "sent_idx": 2,
+   "sentence_id": "history_of_film_26",
+   "sentence": "Illustrated songs were a notable exception to this trend that began in 1894 in theater houses and persisted as late as the late 1930s in film theaters.",
+   "n_words": 27
+  },
+  {
+   "sent_idx": 3,
+   "sentence_id": "history_of_film_27",
+   "sentence": "Live performance or sound recordings were paired with hand-colored glass slides projected through slide projectors and similar devices.",
+   "n_words": 18
+  },
+  {
+   "sent_idx": 4,
+   "sentence_id": "history_of_film_28",
+   "sentence": "In this way, song narrative was illustrated through a series of slides whose changes were simultaneous with the narrative development.",
+   "n_words": 20
+  },
+  {
+   "sent_idx": 5,
+   "sentence_id": "history_of_film_29",
+   "sentence": "The main purpose of illustrated song was to encourage sheet music sales and they were highly successful with sales reaching into millions for a single song.",
+   "n_words": 26
+  },
+  {
+   "sent_idx": 6,
+   "sentence_id": "history_of_film_30",
+   "sentence": "Later with the birth of film, illustrated songs were used as filler material preceding films and during reel changes.",
+   "n_words": 19
+  },
+  {
+   "sent_idx": 7,
+   "sentence_id": "history_of_film_31",
+   "sentence": "The year 1900 conveniently marks the emergence of the first motion pictures that can be considered as 'films' - at this point, film-makers begin to introduce basic editing techniques and film narrative.",
+   "n_words": 32
+  },
+  {
+   "sent_idx": 8,
+   "sentence_id": "history_of_film_32",
+   "sentence": "The first films to consist of more than one shot appeared toward the end of the 19th century, a notable example was the French film of the life of Jesus Christ.",
+   "n_words": 31
+  },
+  {
+   "sent_idx": 9,
+   "sentence_id": "history_of_film_33",
+   "sentence": "These weren't represented as a continuous film; the separate scenes were interspersed with lantern slides, a lecture, and live choral numbers, to increase the running time of the spectacle to about 90 minutes.",
+   "n_words": 27
+  }
+ ],
+ "history_of_film|3": [
+  {
+   "sent_idx": 0,
+   "sentence_id": "history_of_film_33",
+   "sentence": "These weren't represented as a continuous film; the separate scenes were interspersed with lantern slides, a lecture, and live choral numbers, to increase the running time of the spectacle to about 90 minutes.",
+   "n_words": 6
+  },
+  {
+   "sent_idx": 1,
+   "sentence_id": "history_of_film_34",
+   "sentence": "Another example of this is the reproductions of scenes from the Greco-Turkish war, made by Georges Melies in 1897.",
+   "n_words": 19
+  },
+  {
+   "sent_idx": 2,
+   "sentence_id": "history_of_film_35",
+   "sentence": "Although each scene was sold separately, they were shown one after the other by the exhibitors.",
+   "n_words": 16
+  },
+  {
+   "sent_idx": 3,
+   "sentence_id": "history_of_film_36",
+   "sentence": "Even his film \"Cinderella\" in 1898 contained no action moving from one shot to the next one.",
+   "n_words": 17
+  },
+  {
+   "sent_idx": 4,
+   "sentence_id": "history_of_film_37",
+   "sentence": "To understand what was going on in the film, the audience had to know their stories beforehand, or be told them by a presenter.",
+   "n_words": 24
+  },
+  {
+   "sent_idx": 5,
+   "sentence_id": "history_of_film_38",
+   "sentence": "Real film continuity, involving action moving from one sequence into another, is attributed to British film pioneer Robert W. Paul's \"Come Along, Do!\",",
+   "n_words": 23
+  },
+  {
+   "sent_idx": 6,
+   "sentence_id": "history_of_film_39",
+   "sentence": "made in 1898 and one of the first films to feature more than one shot.",
+   "n_words": 15
+  },
+  {
+   "sent_idx": 7,
+   "sentence_id": "history_of_film_40",
+   "sentence": "In the first shot, an elderly couple is outside an art exhibition having lunch and then follow other people inside through the door.",
+   "n_words": 23
+  },
+  {
+   "sent_idx": 8,
+   "sentence_id": "history_of_film_41",
+   "sentence": "The second shot shows what they do inside.",
+   "n_words": 8
+  },
+  {
+   "sent_idx": 9,
+   "sentence_id": "history_of_film_42",
+   "sentence": "Paul's \"Cinematograph Camera No. 1\" of 1895 was the first camera to feature reverse-cranking, which allowed the same film footage to be exposed several times and thereby to create super-positions and multiple exposures.",
+   "n_words": 33
+  },
+  {
+   "sent_idx": 10,
+   "sentence_id": "history_of_film_43",
+   "sentence": "This technique was first used in his 1901 film \"Scrooge, or, Marley's Ghost.\"",
+   "n_words": 13
+  },
+  {
+   "sent_idx": 11,
+   "sentence_id": "history_of_film_44",
+   "sentence": "In 1900, continuity of action across successive shots was definitively established by George Albert Smith and James Williamson, who also worked in Brighton.",
+   "n_words": 23
+  },
+  {
+   "sent_idx": 12,
+   "sentence_id": "history_of_film_45",
+   "sentence": "In that year Smith made \"As Seen Through a Telescope\", in which the main shot shows street scene with a young man tying the shoelace and then caressing the foot of his girlfriend, while an old man observes this through a telescope.",
+   "n_words": 3
+  }
+ ],
+ "history_of_film|4": [
+  {
+   "sent_idx": 0,
+   "sentence_id": "history_of_film_45",
+   "sentence": "In that year Smith made \"As Seen Through a Telescope\", in which the main shot shows street scene with a young man tying the shoelace and then caressing the foot of his girlfriend, while an old man observes this through a telescope.",
+   "n_words": 39
+  },
+  {
+   "sent_idx": 1,
+   "sentence_id": "history_of_film_46",
+   "sentence": "There is then a cut to close shot of the hands on the girl's foot shown inside a black circular mask and then a cut back to the continuation of the original scene.",
+   "n_words": 33
+  },
+  {
+   "sent_idx": 2,
+   "sentence_id": "history_of_film_47",
+   "sentence": "Even more remarkable is James Williamson's \"Attack on a China Mission Station\" (1900).",
+   "n_words": 13
+  },
+  {
+   "sent_idx": 3,
+   "sentence_id": "history_of_film_48",
+   "sentence": "The first shot shows Chinese Boxer rebels at the gate; it then cuts to a missionary family in the garden, where a fight ensues.",
+   "n_words": 24
+  },
+  {
+   "sent_idx": 4,
+   "sentence_id": "history_of_film_49",
+   "sentence": "The wife signals to British sailors from the balcony, who come and rescue them.",
+   "n_words": 14
+  },
+  {
+   "sent_idx": 5,
+   "sentence_id": "history_of_film_50",
+   "sentence": "The film also used the first \"reverse angle\" cut in film history, with opposite viewpoints back-to-back.",
+   "n_words": 16
+  },
+  {
+   "sent_idx": 6,
+   "sentence_id": "history_of_film_51",
+   "sentence": "With the worldwide film boom, yet more countries now joined Britain, France, Germany and the United States in serious film production.",
+   "n_words": 21
+  },
+  {
+   "sent_idx": 7,
+   "sentence_id": "history_of_film_52",
+   "sentence": "In Italy, production was spread over several centers, with Turin being the first and biggest.",
+   "n_words": 15
+  },
+  {
+   "sent_idx": 8,
+   "sentence_id": "history_of_film_53",
+   "sentence": "There, Ambrosio was the first company in the field in 1905, and remained the largest in the country through this period.",
+   "n_words": 21
+  },
+  {
+   "sent_idx": 9,
+   "sentence_id": "history_of_film_54",
+   "sentence": "The great strength of the Italian industry was historical epics, with large casts and massive scenery.",
+   "n_words": 16
+  },
+  {
+   "sent_idx": 10,
+   "sentence_id": "history_of_film_55",
+   "sentence": "As early as 1911, Giovanni Pastrone's two-reel \"The Fall of Troy\" made a big impression worldwide, and it was followed by even bigger spectacles like \"Where are you going?\" ( 1912), which ran for 90 minutes.",
+   "n_words": 21
+  }
+ ],
+ "history_of_film|5": [
+  {
+   "sent_idx": 0,
+   "sentence_id": "history_of_film_55",
+   "sentence": "As early as 1911, Giovanni Pastrone's two-reel \"The Fall of Troy\" made a big impression worldwide, and it was followed by even bigger spectacles like \"Where are you going?\" ( 1912), which ran for 90 minutes.",
+   "n_words": 14
+  },
+  {
+   "sent_idx": 1,
+   "sentence_id": "history_of_film_56",
+   "sentence": "The most important film-producing country in Northern Europe up until the First World War was Denmark.",
+   "n_words": 16
+  },
+  {
+   "sent_idx": 2,
+   "sentence_id": "history_of_film_57",
+   "sentence": "The Nordisk company was set up there in 1906 by Ole Olsen, a fairground showman, and after a brief period imitating the successes of French and British filmmakers, in 1907 he produced 67 films, most directed by Viggo Larsen, with sensational subjects like \"The White Slave\", \"Polar Bear Hunt\" and \"The Lion Hunt\".",
+   "n_words": 53
+  },
+  {
+   "sent_idx": 3,
+   "sentence_id": "history_of_film_58",
+   "sentence": "By 1910, new smaller Danish companies began joining the business, and besides making more films about the white slave trade, they contributed other new subjects.",
+   "n_words": 25
+  },
+  {
+   "sent_idx": 4,
+   "sentence_id": "history_of_film_59",
+   "sentence": "By 1912, the Danish film companies were multiplying rapidly.",
+   "n_words": 9
+  },
+  {
+   "sent_idx": 5,
+   "sentence_id": "history_of_film_60",
+   "sentence": "In Germany, Oskar Messter had been involved in film-making from 1896, but did not make a significant number of films per year until 1910.",
+   "n_words": 24
+  },
+  {
+   "sent_idx": 6,
+   "sentence_id": "history_of_film_61",
+   "sentence": "When the worldwide film boom started, he, and the few other people in the German film business, continued to sell prints of their own films outright, which put them at a disadvantage.",
+   "n_words": 32
+  },
+  {
+   "sent_idx": 7,
+   "sentence_id": "history_of_film_62",
+   "sentence": "It was only when Paul Davidson, the owner of a chain of cinemas, brought Asta Nielsen and Urban Gad to Germany from Denmark in 1911, and set up a production company, that a change-over to renting prints began.",
+   "n_words": 38
+  },
+  {
+   "sent_idx": 8,
+   "sentence_id": "history_of_film_63",
+   "sentence": "Messter replied with a series of longer films starring Henny Porten, but although these did well in the German-speaking world, they were not particularly successful internationally, unlike the Asta Nielsen films.",
+   "n_words": 17
+  }
+ ],
+ "history_of_film|6": [
+  {
+   "sent_idx": 0,
+   "sentence_id": "history_of_film_63",
+   "sentence": "Messter replied with a series of longer films starring Henny Porten, but although these did well in the German-speaking world, they were not particularly successful internationally, unlike the Asta Nielsen films.",
+   "n_words": 14
+  },
+  {
+   "sent_idx": 1,
+   "sentence_id": "history_of_film_64",
+   "sentence": "Altogether, German producers only had a minor part of the German market in 1914.",
+   "n_words": 14
+  },
+  {
+   "sent_idx": 2,
+   "sentence_id": "history_of_film_65",
+   "sentence": "At the start of the First World War, French and Italian cinema had been the most globally popular.",
+   "n_words": 18
+  },
+  {
+   "sent_idx": 3,
+   "sentence_id": "history_of_film_66",
+   "sentence": "The war came as a devastating interruption to European film industries.",
+   "n_words": 11
+  },
+  {
+   "sent_idx": 4,
+   "sentence_id": "history_of_film_67",
+   "sentence": "The American industry, or \"Hollywood\", as it was becoming known after its new geographical center in California, gained the position it has held, more or less, ever since: film factory for the world and exporting its product to most countries.",
+   "n_words": 40
+  },
+  {
+   "sent_idx": 5,
+   "sentence_id": "history_of_film_68",
+   "sentence": "By the 1920s, the United States reached what is still its era of greatest-ever output, producing an average of 800 feature films annually, 82% of the global total.",
+   "n_words": 28
+  },
+  {
+   "sent_idx": 6,
+   "sentence_id": "history_of_film_69",
+   "sentence": "The comedies of Charlie Chaplin and Buster Keaton, the swashbuckling adventures of Douglas Fairbanks and the romances of Clara Bow, to cite just a few examples, made these performers' faces well-known on every continent.",
+   "n_words": 34
+  },
+  {
+   "sent_idx": 7,
+   "sentence_id": "history_of_film_70",
+   "sentence": "The Western visual norm that would become classical continuity editing was developed and exported - although its adoption was slower in some non-Western countries without strong realist traditions in art and drama, such as Japan.",
+   "n_words": 35
+  },
+  {
+   "sent_idx": 8,
+   "sentence_id": "history_of_film_71",
+   "sentence": "This development was contemporary with the growth of the studio system and its greatest publicity method, the star system, which characterized American film for decades to come and provided models for other film industries.",
+   "n_words": 10
+  }
+ ],
+ "history_of_film|7": [
+  {
+   "sent_idx": 0,
+   "sentence_id": "history_of_film_71",
+   "sentence": "This development was contemporary with the growth of the studio system and its greatest publicity method, the star system, which characterized American film for decades to come and provided models for other film industries.",
+   "n_words": 24
+  },
+  {
+   "sent_idx": 1,
+   "sentence_id": "history_of_film_72",
+   "sentence": "The studios' efficient, top-down control over all stages of their product enabled a new and ever-growing level of lavish production and technical sophistication.",
+   "n_words": 23
+  },
+  {
+   "sent_idx": 2,
+   "sentence_id": "history_of_film_73",
+   "sentence": "At the same time, the system's commercial regimentation and focus on glamorous escapism discouraged daring and ambition beyond a certain degree, a prime example being the brief but still legendary directing career of the iconoclastic Erich von Stroheim in the late teens and the '20s.",
+   "n_words": 45
+  },
+  {
+   "sent_idx": 3,
+   "sentence_id": "history_of_film_74",
+   "sentence": "Warners released \"The Jazz Singer\" during late 1927, which was mostly silent but contained what is generally regarded as the first synchronized dialogue (and singing) in a feature film; but this process was actually accomplished first by Charles Taze Russell in 1914 with the lengthy film \"The Photo-Drama of Creation\".",
+   "n_words": 50
+  },
+  {
+   "sent_idx": 4,
+   "sentence_id": "history_of_film_75",
+   "sentence": "This drama consisted of picture slides and moving pictures synchronized with phonograph records of talks and music.",
+   "n_words": 17
+  },
+  {
+   "sent_idx": 5,
+   "sentence_id": "history_of_film_76",
+   "sentence": "The early sound-on-disc processes such as Vitaphone were soon superseded by sound-on-film methods like Fox Movietone, DeForest Phonofilm, and RCA Photophone.",
+   "n_words": 21
+  },
+  {
+   "sent_idx": 6,
+   "sentence_id": "history_of_film_77",
+   "sentence": "The trend convinced the largely reluctant industrialists that \"talking pictures\", or \"talkies\", were the future.",
+   "n_words": 9
+  }
+ ],
+ "history_of_film|8": [
+  {
+   "sent_idx": 0,
+   "sentence_id": "history_of_film_77",
+   "sentence": "The trend convinced the largely reluctant industrialists that \"talking pictures\", or \"talkies\", were the future.",
+   "n_words": 6
+  },
+  {
+   "sent_idx": 1,
+   "sentence_id": "history_of_film_78",
+   "sentence": "The change was remarkably swift.",
+   "n_words": 5
+  },
+  {
+   "sent_idx": 2,
+   "sentence_id": "history_of_film_79",
+   "sentence": "By the end of 1929, Hollywood was almost all-talkie, with several competing sound systems (soon to be standardized).",
+   "n_words": 18
+  },
+  {
+   "sent_idx": 3,
+   "sentence_id": "history_of_film_80",
+   "sentence": "Total changeover was slightly slower in the rest of the world, principally for economic reasons.",
+   "n_words": 15
+  },
+  {
+   "sent_idx": 4,
+   "sentence_id": "history_of_film_81",
+   "sentence": "Cultural reasons were also a factor in countries like China and Japan, where silents co-existed successfully with sound well into the 1930s, indeed producing what would be some of the most revered classics in those countries, like Wu Yonggang's \"The Goddess\" (China, 1934) and Yasujiro Ozu's \"I Was Born, But...\" (Japan, 1932).",
+   "n_words": 52
+  },
+  {
+   "sent_idx": 5,
+   "sentence_id": "history_of_film_82",
+   "sentence": "But even in Japan, a figure such as the \"benshi\", the live narrator who was a major part of Japanese silent cinema, found his acting career was ending.",
+   "n_words": 28
+  },
+  {
+   "sent_idx": 6,
+   "sentence_id": "history_of_film_83",
+   "sentence": "Sound further tightened the grip of major studios in numerous countries: the vast expense of the transition overwhelmed smaller competitors, while the novelty of sound lured vastly larger audiences for those producers that remained.",
+   "n_words": 34
+  },
+  {
+   "sent_idx": 7,
+   "sentence_id": "history_of_film_84",
+   "sentence": "In the case of the U.S., some historians credit sound with saving the Hollywood studio system in the face of the Great Depression.",
+   "n_words": 23
+  },
+  {
+   "sent_idx": 8,
+   "sentence_id": "history_of_film_85",
+   "sentence": "Thus began what is now often called \"The Golden Age of Hollywood\", which refers roughly to the period beginning with the introduction of sound until the late 1940s.",
+   "n_words": 28
+  },
+  {
+   "sent_idx": 9,
+   "sentence_id": "history_of_film_86",
+   "sentence": "The American cinema reached its peak of efficiently manufactured glamour and global appeal during this period.",
+   "n_words": 7
+  }
+ ],
+ "history_of_film|9": [
+  {
+   "sent_idx": 0,
+   "sentence_id": "history_of_film_86",
+   "sentence": "The American cinema reached its peak of efficiently manufactured glamour and global appeal during this period.",
+   "n_words": 9
+  },
+  {
+   "sent_idx": 1,
+   "sentence_id": "history_of_film_87",
+   "sentence": "The top actors of the era are now thought of as the classic film stars, such as Clark Gable, Humphrey Bogart, and the greatest box office draw of the 1930s, child performer Shirley Temple.",
+   "n_words": 34
+  },
+  {
+   "sent_idx": 2,
+   "sentence_id": "history_of_film_88",
+   "sentence": "Creatively, however, the rapid transition was a difficult one, and in some ways, film briefly reverted to conditions of its earliest days.",
+   "n_words": 22
+  },
+  {
+   "sent_idx": 3,
+   "sentence_id": "history_of_film_89",
+   "sentence": "The late '20s were full of static, stagey talkies as artists in front of and behind the camera struggled with the stringent limitations of the early sound equipment and their own uncertainty as to how to utilize the new medium.",
+   "n_words": 40
+  },
+  {
+   "sent_idx": 4,
+   "sentence_id": "history_of_film_90",
+   "sentence": "Many stage performers, directors and writers were introduced to cinema as producers sought personnel experienced in dialogue-based storytelling.",
+   "n_words": 18
+  },
+  {
+   "sent_idx": 5,
+   "sentence_id": "history_of_film_91",
+   "sentence": "Many major silent filmmakers and actors were unable to adjust and found their careers severely curtailed or even ended.",
+   "n_words": 19
+  },
+  {
+   "sent_idx": 6,
+   "sentence_id": "history_of_film_92",
+   "sentence": "This awkward period was fairly short- lived.",
+   "n_words": 7
+  },
+  {
+   "sent_idx": 7,
+   "sentence_id": "history_of_film_93",
+   "sentence": "1929 was a watershed year: William Wellman with \"Chinatown Nights\" and \"The Man I Love\", Rouben Mamoulian with \"Applause\", Alfred Hitchcock with \"Blackmail\" (Britain's first sound feature), were among the directors to bring greater fluidity to talkies and experiment with the expressive use of sound.",
+   "n_words": 45
+  },
+  {
+   "sent_idx": 8,
+   "sentence_id": "history_of_film_94",
+   "sentence": "In this, they both benefited from, and pushed further, technical advances in microphones and cameras, and",
+   "n_words": 16
+  }
+ ],
+ "serena_williams|0": [
+  {
+   "sent_idx": 0,
+   "sentence_id": "serena_williams_0",
+   "sentence": "Serena Jameka Williams (born September 26, 1981) is an American professional tennis player.",
+   "n_words": 13
+  },
+  {
+   "sent_idx": 1,
+   "sentence_id": "serena_williams_1",
+   "sentence": "The Women's Tennis Association (WTA) has ranked her world No. 1 in singles on six separate occasions.",
+   "n_words": 17
+  },
+  {
+   "sent_idx": 2,
+   "sentence_id": "serena_williams_2",
+   "sentence": "She became the world No. 1 for the first time on July 8, 2002, and achieved this ranking for the sixth time on February 18, 2013.",
+   "n_words": 26
+  },
+  {
+   "sent_idx": 3,
+   "sentence_id": "serena_williams_3",
+   "sentence": "Williams has spent 256 weeks overall as the WTA ranked No. 1 as of August 30, 2015, placing her 4th on the List of WTA number 1 ranked players.",
+   "n_words": 29
+  },
+  {
+   "sent_idx": 4,
+   "sentence_id": "serena_williams_4",
+   "sentence": "Williams is regarded by some commentators, sports writers, and current and former players as the greatest female tennis players of all time.",
+   "n_words": 22
+  },
+  {
+   "sent_idx": 5,
+   "sentence_id": "serena_williams_5",
+   "sentence": "Williams holds the most major singles, doubles, and mixed doubles titles combined amongst active players, male or female.",
+   "n_words": 18
+  },
+  {
+   "sent_idx": 6,
+   "sentence_id": "serena_williams_6",
+   "sentence": "Her record of 36 major titles puts her fifth on the all-time list and second in the open era with: 21 in singles, 13 in women's doubles, and two in mixed doubles.",
+   "n_words": 32
+  },
+  {
+   "sent_idx": 7,
+   "sentence_id": "serena_williams_7",
+   "sentence": "She is the most recent player, male or female, to have held all four major singles titles simultaneously (2002-03 and 2014-15), the fifth woman ever to do so and only the third player, male or female, to achieve this record twice after Rod Laver and Steffi Graf.",
+   "n_words": 47
+  },
+  {
+   "sent_idx": 8,
+   "sentence_id": "serena_williams_8",
+   "sentence": "She is also the most recent player, together with her sister Venus Williams, to have held all four Grand Slam women's doubles titles simultaneously (2009-10).",
+   "n_words": 25
+  },
+  {
+   "sent_idx": 9,
+   "sentence_id": "serena_williams_9",
+   "sentence": "Her total of 21 Grand Slam singles titles is third on the all-time list behind Margaret Court (24) and Steffi Graf (22), and second in the Open Era, behind only Graf.",
+   "n_words": 7
+  }
+ ],
+ "serena_williams|1": [
+  {
+   "sent_idx": 0,
+   "sentence_id": "serena_williams_9",
+   "sentence": "Her total of 21 Grand Slam singles titles is third on the all-time list behind Margaret Court (24) and Steffi Graf (22), and second in the Open Era, behind only Graf.",
+   "n_words": 24
+  },
+  {
+   "sent_idx": 1,
+   "sentence_id": "serena_williams_10",
+   "sentence": "She is the only tennis player - female or male - to have won singles titles at least six times in three of the four Grand Slam tournaments.",
+   "n_words": 28
+  },
+  {
+   "sent_idx": 2,
+   "sentence_id": "serena_williams_11",
+   "sentence": "She has won 13 Grand Slam doubles titles with her sister Venus, and the pair is unbeaten in Grand Slam tournament finals.",
+   "n_words": 22
+  },
+  {
+   "sent_idx": 3,
+   "sentence_id": "serena_williams_12",
+   "sentence": "Williams is also a five-time winner of the WTA Tour Championships.",
+   "n_words": 11
+  },
+  {
+   "sent_idx": 4,
+   "sentence_id": "serena_williams_13",
+   "sentence": "The arrival of the Williams sisters has been credited with launching a new era of power tennis in the women's game.",
+   "n_words": 21
+  },
+  {
+   "sent_idx": 5,
+   "sentence_id": "serena_williams_14",
+   "sentence": "Williams has won four Olympic gold medals, one in women's singles and three in women's doubles, an all-time record shared with her sister Venus Williams.",
+   "n_words": 25
+  },
+  {
+   "sent_idx": 6,
+   "sentence_id": "serena_williams_15",
+   "sentence": "Serena Jameka Williams was born in Saginaw, Michigan, to Richard Williams and Oracene Price, and is the youngest of Price's five daughters: half-sisters Yetunde, Lyndrea and Isha Price, and full sister Venus.",
+   "n_words": 32
+  },
+  {
+   "sent_idx": 7,
+   "sentence_id": "serena_williams_16",
+   "sentence": "When the children were young, the family moved to Compton, California, where Williams started playing tennis at the age of three.",
+   "n_words": 21
+  },
+  {
+   "sent_idx": 8,
+   "sentence_id": "serena_williams_17",
+   "sentence": "Her father home-schooled Serena and her sister Venus.",
+   "n_words": 8
+  },
+  {
+   "sent_idx": 9,
+   "sentence_id": "serena_williams_18",
+   "sentence": "While he -- and subsequently her mother, Oracene -- have been the official coaches, other mentors who helped her learn the game included Richard Williams, a Compton man who shared her father's name later founded The Venus and Serena Williams Tennis Tutorial Academy.",
+   "n_words": 31
+  }
+ ],
+ "serena_williams|2": [
+  {
+   "sent_idx": 0,
+   "sentence_id": "serena_williams_18",
+   "sentence": "While he -- and subsequently her mother, Oracene -- have been the official coaches, other mentors who helped her learn the game included Richard Williams, a Compton man who shared her father's name later founded The Venus and Serena Williams Tennis Tutorial Academy.",
+   "n_words": 12
+  },
+  {
+   "sent_idx": 1,
+   "sentence_id": "serena_williams_19",
+   "sentence": "Williams's family moved from Compton to West Palm Beach, Florida, when she was nine so that she could attend the tennis academy of Rick Macci, who would provide additional coaching.",
+   "n_words": 30
+  },
+  {
+   "sent_idx": 2,
+   "sentence_id": "serena_williams_20",
+   "sentence": "Macci spotted the exceptional talents of the sisters.",
+   "n_words": 8
+  },
+  {
+   "sent_idx": 3,
+   "sentence_id": "serena_williams_21",
+   "sentence": "He did not always agree with Williams's father, but respected that \"he treated his daughters like kids, allowed them to be little girls\".",
+   "n_words": 23
+  },
+  {
+   "sent_idx": 4,
+   "sentence_id": "serena_williams_22",
+   "sentence": "Richard stopped sending his daughters to national junior tennis tournaments when Williams was 10, since he wanted them to take it slow and focus on school work.",
+   "n_words": 27
+  },
+  {
+   "sent_idx": 5,
+   "sentence_id": "serena_williams_23",
+   "sentence": "Experiences of racism also influenced this decision, as he had heard white parents talk about the Williams sisters in a derogatory manner during tournaments.",
+   "n_words": 24
+  },
+  {
+   "sent_idx": 6,
+   "sentence_id": "serena_williams_24",
+   "sentence": "At that time, Williams had a 46-3 record on the United States Tennis Association junior tour and was ranked No. 1 among under-10 players in Florida.",
+   "n_words": 26
+  },
+  {
+   "sent_idx": 7,
+   "sentence_id": "serena_williams_25",
+   "sentence": "In 1995, when Williams was in the ninth grade, her father pulled his daughters out of Macci's academy and took over all coaching at their home.",
+   "n_words": 26
+  },
+  {
+   "sent_idx": 8,
+   "sentence_id": "serena_williams_26",
+   "sentence": "When asked in 2000 whether having followed the normal path of playing regularly on the junior circuit would have been beneficial, Williams responded: \"Everyone does different things.",
+   "n_words": 27
+  },
+  {
+   "sent_idx": 9,
+   "sentence_id": "serena_williams_27",
+   "sentence": "I think for Venus and I, we just attempted a different road, and it worked for us.\"",
+   "n_words": 17
+  }
+ ],
+ "serena_williams|3": [
+  {
+   "sent_idx": 0,
+   "sentence_id": "serena_williams_28",
+   "sentence": "Williams is primarily a baseline player and her game is built around taking immediate control of rallies with her powerful and consistent serve, return of serve, and forceful groundstrokes from both her forehand and backhand swings.",
+   "n_words": 36
+  },
+  {
+   "sent_idx": 1,
+   "sentence_id": "serena_williams_29",
+   "sentence": "Williams's forehand is considered to be among the most powerful shots in the women's game as is her double-handed backhand.",
+   "n_words": 20
+  },
+  {
+   "sent_idx": 2,
+   "sentence_id": "serena_williams_30",
+   "sentence": "Williams strikes her backhand groundstroke using an open stance, and uses the same open stance for her forehand.",
+   "n_words": 18
+  },
+  {
+   "sent_idx": 3,
+   "sentence_id": "serena_williams_31",
+   "sentence": "Williams's aggressive play, a \"high risk\" style, is balanced in part by her serve, which some say is the greatest in women's tennis history.",
+   "n_words": 24
+  },
+  {
+   "sent_idx": 4,
+   "sentence_id": "serena_williams_32",
+   "sentence": "She consistently projects great pace and placement with her serves and in the 2013 Australian Open, she had a peak serve speed of 128.6 mph (207.0 km/h) which is the third fastest all-time among female players (only Venus's 129 mph and Sabine Lisicki's 131 mph recorded speeds are faster).",
+   "n_words": 49
+  },
+  {
+   "sent_idx": 5,
+   "sentence_id": "serena_williams_33",
+   "sentence": "What makes her serve even more deadly is her ball placement and her ability to consistently place powerful shots with great accuracy.",
+   "n_words": 22
+  },
+  {
+   "sent_idx": 6,
+   "sentence_id": "serena_williams_34",
+   "sentence": "At the 2012 Wimbledon Championships, she hit a women's tournament record of 102 aces which was more than any of the men hit during the two weeks.",
+   "n_words": 27
+  },
+  {
+   "sent_idx": 7,
+   "sentence_id": "serena_williams_35",
+   "sentence": "Williams also possesses a very solid and powerful overhead.",
+   "n_words": 9
+  },
+  {
+   "sent_idx": 8,
+   "sentence_id": "serena_williams_36",
+   "sentence": "Although many think of Williams as only an offensive player, she also plays a strong defensive game.",
+   "n_words": 14
+  }
+ ],
+ "serena_williams|4": [
+  {
+   "sent_idx": 0,
+   "sentence_id": "serena_williams_36",
+   "sentence": "Although many think of Williams as only an offensive player, she also plays a strong defensive game.",
+   "n_words": 3
+  },
+  {
+   "sent_idx": 1,
+   "sentence_id": "serena_williams_37",
+   "sentence": "She has stated that her favorite surface is clay because it gives her extra time to set up her shot.",
+   "n_words": 20
+  },
+  {
+   "sent_idx": 2,
+   "sentence_id": "serena_williams_38",
+   "sentence": "She has won three Grand Slam singles titles after saving match points, (2003 Australian Open versus Kim Clijsters, 2005 Australian Open versus Maria Sharapova, and 2009 Wimbledon versus Elena Dementieva), more than any other player in history, male or female.",
+   "n_words": 40
+  },
+  {
+   "sent_idx": 3,
+   "sentence_id": "serena_williams_39",
+   "sentence": "She also came back from a 3-5 deficit in the third set against Kim Clijsters in the 1999 US Open and went on to win her first Grand Slam singles title.",
+   "n_words": 31
+  },
+  {
+   "sent_idx": 4,
+   "sentence_id": "serena_williams_40",
+   "sentence": "In the 2012 US Open final against Victoria Azarenka, she was down 3-5 in the third set and found herself two points away from losing the match.",
+   "n_words": 27
+  },
+  {
+   "sent_idx": 5,
+   "sentence_id": "serena_williams_41",
+   "sentence": "Williams won the next 4 games and defeated Azarenka.",
+   "n_words": 9
+  },
+  {
+   "sent_idx": 6,
+   "sentence_id": "serena_williams_42",
+   "sentence": "In recent years, Williams has shown an ability to serve aces at critical moments.",
+   "n_words": 14
+  },
+  {
+   "sent_idx": 7,
+   "sentence_id": "serena_williams_43",
+   "sentence": "One of these instances was the 2013 French Open final, where in the last game of the match, she fired three aces, including one clocked at 123 mph (198 km/h) on match point.",
+   "n_words": 33
+  },
+  {
+   "sent_idx": 8,
+   "sentence_id": "serena_williams_44",
+   "sentence": "In the 2015 French Open semi-finals, Williams was ill and barely able to walk during changeovers, yet beat her opponent, Timea Bacsinszky, 6-0 in the third set.",
+   "n_words": 27
+  },
+  {
+   "sent_idx": 9,
+   "sentence_id": "serena_williams_45",
+   "sentence": "Another improbable win occurred in the third round of the 2015 Wimbledon Championships, when she recovered from two breaks of service in the third set to defeat Great Britain's No. 1 player, Heather Watson.",
+   "n_words": 33
+  }
+ ],
+ "serena_williams|5": [
+  {
+   "sent_idx": 0,
+   "sentence_id": "serena_williams_45",
+   "sentence": "Another improbable win occurred in the third round of the 2015 Wimbledon Championships, when she recovered from two breaks of service in the third set to defeat Great Britain's No. 1 player, Heather Watson.",
+   "n_words": 1
+  },
+  {
+   "sent_idx": 1,
+   "sentence_id": "serena_williams_46",
+   "sentence": "Williams has come back from a set down to win in 33 Grand Slam matches.",
+   "n_words": 15
+  },
+  {
+   "sent_idx": 2,
+   "sentence_id": "serena_williams_47",
+   "sentence": "Williams's first professional event was in September 1995, at the age of 14 to counteract the forthcoming changes to age-eligibility rules, at the Bell Challenge in Quebec City.",
+   "n_words": 28
+  },
+  {
+   "sent_idx": 3,
+   "sentence_id": "serena_williams_48",
+   "sentence": "She lost in the first round of qualifying to Anne Miller, winning just two games, and earned $240 in prize money.",
+   "n_words": 21
+  },
+  {
+   "sent_idx": 4,
+   "sentence_id": "serena_williams_49",
+   "sentence": "Williams did not play a tournament in 1996.",
+   "n_words": 8
+  },
+  {
+   "sent_idx": 5,
+   "sentence_id": "serena_williams_50",
+   "sentence": "The following year, she lost in the qualifying rounds of three tournaments, before winning her first main-draw match at the Ameritech Cup Chicago.",
+   "n_words": 23
+  },
+  {
+   "sent_idx": 6,
+   "sentence_id": "serena_williams_51",
+   "sentence": "Ranked world No. 304, she upset world No. 7 Mary Pierce and world No. 4 Monica Seles, recording her first career wins over top 10 players and becoming the lowest-ranked player in the open era to defeat two top 10 opponents in one tournament.",
+   "n_words": 44
+  },
+  {
+   "sent_idx": 7,
+   "sentence_id": "serena_williams_52",
+   "sentence": "She ultimately lost in the semifinals to world No. 5 Lindsay Davenport.",
+   "n_words": 12
+  },
+  {
+   "sent_idx": 8,
+   "sentence_id": "serena_williams_53",
+   "sentence": "She finished 1997 ranked world No. 99.",
+   "n_words": 7
+  },
+  {
+   "sent_idx": 9,
+   "sentence_id": "serena_williams_54",
+   "sentence": "Williams began 1998 at the Medibank International Sydney.",
+   "n_words": 8
+  },
+  {
+   "sent_idx": 10,
+   "sentence_id": "serena_williams_55",
+   "sentence": "As a qualifier ranked world No. 96, she defeated world No. 3 Davenport in the quarterfinals, before losing to Arantxa Sanchez Vicario in the semifinals.",
+   "n_words": 25
+  },
+  {
+   "sent_idx": 11,
+   "sentence_id": "serena_williams_56",
+   "sentence": "Williams made her debut in the main draw of a Grand Slam tournament at the Australian Open, where she defeated sixth-seeded Irina Spirlea in the first round, before losing to sister Venus in the second round in the Sisters' first professional match.",
+   "n_words": 38
+  }
+ ],
+ "serena_williams|6": [
+  {
+   "sent_idx": 0,
+   "sentence_id": "serena_williams_56",
+   "sentence": "Williams made her debut in the main draw of a Grand Slam tournament at the Australian Open, where she defeated sixth-seeded Irina Spirlea in the first round, before losing to sister Venus in the second round in the Sisters' first professional match.",
+   "n_words": 4
+  },
+  {
+   "sent_idx": 1,
+   "sentence_id": "serena_williams_57",
+   "sentence": "Williams reached six other quarterfinals during the year, but lost all of them, including her first match against world No. 1 Martina Hingis at the Lipton International Players Championships, and her second match against Venus at the Italian Open in Rome.",
+   "n_words": 41
+  },
+  {
+   "sent_idx": 2,
+   "sentence_id": "serena_williams_58",
+   "sentence": "She failed to reach the quarterfinals of any Grand Slam tournament the remainder of the year, losing in the fourth round of the French Open to Arantxa Sanchez Vicario, and the third round of both Wimbledon and the US Open, to Virginia Ruano Pascual and Spirlea, respectively.",
+   "n_words": 47
+  },
+  {
+   "sent_idx": 3,
+   "sentence_id": "serena_williams_59",
+   "sentence": "She did, however, win the mixed doubles titles at Wimbledon and the US Open with Max Mirnyi, completing the Williams family's sweep of the 1998 mixed doubles Grand Slam tournaments.",
+   "n_words": 30
+  },
+  {
+   "sent_idx": 4,
+   "sentence_id": "serena_williams_60",
+   "sentence": "Williams won her first professional title in doubles in Oklahoma City with Venus, becoming the third pair of sisters to win a WTA title.",
+   "n_words": 24
+  },
+  {
+   "sent_idx": 5,
+   "sentence_id": "serena_williams_61",
+   "sentence": "Williams and her sister won two more doubles titles together during the year.",
+   "n_words": 13
+  },
+  {
+   "sent_idx": 6,
+   "sentence_id": "serena_williams_62",
+   "sentence": "Williams finished the year ranked world No. 20 in singles.",
+   "n_words": 10
+  },
+  {
+   "sent_idx": 7,
+   "sentence_id": "serena_williams_63",
+   "sentence": "Williams won her first professional singles title when she defeated Amelie Mauresmo in the final of the Open Gaz de France.",
+   "n_words": 21
+  },
+  {
+   "sent_idx": 8,
+   "sentence_id": "serena_williams_64",
+   "sentence": "With Venus also winning the IGA Classic that day, the pair became the first sisters to win professional tournaments in the same week.",
+   "n_words": 23
+  },
+  {
+   "sent_idx": 9,
+   "sentence_id": "serena_williams_65",
+   "sentence": "A month later, Williams won her first Tier I singles title at the Evert Cup, defeating Steffi Graf in the final.",
+   "n_words": 10
+  }
+ ],
+ "serena_williams|7": [
+  {
+   "sent_idx": 0,
+   "sentence_id": "serena_williams_65",
+   "sentence": "A month later, Williams won her first Tier I singles title at the Evert Cup, defeating Steffi Graf in the final.",
+   "n_words": 11
+  },
+  {
+   "sent_idx": 1,
+   "sentence_id": "serena_williams_66",
+   "sentence": "At the Lipton International Players Championships, Williams had her 16-match winning streak ended by Venus in the first all-sister singles final in WTA history and made her top-10 debut at world No. 9.",
+   "n_words": 33
+  },
+  {
+   "sent_idx": 2,
+   "sentence_id": "serena_williams_67",
+   "sentence": "She then defeated in succession grand slam tournament champions Kim Clijsters, Conchita Martinez, Monica Seles, and defending champion Lindsay Davenport to reach the US Open final where she defeated world No. 1 Hingis to become the second African-American woman after Althea Gibson in 1958 to win a Grand Slam singles tournament.",
+   "n_words": 51
+  },
+  {
+   "sent_idx": 3,
+   "sentence_id": "serena_williams_68",
+   "sentence": "The Williams sisters also won the doubles title at this tournament.",
+   "n_words": 11
+  },
+  {
+   "sent_idx": 4,
+   "sentence_id": "serena_williams_69",
+   "sentence": "To complete 1999, Williams won a doubles match in the Fed Cup final against Russia.",
+   "n_words": 15
+  },
+  {
+   "sent_idx": 5,
+   "sentence_id": "serena_williams_70",
+   "sentence": "Williams ended 1999 ranked world No. 4 in just her second full year on the main tour.",
+   "n_words": 17
+  },
+  {
+   "sent_idx": 6,
+   "sentence_id": "serena_williams_71",
+   "sentence": "Williams started 2000 by losing in the fourth round of the Australian Open to Elena Likhovtseva.",
+   "n_words": 16
+  },
+  {
+   "sent_idx": 7,
+   "sentence_id": "serena_williams_72",
+   "sentence": "She failed to defend her titles in Paris and Indian Wells, although she did win the Faber Grand Prix.",
+   "n_words": 19
+  },
+  {
+   "sent_idx": 8,
+   "sentence_id": "serena_williams_73",
+   "sentence": "Williams missed the French Open because of injury.",
+   "n_words": 8
+  },
+  {
+   "sent_idx": 9,
+   "sentence_id": "serena_williams_74",
+   "sentence": "She returned at Wimbledon, where she lost to Venus in the semi-finals, but they won the doubles event at the title.",
+   "n_words": 21
+  },
+  {
+   "sent_idx": 10,
+   "sentence_id": "serena_williams_75",
+   "sentence": "Williams successfully defended her title in Los Angeles, defeating Davenport in the final.",
+   "n_words": 13
+  },
+  {
+   "sent_idx": 11,
+   "sentence_id": "serena_williams_76",
+   "sentence": "She reached the final of the Du Maurier Open where an injury forced her to retire from her match with Hingis.",
+   "n_words": 10
+  }
+ ],
+ "serena_williams|8": [
+  {
+   "sent_idx": 0,
+   "sentence_id": "serena_williams_76",
+   "sentence": "She reached the final of the Du Maurier Open where an injury forced her to retire from her match with Hingis.",
+   "n_words": 11
+  },
+  {
+   "sent_idx": 1,
+   "sentence_id": "serena_williams_77",
+   "sentence": "Her defense of the US Open title ended when she lost in the quarterfinals to Davenport.",
+   "n_words": 16
+  },
+  {
+   "sent_idx": 2,
+   "sentence_id": "serena_williams_78",
+   "sentence": "Williams teamed with Venus to win the gold medal in doubles at the Sydney Olympics in September.",
+   "n_words": 17
+  },
+  {
+   "sent_idx": 3,
+   "sentence_id": "serena_williams_79",
+   "sentence": "She ended the year winning the Toyota Princess Cup.",
+   "n_words": 9
+  },
+  {
+   "sent_idx": 4,
+   "sentence_id": "serena_williams_80",
+   "sentence": "She finished the year ranked world No. 6.",
+   "n_words": 8
+  },
+  {
+   "sent_idx": 5,
+   "sentence_id": "serena_williams_81",
+   "sentence": "Williams began 2001 losing to Martina Hingis in the quarterfinals of both Sydney and the Australian Open.",
+   "n_words": 17
+  },
+  {
+   "sent_idx": 6,
+   "sentence_id": "serena_williams_82",
+   "sentence": "Williams and her sister won the doubles title at the latter tournament, becoming only the fifth doubles team in history to win all four Grand Slam women's doubles titles during their career, completing a \"Career Grand Slam\".",
+   "n_words": 37
+  },
+  {
+   "sent_idx": 7,
+   "sentence_id": "serena_williams_83",
+   "sentence": "Her next event was the Pacific Life Open, defeating Kim Clijsters in the final.",
+   "n_words": 14
+  },
+  {
+   "sent_idx": 8,
+   "sentence_id": "serena_williams_84",
+   "sentence": "However, the final was marred by the behavior of the crowd towards Williams and her family.",
+   "n_words": 16
+  },
+  {
+   "sent_idx": 9,
+   "sentence_id": "serena_williams_85",
+   "sentence": "The crowd was incensed at the perceived match fixing of games involving the family after Venus withdrew before their semifinal.",
+   "n_words": 20
+  },
+  {
+   "sent_idx": 10,
+   "sentence_id": "serena_williams_86",
+   "sentence": "Neither Williams or her sister entered the tournament for fourteen years until Williams entered in 2015 as the top seed.",
+   "n_words": 20
+  },
+  {
+   "sent_idx": 11,
+   "sentence_id": "serena_williams_87",
+   "sentence": "Williams played three clay-court tournaments before the 2002 French Open.",
+   "n_words": 10
+  },
+  {
+   "sent_idx": 12,
+   "sentence_id": "serena_williams_88",
+   "sentence": "Her first tournament was at Charleston, where she was the third seed.",
+   "n_words": 12
+  },
+  {
+   "sent_idx": 13,
+   "sentence_id": "serena_williams_89",
+   "sentence": "Williams reached the quarterfinals losing to Patty Schnyder.",
+   "n_words": 8
+  },
+  {
+   "sent_idx": 14,
+   "sentence_id": "serena_williams_90",
+   "sentence": "She reached her first clay-court final in May, at the Eurocard German Open losing to Justine Henin in a third set tiebreak.",
+   "n_words": 8
+  }
+ ],
+ "serena_williams|9": [
+  {
+   "sent_idx": 0,
+   "sentence_id": "serena_williams_90",
+   "sentence": "She reached her first clay-court final in May, at the Eurocard German Open losing to Justine Henin in a third set tiebreak.",
+   "n_words": 14
+  },
+  {
+   "sent_idx": 1,
+   "sentence_id": "serena_williams_91",
+   "sentence": "Williams went on to win her first clay court title at the Italian Open, defeating Capriati in the semifinals and Henin in the final.",
+   "n_words": 24
+  },
+  {
+   "sent_idx": 2,
+   "sentence_id": "serena_williams_92",
+   "sentence": "This raised her ranking to a new high of No. 3.",
+   "n_words": 11
+  },
+  {
+   "sent_idx": 3,
+   "sentence_id": "serena_williams_93",
+   "sentence": "Williams was the third seed at the French Open, where she claimed her first title by defeating defending champion Capriati in the semifinals, and Venus in the final to win her second Grand Slam tournament title.",
+   "n_words": 36
+  },
+  {
+   "sent_idx": 4,
+   "sentence_id": "serena_williams_94",
+   "sentence": "As a result, Williams rose to a career high of No. 2, second only to Venus.",
+   "n_words": 16
+  },
+  {
+   "sent_idx": 5,
+   "sentence_id": "serena_williams_95",
+   "sentence": "At the 2002 Wimbledon Championships, Williams won the title for the first time, defeating Venus to win a Grand Slam singles title without dropping a set for the first time in her career.",
+   "n_words": 33
+  },
+  {
+   "sent_idx": 6,
+   "sentence_id": "serena_williams_96",
+   "sentence": "This victory earned Williams the world No. 1 ranking, dethroning her sister and becoming only the third African- American woman to hold that ranking.",
+   "n_words": 24
+  },
+  {
+   "sent_idx": 7,
+   "sentence_id": "serena_williams_97",
+   "sentence": "At the 2003 Australian Open, Williams went on to reach the semifinals for the first time, where she recovered from 5-1 down in the third set and saved two match points, before defeating Clijsters.",
+   "n_words": 34
+  },
+  {
+   "sent_idx": 8,
+   "sentence_id": "serena_williams_98",
+   "sentence": "She faced Venus for the fourth consecutive Grand Slam tournament final and won to become the sixth woman in the open era to complete a Career Grand Slam, joining Margaret Court, Billie Jean King, Chris Evert, Martina Navratilova, and Steffi Graf.",
+   "n_words": 41
+  }
+ ],
+ "prisoners_dilemma|0": [
+  {
+   "sent_idx": 0,
+   "sentence_id": "prisoners_dilemma_0",
+   "sentence": "The prisoner's dilemma is a standard example of a game analyzed in game theory that shows why two completely \"rational\" individuals might not cooperate, even if it appears that it is in their best interests to do so.",
+   "n_words": 38
+  },
+  {
+   "sent_idx": 1,
+   "sentence_id": "prisoners_dilemma_1",
+   "sentence": "It was originally framed by Merrill Flood and Melvin Dresher working at RAND in 1950.",
+   "n_words": 15
+  },
+  {
+   "sent_idx": 2,
+   "sentence_id": "prisoners_dilemma_2",
+   "sentence": "Albert W. Tucker formalized the game with prison sentence rewards and named it, \"prisoner's dilemma\", presenting it as follows: two members of a criminal gang are arrested and imprisoned.",
+   "n_words": 29
+  },
+  {
+   "sent_idx": 3,
+   "sentence_id": "prisoners_dilemma_3",
+   "sentence": "Each prisoner is in solitary confinement with no means of communicating with the other.",
+   "n_words": 14
+  },
+  {
+   "sent_idx": 4,
+   "sentence_id": "prisoners_dilemma_4",
+   "sentence": "The prosecutors lack sufficient evidence to convict the pair on the principal charge.",
+   "n_words": 13
+  },
+  {
+   "sent_idx": 5,
+   "sentence_id": "prisoners_dilemma_5",
+   "sentence": "They hope to get both sentenced to a year in prison on a lesser charge.",
+   "n_words": 15
+  },
+  {
+   "sent_idx": 6,
+   "sentence_id": "prisoners_dilemma_6",
+   "sentence": "Simultaneously, the prosecutors offer each prisoner a bargain.",
+   "n_words": 8
+  },
+  {
+   "sent_idx": 7,
+   "sentence_id": "prisoners_dilemma_7",
+   "sentence": "Each prisoner is given the opportunity either to: betray the other by testifying that the other committed the crime, or to cooperate with the other by remaining silent.",
+   "n_words": 28
+  },
+  {
+   "sent_idx": 8,
+   "sentence_id": "prisoners_dilemma_8",
+   "sentence": "The offer is: If A and B each betray the other, each of them serves 2 years in prison.",
+   "n_words": 19
+  },
+  {
+   "sent_idx": 9,
+   "sentence_id": "prisoners_dilemma_9",
+   "sentence": "If A betrays B but B remains silent, A will be set free and B will serve 3 years in prison (and vice versa).",
+   "n_words": 24
+  },
+  {
+   "sent_idx": 10,
+   "sentence_id": "prisoners_dilemma_10",
+   "sentence": "If A and B both remain silent, both of them will only serve 1 year in prison (on the lesser charge).",
+   "n_words": 21
+  },
+  {
+   "sent_idx": 11,
+   "sentence_id": "prisoners_dilemma_11",
+   "sentence": "It is implied that the prisoners will have no opportunity to reward or punish their partner other than the prison sentences they get, and that their decision will not affect their reputation in the future.",
+   "n_words": 15
+  }
+ ],
+ "prisoners_dilemma|1": [
+  {
+   "sent_idx": 0,
+   "sentence_id": "prisoners_dilemma_11",
+   "sentence": "It is implied that the prisoners will have no opportunity to reward or punish their partner other than the prison sentences they get, and that their decision will not affect their reputation in the future.",
+   "n_words": 20
+  },
+  {
+   "sent_idx": 1,
+   "sentence_id": "prisoners_dilemma_12",
+   "sentence": "Because betraying a partner offers a greater reward than cooperating with them, all purely rational self-interested prisoners would betray the other, and so the only possible outcome for two purely rational prisoners is for them to betray each other.",
+   "n_words": 39
+  },
+  {
+   "sent_idx": 2,
+   "sentence_id": "prisoners_dilemma_13",
+   "sentence": "The interesting part of this result is that pursuing individual reward logically leads both prisoners to betray, when they would get a better reward if they both kept silent.",
+   "n_words": 29
+  },
+  {
+   "sent_idx": 3,
+   "sentence_id": "prisoners_dilemma_14",
+   "sentence": "In reality, humans display a systematic bias towards cooperative behavior in this and similar games, much more so than predicted by simple models of \"rational\" self-interested action.",
+   "n_words": 27
+  },
+  {
+   "sent_idx": 4,
+   "sentence_id": "prisoners_dilemma_15",
+   "sentence": "An extended \"iterated\" version of the game also exists, where the classic game is played repeatedly between the same prisoners, and consequently, both prisoners continuously have an opportunity to penalize the other for previous decisions.",
+   "n_words": 35
+  },
+  {
+   "sent_idx": 5,
+   "sentence_id": "prisoners_dilemma_16",
+   "sentence": "If the number of times the game will be played is known to the players, then (by backward induction) two classically rational players will betray each other repeatedly, for the same reasons as the single shot variant.",
+   "n_words": 37
+  },
+  {
+   "sent_idx": 6,
+   "sentence_id": "prisoners_dilemma_17",
+   "sentence": "In an infinite or unknown length game there is no fixed optimum strategy, and Prisoner's Dilemma tournaments have been held to compete and test algorithms.",
+   "n_words": 25
+  },
+  {
+   "sent_idx": 7,
+   "sentence_id": "prisoners_dilemma_18",
+   "sentence": "The prisoner's dilemma game can be used as a model for many real-world situations involving cooperative behavior.",
+   "n_words": 1
+  }
+ ],
+ "prisoners_dilemma|2": [
+  {
+   "sent_idx": 0,
+   "sentence_id": "prisoners_dilemma_18",
+   "sentence": "The prisoner's dilemma game can be used as a model for many real-world situations involving cooperative behavior.",
+   "n_words": 16
+  },
+  {
+   "sent_idx": 1,
+   "sentence_id": "prisoners_dilemma_19",
+   "sentence": "In casual usage, the label \"prisoner's dilemma\" may be applied to situations not strictly matching the formal criteria of the classic or iterative games: for instance, those in which two entities could gain important benefits from cooperating or suffer from the failure to do so, but find it merely difficult or expensive, not necessarily impossible, to coordinate their activities to achieve cooperation.",
+   "n_words": 62
+  },
+  {
+   "sent_idx": 2,
+   "sentence_id": "prisoners_dilemma_20",
+   "sentence": "Possible strategies and outcomes for the normal game are described below.",
+   "n_words": 11
+  },
+  {
+   "sent_idx": 3,
+   "sentence_id": "prisoners_dilemma_21",
+   "sentence": "If Prisoner A stays silent (cooperates) and Prisoner B stays silent (cooperates), they each serve one year.",
+   "n_words": 17
+  },
+  {
+   "sent_idx": 4,
+   "sentence_id": "prisoners_dilemma_22",
+   "sentence": "If Prisoner A cooperates and Prisoner B betrays (defects), Prisoner A gets three years and Prisoner B goes free.",
+   "n_words": 19
+  },
+  {
+   "sent_idx": 5,
+   "sentence_id": "prisoners_dilemma_23",
+   "sentence": "If Prisoner B cooperates and Prisoner A defects, Prisoner B gets three years and Prisoner A goes free.",
+   "n_words": 18
+  },
+  {
+   "sent_idx": 6,
+   "sentence_id": "prisoners_dilemma_24",
+   "sentence": "If both Prisoner A and B defect, they each serve two years.",
+   "n_words": 12
+  },
+  {
+   "sent_idx": 7,
+   "sentence_id": "prisoners_dilemma_25",
+   "sentence": "Here, regardless of what the other decides, each prisoner gets a higher reward by betraying the other (\"defecting\").",
+   "n_words": 18
+  },
+  {
+   "sent_idx": 8,
+   "sentence_id": "prisoners_dilemma_26",
+   "sentence": "The reasoning involves analyzing both players' best responses: B will either cooperate or defect.",
+   "n_words": 14
+  },
+  {
+   "sent_idx": 9,
+   "sentence_id": "prisoners_dilemma_27",
+   "sentence": "If B cooperates, A should defect, because going free is better than serving 1 year.",
+   "n_words": 14
+  }
+ ],
+ "prisoners_dilemma|3": [
+  {
+   "sent_idx": 0,
+   "sentence_id": "prisoners_dilemma_27",
+   "sentence": "If B cooperates, A should defect, because going free is better than serving 1 year.",
+   "n_words": 1
+  },
+  {
+   "sent_idx": 1,
+   "sentence_id": "prisoners_dilemma_28",
+   "sentence": "If B defects, A should also defect, because serving 2 years is better than serving 3.",
+   "n_words": 16
+  },
+  {
+   "sent_idx": 2,
+   "sentence_id": "prisoners_dilemma_29",
+   "sentence": "So either way, A should defect.",
+   "n_words": 6
+  },
+  {
+   "sent_idx": 3,
+   "sentence_id": "prisoners_dilemma_30",
+   "sentence": "Parallel reasoning will show that B should defect.",
+   "n_words": 8
+  },
+  {
+   "sent_idx": 4,
+   "sentence_id": "prisoners_dilemma_31",
+   "sentence": "Typically, some very restrictive assumptions on prisoner behavior are made.",
+   "n_words": 10
+  },
+  {
+   "sent_idx": 5,
+   "sentence_id": "prisoners_dilemma_32",
+   "sentence": "It is assumed that both understand the nature of the game, and that despite being members of the same gang, they have no loyalty to each other and will have no opportunity for retribution or reward outside the game.",
+   "n_words": 39
+  },
+  {
+   "sent_idx": 6,
+   "sentence_id": "prisoners_dilemma_33",
+   "sentence": "Most importantly, a very narrow interpretation of \"rationality\" is applied in defining the decision-making strategies of the prisoners.",
+   "n_words": 18
+  },
+  {
+   "sent_idx": 7,
+   "sentence_id": "prisoners_dilemma_34",
+   "sentence": "Given these conditions and the payoffs above, prisoner A will betray prisoner B. The game is symmetric, so Prisoner B should act the same way.",
+   "n_words": 25
+  },
+  {
+   "sent_idx": 8,
+   "sentence_id": "prisoners_dilemma_35",
+   "sentence": "Since both \"rationally\" decide to defect, each receives a lower reward than if both were to stay quiet.",
+   "n_words": 18
+  },
+  {
+   "sent_idx": 9,
+   "sentence_id": "prisoners_dilemma_36",
+   "sentence": "Mutual defection results in both players being worse off than if each chose to lessen the sentence of his accomplice at the cost of spending more time in jail himself.",
+   "n_words": 30
+  },
+  {
+   "sent_idx": 10,
+   "sentence_id": "prisoners_dilemma_37",
+   "sentence": "The dilemma is that mutual cooperation yields a better outcome than mutual defection, but it is not the rational outcome because from a self-interested perspective, the choice to cooperate, at the individual level, is irrational.",
+   "n_words": 35
+  },
+  {
+   "sent_idx": 11,
+   "sentence_id": "prisoners_dilemma_38",
+   "sentence": "The \"donation game\" is a form of prisoner's dilemma in which cooperation corresponds to offering the other player a benefit B at a personal cost b with b greater than c. Defection means offering nothing.",
+   "n_words": 12
+  }
+ ],
+ "prisoners_dilemma|4": [
+  {
+   "sent_idx": 0,
+   "sentence_id": "prisoners_dilemma_38",
+   "sentence": "The \"donation game\" is a form of prisoner's dilemma in which cooperation corresponds to offering the other player a benefit B at a personal cost b with b greater than c. Defection means offering nothing.",
+   "n_words": 23
+  },
+  {
+   "sent_idx": 1,
+   "sentence_id": "prisoners_dilemma_39",
+   "sentence": "The donation game may be applied to markets.",
+   "n_words": 8
+  },
+  {
+   "sent_idx": 2,
+   "sentence_id": "prisoners_dilemma_40",
+   "sentence": "Suppose X grows oranges, Y grows apples.",
+   "n_words": 7
+  },
+  {
+   "sent_idx": 3,
+   "sentence_id": "prisoners_dilemma_41",
+   "sentence": "The utility of an additional apple to the orange-grower X is b, which is higher than the utility (c) of an additional orange, since X has a surplus of oranges and no apples.",
+   "n_words": 33
+  },
+  {
+   "sent_idx": 4,
+   "sentence_id": "prisoners_dilemma_42",
+   "sentence": "Similarly, for apple-grower Y, the utility of an additional orange is b while the utility of an additional apple is c. If X and Y contract to exchange an apple and an orange, and each fulfills their end of the deal, then each receive a payoff of b-c. If one \"defects\" and does not deliver as promised, the defector will receive a payoff of b, while the cooperator will lose c. If both defect, then neither one gains or loses anything.",
+   "n_words": 81
+  },
+  {
+   "sent_idx": 5,
+   "sentence_id": "prisoners_dilemma_43",
+   "sentence": "If two players play prisoners' dilemma more than once in succession and they remember previous actions of their opponent and change their strategy accordingly, the game is called iterated prisoners' dilemma.",
+   "n_words": 31
+  },
+  {
+   "sent_idx": 6,
+   "sentence_id": "prisoners_dilemma_44",
+   "sentence": "The iterated prisoners' dilemma game is fundamental to some theories of human cooperation and trust.",
+   "n_words": 15
+  },
+  {
+   "sent_idx": 7,
+   "sentence_id": "prisoners_dilemma_45",
+   "sentence": "On the assumption that the game can model transactions between two people requiring trust, cooperative behavior in populations may be modeled by a multi-player, iterated, version of the game.",
+   "n_words": 28
+  }
+ ],
+ "prisoners_dilemma|5": [
+  {
+   "sent_idx": 0,
+   "sentence_id": "prisoners_dilemma_45",
+   "sentence": "On the assumption that the game can model transactions between two people requiring trust, cooperative behavior in populations may be modeled by a multi-player, iterated, version of the game.",
+   "n_words": 1
+  },
+  {
+   "sent_idx": 1,
+   "sentence_id": "prisoners_dilemma_46",
+   "sentence": "It has, consequently, fascinated many scholars over the years.",
+   "n_words": 9
+  },
+  {
+   "sent_idx": 2,
+   "sentence_id": "prisoners_dilemma_47",
+   "sentence": "In 1975, two scholars named Grofman and Pool estimated the count of scholarly articles devoted to it at over 2,000.",
+   "n_words": 20
+  },
+  {
+   "sent_idx": 3,
+   "sentence_id": "prisoners_dilemma_48",
+   "sentence": "The iterated prisoners' dilemma has also been referred to as the \"Peace-War game\".",
+   "n_words": 13
+  },
+  {
+   "sent_idx": 4,
+   "sentence_id": "prisoners_dilemma_49",
+   "sentence": "If the game is played exactly N times and both players know this, then it is always game theoretically optimal to defect in all rounds.",
+   "n_words": 25
+  },
+  {
+   "sent_idx": 5,
+   "sentence_id": "prisoners_dilemma_50",
+   "sentence": "The only possible stable outcome is to always defect.",
+   "n_words": 9
+  },
+  {
+   "sent_idx": 6,
+   "sentence_id": "prisoners_dilemma_51",
+   "sentence": "The proof is inductive: one might as well defect on the last turn, since the opponent will not have a chance to later retaliate.",
+   "n_words": 24
+  },
+  {
+   "sent_idx": 7,
+   "sentence_id": "prisoners_dilemma_52",
+   "sentence": "Therefore, both will defect on the last turn.",
+   "n_words": 8
+  },
+  {
+   "sent_idx": 8,
+   "sentence_id": "prisoners_dilemma_53",
+   "sentence": "Thus, the player might as well defect on the second-to-last turn, since the opponent will defect on the last no matter what is done, and so on.",
+   "n_words": 27
+  },
+  {
+   "sent_idx": 9,
+   "sentence_id": "prisoners_dilemma_54",
+   "sentence": "The same applies if the game length is unknown but has a known upper limit.",
+   "n_words": 15
+  },
+  {
+   "sent_idx": 10,
+   "sentence_id": "prisoners_dilemma_55",
+   "sentence": "Unlike the standard prisoners' dilemma, in the iterated prisoners' dilemma the defection strategy is counter-intuitive and fails badly to predict the behavior of human players.",
+   "n_words": 25
+  },
+  {
+   "sent_idx": 11,
+   "sentence_id": "prisoners_dilemma_56",
+   "sentence": "Within standard economic theory, though, this is the only correct answer.",
+   "n_words": 11
+  },
+  {
+   "sent_idx": 12,
+   "sentence_id": "prisoners_dilemma_57",
+   "sentence": "The superrational strategy in the iterated prisoners' dilemma with fixed N is to cooperate against a superrational opponent, and in the limit of large N, experimental results on strategies agree with the superrational version, not the game- theoretic rational one.",
+   "n_words": 37
+  }
+ ],
+ "prisoners_dilemma|6": [
+  {
+   "sent_idx": 0,
+   "sentence_id": "prisoners_dilemma_57",
+   "sentence": "The superrational strategy in the iterated prisoners' dilemma with fixed N is to cooperate against a superrational opponent, and in the limit of large N, experimental results on strategies agree with the superrational version, not the game- theoretic rational one.",
+   "n_words": 3
+  },
+  {
+   "sent_idx": 1,
+   "sentence_id": "prisoners_dilemma_58",
+   "sentence": "For cooperation to emerge between game theoretic rational players, the total number of rounds N must be random, or at least unknown to the players.",
+   "n_words": 25
+  },
+  {
+   "sent_idx": 2,
+   "sentence_id": "prisoners_dilemma_59",
+   "sentence": "In this case 'always defect' may no longer be a strictly dominant strategy.",
+   "n_words": 13
+  },
+  {
+   "sent_idx": 3,
+   "sentence_id": "prisoners_dilemma_60",
+   "sentence": "Amongst results shown by Robert Aumann in a 1959 paper, rational players repeatedly interacting for indefinitely long games can sustain the cooperative outcome.",
+   "n_words": 23
+  },
+  {
+   "sent_idx": 4,
+   "sentence_id": "prisoners_dilemma_61",
+   "sentence": "Interest in the iterated prisoners' dilemma (IPD) was kindled by Robert Axelrod in his book The Evolution of Cooperation (1984).",
+   "n_words": 20
+  },
+  {
+   "sent_idx": 5,
+   "sentence_id": "prisoners_dilemma_62",
+   "sentence": "In it he reports on a tournament he organized of the N step prisoners' dilemma (with N fixed) in which participant have to choose their mutual strategies again and again, and have memory of their previous encounters.",
+   "n_words": 37
+  },
+  {
+   "sent_idx": 6,
+   "sentence_id": "prisoners_dilemma_63",
+   "sentence": "Axelrod invited academic colleagues all over the world to devise computer strategies to compete in an IPD tournament.",
+   "n_words": 18
+  },
+  {
+   "sent_idx": 7,
+   "sentence_id": "prisoners_dilemma_64",
+   "sentence": "The programs that were entered varied widely in complexity, initial hostility, capacity for forgiveness, and so forth.",
+   "n_words": 17
+  },
+  {
+   "sent_idx": 8,
+   "sentence_id": "prisoners_dilemma_65",
+   "sentence": "Axelrod discovered that when these encounters were repeated over a long period of time with many players, each with different strategies, greedy strategies tended to do very poorly in the long run while more altruistic strategies did better, as judged purely by self-interest.",
+   "n_words": 43
+  },
+  {
+   "sent_idx": 9,
+   "sentence_id": "prisoners_dilemma_66",
+   "sentence": "He used this to show how altruistic behavior could emerge from mechanisms that are initially purely selfish, by natural selection.",
+   "n_words": 11
+  }
+ ],
+ "prisoners_dilemma|7": [
+  {
+   "sent_idx": 0,
+   "sentence_id": "prisoners_dilemma_66",
+   "sentence": "He used this to show how altruistic behavior could emerge from mechanisms that are initially purely selfish, by natural selection.",
+   "n_words": 9
+  },
+  {
+   "sent_idx": 1,
+   "sentence_id": "prisoners_dilemma_67",
+   "sentence": "The winning deterministic strategy was tit for tat, which Anatol Rapoport developed and entered into the tournament.",
+   "n_words": 17
+  },
+  {
+   "sent_idx": 2,
+   "sentence_id": "prisoners_dilemma_68",
+   "sentence": "It was the simplest of any program entered, containing only four lines of BASIC, and won the contest.",
+   "n_words": 18
+  },
+  {
+   "sent_idx": 3,
+   "sentence_id": "prisoners_dilemma_69",
+   "sentence": "The strategy is simply to cooperate on the first iteration of the game; after that, the player does what his or her opponent did on the previous move.",
+   "n_words": 28
+  },
+  {
+   "sent_idx": 4,
+   "sentence_id": "prisoners_dilemma_70",
+   "sentence": "Depending on the situation, a slightly better strategy can be \"tit for tat with forgiveness.\"",
+   "n_words": 15
+  },
+  {
+   "sent_idx": 5,
+   "sentence_id": "prisoners_dilemma_71",
+   "sentence": "When the opponent defects, on the next move, the player sometimes cooperates anyway, with a small probability (around 1-5%).",
+   "n_words": 19
+  },
+  {
+   "sent_idx": 6,
+   "sentence_id": "prisoners_dilemma_72",
+   "sentence": "This allows for occasional recovery from getting trapped in a cycle of defections.",
+   "n_words": 13
+  },
+  {
+   "sent_idx": 7,
+   "sentence_id": "prisoners_dilemma_73",
+   "sentence": "The exact probability depends on the line-up of opponents.",
+   "n_words": 9
+  },
+  {
+   "sent_idx": 8,
+   "sentence_id": "prisoners_dilemma_74",
+   "sentence": "By analyzing the top-scoring strategies, Axelrod stated several conditions necessary for a strategy to be successful.",
+   "n_words": 16
+  },
+  {
+   "sent_idx": 9,
+   "sentence_id": "prisoners_dilemma_75",
+   "sentence": "The most important condition is that the strategy must be \"nice\", that is, it will not defect before its opponent does.",
+   "n_words": 21
+  },
+  {
+   "sent_idx": 10,
+   "sentence_id": "prisoners_dilemma_76",
+   "sentence": "Almost all of the top-scoring strategies were nice; therefore, a purely selfish strategy will not \"cheat\" on its opponent, for purely self-interested reasons first.",
+   "n_words": 24
+  },
+  {
+   "sent_idx": 11,
+   "sentence_id": "prisoners_dilemma_77",
+   "sentence": "However, Axelrod contended, the successful strategy must not be a blind optimist.",
+   "n_words": 12
+  },
+  {
+   "sent_idx": 12,
+   "sentence_id": "prisoners_dilemma_78",
+   "sentence": "It must sometimes retaliate.",
+   "n_words": 4
+  },
+  {
+   "sent_idx": 13,
+   "sentence_id": "prisoners_dilemma_79",
+   "sentence": "An example of a non-retaliating strategy is Always Cooperate.",
+   "n_words": 4
+  }
+ ],
+ "prisoners_dilemma|8": [
+  {
+   "sent_idx": 0,
+   "sentence_id": "prisoners_dilemma_79",
+   "sentence": "An example of a non-retaliating strategy is Always Cooperate.",
+   "n_words": 5
+  },
+  {
+   "sent_idx": 1,
+   "sentence_id": "prisoners_dilemma_80",
+   "sentence": "This is a very bad choice, as \"nasty\" strategies will ruthlessly exploit such players.",
+   "n_words": 14
+  },
+  {
+   "sent_idx": 2,
+   "sentence_id": "prisoners_dilemma_81",
+   "sentence": "Successful strategies must also be forgiving.",
+   "n_words": 6
+  },
+  {
+   "sent_idx": 3,
+   "sentence_id": "prisoners_dilemma_82",
+   "sentence": "Though players will retaliate, they will once again fall back to cooperating if the opponent does not continue to defect.",
+   "n_words": 20
+  },
+  {
+   "sent_idx": 4,
+   "sentence_id": "prisoners_dilemma_83",
+   "sentence": "This stops long runs of revenge and counter-revenge, maximizing points.",
+   "n_words": 10
+  },
+  {
+   "sent_idx": 5,
+   "sentence_id": "prisoners_dilemma_84",
+   "sentence": "The last quality is being non-envious, that is not striving to score more than the opponent.",
+   "n_words": 16
+  },
+  {
+   "sent_idx": 6,
+   "sentence_id": "prisoners_dilemma_85",
+   "sentence": "The optimal strategy for the one-time PD game is simply defection; as explained above, this is true whatever the composition of opponents may be.",
+   "n_words": 24
+  },
+  {
+   "sent_idx": 7,
+   "sentence_id": "prisoners_dilemma_86",
+   "sentence": "However, in the iterated-PD game, the optimal strategy depends upon the strategies of likely opponents, and how they will react to defections and cooperations.",
+   "n_words": 24
+  },
+  {
+   "sent_idx": 8,
+   "sentence_id": "prisoners_dilemma_87",
+   "sentence": "For example, consider a population where everyone defects every time, except for a single individual following the tit for tat strategy.",
+   "n_words": 21
+  },
+  {
+   "sent_idx": 9,
+   "sentence_id": "prisoners_dilemma_88",
+   "sentence": "That individual is at a slight disadvantage because of the loss on the first turn.",
+   "n_words": 15
+  },
+  {
+   "sent_idx": 10,
+   "sentence_id": "prisoners_dilemma_89",
+   "sentence": "In such a population, the optimal strategy for that individual is to defect every time.",
+   "n_words": 15
+  },
+  {
+   "sent_idx": 11,
+   "sentence_id": "prisoners_dilemma_90",
+   "sentence": "In a population with a certain percentage of always-defectors and the rest being tit for tat players, the optimal strategy for an individual depends on the percentage, and on the length of the game.",
+   "n_words": 34
+  }
+ ],
+ "prisoners_dilemma|9": [
+  {
+   "sent_idx": 0,
+   "sentence_id": "prisoners_dilemma_91",
+   "sentence": "Deriving the optimal strategy is generally done in two ways.",
+   "n_words": 10
+  },
+  {
+   "sent_idx": 1,
+   "sentence_id": "prisoners_dilemma_92",
+   "sentence": "First, it can be done with a strategy that maximizes expected payoff.",
+   "n_words": 12
+  },
+  {
+   "sent_idx": 2,
+   "sentence_id": "prisoners_dilemma_93",
+   "sentence": "That is, if the statistical distribution of opposing strategies can be determined an optimal counter-strategy can be derived analytically.",
+   "n_words": 19
+  },
+  {
+   "sent_idx": 3,
+   "sentence_id": "prisoners_dilemma_94",
+   "sentence": "Second, a computer simulation to predict outcomes of populations has been made, where individuals with low scores die off, and those with high scores reproduce.",
+   "n_words": 25
+  },
+  {
+   "sent_idx": 4,
+   "sentence_id": "prisoners_dilemma_95",
+   "sentence": "The mix of strategies in the final population generally depends on the mix in the initial population.",
+   "n_words": 17
+  },
+  {
+   "sent_idx": 5,
+   "sentence_id": "prisoners_dilemma_96",
+   "sentence": "The introduction of mutation (random variation during reproduction) lessens the dependency on the initial population.",
+   "n_words": 15
+  },
+  {
+   "sent_idx": 6,
+   "sentence_id": "prisoners_dilemma_97",
+   "sentence": "Although tit for tat is considered to be the most robust basic strategy, a team from Southampton University in England introduced a new strategy at the 20th- anniversary iterated prisoner's dilemma competition, which proved to be more successful than tit for tat.",
+   "n_words": 42
+  },
+  {
+   "sent_idx": 7,
+   "sentence_id": "prisoners_dilemma_98",
+   "sentence": "This strategy relied on collusion between programs to achieve the highest number of points for a single program.",
+   "n_words": 18
+  },
+  {
+   "sent_idx": 8,
+   "sentence_id": "prisoners_dilemma_99",
+   "sentence": "The university submitted 60 programs to the competition, which were designed to recognize each other through a series of five to ten moves at the start.",
+   "n_words": 26
+  },
+  {
+   "sent_idx": 9,
+   "sentence_id": "prisoners_dilemma_100",
+   "sentence": "Once this recognition was made, one program would always cooperate and the other would always defect, assuring the maximum number",
+   "n_words": 20
+  }
+ ]
+}

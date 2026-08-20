@@ -1,0 +1,10 @@
+{
+  "gaze_real_diff": -0.027719488008040586,
+  "gaze_p": 0.025171939589673332,
+  "gaze_pseudo_diff": -0.0029170916055425446,
+  "gaze_real_vs_pseudo_p": 0.02993241965933731,
+  "template_sd_mw": 0.1135869080638597,
+  "template_sd_ontask": 0.11773329063338459,
+  "neural_combined_diff": -0.01603961496650481,
+  "neural_combined_p": 0.03701364591041575
+}

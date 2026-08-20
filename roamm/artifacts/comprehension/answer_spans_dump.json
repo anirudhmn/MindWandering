@@ -1,0 +1,452 @@
+[
+  {
+    "item": "Pluto_p0",
+    "negated": true,
+    "question": "Which of the following is NOT true about Pluto?",
+    "correct_option": "It is larger than the Earth\u2019s moon",
+    "matched_sentence": "Like other Kuiper belt objects, Pluto is primarily made of ice and rock and is relatively small -- about one-sixth the mass of the Moon and one-third its volume.",
+    "margin": 0.28,
+    "n_sentences_on_page": 12
+  },
+  {
+    "item": "Pluto_p1",
+    "negated": false,
+    "question": "Why are Pluto and Charon sometimes considered a binary system?",
+    "correct_option": "The center of their orbits does not lie within either body",
+    "matched_sentence": "Pluto and Charon are sometimes considered a binary system because the center of their orbits does not lie within either body.",
+    "margin": 0.65,
+    "n_sentences_on_page": 10
+  },
+  {
+    "item": "Pluto_p2",
+    "negated": false,
+    "question": "The search for Pluto was delayed in the 1910s and 1920s because:",
+    "correct_option": "Percival Lowell\u2019s widow was engaged in a legal battle over Lowell Observatory funds",
+    "matched_sentence": "In 1906, Percival Lowell -- a wealthy Bostonian who had founded the Lowell Observatory in Flagstaff, Arizona, in 1894 -- started an extensive project in search of a possible ninth planet, which he termed \"Planet X\".",
+    "margin": 0.039,
+    "n_sentences_on_page": 10
+  },
+  {
+    "item": "Pluto_p3",
+    "negated": false,
+    "question": "What technique did Tombaugh use to discover the new object, later named \u201cPluto\u201d?",
+    "correct_option": "Rapid flipping back and forth between photographs to observe objects that changed position",
+    "matched_sentence": "Using a blink comparator, he rapidly shifted back and forth between views of each of the plates to create the illusion of movement of any objects that had changed position or appearance between photographs.",
+    "margin": 0.232,
+    "n_sentences_on_page": 12
+  },
+  {
+    "item": "Pluto_p4",
+    "negated": false,
+    "question": "Which of the following helped, in part, with the final choice of the name \u201cPluto\u201d?",
+    "correct_option": "The first two letters of Pluto are the initials of Percival Lowell",
+    "matched_sentence": "The final choice of name was helped in part by the fact that the first two letters of Pluto are the initials of Percival Lowell.",
+    "margin": 0.599,
+    "n_sentences_on_page": 12
+  },
+  {
+    "item": "Pluto_p5",
+    "negated": false,
+    "question": "Which is true about estimates of the mass of Pluto in the 20th century?",
+    "correct_option": "Estimates of Pluto's mass got smaller astronomers learned more about it",
+    "matched_sentence": "Once found, Pluto's faintness and lack of a resolvable disc cast doubt on the idea that it was Lowell's Planet X. Estimates of Pluto's mass were revised downward throughout the 20th century.",
+    "margin": 0.211,
+    "n_sentences_on_page": 9
+  },
+  {
+    "item": "Pluto_p6",
+    "negated": false,
+    "question": "Which of the following findings cast doubt on the idea that Pluto was \u201cPlanet X\u201d?",
+    "correct_option": "New estimates of Neptune\u2019s mass negated the need for a Planet X",
+    "matched_sentence": "With the new figures added in, the discrepancies, and with them the need for a Planet X, vanished.",
+    "margin": 0.019,
+    "n_sentences_on_page": 10
+  },
+  {
+    "item": "Pluto_p7",
+    "negated": true,
+    "question": "Which is NOT true of the discovery of Eris?",
+    "correct_option": "Eris was discovered around the same time as Pluto",
+    "matched_sentence": "On 29 July 2005, Caltech astronomers announced the discovery of a new trans-Neptunian object, Eris, which was substantially more massive than Pluto and the most massive object discovered in the Solar System since Triton in 1846.",
+    "margin": 0.199,
+    "n_sentences_on_page": 8
+  },
+  {
+    "item": "Pluto_p8",
+    "negated": true,
+    "question": "Which of the following is NOT one of the three main conditions that must be met for an object to be considered a \u201cplanet\u201d?",
+    "correct_option": "The object must have one or more moons",
+    "matched_sentence": "According to this resolution, there are three main conditions for an object to be considered a \"planet\": First, the object must be in orbit around the Sun.",
+    "margin": 0.248,
+    "n_sentences_on_page": 11
+  },
+  {
+    "item": "Pluto_p9",
+    "negated": true,
+    "question": "Which of the following is NOT an argument used by Alan Stern in opposition of the new definition for a planet?",
+    "correct_option": "It made too many changes to the collection of bodies historically considered planets",
+    "matched_sentence": "He argued that all big spherical moons, including the Moon, should likewise be considered planets.",
+    "margin": 0.135,
+    "n_sentences_on_page": 12
+  },
+  {
+    "item": "The Voynich Manuscript_p0",
+    "negated": false,
+    "question": "Who was the Voynich manuscript named after?",
+    "correct_option": "The book dealer who purchased it in 1912",
+    "matched_sentence": "The manuscript is named after Wilfrid Voynich, a Polish book dealer who purchased it in 1912.",
+    "margin": 0.501,
+    "n_sentences_on_page": 10
+  },
+  {
+    "item": "The Voynich Manuscript_p1",
+    "negated": true,
+    "question": "Which of the following is NOT correct about the Voynich manuscript?",
+    "correct_option": "The manuscript contains no writing in Latin script",
+    "matched_sentence": "Every page in the manuscript contains text, mostly in an unknown script, but some have extraneous writing in Latin script.",
+    "margin": 0.421,
+    "n_sentences_on_page": 9
+  },
+  {
+    "item": "The Voynich Manuscript_p2",
+    "negated": false,
+    "question": "What is the significance of the fact that the manuscript flows smoothly?",
+    "correct_option": "The symbols were likely not encoded because there is no delay between characters",
+    "matched_sentence": "The manuscript flows smoothly, suggesting that the symbols were not encoded, as there is no delay between characters as would normally be expected in written encoded text.",
+    "margin": 0.529,
+    "n_sentences_on_page": 12
+  },
+  {
+    "item": "The Voynich Manuscript_p3",
+    "negated": false,
+    "question": "Which of the following is cited as a reason that the Voynich manuscript's characters cannot be deciphered using single-letter substitutions?",
+    "correct_option": "Words that differ by only one letter repeat more frequently than expected",
+    "matched_sentence": "Words that differ by only one letter also repeat with unusual frequency, causing single-substitution alphabet decipherings to yield babble- like text.",
+    "margin": 0.31,
+    "n_sentences_on_page": 12
+  },
+  {
+    "item": "The Voynich Manuscript_p4",
+    "negated": false,
+    "question": "What was similar about the \u201cHerbal\u201d and \u201cPharmaceutical\u201d section of the manuscript?",
+    "correct_option": "Some drawings in the herbal section were copies of those in the pharmaceutical section",
+    "matched_sentence": "Some parts of these drawings are larger and cleaner copies of sketches seen in the pharmaceutical section.",
+    "margin": 0.229,
+    "n_sentences_on_page": 13
+  },
+  {
+    "item": "The Voynich Manuscript_p5",
+    "negated": false,
+    "question": "Based on the surviving leaves of the manuscript, what was the likely purpose of the manuscript?",
+    "correct_option": "Pharmacy book to address topics in medieval or early modern medicine",
+    "matched_sentence": "The overall impression given by the surviving leaves of the manuscript is that it was meant to serve as a pharmacy book or to address topics in medieval or early modern medicine.",
+    "margin": 0.684,
+    "n_sentences_on_page": 10
+  },
+  {
+    "item": "The Voynich Manuscript_p6",
+    "negated": false,
+    "question": "Based on some interpretations, the basins and tubes in the \u201cbiological\" section were connected to which of the following?",
+    "correct_option": "Alchemy",
+    "matched_sentence": "The basins and tubes in the \"biological\" section are sometimes interpreted as implying a connection to alchemy, yet bear little obvious resemblance to the alchemical equipment of the period.",
+    "margin": 0.808,
+    "n_sentences_on_page": 8
+  },
+  {
+    "item": "The Voynich Manuscript_p7",
+    "negated": false,
+    "question": "What was the aim for the tests on the materials of the manuscript (such as radiocarbon tests on paper and paint)?",
+    "correct_option": "To gain insights into the history of the manuscripts by knowing the time period and origin of the materials",
+    "matched_sentence": "In addition, the McCrone Research Institute in Chicago found that the paints in the manuscript were of materials to be expected from that period of European history.",
+    "margin": 0.28,
+    "n_sentences_on_page": 9
+  },
+  {
+    "item": "The Voynich Manuscript_p8",
+    "negated": false,
+    "question": "The manuscript was likely stored in the library of the Collegio Romano, and it probably remained there for 200 years until which of the following events?",
+    "correct_option": "The troops of Victor Emmanuel II of Italy captured the city",
+    "matched_sentence": "It probably remained there until the troops of Victor Emmanuel II of Italy captured the city in 1870 and annexed the Papal States.",
+    "margin": 0.508,
+    "n_sentences_on_page": 10
+  },
+  {
+    "item": "The Voynich Manuscript_p9",
+    "negated": false,
+    "question": "Why did Hans Kraus donate the manuscript to Yale University in 1969?",
+    "correct_option": "Because he was unable to find a buyer",
+    "matched_sentence": "Unable to find a buyer, Kraus donated the manuscript to Yale University in 1969, where it was catalogued as \"MS 408\".",
+    "margin": 0.522,
+    "n_sentences_on_page": 10
+  },
+  {
+    "item": "History of Film_p0",
+    "negated": false,
+    "question": "What does film continuity mean?",
+    "correct_option": "Action moving from one sequence to another",
+    "matched_sentence": "Special effects were introduced and film continuity, involving action moving from one sequence into another, began to be used.",
+    "margin": 0.52,
+    "n_sentences_on_page": 12
+  },
+  {
+    "item": "History of Film_p1",
+    "negated": true,
+    "question": "Which is NOT true of the films of the silent era?",
+    "correct_option": "Cinematic technique was characterized by smooth camera movement",
+    "matched_sentence": "There was little to no cinematic technique, usually no camera movement, and flat compositions reminiscent of the stage.",
+    "margin": 0.281,
+    "n_sentences_on_page": 14
+  },
+  {
+    "item": "History of Film_p2",
+    "negated": false,
+    "question": "What was the main purpose of the illustrated song?",
+    "correct_option": "To encourage sheet music sales",
+    "matched_sentence": "The main purpose of illustrated song was to encourage sheet music sales and they were highly successful with sales reaching into millions for a single song.",
+    "margin": 0.676,
+    "n_sentences_on_page": 10
+  },
+  {
+    "item": "History of Film_p3",
+    "negated": false,
+    "question": "What was made possible by the \u201cCinematograph Camera NO. 1\u201d, the first camera to feature reverse-cranking?",
+    "correct_option": "Creation of super-positions and multiple exposures",
+    "matched_sentence": "Paul's \"Cinematograph Camera No. 1\" of 1895 was the first camera to feature reverse-cranking, which allowed the same film footage to be exposed several times and thereby to create super-positions and multiple exposures.",
+    "margin": 0.638,
+    "n_sentences_on_page": 13
+  },
+  {
+    "item": "History of Film_p4",
+    "negated": false,
+    "question": "Which of the following is true of both the film \u201cChina Mission Station\u201d and the film \"As Seen Through a Telescope\"?",
+    "correct_option": "Both films include multiple shots",
+    "matched_sentence": "Even more remarkable is James Williamson's \"Attack on a China Mission Station\" (1900).",
+    "margin": 0.009,
+    "n_sentences_on_page": 11
+  },
+  {
+    "item": "History of Film_p5",
+    "negated": false,
+    "question": "Which of the following is true of film-production during the period before the First World War?",
+    "correct_option": "Denmark was the most important film-producing country",
+    "matched_sentence": "The most important film-producing country in Northern Europe up until the First World War was Denmark.",
+    "margin": 0.592,
+    "n_sentences_on_page": 9
+  },
+  {
+    "item": "History of Film_p6",
+    "negated": false,
+    "question": "Which of these occurred as a result of the First World War?",
+    "correct_option": "The American industry began to dominate film-making",
+    "matched_sentence": "The American industry, or \"Hollywood\", as it was becoming known after its new geographical center in California, gained the position it has held, more or less, ever since: film factory for the world and exporting its product to most countries.",
+    "margin": 0.166,
+    "n_sentences_on_page": 9
+  },
+  {
+    "item": "History of Film_p7",
+    "negated": false,
+    "question": "How did Hollywood studios enable a new level of lavish production?",
+    "correct_option": "Top-down control over all stages of their product",
+    "matched_sentence": "The studios' efficient, top-down control over all stages of their product enabled a new and ever-growing level of lavish production and technical sophistication.",
+    "margin": 0.611,
+    "n_sentences_on_page": 7
+  },
+  {
+    "item": "History of Film_p8",
+    "negated": false,
+    "question": "Why was the changeover to talking pictures slightly slower in the rest of the world than the United States?",
+    "correct_option": "Economic and cultural reasons",
+    "matched_sentence": "Total changeover was slightly slower in the rest of the world, principally for economic reasons.",
+    "margin": 0.062,
+    "n_sentences_on_page": 10
+  },
+  {
+    "item": "History of Film_p9",
+    "negated": false,
+    "question": "What is one reason that the late 1920s were full of static, stagey talkies?",
+    "correct_option": "Artists struggled with the limitations of the early sound equipment",
+    "matched_sentence": "The late '20s were full of static, stagey talkies as artists in front of and behind the camera struggled with the stringent limitations of the early sound equipment and their own uncertainty as to how to utilize the new medium.",
+    "margin": 0.639,
+    "n_sentences_on_page": 9
+  },
+  {
+    "item": "Serena Williams_p0",
+    "negated": false,
+    "question": "Which of the following is  among Serena Williams\u2019 accomplishments?",
+    "correct_option": "Holding all four major women\u2019s singles titles simultaneously",
+    "matched_sentence": "She is the most recent player, male or female, to have held all four major singles titles simultaneously (2002-03 and 2014-15), the fifth woman ever to do so and only the third player, male or female, to achieve this record twice after Rod Laver and Steffi Graf.",
+    "margin": 0.19,
+    "n_sentences_on_page": 10
+  },
+  {
+    "item": "Serena Williams_p1",
+    "negated": false,
+    "question": "Some credit the arrival of Serena Williams and her sister Venus for:",
+    "correct_option": "Starting an era of power tennis in the women\u2019s game",
+    "matched_sentence": "The arrival of the Williams sisters has been credited with launching a new era of power tennis in the women's game.",
+    "margin": 0.371,
+    "n_sentences_on_page": 10
+  },
+  {
+    "item": "Serena Williams_p2",
+    "negated": false,
+    "question": "What was Williams\u2019s father\u2019s general attitude towards her tennis talent after the family moved from Compton to Florida?",
+    "correct_option": "He allowed Williams to be a little girl and focus on school",
+    "matched_sentence": "Richard stopped sending his daughters to national junior tennis tournaments when Williams was 10, since he wanted them to take it slow and focus on school work.",
+    "margin": 0.033,
+    "n_sentences_on_page": 10
+  },
+  {
+    "item": "Serena Williams_p3",
+    "negated": true,
+    "question": "Which of the following statements on Williams\u2019 play is NOT supported by the reading?",
+    "correct_option": "Her serve was fast but with less satisfying consistency and accuracy",
+    "matched_sentence": "What makes her serve even more deadly is her ball placement and her ability to consistently place powerful shots with great accuracy.",
+    "margin": 0.238,
+    "n_sentences_on_page": 9
+  },
+  {
+    "item": "Serena Williams_p4",
+    "negated": false,
+    "question": "Why is Williams\u2019s favorite court surface clay?",
+    "correct_option": "It gives her extra time to set up her shot",
+    "matched_sentence": "She has stated that her favorite surface is clay because it gives her extra time to set up her shot.",
+    "margin": 0.592,
+    "n_sentences_on_page": 10
+  },
+  {
+    "item": "Serena Williams_p5",
+    "negated": false,
+    "question": "What was the outcome of Williams\u2019s first professional event(s) as a teenager?",
+    "correct_option": "She lost in the first round, winning just two games",
+    "matched_sentence": "She lost in the first round of qualifying to Anne Miller, winning just two games, and earned $240 in prize money.",
+    "margin": 0.282,
+    "n_sentences_on_page": 12
+  },
+  {
+    "item": "Serena Williams_p6",
+    "negated": false,
+    "question": "Which of the following was mentioned in the reading as Serena Williams\u2019 mixed doubles partner?",
+    "correct_option": "Max Mirnyi",
+    "matched_sentence": "She did, however, win the mixed doubles titles at Wimbledon and the US Open with Max Mirnyi, completing the Williams family's sweep of the 1998 mixed doubles Grand Slam tournaments.",
+    "margin": 0.542,
+    "n_sentences_on_page": 10
+  },
+  {
+    "item": "Serena Williams_p7",
+    "negated": false,
+    "question": "Why did Williams miss the French open in 2000?",
+    "correct_option": "Because of injury",
+    "matched_sentence": "Williams missed the French Open because of injury.",
+    "margin": 0.496,
+    "n_sentences_on_page": 12
+  },
+  {
+    "item": "Serena Williams_p8",
+    "negated": false,
+    "question": "Why was the crowd angry at the Williams sisters at the Pacific Life Open?",
+    "correct_option": "They thought the family had fixed one of the games",
+    "matched_sentence": "The crowd was incensed at the perceived match fixing of games involving the family after Venus withdrew before their semifinal.",
+    "margin": 0.118,
+    "n_sentences_on_page": 15
+  },
+  {
+    "item": "Serena Williams_p9",
+    "negated": false,
+    "question": "Which of the following statements about Serena William\u2019s victory over her sister Venus at the 2002 Wimbledon Championships is *wrong*?",
+    "correct_option": "She was the fourth seed in the tournament",
+    "matched_sentence": "Williams was the third seed at the French Open, where she claimed her first title by defeating defending champion Capriati in the semifinals, and Venus in the final to win her second Grand Slam tournament title.",
+    "margin": 0.008,
+    "n_sentences_on_page": 9
+  },
+  {
+    "item": "Prisoners Dilemma_p0",
+    "negated": true,
+    "question": "Which of the following is NOT true of the classic prisoner's dilemma?",
+    "correct_option": "If both prisoners remain silent, then both will be set free",
+    "matched_sentence": "If A betrays B but B remains silent, A will be set free and B will serve 3 years in prison (and vice versa).",
+    "margin": 0.073,
+    "n_sentences_on_page": 12
+  },
+  {
+    "item": "Prisoners Dilemma_p1",
+    "negated": true,
+    "question": "Which of the following is NOT a difference between the classic prisoner\u2019s dilemma and the \u201citerated\u201d version of the game?",
+    "correct_option": "Purely rational self-interested players will betray each other in a classic game but cooperate in an iterated game when they know the number of rounds",
+    "matched_sentence": "An extended \"iterated\" version of the game also exists, where the classic game is played repeatedly between the same prisoners, and consequently, both prisoners continuously have an opportunity to penalize the other for previous decisions.",
+    "margin": 0.008,
+    "n_sentences_on_page": 8
+  },
+  {
+    "item": "Prisoners Dilemma_p2",
+    "negated": true,
+    "question": "Which of the following might be called a \"prisoner's dilemma\" in casual usage but does not match the formal criteria of the classic or iterative game?",
+    "correct_option": "A situation in which players get an important benefit for cooperating",
+    "matched_sentence": "In casual usage, the label \"prisoner's dilemma\" may be applied to situations not strictly matching the formal criteria of the classic or iterative games: for instance, those in which two entities could gain important benefits from cooperating or suffer from the failure to do so, but find it merely difficult or expensive, not necessarily impossible, to coordinate their activities to achieve cooperation.",
+    "margin": 0.243,
+    "n_sentences_on_page": 10
+  },
+  {
+    "item": "Prisoners Dilemma_p3",
+    "negated": true,
+    "question": "Which of the following is NOT one of the assumptions about the prisoners in the game?",
+    "correct_option": "They have not played the game previously",
+    "matched_sentence": "Given these conditions and the payoffs above, prisoner A will betray prisoner B. The game is symmetric, so Prisoner B should act the same way.",
+    "margin": 0.055,
+    "n_sentences_on_page": 12
+  },
+  {
+    "item": "Prisoners Dilemma_p4",
+    "negated": false,
+    "question": "Which of the following is true about the \"donation game\" version of the prisoner's dilemma?",
+    "correct_option": "Neither player gains or loses anything if they both defect",
+    "matched_sentence": "Similarly, for apple-grower Y, the utility of an additional orange is b while the utility of an additional apple is c. If X and Y contract to exchange an apple and an orange, and each fulfills their end of the deal, then each receive a payoff of b-c. If one \"defects\" and does not deliver as promised, the defector will receive a payoff of b, while the cooperator will lose c. If both defect, then neither one gains or loses anything.",
+    "margin": 0.207,
+    "n_sentences_on_page": 8
+  },
+  {
+    "item": "Prisoners Dilemma_p5",
+    "negated": false,
+    "question": "If the iterated prisoner's dilemma game is played exactly N times and both players know this, what strategy should the purely rational player choose on the second-to-last turn?",
+    "correct_option": "Defect, since both players should defect on the last turn anyways",
+    "matched_sentence": "Thus, the player might as well defect on the second-to-last turn, since the opponent will defect on the last no matter what is done, and so on.",
+    "margin": 0.019,
+    "n_sentences_on_page": 13
+  },
+  {
+    "item": "Prisoners Dilemma_p6",
+    "negated": false,
+    "question": "In Axelrod\u2019s iterated prisoner\u2019s dilemma tournament, which of the following strategies performed better in the long run against the other players?",
+    "correct_option": "Altruistic strategies",
+    "matched_sentence": "Axelrod discovered that when these encounters were repeated over a long period of time with many players, each with different strategies, greedy strategies tended to do very poorly in the long run while more altruistic strategies did better, as judged purely by self-interest.",
+    "margin": 0.34,
+    "n_sentences_on_page": 10
+  },
+  {
+    "item": "Prisoners Dilemma_p7",
+    "negated": false,
+    "question": "Axelrod stated the most important condition for a strategy to be successful, which was \u201cthe strategy must be nice\u201d. What does \u201cnice\u201d mean?",
+    "correct_option": "The player will not defect before its opponent does",
+    "matched_sentence": "The most important condition is that the strategy must be \"nice\", that is, it will not defect before its opponent does.",
+    "margin": 0.302,
+    "n_sentences_on_page": 14
+  },
+  {
+    "item": "Prisoners Dilemma_p8",
+    "negated": false,
+    "question": "Which of the following is true about optimal strategies in the prisoner\u2019s dilemma?",
+    "correct_option": "The optimal strategy is independent of the number of rounds of the game that will be played",
+    "matched_sentence": "However, in the iterated-PD game, the optimal strategy depends upon the strategies of likely opponents, and how they will react to defections and cooperations.",
+    "margin": 0.037,
+    "n_sentences_on_page": 12
+  },
+  {
+    "item": "Prisoners Dilemma_p9",
+    "negated": true,
+    "question": "Which of the following is NOT true of the new strategy introduced by Southampton University?",
+    "correct_option": "the program would always defect in the first several moves",
+    "matched_sentence": "Once this recognition was made, one program would always cooperate and the other would always defect, assuring the maximum number",
+    "margin": 0.035,
+    "n_sentences_on_page": 10
+  }
+]

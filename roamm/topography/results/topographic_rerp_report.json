@@ -1,0 +1,282 @@
+{
+  "n_subjects": 44,
+  "n_permutations": 5000,
+  "window_field_tests": {
+    "zipf_lexical": {
+      "group_mean_gfp_uV": 0.08941139280796051,
+      "p_signflip": 0.0001999600079984003,
+      "null_mean": 0.021842279702179505,
+      "null_95": [
+        0.010947256068196111,
+        0.04173436217592312
+      ]
+    },
+    "mw_lexical": {
+      "group_mean_gfp_uV": 0.06739712506532669,
+      "p_signflip": 0.0001999600079984003,
+      "null_mean": 0.02633928973799671,
+      "null_95": [
+        0.015207789883738838,
+        0.04335623600843021
+      ]
+    },
+    "zipf_mw_lexical": {
+      "group_mean_gfp_uV": 0.029766377061605453,
+      "p_signflip": 0.5490901819636073,
+      "null_mean": 0.03169710195618651,
+      "null_95": [
+        0.020373481556791893,
+        0.04881702822063001
+      ]
+    },
+    "surprisal_semantic": {
+      "group_mean_gfp_uV": 0.03274534270167351,
+      "p_signflip": 0.0001999600079984003,
+      "null_mean": 0.013236433607199515,
+      "null_95": [
+        0.008000460361993172,
+        0.021253174989375425
+      ]
+    },
+    "surprisal_mw_semantic": {
+      "group_mean_gfp_uV": 0.038007039576768875,
+      "p_signflip": 0.14757048590281943,
+      "null_mean": 0.03076461935711502,
+      "null_95": [
+        0.019843812838093295,
+        0.04723348001359288
+      ]
+    },
+    "intercept_lexical": {
+      "group_mean_gfp_uV": 0.22806932032108307,
+      "p_signflip": 0.0001999600079984003,
+      "null_mean": 0.061434937561064905,
+      "null_95": [
+        0.024869402490673743,
+        0.12659210681423055
+      ]
+    }
+  },
+  "window_tanova": {
+    "frequency_vs_surprisal": {
+      "gmd": 1.3422931432724,
+      "p_paired_tanova": 0.0001999600079984003,
+      "group_map_spatial_r": 0.10088766062977199,
+      "spatial_r_boot_ci95": [
+        -0.2457361098989848,
+        0.45331189916022224
+      ],
+      "p_holm_family_B": 0.0007998400319936012
+    },
+    "mw_vs_on_task_fixation": {
+      "gmd": 1.8630568981170654,
+      "p_paired_tanova": 0.0001999600079984003,
+      "group_map_spatial_r": -0.8724074302883007,
+      "spatial_r_boot_ci95": [
+        -0.9311313554886508,
+        -0.5986854802066702
+      ],
+      "p_holm_family_B": 0.0007998400319936012
+    },
+    "frequency_interaction_vs_frequency": {
+      "gmd": 0.9807779788970947,
+      "p_paired_tanova": 0.0015996800639872025,
+      "group_map_spatial_r": 0.5784374597866253,
+      "spatial_r_boot_ci95": [
+        -0.27157793286082377,
+        0.7949395917588594
+      ],
+      "p_holm_family_B": 0.0015996800639872025
+    },
+    "surprisal_interaction_vs_surprisal": {
+      "gmd": 1.470744013786316,
+      "p_paired_tanova": 0.0003999200159968006,
+      "group_map_spatial_r": -0.03334024866244046,
+      "spatial_r_boot_ci95": [
+        -0.5887486127618043,
+        0.4000837629876993
+      ],
+      "p_holm_family_B": 0.0007998400319936012
+    }
+  },
+  "mw_vs_fixation_crossfit_proportional_residual": {
+    "group_mean_gfp_uV": 0.03236045315861702,
+    "p_signflip": 0.27654469106178764,
+    "null_mean": 0.028362276535902106,
+    "null_95": [
+      0.01564926269410281,
+      0.04792489441332216
+    ],
+    "loo_scale_mean": -0.25776377658952365,
+    "loo_scale_range": [
+      -0.28057509660720825,
+      -0.23502083122730255
+    ],
+    "group_map_variance_explained_r2": 0.7610947244222362,
+    "absolute_spatial_r": 0.8724074302883007,
+    "group_scale_boot_ci95": [
+      -0.39678726345300674,
+      -0.13831990323960786
+    ],
+    "remaining_response_ratio_mw_over_on_task": 0.7422362234104763,
+    "attenuation_percent": 25.776377658952367,
+    "attenuation_percent_boot_ci95": [
+      13.831990323960785,
+      39.678726345300674
+    ],
+    "spatial_r_boot_ci95": [
+      -0.931129449292241,
+      -0.6045011731007062
+    ]
+  },
+  "time_resolved_field_clusters": {
+    "zipf": {
+      "clusters": [
+        {
+          "start_ms": -101.56,
+          "end_ms": 101.56,
+          "mass": 1.0341914892196655,
+          "p_cluster_fwer_family": 0.0001999600079984003
+        },
+        {
+          "start_ms": 125.0,
+          "end_ms": 500.0,
+          "mass": 2.3918957710266113,
+          "p_cluster_fwer_family": 0.0001999600079984003
+        }
+      ],
+      "significant": [
+        {
+          "start_ms": -101.56,
+          "end_ms": 101.56,
+          "mass": 1.0341914892196655,
+          "p_cluster_fwer_family": 0.0001999600079984003
+        },
+        {
+          "start_ms": 125.0,
+          "end_ms": 500.0,
+          "mass": 2.3918957710266113,
+          "p_cluster_fwer_family": 0.0001999600079984003
+        }
+      ]
+    },
+    "surprisal": {
+      "clusters": [
+        {
+          "start_ms": -101.56,
+          "end_ms": 0.0,
+          "mass": 0.3483426570892334,
+          "p_cluster_fwer_family": 0.028194361127774445
+        },
+        {
+          "start_ms": 42.97,
+          "end_ms": 66.41,
+          "mass": 0.029101330786943436,
+          "p_cluster_fwer_family": 0.8262347530493901
+        },
+        {
+          "start_ms": 93.75,
+          "end_ms": 500.0,
+          "mass": 1.2063671350479126,
+          "p_cluster_fwer_family": 0.0001999600079984003
+        }
+      ],
+      "significant": [
+        {
+          "start_ms": -101.56,
+          "end_ms": 0.0,
+          "mass": 0.3483426570892334,
+          "p_cluster_fwer_family": 0.028194361127774445
+        },
+        {
+          "start_ms": 93.75,
+          "end_ms": 500.0,
+          "mass": 1.2063671350479126,
+          "p_cluster_fwer_family": 0.0001999600079984003
+        }
+      ]
+    },
+    "mw": {
+      "clusters": [
+        {
+          "start_ms": -74.22,
+          "end_ms": -31.25,
+          "mass": 0.09392140805721283,
+          "p_cluster_fwer_family": 0.38192361527694463
+        },
+        {
+          "start_ms": -19.53,
+          "end_ms": -3.91,
+          "mass": 0.027032196521759033,
+          "p_cluster_fwer_family": 0.8420315936812638
+        },
+        {
+          "start_ms": 23.44,
+          "end_ms": 31.25,
+          "mass": 0.014950394630432129,
+          "p_cluster_fwer_family": 0.9244151169766047
+        },
+        {
+          "start_ms": 105.47,
+          "end_ms": 125.0,
+          "mass": 0.06173781305551529,
+          "p_cluster_fwer_family": 0.5810837832433513
+        },
+        {
+          "start_ms": 171.88,
+          "end_ms": 265.62,
+          "mass": 0.590374767780304,
+          "p_cluster_fwer_family": 0.005598880223955209
+        },
+        {
+          "start_ms": 324.22,
+          "end_ms": 328.12,
+          "mass": 0.001807965338230133,
+          "p_cluster_fwer_family": 0.9916016796640672
+        },
+        {
+          "start_ms": 359.38,
+          "end_ms": 371.09,
+          "mass": 0.004335150122642517,
+          "p_cluster_fwer_family": 0.9846030793841232
+        }
+      ],
+      "significant": [
+        {
+          "start_ms": 171.88,
+          "end_ms": 265.62,
+          "mass": 0.590374767780304,
+          "p_cluster_fwer_family": 0.005598880223955209
+        }
+      ]
+    },
+    "zipf_mw": {
+      "clusters": [],
+      "significant": []
+    },
+    "surprisal_mw": {
+      "clusters": [
+        {
+          "start_ms": 277.34,
+          "end_ms": 281.25,
+          "mass": 0.007800482213497162,
+          "p_cluster_fwer_family": 0.9682063587282543
+        },
+        {
+          "start_ms": 312.5,
+          "end_ms": 324.22,
+          "mass": 0.01578618586063385,
+          "p_cluster_fwer_family": 0.9198160367926415
+        }
+      ],
+      "significant": []
+    }
+  },
+  "B2_verdict": "nonzero MW field is explained by a signed rescaling of the ordinary fixation field: subtractive gain/attenuation, not a new configuration",
+  "interaction_topology_gate": {
+    "frequency_interaction_field_reliable": false,
+    "surprisal_interaction_field_reliable": false,
+    "rule": "Normalized topology of an interaction is not interpreted when the interaction field itself fails the sign-flip field test."
+  },
+  "interpretation_limit": "Scalp-field configuration is reference-invariant but is not equivalent to anatomical source localization."
+}

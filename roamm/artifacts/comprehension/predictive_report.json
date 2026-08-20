@@ -1,0 +1,225 @@
+{
+  "dilution": {
+    "n_mw_flagged_pages": 1001,
+    "mean_mw_seconds_per_flagged_page": 7.9938014042126175,
+    "mean_page_seconds": 33.4994245754246,
+    "mean_frac_of_page_duration_in_mw": 0.2906469876627944,
+    "median_frac_of_page_duration_in_mw": 0.21826028756721458,
+    "mean_frac_of_fixated_words_labelled_mw": 0.30370335386715736,
+    "median_frac_of_fixated_words_labelled_mw": 0.21525096525096526
+  },
+  "graded_mw_to_alignment": {
+    "frac_words_mw": {
+      "isc_gaze_raw_z": {
+        "L0_raw": {
+          "beta_sd_per_unit": -0.07332024618194931,
+          "se": 0.16327130824519603,
+          "p": 0.6533811619032096,
+          "n": 2083
+        },
+        "L1_reliability": {
+          "beta_sd_per_unit": 0.09957741154515272,
+          "se": 0.23531153708730937,
+          "p": 0.6721692848973331,
+          "n": 2083
+        }
+      },
+      "isc_gaze_resid_z": {
+        "L0_raw": {
+          "beta_sd_per_unit": -0.01792612739275823,
+          "se": 0.1716389555170522,
+          "p": 0.9168194647667234,
+          "n": 2083
+        },
+        "L1_reliability": {
+          "beta_sd_per_unit": 0.08949742927985249,
+          "se": 0.23813568080061936,
+          "p": 0.7070467289641498,
+          "n": 2083
+        }
+      },
+      "isc_n400_resid_z": {
+        "L0_raw": {
+          "beta_sd_per_unit": -0.15329137353692307,
+          "se": 0.1752613666975717,
+          "p": 0.3817674193995094,
+          "n": 2083
+        },
+        "L1_reliability": {
+          "beta_sd_per_unit": -0.12513484414501627,
+          "se": 0.2058749468059248,
+          "p": 0.5433070757502344,
+          "n": 2083
+        }
+      }
+    },
+    "mw_frac_page": {
+      "isc_gaze_raw_z": {
+        "L0_raw": {
+          "beta_sd_per_unit": -0.028726171817376474,
+          "se": 0.15877925963349532,
+          "p": 0.8564312196477146,
+          "n": 2083
+        },
+        "L1_reliability": {
+          "beta_sd_per_unit": 0.17948999932277288,
+          "se": 0.2287738444811994,
+          "p": 0.43270340714555156,
+          "n": 2083
+        }
+      },
+      "isc_gaze_resid_z": {
+        "L0_raw": {
+          "beta_sd_per_unit": 0.022508643663228637,
+          "se": 0.1686941351773953,
+          "p": 0.8938543278769288,
+          "n": 2083
+        },
+        "L1_reliability": {
+          "beta_sd_per_unit": 0.15981759649838378,
+          "se": 0.22952619514685435,
+          "p": 0.48624504643771427,
+          "n": 2083
+        }
+      },
+      "isc_n400_resid_z": {
+        "L0_raw": {
+          "beta_sd_per_unit": -0.15565564280952288,
+          "se": 0.1738279856748824,
+          "p": 0.3705423619162649,
+          "n": 2083
+        },
+        "L1_reliability": {
+          "beta_sd_per_unit": -0.1244279668789823,
+          "se": 0.2024245978659883,
+          "p": 0.5387608003115489,
+          "n": 2083
+        }
+      }
+    }
+  },
+  "predictive": {
+    "item_difficulty": {
+      "features_cumulative": [
+        "item_difficulty_train"
+      ],
+      "loso_auc": 0.695874412106185,
+      "ci95": [
+        0.6779021159492667,
+        0.715960774036055
+      ],
+      "n": 2083
+    },
+    "item_difficulty +reading_amount": {
+      "features_cumulative": [
+        "item_difficulty_train",
+        "n_gaze_raw",
+        "coverage",
+        "log_page_dur",
+        "mean_logdur",
+        "frac_firstpass"
+      ],
+      "loso_auc": 0.7135909242969872,
+      "ci95": [
+        0.6947812382837392,
+        0.7341503359732501
+      ],
+      "n": 2083
+    },
+    "item_difficulty +reading_amount +mw_report": {
+      "features_cumulative": [
+        "item_difficulty_train",
+        "n_gaze_raw",
+        "coverage",
+        "log_page_dur",
+        "mean_logdur",
+        "frac_firstpass",
+        "mw",
+        "mw_frac_page"
+      ],
+      "loso_auc": 0.712768364917252,
+      "ci95": [
+        0.6938599985517052,
+        0.7331015004990101
+      ],
+      "n": 2083
+    },
+    "item_difficulty +reading_amount +mw_report +alignment": {
+      "features_cumulative": [
+        "item_difficulty_train",
+        "n_gaze_raw",
+        "coverage",
+        "log_page_dur",
+        "mean_logdur",
+        "frac_firstpass",
+        "mw",
+        "mw_frac_page",
+        "isc_gaze_raw_z",
+        "isc_gaze_resid_z",
+        "isc_n400_resid_z",
+        "isc_occp2_resid_z"
+      ],
+      "loso_auc": 0.712669972646949,
+      "ci95": [
+        0.6927482025150087,
+        0.7338021748452304
+      ],
+      "n": 2083
+    },
+    "item_difficulty +reading_amount +mw_report +alignment +coupling": {
+      "features_cumulative": [
+        "item_difficulty_train",
+        "n_gaze_raw",
+        "coverage",
+        "log_page_dur",
+        "mean_logdur",
+        "frac_firstpass",
+        "mw",
+        "mw_frac_page",
+        "isc_gaze_raw_z",
+        "isc_gaze_resid_z",
+        "isc_n400_resid_z",
+        "isc_occp2_resid_z",
+        "b_zipf_gaze",
+        "b_surp_gaze",
+        "b_surp_n400"
+      ],
+      "loso_auc": 0.7122468858846449,
+      "ci95": [
+        0.692566102953072,
+        0.7327506270361944
+      ],
+      "n": 2083
+    }
+  },
+  "predictive_delta": {
+    "+reading_amount": {
+      "delta_auc": 0.01771651219080228,
+      "ci95": [
+        0.007754647240112012,
+        0.02726014148137798
+      ]
+    },
+    "+mw_report": {
+      "delta_auc": -0.0008225593797351882,
+      "ci95": [
+        -0.003606476337558032,
+        0.0020452543154852753
+      ]
+    },
+    "+alignment": {
+      "delta_auc": -9.839227030306041e-05,
+      "ci95": [
+        -0.004011303851070028,
+        0.0041357172473166955
+      ]
+    },
+    "+coupling": {
+      "delta_auc": -0.00042308676230407016,
+      "ci95": [
+        -0.0028269650283621493,
+        0.0017007771041529986
+      ]
+    }
+  }
+}

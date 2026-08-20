@@ -1,0 +1,56 @@
+{
+  "n_trials": 2200,
+  "n_readers": 44,
+  "n_items": 50,
+  "evidence_coverage": {
+    "count": 2200.0,
+    "mean": 0.5331826751613091,
+    "std": 0.28212136606477467,
+    "min": 0.0,
+    "25%": 0.4166666666666667,
+    "50%": 0.625,
+    "75%": 0.735632183908046,
+    "max": 1.0
+  },
+  "control_coverage": {
+    "count": 2200.0,
+    "mean": 0.5272197412931274,
+    "std": 0.2669515606622647,
+    "min": 0.0,
+    "25%": 0.36566156615661566,
+    "50%": 0.6086956521739131,
+    "75%": 0.7254901960784313,
+    "max": 1.0
+  },
+  "frac_trials_evidence_never_fixated": 0.14772727272727273,
+  "frac_trials_evidence_cov_below_half": 0.2927272727272727,
+  "frp_epochs_on_evidence_total": 79298,
+  "frp_epochs_per_trial_median": 28.0,
+  "trials_with_ge5_evidence_frp": 1825,
+  "by_item_type": {
+    "inferential": {
+      "n_trials": 88,
+      "acc": 0.659,
+      "ev_cov": 0.624,
+      "ev_frp": 41.136
+    },
+    "integrative": {
+      "n_trials": 44,
+      "acc": 0.364,
+      "ev_cov": 0.57,
+      "ev_frp": 120.591
+    },
+    "negated": {
+      "n_trials": 528,
+      "acc": 0.593,
+      "ev_cov": 0.541,
+      "ev_frp": 62.873
+    },
+    "single_fact": {
+      "n_trials": 1540,
+      "acc": 0.632,
+      "ev_cov": 0.524,
+      "ev_frp": 24.14
+    }
+  }
+}

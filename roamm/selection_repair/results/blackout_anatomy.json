@@ -1,0 +1,196 @@
+{
+  "skip_composition": {
+    "total_stepped_over": {
+      "MW": 1.0,
+      "on-task": 1.0,
+      "transition": 1.0
+    },
+    "in_gap<=4": {
+      "MW": 0.251,
+      "on-task": 0.223,
+      "transition": 0.057
+    },
+    "in_big_gap_same_page": {
+      "MW": 0.743,
+      "on-task": 0.483,
+      "transition": 0.175
+    },
+    "in_big_gap_page_change": {
+      "MW": 0.006,
+      "on-task": 0.294,
+      "transition": 0.768
+    }
+  },
+  "gap_time_same_page": [
+    {
+      "gap": "0",
+      "state": "MW",
+      "n": 8005,
+      "median_ms": 26.0,
+      "mean_ms": 37.27,
+      "frac_gt500ms": 0.0
+    },
+    {
+      "gap": "0",
+      "state": "on-task",
+      "n": 105397,
+      "median_ms": 27.0,
+      "mean_ms": 36.23,
+      "frac_gt500ms": 0.0
+    },
+    {
+      "gap": "0",
+      "state": "transition",
+      "n": 538,
+      "median_ms": 28.0,
+      "mean_ms": 42.34,
+      "frac_gt500ms": 0.0
+    },
+    {
+      "gap": "1",
+      "state": "MW",
+      "n": 5154,
+      "median_ms": 31.0,
+      "mean_ms": 43.35,
+      "frac_gt500ms": 0.0
+    },
+    {
+      "gap": "1",
+      "state": "on-task",
+      "n": 76246,
+      "median_ms": 32.0,
+      "mean_ms": 42.69,
+      "frac_gt500ms": 0.0
+    },
+    {
+      "gap": "1",
+      "state": "transition",
+      "n": 416,
+      "median_ms": 33.0,
+      "mean_ms": 47.9,
+      "frac_gt500ms": 0.0
+    },
+    {
+      "gap": "2-4",
+      "state": "MW",
+      "n": 1981,
+      "median_ms": 41.0,
+      "mean_ms": 56.44,
+      "frac_gt500ms": 0.0
+    },
+    {
+      "gap": "2-4",
+      "state": "on-task",
+      "n": 32132,
+      "median_ms": 43.0,
+      "mean_ms": 57.51,
+      "frac_gt500ms": 0.0
+    },
+    {
+      "gap": "2-4",
+      "state": "transition",
+      "n": 173,
+      "median_ms": 43.0,
+      "mean_ms": 56.81,
+      "frac_gt500ms": 0.01
+    },
+    {
+      "gap": "5-10",
+      "state": "MW",
+      "n": 330,
+      "median_ms": 43.5,
+      "mean_ms": 79.18,
+      "frac_gt500ms": 0.02
+    },
+    {
+      "gap": "5-10",
+      "state": "on-task",
+      "n": 4304,
+      "median_ms": 49.0,
+      "mean_ms": 83.01,
+      "frac_gt500ms": 0.02
+    },
+    {
+      "gap": "5-10",
+      "state": "transition",
+      "n": 46,
+      "median_ms": 49.0,
+      "mean_ms": 100.24,
+      "frac_gt500ms": 0.04
+    },
+    {
+      "gap": ">10",
+      "state": "MW",
+      "n": 1568,
+      "median_ms": 30.0,
+      "mean_ms": 69.15,
+      "frac_gt500ms": 0.02
+    },
+    {
+      "gap": ">10",
+      "state": "on-task",
+      "n": 17965,
+      "median_ms": 32.0,
+      "mean_ms": 66.74,
+      "frac_gt500ms": 0.01
+    },
+    {
+      "gap": ">10",
+      "state": "transition",
+      "n": 147,
+      "median_ms": 31.0,
+      "mean_ms": 105.97,
+      "frac_gt500ms": 0.05
+    }
+  ],
+  "transition_steps": {
+    "onset": {
+      "n": 981,
+      "median_off_ms": 34.000000000332875,
+      "mean_off_ms": 1477.4668705402478,
+      "frac_gt500ms": 0.06829765545361875,
+      "mean_gap": 12.060142711518859
+    },
+    "offset": {
+      "n": 982,
+      "median_off_ms": 27.99999999956526,
+      "mean_off_ms": 306.35437881871803,
+      "frac_gt500ms": 0.019348268839103868,
+      "mean_gap": -1.3574338085539714
+    },
+    "within_state": {
+      "median_off_ms": 27.999999999906322,
+      "frac_gt500ms": 0.006190742466604535
+    }
+  },
+  "offword_fraction_same_page": {
+    "on_task": 0.16600965331115505,
+    "mw": 0.1690976500054623,
+    "diff": {
+      "mean": 0.003087996694307246,
+      "ci": [
+        -0.004208829697981368,
+        0.01277401364561094
+      ],
+      "t": 0.6930230287351232,
+      "p": 0.49202145550043186,
+      "n": 44,
+      "n_pos": 19
+    }
+  },
+  "large_jump_rate_same_page": {
+    "on_task": 0.05964061862833279,
+    "mw": 0.06460656336319202,
+    "diff": {
+      "mean": 0.004965944734859245,
+      "ci": [
+        -0.00171518863955902,
+        0.011546877121447762
+      ],
+      "t": 1.4562280232510982,
+      "p": 0.1525929736598519,
+      "n": 44,
+      "n_pos": 29
+    }
+  }
+}

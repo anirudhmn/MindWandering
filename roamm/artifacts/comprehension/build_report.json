@@ -1,0 +1,92 @@
+{
+  "likert_prompts": {
+    "Pluto": [
+      "I was able to read and understand the text and questions",
+      "I had prior knowledge that helped me answer the questions"
+    ],
+    "The Voynich Manuscript": [
+      "I was able to read and understand the text and questions",
+      "I had prior knowledge that helped me answer the questions"
+    ],
+    "History of Film": [
+      "I was able to read and understand the text and questions",
+      "I had prior knowledge that helped me answer the questions"
+    ],
+    "Serena Williams": [
+      "I was able to read and understand the text and questions",
+      "I had prior knowledge that helped me answer the questions"
+    ],
+    "Prisoners Dilemma": [
+      "I was able to read and understand the text and questions",
+      "I had prior knowledge that helped me answer the questions"
+    ]
+  },
+  "n_items": 50,
+  "items_per_story": {
+    "History of Film": 10,
+    "Pluto": 10,
+    "Prisoners Dilemma": 10,
+    "Serena Williams": 10,
+    "The Voynich Manuscript": 10
+  },
+  "n_options_unique": [
+    5
+  ],
+  "validation": {
+    "accuracy_max_abs_err": 0.0,
+    "filtered_accuracy_max_abs_err": 5.551115123125783e-17,
+    "num_skipped_mismatches": 0,
+    "n_trials_checked": 220,
+    "answer_key_mismatches_vs_xlsx": 0,
+    "responses_out_of_range": 0
+  },
+  "n_pages": 2200,
+  "n_subjects": 44,
+  "overall": {
+    "p_correct": 0.6181818181818182,
+    "p_skipped": 0.16818181818181818,
+    "p_correct_given_answered": 0.7431693989071039,
+    "p_mw_page": 0.455,
+    "chance_level": 0.25
+  },
+  "per_story": {
+    "History of Film": {
+      "p_correct": 0.6136,
+      "p_skip": 0.175,
+      "p_mw": 0.4864
+    },
+    "Pluto": {
+      "p_correct": 0.6386,
+      "p_skip": 0.1477,
+      "p_mw": 0.3886
+    },
+    "Prisoners Dilemma": {
+      "p_correct": 0.4955,
+      "p_skip": 0.175,
+      "p_mw": 0.4795
+    },
+    "Serena Williams": {
+      "p_correct": 0.6659,
+      "p_skip": 0.2023,
+      "p_mw": 0.4477
+    },
+    "The Voynich Manuscript": {
+      "p_correct": 0.6773,
+      "p_skip": 0.1409,
+      "p_mw": 0.4727
+    }
+  },
+  "item_difficulty": {
+    "min": 0.09090909090909091,
+    "max": 0.9545454545454546,
+    "mean": 0.6181818181818182,
+    "sd": 0.1948051948051948,
+    "n_items_at_or_below_chance": 1
+  },
+  "subject_accuracy": {
+    "min": 0.32,
+    "max": 0.84,
+    "mean": 0.6181818181818183,
+    "sd": 0.1296735207639363
+  }
+}

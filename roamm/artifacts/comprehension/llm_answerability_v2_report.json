@@ -1,0 +1,46 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "n_orderings_per_item": 8,
+  "n_items": 50,
+  "mean_p_gold": {
+    "nopassage": 0.545368642575246,
+    "evidence": 0.8590702971115977,
+    "fullpage": 0.847590584016217
+  },
+  "mean_accuracy": {
+    "nopassage": 0.5575,
+    "evidence": 0.865,
+    "fullpage": 0.85
+  },
+  "human_accuracy": 0.6181818181818182,
+  "chance": 0.25,
+  "by_item_type": {
+    "inferential": {
+      "p_gold_nopassage": 0.946,
+      "p_gold_evidence": 0.651,
+      "p_gold_fullpage": 0.897,
+      "human_acc": 0.659
+    },
+    "integrative": {
+      "p_gold_nopassage": 0.477,
+      "p_gold_evidence": 0.009,
+      "p_gold_fullpage": 0.171,
+      "human_acc": 0.364
+    },
+    "negated": {
+      "p_gold_nopassage": 0.469,
+      "p_gold_evidence": 0.714,
+      "p_gold_fullpage": 0.647,
+      "human_acc": 0.593
+    },
+    "single_fact": {
+      "p_gold_nopassage": 0.551,
+      "p_gold_evidence": 0.945,
+      "p_gold_fullpage": 0.933,
+      "human_acc": 0.632
+    }
+  },
+  "corr_p_gold_nopassage_with_human_acc": 0.2586184246124698,
+  "corr_p_gold_fullpage_with_human_acc": 0.530091538997957,
+  "evidence_vs_fullpage_p_gold_corr": 0.7707271675156769
+}
