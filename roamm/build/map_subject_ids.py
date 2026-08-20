@@ -19,7 +19,7 @@ import numpy as np
 import pandas as pd
 from scipy.optimize import linear_sum_assignment
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "roamm" / "artifacts" / "comprehension"
 COUP = ROOT / "roamm" / "artifacts" / "coupling"
 

@@ -17,7 +17,7 @@ import pandas as pd
 from scipy import stats
 import sys, pathlib
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
-from common import RES, boot_ci, fmt
+from common import RES, ROOT, boot_ci, fmt
 
 ZA = str(ROOT / "zuco" / "artifacts")
 PROPS = ["zipf", "surprisal"]

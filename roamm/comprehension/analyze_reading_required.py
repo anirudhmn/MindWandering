@@ -26,7 +26,7 @@ import pandas as pd
 from scipy import stats
 from statsmodels.genmod.bayes_mixed_glm import BinomialBayesMixedGLM
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 COUP = ROOT / "roamm" / "artifacts" / "coupling"
 OUT = ROOT / "roamm" / "artifacts" / "comprehension"
 

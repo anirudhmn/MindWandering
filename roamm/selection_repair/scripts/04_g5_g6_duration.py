@@ -16,7 +16,7 @@ import pandas as pd
 from scipy import stats
 import sys, pathlib
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
-from common import ART, RES, COUP, boot_ci, fmt
+from common import ART, RES, COUP, ROOT, boot_ci, fmt
 
 PROPS = ["zipf", "surprisal", "length"]
 rep = {}

@@ -8,7 +8,7 @@ EXACT slices of rawData), then re-epoch -100..+500 ms (fs=500Hz -> -50..+250 sam
 105 channels) with proper pre-fixation baseline. The dataset's per-fixation rawEEG is only fixation-
 length, too short for the 300-450 ms N400 window -> we MUST re-epoch from rawData.
 
-Outputs (per subject x task) in analysis/artifacts/frp/:
+Outputs (per subject x task) in artifacts/frp/:
   meta_<ZID>_<TASK>.parquet   word-level table (one row per first-fixation kept)
   frp_<ZID>_<TASK>.npy        float32 [n_rows, 105, 300], -100..+500 ms, raw (no baseline corr)
 Run:  python zuco/scripts/parse_frp.py NR    (or TSR, or ALL)
@@ -24,7 +24,7 @@ WIN = PRE + POST              # 300 samples
 NCH = 105
 from pathlib import Path
 ROOT = str(Path(__file__).resolve().parents[1])
-OUT = f'{ROOT}/analysis/artifacts/frp'
+OUT = f'{ROOT}/artifacts/frp'
 os.makedirs(OUT, exist_ok=True)
 
 def find_onset(seg, rd, atol=1e-3):

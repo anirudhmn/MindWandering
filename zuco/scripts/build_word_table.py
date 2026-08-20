@@ -12,8 +12,8 @@ import numpy as np, pandas as pd
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-FRP = ROOT/'analysis/artifacts/frp'
-ART = ROOT/'analysis/artifacts'
+FRP = ROOT/'artifacts/frp'
+ART = ROOT/'artifacts'
 OUT = ART/'tsr'; OUT.mkdir(exist_ok=True)
 
 SUBJS = ['ZAB','ZDM','ZDN','ZGW','ZJM','ZJN','ZJS','ZKB','ZKH','ZKW','ZMG','ZPH']
@@ -46,7 +46,7 @@ def roi_scalars(frp):
 # --- TSR relation labels (aligned to .mat sentence order = sent_idx) ---
 def load_rel():
     rows=[]
-    with open(ROOT/'analysis/materials/relations_labels_task3.csv',encoding='utf-8') as f:
+    with open(ROOT/'materials/relations_labels_task3.csv',encoding='utf-8') as f:
         f.readline()
         for line in f:
             p=line.rstrip('\n').split(';')

@@ -21,7 +21,7 @@ import pandas as pd
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 RD = ROOT / "reading_data"
 STIM = ROOT / "data" / "derivatives" / "stimuli" / "wiki_stories"
 OUT = ROOT / "roamm" / "artifacts" / "comprehension"

@@ -27,12 +27,22 @@ def bf01_ttest(d, r=0.7071):
 
 
 def pct_ci(d, base, n=10000):
-    """Bootstrap CI of the MW-minus-on-task difference, expressed as % of the on-task effect."""
+    """Bootstrap CI of the MW-minus-on-task difference, expressed as % of the on-task effect.
+
+    Also returns the 5th and 95th bootstrap percentiles, from which the one-sided 95% bound is
+    taken once the sign of the on-task effect is applied, and the smallest change the contrast
+    could have detected at 80% power. Both are reported in the manuscript equivalence table, so
+    they are computed here rather than derived by hand."""
     d = np.asarray(d, float); d = d[np.isfinite(d)]
     rng = np.random.default_rng(59)
     bm = d[rng.integers(0, len(d), size=(n, len(d)))].mean(axis=1) / abs(base) * 100
+    se = float(np.std(d, ddof=1) / np.sqrt(len(d)) / abs(base) * 100)
+    df = len(d) - 1
+    mde = float((stats.t.ppf(0.975, df) + stats.t.ppf(0.8, df)) * se)
     return dict(mean=float(d.mean() / abs(base) * 100),
-                ci=[float(np.percentile(bm, 2.5)), float(np.percentile(bm, 97.5))], n=int(len(d)))
+                ci=[float(np.percentile(bm, 2.5)), float(np.percentile(bm, 97.5))],
+                pct5=float(np.percentile(bm, 5)), pct95=float(np.percentile(bm, 95)),
+                mde_pct_80power=mde, n=int(len(d)))
 
 
 def tost(d, bound):

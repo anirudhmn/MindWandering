@@ -44,7 +44,7 @@ File names carry the draft numbering, not the printed numbering:
 paper/          manuscript, bibliography, figures, and the figure script
 roamm/          analysis of the primary dataset
   build/            raw recordings -> per-fixation, per-word and per-page tables
-  coupling/         the coupling instrument and the preserved-coupling tests
+  coupling/         the coupling instrument, the preserved-coupling tests, extended context
   comprehension/    page-level comprehension outcomes and inter-subject alignment
   selection_repair/ selection, repair and duration channels; the skipping audit
   localisation/     semantic importance, answer spans, and the localised MW cost
@@ -79,24 +79,45 @@ stimulus coordinate CSVs under `data/derivatives/stimuli/wiki_stories/`.
 **ZuCo.** `zuco/download_*.sh` fetch the MATLAB releases from OSF into `zuco/task*_matlab/`.
 `zuco/scripts/parse_frp.py` re-epochs fixation-related potentials from the sentence-continuous
 raw data, which is the only way to reach the N400 window; its per-subject `frp_*.npy` outputs are
-large and are not included, though the `meta_*.parquet` tables they pair with are.
+large and are not included, though the `meta_*.parquet` tables they pair with are. `zuco/RESULTS.md`
+is the numeric record for the control sample, including the two gate results the manuscript quotes
+that the shipped tables cannot regenerate (the cross-dataset frequency replication and the N400
+null, both of which need `frp_*.npy`).
 
 Order within `roamm/build/`: `word_features` → `surprisal_features` (GPT-2) →
-`extract_fixations` → `extract_frp_epochs` → `extract_frp_roi` → `build_reading_table` →
-`build_rerp`; `map_subject_ids` → `build_comprehension` → `build_answer_spans_v2` for the
+`extract_multiscale_surprisal` → `extract_fixations` → `extract_all_fixations` →
+`extract_frp_epochs` → `extract_frp_roi` → `build_reading_table` → `build_rerp` →
+`extract_dynamics`; `map_subject_ids` → `build_comprehension` → `build_answer_spans_v2` for the
 comprehension side. Stage scripts are numbered in their run order.
 
 ## What is and is not included
 
 Included: all analysis code behind the manuscript, the preregistration documents, the
-machine-readable result files, and the derived tables the figures need (about 100 MB, mostly
-`reading_fixations.parquet`, `fixations_frp.parquet`, `all_fixations.parquet`, `rerp_betas.npy`
-and `attention_index.parquet`).
+machine-readable result files, and the derived tables the figures and analyses need (about
+125 MB, mostly `reading_fixations.parquet`, `fixations_frp.parquet`, `all_fixations.parquet`,
+`fixations.parquet`, `rerp_betas.npy` and `attention_index.parquet`).
 
 Not included: the raw recordings of either dataset, single-trial EEG epochs, and analyses that
 are not reported in the manuscript.
 
-Two notes on provenance:
+## What has been checked
+
+Every result file in this repository was regenerated from the code and the shipped tables and
+compared against the version recorded here. All 24 scripts that can run without the raw
+recordings reproduce their outputs exactly, to floating-point noise, and the nine figures
+regenerate byte-identically. Every number in the manuscript was then traced to the result file
+that produces it. Five values in the manuscript were stale relative to the current code and were
+corrected to match it: three confidence intervals in Table 1, the equivalence-bound column of
+Table 1, one significance threshold in the skipping section, and the neural cell of the
+instructed-goal contrast.
+
+Three analyses cannot be rerun here because they need inputs that are not redistributed:
+`roamm/coupling/landmark_equivalence_and_waveforms.py` needs the single-trial epoch array,
+and `roamm/selection_repair/scripts/09_reviewer_checks.py`, `roamm/localisation/scripts/08*.py`
+and `roamm/comprehension/analyze_evidence_region.py` need the stimulus coordinate files from the
+dataset. Their stored outputs are included.
+
+One note on provenance:
 
 - `roamm/selection_repair/results/neural_power.json` is a summary assembled from
   `neural_deepdive.json` and `neural_equivalence.json`; the assembling step was not kept as a

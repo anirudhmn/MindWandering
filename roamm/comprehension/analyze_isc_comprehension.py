@@ -28,7 +28,7 @@ import statsmodels.api as sm
 from scipy import stats
 from statsmodels.genmod.bayes_mixed_glm import BinomialBayesMixedGLM
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "roamm" / "artifacts" / "comprehension"
 RNG = np.random.default_rng(77)
 NBOOT = 4000

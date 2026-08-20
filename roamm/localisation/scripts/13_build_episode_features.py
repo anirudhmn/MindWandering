@@ -69,7 +69,7 @@ print(f"\nbuilt {len(E)} (reader,item) rows | any page MW: {(E.mw_n_page>0).mean
 print(E[['ev_n_fix','mw_n_ev','ep_n_fix','post_n_fix','repair_ev_fix','pre_ev_fix']].describe().T.to_string())
 E.to_parquet(SP+'episodes.parquet')
 
-s = pd.read_parquet(SP+'sample2.parquet')
+s = pd.read_parquet(SP+'sample.parquet')
 m = s.merge(E, on=['sub_id','item'], how='inner', suffixes=('','_ep'))
 print(f"\nmerged with analysis sample: {len(m)} rows")
 print("check mw_n_ev>0 vs mw_frac_evidence>0 agreement:",

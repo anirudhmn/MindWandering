@@ -11,7 +11,7 @@ from transformers import GPT2LMHeadModel, GPT2TokenizerFast
 
 from pathlib import Path
 ROOT = str(Path(__file__).resolve().parents[1])
-OUT = f'{ROOT}/analysis/artifacts'
+OUT = f'{ROOT}/artifacts'
 CANON = {'NR': 'task2_NR_matlab/resultsZDM_NR.mat', 'TSR': 'task3_TSR_matlab/resultsZDM_TSR.mat',
          'SR': 'task1_SR_matlab/resultsZDM_SR.mat'}
 
