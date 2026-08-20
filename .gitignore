@@ -5,6 +5,7 @@ __pycache__/
 
 # raw and intermediate data (see README: not redistributed here)
 data/
+reading_data/
 zuco/task*_matlab/
 zuco/artifacts/frp/frp_*.npy
 

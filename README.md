@@ -74,7 +74,9 @@ Most analysis scripts run against the derived tables included here. The extracti
 **ROAMM.** Download `ds007629` from OpenNeuro into `data/`. `roamm/build/extract_fixations.py`
 and `extract_all_fixations.py` read the synchronised 256 Hz frame (`data/derivatives/features_df.pkl`,
 about 47 GB, and needs a machine that can hold a chunk of it); `word_features.py` reads the
-stimulus coordinate CSVs under `data/derivatives/stimuli/wiki_stories/`.
+stimulus coordinate CSVs under `data/derivatives/stimuli/wiki_stories/`. The comprehension
+scripts additionally expect the released trial table and item banks in `reading_data/`
+(`trial_level_data.csv` and `*_questions.xlsx`).
 
 **ZuCo.** `zuco/download_*.sh` fetch the MATLAB releases from OSF into `zuco/task*_matlab/`.
 `zuco/scripts/parse_frp.py` re-epochs fixation-related potentials from the sentence-continuous

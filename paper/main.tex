@@ -168,6 +168,258 @@ which we exploit in Section~\ref{sec:goal}.}
 \label{fig:design}
 \end{figure}
 
+\section{Methods}
+
+\subsection{Datasets}
+
+\paragraph{Primary sample.} We analysed the ROAMM dataset \citep{roammdata}: 44 adults read
+five Wikipedia articles, each divided into ten pages of about 220 words, presented as
+monospaced text. Reading was self-paced and page-wise. After each article, readers marked the
+spans of text during which their minds had wandered, and answered one multiple-choice
+comprehension question per page. Electroencephalography was recorded with a 64-channel
+BioSemi ActiveTwo system at 256\,Hz and binocular eye movements with an EyeLink 1000 Plus.
+The released derivative provides fixation events mapped to corpus word identifiers. We used
+all 404{,}557 first-pass fixations; 7.2\% fell inside a reported mind-wandering span. The
+Comprehension scores are used in Section~\ref{sec:comp}.
+
+\paragraph{Positive-control sample.} We used ZuCo 1.0 \citep{hollenstein2018}: 12 adults read
+isolated sentences under three tasks, with 105 usable channels of EEG at 500\,Hz and
+simultaneous eye tracking. Task 2 is normal reading of encyclopedic sentences, task 3 is a
+search for a named semantic relation in encyclopedic sentences, and task 1 is sentiment
+reading of film-review sentences. Task order was fixed for every reader: session one contained
+task 2 followed by the first half of task 1, and session two contained task 3 followed by the
+second half of task 1. We exploit that structure to separate task from session, splitting task
+1 at its sentence-index midpoint.
+
+\subsection{Linguistic predictors}
+
+Word frequency was the Zipf value from a large subtitle- and web-derived corpus
+\citep{vanheuven2014,brysbaert2018}. Contextual surprisal was the negative log probability of
+each word under GPT-2 \citep{radford2019}, conditioned on the preceding text within the
+article and with the sentence-initial token conditioned on a beginning-of-sequence marker.
+Sub-word tokens were mapped to words by maximum character overlap; a containment rule
+undercounts words because of the model's leading-space convention. Word length was in
+characters.
+
+\subsection{Defining the three eye-movement decisions}
+
+Reading positions were assigned in corpus order within each article. For each reader and
+article we took the ordered sequence of first-pass fixation positions.
+
+\emph{Selection.} For each forward step from position $p_i$ to $p_{i+1}>p_i$, the words
+strictly between were treated as stepped over. A word was scored as skipped if it was stepped
+over in a step spanning at most $G$ intervening words and never fixated, and as fixated
+otherwise. Words falling only inside steps larger than $G$ were excluded from the analysis set,
+since the reader is not demonstrated to have scanned them. The primary analysis used $G=4$;
+results are reported for $G\in\{1,2,3,4,6,10\}$. The naive alternative, in which any word in
+the reading span without a first-pass fixation counts as skipped, corresponds to
+$G=\infty$. Mind-wandering state for a stepped-over word was taken from the bounding
+fixations, and steps whose bounding fixations disagreed were excluded (3.4\% of steps).
+
+We also used a criterion that makes no reference to gap size. Word bounding-box tops were
+clustered into text lines within each page, with a tolerance of 40 pixels against a line
+spacing of about 90 pixels, because tops jitter by a few pixels with glyph height. A word was
+analysable if the reader fixated at least one word on the same line both before and after it.
+This yields the same conclusions and is reported alongside the gap criterion.
+
+Only fixations that the dataset providers could map to a word are present in the released
+derivative. We can therefore measure the interval between successive mapped fixations, but we
+cannot observe a fixation that fell outside every word bounding box. Our claim about off-text
+gaze is an inference from elapsed time: a fixation we cannot see would still occupy time, and
+the intervals we observe are too short to contain one.
+
+\emph{Duration.} Gaze duration was the sum of first-pass fixations on a word; first-fixation
+duration was the first of them. Analyses used the natural logarithm, with raw milliseconds
+reported alongside where the scale matters.
+
+\emph{Repair.} A corrective return was defined for every forward step that stepped over exactly
+one word: the event was coded 1 if any of the next five fixations landed on that word. We also
+computed the overall rate of backward steps and the rate of immediate refixation.
+
+\subsection{Coupling measures and inference}
+
+For the two binary decisions we used Somers' $D$, computed as $2A-1$ where $A$ is the
+probability that a randomly chosen positive case has a higher predictor value than a randomly
+chosen negative case \citep{somers1962}. It is invariant to monotone transformations of the
+predictor and to the base rate of the outcome, which matters here because the base rates
+differ between states. For duration we used ordinary least-squares slopes on standardised
+predictors, computed within reader and within state.
+
+Reader is the unit of inference throughout. We report the mean, a 95\% percentile interval
+from 10{,}000 reader-level bootstrap resamples, a paired $t$ test, and the number of readers
+showing the effect. Families of three tests were corrected by the Holm procedure
+\citep{holm1979}. Retention is the mind-wandering estimate divided by the on-task estimate,
+always computed on signed rather than absolute values, since ratios of absolute values are
+inflated when the underlying slopes are noisy.
+
+Nulls were supported rather than merely reported. We ran two one-sided tests against bounds of
+10\% and 20\% of the on-task effect \citep{lakens2017} and computed default Bayes factors for
+the paired difference with a Cauchy prior of scale $1/\sqrt{2}$ \citep{rouder2009}.
+
+\subsection{Within-token fixed-effects model}
+
+Because the same corpus token is read by many readers, mind-wandering status varies within
+token. We fitted
+\[
+\log(\text{gaze duration})_{ij}
+= \alpha_i + \gamma_j + \delta\,m_{ij} + \sum_k \theta_k\,m_{ij}z_{k,i} + \varepsilon_{ij},
+\]
+where $i$ indexes token instance, $j$ indexes reader, $m$ is the mind-wandering indicator and
+$z_k$ are standardised word properties. Token and reader effects were absorbed by alternating
+within-transformation, and standard errors were clustered on reader
+\citep{cameron2011}. Main effects of word properties are absorbed by the token effects, which
+is the point: the interaction is identified purely from readers who differ in state on the
+same physical word in the same position of the same page.
+
+\subsection{Control analyses}
+
+A relocation control tested whether the observed contrasts are specific to reported spans. For
+each reader we recorded the number and length of their mind-wandering spans, relocated each to
+a random on-task position within the same run, and recomputed the whole analysis. Two hundred
+relocations gave a null distribution for each contrast. We also repeated the primary analysis
+within tertiles of position through a run, restricted to spans marked as fully off-task, and
+leaving out each article in turn.
+
+For the interpretation of large positional gaps we computed, for every consecutive fixation
+pair, the interval between the end of one fixation and the start of the next, and tabulated it
+against gap size, state, and whether the pair crossed a page boundary.
+
+\subsection{Electrophysiology}
+
+Fixation-related potentials were epoched from $-100$ to $+500$\,ms around fixation onset. In
+natural reading successive fixations overlap, and the overlap is correlated with word
+properties because difficult words are fixated longer, so naive averages are not
+interpretable \citep{dimigen2011,dimigen2021}. We therefore estimated overlap-corrected
+kernels by linear deconvolution: a sparse finite-impulse-response design matrix was built over
+the epoch for an intercept and for each predictor, including the interactions with
+mind-wandering state, and solved by ridge-regularised normal equations for all channels at
+once \citep{smith2015,ehinger2019}.
+
+Regions of interest were fixed a priori: an occipitotemporal set analysed from 150 to 290\,ms
+for frequency, and a centroparietal set analysed from 300 to 450\,ms for surprisal. Beyond the
+regions of interest we ran cluster-based permutation tests over the full epoch and all channels
+with sign-flipping at the reader level \citep{maris2007}. Split-half reliability of the
+fixation-related potential was computed with trial counts matched between states.
+
+\subsection{Comprehension outcomes and answer spans}
+
+The released dataset records one four-option comprehension question per page. We parsed
+2{,}200 per-page outcomes and validated them against the shipped accuracy fields and against the
+item keys. One item was found to be mis-keyed and is excluded everywhere. The mapping between
+the physiology subject index and the released subject identifiers was recovered from a 50-page
+reading-duration fingerprint rather than assumed, and is bijective.
+
+Each item was localised to its answer-bearing sentences by a large language model
+\citep{claudeopus5} reading the full page alongside the question and its four options, and
+returning the page-local indices of the sentences a reader must have encoded in order to answer.
+The model also classified each item. A \emph{single-fact} item is stated by one sentence or two
+adjacent ones; an \emph{inferential} item follows from a few sentences without being stated in
+any; an \emph{integrative} item requires combining several; and a \emph{negated} item asks which
+option is not supported, so its answer span is the union of the sentences supporting the three
+true options. The annotation was run after the text-importance ratings used elsewhere had been
+frozen, so the question wording could not leak into them.
+
+The negated items are a built-in control on the whole approach. For them the prediction inverts:
+performance should track broad coverage of the page rather than dwell on any one span, because
+the reader has to check three separate statements. If the spans were noise, single-fact and
+negated items could not behave differently, and they do.
+
+Two checks bear on the annotation. A local language model scoring from the annotated sentences
+alone recovers the gold answer at 0.859, against 0.848 from the whole page, so the spans carry
+the answers. An independent annotation of the same 50 items, built automatically from sentence
+embeddings and inverse-document-frequency overlap with the question and its options and then
+hand-corrected where a fact is split across sentences, agrees with the model's spans on 32 items
+exactly and at a mean Jaccard overlap of 0.825; it reproduces the central null for \emph{reading}
+the answer span at the 39th percentile of the random-region distribution against the 38th
+reported here. The two annotations and the item-by-item comparison are included with the code.
+
+Trial-level models are linear probability models absorbing reader and item, with standard errors
+clustered by reader and confidence intervals from a reader-level bootstrap. The random-region
+control draws 1000 contiguous regions of the same word count from the same page and repeats the
+analysis on each. The overlap gradient regresses the effect obtained for each random region on
+that region's word overlap with the true answer span. The attributable fraction is a
+counterfactual from the fitted model with the answer-span mind-wandering term set to zero,
+bootstrapped over readers.
+
+\subsection{Topographic rescaling analysis}
+
+To ask whether mind-wandering changes the pattern or the size of the fixation-evoked response we
+computed, per reader, overlap-corrected fixation responses for on-task and mind-wandering
+fixations matched on frequency, length, surprisal and fixation duration. The difference field was
+tested with a sign-flip test on global field power, and its spatial pattern was correlated with
+the on-task fixation field over the same interval, with a bootstrap over readers.
+
+The proportional model estimates a single scalar $\alpha$ such that the difference field equals
+$-\alpha$ times the on-task field. It is fit leave-one-reader-out to avoid using a reader's own
+data in their own estimate. We report the variance of the group difference map that the rescaled
+on-task map accounts for, and we test the residual field after subtracting it with the same
+sign-flip procedure. Time-resolved differences use a familywise cluster correction across the
+epoch. Polarity is not retained when comparing topographies, because a polarity-preserving
+comparison confounds a change in sign with a change in configuration.
+
+\subsection{Index of text-driven reading}
+
+The index is fit only on on-task fixations and never sees a mind-wandering report. We regress log
+fixation duration on Zipf frequency, word length and contextual surprisal, with reader effects,
+over fixations of 50 to 1000\,ms with a mapped word and finite predictors. This yields, for each
+fixation, a duration predicted from the text alone.
+
+For each reader and run we then take a centred rolling window of 25 fixations and compute the
+slope of observed log duration on predicted log duration, with both quantities centred inside the
+window. Centring removes any additive change in reading speed, so the slope reflects only the
+degree to which word properties are currently governing behaviour. Windows with insufficient
+variance in the predicted values are dropped. Slopes are winsorised at the 1st and 99th
+percentiles and converted to a within-reader percentile, giving a 0 to 100 score. The comparison
+index is the within-reader percentile of raw log fixation duration over the same fixations.
+State contrasts are computed per reader and tested with a reader-level bootstrap.
+
+\subsection{Episode time course and effort targeting}
+
+Episodes were the maximal runs of consecutive fixations carrying a mind-wandering label. For
+each fixation we recorded elapsed time since the first fixation of its episode and binned it
+into 0--2, 2--5, 5--10 and beyond 10 seconds. Each reader's values were expressed relative to
+their own on-task mean and a linear trend across bins was fitted per reader. The null came from
+300 sets of matched on-task stretches drawn at random positions with lengths sampled from the
+observed episode-length distribution, analysed identically. Time on task was controlled by
+regressing each reader's regression indicator on their position through the run before binning.
+
+For the targeting analysis, words were split into quartiles of contextual surprisal within
+reader, and the mind-wandering minus on-task difference in each effort measure was computed per
+quartile, with a linear trend across quartiles fitted per reader. Extended-context integration
+was tested by decomposing GPT-2 surprisal into a within-sentence component and the additional
+reduction contributed by the preceding passage, then testing the interaction of the latter with
+mind-wandering.
+
+\subsection{State dynamics and inter-subject correlation}
+
+Peri-onset trajectories were computed over $\pm 8$\,s around the onset and offset of each
+reported span, z-scored within run, for pupil diameter and for band-limited power. Control
+onsets were drawn from on-task reading and matched on position within the run. Inter-subject
+correlation used a leave-one-reader-out group template of the response to each word. The
+template for a given reader was the mean over the other readers' \emph{on-task} readings of that
+word, requiring at least five contributors, so that it represents a normative response rather
+than a mixture of states. The target reader's words were then correlated with the template
+separately for each state, subsampling on-task words to match the mind-wandering count. Three
+versions of the response were used: raw log gaze duration, the same z-scored within reader and
+state, and the residual after regressing out frequency, length and surprisal. Specificity was
+tested by permuting the mind-wandering labels within reader at matched count.
+
+\subsection{Software}
+
+Analyses were run in Python with NumPy, SciPy, pandas, statsmodels and scikit-learn. Word
+frequencies came from \texttt{wordfreq} and contextual surprisal from GPT-2 as distributed with
+the \texttt{transformers} library. Scalp-field handling used MNE-Python.
+
+\subsection{Preregistration status}
+
+The analyses of the selection and repair channels were specified in a written plan, with gates
+and directional predictions taken from the published literature, before the corresponding
+analyses were run; that plan is included with the code. They are nevertheless exploratory with
+respect to this dataset, which has been analysed by us for other purposes. The comparison in
+the control sample was gate-declared. We report equivalence tests and Bayes factors for every
+null and regard preregistered replication as necessary.
+
+
 \section{Results}
 
 The order below follows that dissociation. The first two subsections establish the instrument
@@ -548,9 +800,12 @@ is 5.9 accuracy points ($p=0.006$), a within-cell permutation gives $p=0.014$, a
 graded with the amount of the page covered ($p=7.2\times10^{-4}$). It is specific to the page
 whose question is asked rather than to the rest of the story.
 
-The more informative question is where on the page it matters. We annotated each item with its answer-bearing sentences, a median of 21\% of the page, and
-validated the annotation independently. A language model scoring from those sentences alone
-recovers the gold answer at 0.859, against 0.848 from the whole page. The spans really do carry the answers.
+The more informative question is where on the page it matters. A large language model read each
+page against its question and marked the answer-bearing sentences, a median of 21\% of the page.
+Two checks say the spans are real. A second language model scoring from those sentences alone
+recovers the gold answer at 0.859, against 0.848 from the whole page, so the spans carry the
+answers. A separate annotation of the same items, built automatically from question-to-sentence
+overlap, agrees with them exactly on 32 of 50 and at a mean overlap of 0.825.
 
 Mind-wandering on the answer span cost $-0.073$ in accuracy (95\% CI $[-0.092, -0.053]$,
 $p=1.7\times10^{-13}$), with reader and item held constant. Mind-wandering elsewhere on the same
@@ -750,241 +1005,6 @@ still be useful, but it is a different quantity, and the distinction matters as 
 is asked to decide whether a reader has understood something rather than whether they are
 tired.
 
-\section{Methods}
-
-\subsection{Datasets}
-
-\paragraph{Primary sample.} We analysed the ROAMM dataset \citep{roammdata}: 44 adults read
-five Wikipedia articles, each divided into ten pages of about 220 words, presented as
-monospaced text. Reading was self-paced and page-wise. After each article, readers marked the
-spans of text during which their minds had wandered, and answered one multiple-choice
-comprehension question per page. Electroencephalography was recorded with a 64-channel
-BioSemi ActiveTwo system at 256\,Hz and binocular eye movements with an EyeLink 1000 Plus.
-The released derivative provides fixation events mapped to corpus word identifiers. We used
-all 404{,}557 first-pass fixations; 7.2\% fell inside a reported mind-wandering span. The
-Comprehension scores are used in Section~\ref{sec:comp}.
-
-\paragraph{Positive-control sample.} We used ZuCo 1.0 \citep{hollenstein2018}: 12 adults read
-isolated sentences under three tasks, with 105 usable channels of EEG at 500\,Hz and
-simultaneous eye tracking. Task 2 is normal reading of encyclopedic sentences, task 3 is a
-search for a named semantic relation in encyclopedic sentences, and task 1 is sentiment
-reading of film-review sentences. Task order was fixed for every reader: session one contained
-task 2 followed by the first half of task 1, and session two contained task 3 followed by the
-second half of task 1. We exploit that structure to separate task from session, splitting task
-1 at its sentence-index midpoint.
-
-\subsection{Linguistic predictors}
-
-Word frequency was the Zipf value from a large subtitle- and web-derived corpus
-\citep{vanheuven2014,brysbaert2018}. Contextual surprisal was the negative log probability of
-each word under GPT-2 \citep{radford2019}, conditioned on the preceding text within the
-article and with the sentence-initial token conditioned on a beginning-of-sequence marker.
-Sub-word tokens were mapped to words by maximum character overlap; a containment rule
-undercounts words because of the model's leading-space convention. Word length was in
-characters.
-
-\subsection{Defining the three eye-movement decisions}
-
-Reading positions were assigned in corpus order within each article. For each reader and
-article we took the ordered sequence of first-pass fixation positions.
-
-\emph{Selection.} For each forward step from position $p_i$ to $p_{i+1}>p_i$, the words
-strictly between were treated as stepped over. A word was scored as skipped if it was stepped
-over in a step spanning at most $G$ intervening words and never fixated, and as fixated
-otherwise. Words falling only inside steps larger than $G$ were excluded from the analysis set,
-since the reader is not demonstrated to have scanned them. The primary analysis used $G=4$;
-results are reported for $G\in\{1,2,3,4,6,10\}$. The naive alternative, in which any word in
-the reading span without a first-pass fixation counts as skipped, corresponds to
-$G=\infty$. Mind-wandering state for a stepped-over word was taken from the bounding
-fixations, and steps whose bounding fixations disagreed were excluded (3.4\% of steps).
-
-We also used a criterion that makes no reference to gap size. Word bounding-box tops were
-clustered into text lines within each page, with a tolerance of 40 pixels against a line
-spacing of about 90 pixels, because tops jitter by a few pixels with glyph height. A word was
-analysable if the reader fixated at least one word on the same line both before and after it.
-This yields the same conclusions and is reported alongside the gap criterion.
-
-Only fixations that the dataset providers could map to a word are present in the released
-derivative. We can therefore measure the interval between successive mapped fixations, but we
-cannot observe a fixation that fell outside every word bounding box. Our claim about off-text
-gaze is an inference from elapsed time: a fixation we cannot see would still occupy time, and
-the intervals we observe are too short to contain one.
-
-\emph{Duration.} Gaze duration was the sum of first-pass fixations on a word; first-fixation
-duration was the first of them. Analyses used the natural logarithm, with raw milliseconds
-reported alongside where the scale matters.
-
-\emph{Repair.} A corrective return was defined for every forward step that stepped over exactly
-one word: the event was coded 1 if any of the next five fixations landed on that word. We also
-computed the overall rate of backward steps and the rate of immediate refixation.
-
-\subsection{Coupling measures and inference}
-
-For the two binary decisions we used Somers' $D$, computed as $2A-1$ where $A$ is the
-probability that a randomly chosen positive case has a higher predictor value than a randomly
-chosen negative case \citep{somers1962}. It is invariant to monotone transformations of the
-predictor and to the base rate of the outcome, which matters here because the base rates
-differ between states. For duration we used ordinary least-squares slopes on standardised
-predictors, computed within reader and within state.
-
-Reader is the unit of inference throughout. We report the mean, a 95\% percentile interval
-from 10{,}000 reader-level bootstrap resamples, a paired $t$ test, and the number of readers
-showing the effect. Families of three tests were corrected by the Holm procedure
-\citep{holm1979}. Retention is the mind-wandering estimate divided by the on-task estimate,
-always computed on signed rather than absolute values, since ratios of absolute values are
-inflated when the underlying slopes are noisy.
-
-Nulls were supported rather than merely reported. We ran two one-sided tests against bounds of
-10\% and 20\% of the on-task effect \citep{lakens2017} and computed default Bayes factors for
-the paired difference with a Cauchy prior of scale $1/\sqrt{2}$ \citep{rouder2009}.
-
-\subsection{Within-token fixed-effects model}
-
-Because the same corpus token is read by many readers, mind-wandering status varies within
-token. We fitted
-\[
-\log(\text{gaze duration})_{ij}
-= \alpha_i + \gamma_j + \delta\,m_{ij} + \sum_k \theta_k\,m_{ij}z_{k,i} + \varepsilon_{ij},
-\]
-where $i$ indexes token instance, $j$ indexes reader, $m$ is the mind-wandering indicator and
-$z_k$ are standardised word properties. Token and reader effects were absorbed by alternating
-within-transformation, and standard errors were clustered on reader
-\citep{cameron2011}. Main effects of word properties are absorbed by the token effects, which
-is the point: the interaction is identified purely from readers who differ in state on the
-same physical word in the same position of the same page.
-
-\subsection{Control analyses}
-
-A relocation control tested whether the observed contrasts are specific to reported spans. For
-each reader we recorded the number and length of their mind-wandering spans, relocated each to
-a random on-task position within the same run, and recomputed the whole analysis. Two hundred
-relocations gave a null distribution for each contrast. We also repeated the primary analysis
-within tertiles of position through a run, restricted to spans marked as fully off-task, and
-leaving out each article in turn.
-
-For the interpretation of large positional gaps we computed, for every consecutive fixation
-pair, the interval between the end of one fixation and the start of the next, and tabulated it
-against gap size, state, and whether the pair crossed a page boundary.
-
-\subsection{Electrophysiology}
-
-Fixation-related potentials were epoched from $-100$ to $+500$\,ms around fixation onset. In
-natural reading successive fixations overlap, and the overlap is correlated with word
-properties because difficult words are fixated longer, so naive averages are not
-interpretable \citep{dimigen2011,dimigen2021}. We therefore estimated overlap-corrected
-kernels by linear deconvolution: a sparse finite-impulse-response design matrix was built over
-the epoch for an intercept and for each predictor, including the interactions with
-mind-wandering state, and solved by ridge-regularised normal equations for all channels at
-once \citep{smith2015,ehinger2019}.
-
-Regions of interest were fixed a priori: an occipitotemporal set analysed from 150 to 290\,ms
-for frequency, and a centroparietal set analysed from 300 to 450\,ms for surprisal. Beyond the
-regions of interest we ran cluster-based permutation tests over the full epoch and all channels
-with sign-flipping at the reader level \citep{maris2007}. Split-half reliability of the
-fixation-related potential was computed with trial counts matched between states.
-
-\subsection{Comprehension outcomes and answer spans}
-
-The released dataset records one four-option comprehension question per page. We parsed
-2{,}200 per-page outcomes and validated them against the shipped accuracy fields and against the
-item keys. One item was found to be mis-keyed and is excluded everywhere. The mapping between
-the physiology subject index and the released subject identifiers was recovered from a 50-page
-reading-duration fingerprint rather than assumed, and is bijective.
-
-Each item was localised to its answer-bearing sentences using sentence embeddings and
-inverse-document-frequency overlap with the question and its options, over the candidate
-sentences of that page. Seven items were hand-corrected where a fact is split across sentences.
-Items phrased with a negation were handled by taking the union of the sources of the true
-options. The annotation was validated by scoring a local language model on the evidence
-sentences alone and comparing with the full page.
-
-Trial-level models are linear probability models absorbing reader and item, with standard errors
-clustered by reader and confidence intervals from a reader-level bootstrap. The random-region
-control draws 1000 contiguous regions of the same word count from the same page and repeats the
-analysis on each. The overlap gradient regresses the effect obtained for each random region on
-that region's word overlap with the true answer span. The attributable fraction is a
-counterfactual from the fitted model with the answer-span mind-wandering term set to zero,
-bootstrapped over readers.
-
-\subsection{Topographic rescaling analysis}
-
-To ask whether mind-wandering changes the pattern or the size of the fixation-evoked response we
-computed, per reader, overlap-corrected fixation responses for on-task and mind-wandering
-fixations matched on frequency, length, surprisal and fixation duration. The difference field was
-tested with a sign-flip test on global field power, and its spatial pattern was correlated with
-the on-task fixation field over the same interval, with a bootstrap over readers.
-
-The proportional model estimates a single scalar $\alpha$ such that the difference field equals
-$-\alpha$ times the on-task field. It is fit leave-one-reader-out to avoid using a reader's own
-data in their own estimate. We report the variance of the group difference map that the rescaled
-on-task map accounts for, and we test the residual field after subtracting it with the same
-sign-flip procedure. Time-resolved differences use a familywise cluster correction across the
-epoch. Polarity is not retained when comparing topographies, because a polarity-preserving
-comparison confounds a change in sign with a change in configuration.
-
-\subsection{Index of text-driven reading}
-
-The index is fit only on on-task fixations and never sees a mind-wandering report. We regress log
-fixation duration on Zipf frequency, word length and contextual surprisal, with reader effects,
-over fixations of 50 to 1000\,ms with a mapped word and finite predictors. This yields, for each
-fixation, a duration predicted from the text alone.
-
-For each reader and run we then take a centred rolling window of 25 fixations and compute the
-slope of observed log duration on predicted log duration, with both quantities centred inside the
-window. Centring removes any additive change in reading speed, so the slope reflects only the
-degree to which word properties are currently governing behaviour. Windows with insufficient
-variance in the predicted values are dropped. Slopes are winsorised at the 1st and 99th
-percentiles and converted to a within-reader percentile, giving a 0 to 100 score. The comparison
-index is the within-reader percentile of raw log fixation duration over the same fixations.
-State contrasts are computed per reader and tested with a reader-level bootstrap.
-
-\subsection{Episode time course and effort targeting}
-
-Episodes were the maximal runs of consecutive fixations carrying a mind-wandering label. For
-each fixation we recorded elapsed time since the first fixation of its episode and binned it
-into 0--2, 2--5, 5--10 and beyond 10 seconds. Each reader's values were expressed relative to
-their own on-task mean and a linear trend across bins was fitted per reader. The null came from
-300 sets of matched on-task stretches drawn at random positions with lengths sampled from the
-observed episode-length distribution, analysed identically. Time on task was controlled by
-regressing each reader's regression indicator on their position through the run before binning.
-
-For the targeting analysis, words were split into quartiles of contextual surprisal within
-reader, and the mind-wandering minus on-task difference in each effort measure was computed per
-quartile, with a linear trend across quartiles fitted per reader. Extended-context integration
-was tested by decomposing GPT-2 surprisal into a within-sentence component and the additional
-reduction contributed by the preceding passage, then testing the interaction of the latter with
-mind-wandering.
-
-\subsection{State dynamics and inter-subject correlation}
-
-Peri-onset trajectories were computed over $\pm 8$\,s around the onset and offset of each
-reported span, z-scored within run, for pupil diameter and for band-limited power. Control
-onsets were drawn from on-task reading and matched on position within the run. Inter-subject
-correlation used a leave-one-reader-out group template of the response to each word. The
-template for a given reader was the mean over the other readers' \emph{on-task} readings of that
-word, requiring at least five contributors, so that it represents a normative response rather
-than a mixture of states. The target reader's words were then correlated with the template
-separately for each state, subsampling on-task words to match the mind-wandering count. Three
-versions of the response were used: raw log gaze duration, the same z-scored within reader and
-state, and the residual after regressing out frequency, length and surprisal. Specificity was
-tested by permuting the mind-wandering labels within reader at matched count.
-
-\subsection{Software and availability}
-
-Analyses were run in Python with NumPy, SciPy, pandas and scikit-learn. Analysis code and the
-derived tables needed to reproduce every figure are available at [repository]. The primary
-dataset is openly available \citep{roammdata} and the control dataset is distributed by its
-authors \citep{hollenstein2018}.
-
-\subsection{Preregistration status}
-
-The analyses of the selection and repair channels were specified in a written plan, with gates
-and directional predictions taken from the published literature, before the corresponding
-analyses were run; that plan is included with the code. They are nevertheless exploratory with
-respect to this dataset, which has been analysed by us for other purposes. The comparison in
-the control sample was gate-declared. We report equivalence tests and Bayes factors for every
-null and regard preregistered replication as necessary.
-
 \section*{Acknowledgements}
 
 [To be completed.]
@@ -996,6 +1016,12 @@ null and regard preregistered replication as necessary.
 \section*{Competing interests}
 
 The authors declare no competing interests.
+
+\section*{Data and code availability}
+
+The primary dataset is openly available \citep{roammdata} and the control dataset is distributed
+by its authors \citep{hollenstein2018}. Analysis code, the preregistration documents, and the
+derived tables needed to reproduce every figure are available at [repository].
 
 \bibliography{refs}
 
