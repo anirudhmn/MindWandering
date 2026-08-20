@@ -251,8 +251,10 @@ answer does not just fail to write the memory — it leaves something wrong behi
 
 Per-reader importance-tracking slopes are **not reliable** (split-half by story: refixation
 r=−0.18, gaze r=−0.32; Spearman-Brown negative), so the reader typology was abandoned as
-preregistered. For calibration, the *lexical* slopes are barely reliable either (zipf→refixation
-SB = 0.31), so this dataset does not support individual differences in coupling slopes at all.
+preregistered. For calibration, the *lexical* slopes are no better (zipf→refixation SB = 0.20,
+zipf→gaze SB = −0.17), and their between-reader standard deviation is effectively zero once
+lemma is absorbed, because frequency is a property of the lemma. This dataset does not support
+individual differences in coupling slopes at all.
 
 * Within-reader cost of a lapse landing on the answer: **+0.239** accuracy points
   [+0.171,+0.304], p=7.8e-8, 28/34 readers.

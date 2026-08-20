@@ -41,7 +41,9 @@ D["half"] = D["story_phys"].map({s: i % 2 for i, s in enumerate(stories)})
 
 
 def slope(g, outcome, pred):
-    cols = [pred] + COV
+    # the predictor must not also appear as a covariate: a duplicated column makes the
+    # normal equations singular and the split between the two copies numerically arbitrary
+    cols = [pred] + [c for c in COV if c != pred]
     if len(g) < 200:
         return np.nan
     M = absorb(np.column_stack([g[outcome].to_numpy(float)] + [g[c].to_numpy(float) for c in cols]),

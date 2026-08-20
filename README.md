@@ -102,14 +102,18 @@ are not reported in the manuscript.
 
 ## What has been checked
 
-Every result file in this repository was regenerated from the code and the shipped tables and
-compared against the version recorded here. All 24 scripts that can run without the raw
-recordings reproduce their outputs exactly, to floating-point noise, and the nine figures
-regenerate byte-identically. Every number in the manuscript was then traced to the result file
-that produces it. Five values in the manuscript were stale relative to the current code and were
-corrected to match it: three confidence intervals in Table 1, the equivalence-bound column of
-Table 1, one significance threshold in the skipping section, and the neural cell of the
-instructed-goal contrast.
+Every result file in this repository was regenerated from a fresh checkout and compared against
+the version recorded here. All 37 scripts that can run without the raw recordings succeed, and
+their outputs agree to floating-point noise; the nine figures regenerate byte-identically. Every
+number in the manuscript was then traced to the result file that produces it.
+
+Five values in the manuscript were stale relative to the current code and were corrected to match
+it: three confidence intervals in Table 1, the equivalence-bound column of Table 1, one
+significance threshold in the skipping section, and the neural cell of the instructed-goal
+contrast. One analysis was wrong rather than stale: in `10_readers.py` the predictor of interest
+also appeared in its own covariate list, which made the normal equations singular and the
+per-reader frequency slopes unstable between runs. It is fixed, and the affected reliability
+figures in `roamm/localisation/RESULTS.md` are updated. No manuscript claim depended on them.
 
 Three analyses cannot be rerun here because they need inputs that are not redistributed:
 `roamm/coupling/landmark_equivalence_and_waveforms.py` needs the single-trial epoch array,
@@ -117,7 +121,7 @@ and `roamm/selection_repair/scripts/09_reviewer_checks.py`, `roamm/localisation/
 and `roamm/comprehension/analyze_evidence_region.py` need the stimulus coordinate files from the
 dataset. Their stored outputs are included.
 
-One note on provenance:
+Two notes on provenance:
 
 - `roamm/selection_repair/results/neural_power.json` is a summary assembled from
   `neural_deepdive.json` and `neural_equivalence.json`; the assembling step was not kept as a

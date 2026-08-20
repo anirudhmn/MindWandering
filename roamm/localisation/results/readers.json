@@ -2,31 +2,31 @@
   "A_reliability": {
     "refix__importance_llm_z": {
       "n_readers": 44,
-      "split_half_r": -0.17876294084032293,
-      "spearman_brown": -0.43535039936760866,
-      "between_reader_sd": 0.01174522759297766,
-      "mean": 0.005224163912136318
+      "split_half_r": -0.17876294084032104,
+      "spearman_brown": -0.43535039936760306,
+      "between_reader_sd": 0.01174522759297765,
+      "mean": 0.005224163912136303
     },
     "refix__zipf_z": {
       "n_readers": 44,
-      "split_half_r": 0.1863976076966749,
-      "spearman_brown": 0.31422451712214006,
-      "between_reader_sd": 7.090167463562177e-19,
-      "mean": 6.135967869086701e-20
+      "split_half_r": 0.11278487599312666,
+      "spearman_brown": 0.20270742068177297,
+      "between_reader_sd": 8.338329538716287e-19,
+      "mean": 1.0310771494923135e-20
     },
     "log_gaze__importance_llm_z": {
       "n_readers": 44,
-      "split_half_r": -0.3195801503820219,
-      "spearman_brown": -0.939361632560985,
-      "between_reader_sd": 0.013714139994407359,
-      "mean": 0.005149484653676986
+      "split_half_r": -0.3195801503820227,
+      "spearman_brown": -0.9393616325609885,
+      "between_reader_sd": 0.01371413999440733,
+      "mean": 0.005149484653676941
     },
     "log_gaze__zipf_z": {
       "n_readers": 44,
-      "split_half_r": 0.168293710281721,
-      "spearman_brown": 0.28810171415052616,
-      "between_reader_sd": 1.4228706541345908e-18,
-      "mean": 1.0760401734347605e-19
+      "split_half_r": -0.07683105700901881,
+      "spearman_brown": -0.1664506970091376,
+      "between_reader_sd": 1.2999678445655178e-18,
+      "mean": -3.732414049611638e-20
     }
   },
   "A_VERDICT": "typology abandoned: per-reader importance slopes are not reliable",
@@ -41,7 +41,7 @@
         0.3035858009394992
       ],
       "t": 6.863464557948272,
-      "p": 7.78524671522031e-08,
+      "p": 7.785246715220315e-08,
       "n": 34,
       "n_pos": 28
     },
@@ -56,24 +56,24 @@
     ],
     "frac_mw_landing_on_answer_mean": 0.49863081270829157,
     "corr_mwrate_vs_accuracy": {
-      "r": -0.32258809511361364,
+      "r": -0.32258809511361375,
       "p": 0.03270658758588186
     },
     "corr_hitrate_vs_accuracy": {
-      "r": -0.08100358298610341,
+      "r": -0.08100358298610343,
       "p": 0.6011768921719205
     }
   },
   "B_reader_regression": {
     "mw_frac_all": {
-      "beta": -0.5577804756663984,
+      "beta": -0.5577804756663991,
       "p": 0.09902949744766831
     },
     "hit_rate_given_mw": {
-      "beta": 0.00608376097057399,
-      "p": 0.9646275675089782
+      "beta": 0.006083760970574115,
+      "p": 0.9646275675089775
     },
-    "r2": 0.07110651053213346,
+    "r2": 0.07110651053213357,
     "n": 44
   }
 }
