@@ -12,14 +12,14 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from matplotlib.patches import FancyArrowPatch, Rectangle
 
-ROOT = Path("/Users/anirudh/Desktop/PhD/ROAMM")
-COUP = ROOT / "roamm_research/artifacts/coupling"
-IT59 = ROOT / "roamm_research/iteration59_selection_channel"
-IT60 = ROOT / "roamm_research/iteration60_importance"
-IT63 = ROOT / "roamm_research/iteration63_neuroscience"
-IT64 = ROOT / "roamm_research/iteration64_detect_vs_harm"
-ZA = ROOT / "zuco/analysis/artifacts"
-OUT = ROOT / "paper/figs"
+ROOT = Path(__file__).resolve().parents[1]
+COUP = ROOT / "roamm/artifacts/coupling"
+IT59 = ROOT / "roamm/selection_repair"
+IT60 = ROOT / "roamm/localisation"
+IT63 = ROOT / "roamm/topography"
+IT64 = ROOT / "roamm/attention_index"
+ZA = ROOT / "zuco/artifacts"
+OUT = ROOT / "figures/out"
 OUT.mkdir(parents=True, exist_ok=True)
 
 plt.rcParams.update({

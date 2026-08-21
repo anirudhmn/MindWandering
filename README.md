@@ -1,7 +1,8 @@
 # Mind-wandering preserves word-level coupling
 
 Version 1.0. Analysis code and derived tables for the manuscript *Mind-wandering preserves
-word-level coupling but produces localized comprehension failure*.
+word-level coupling but produces localized comprehension failure*. This repository holds the
+code and the numeric record only; the manuscript itself is not distributed here.
 
 Two simultaneous eye-tracking and EEG datasets are used. The primary sample is
 **ROAMM** (OpenNeuro `ds007629`): 44 adults reading five Wikipedia articles page by page,
@@ -9,20 +10,17 @@ marking afterwards the spans over which their minds had wandered, and answering 
 multiple-choice question per page. The control sample is **ZuCo 1.0**, which contributes an
 instructed shallow-reading condition.
 
-The manuscript source is in `paper/`. `paper/main.pdf` is the current build.
-
 ## Reproducing the figures
 
 The derived tables the figures read are in the repository, so this needs no raw data:
 
 ```bash
 pip install -r requirements.txt
-python paper/make_figures.py
+python figures/make_figures.py
 ```
 
-About five seconds; writes `fig1..fig9` to `paper/figs/` as PDF and PNG and reproduces every
-number printed in the figures. `paper/main.tex` builds with pdfLaTeX and BibTeX (`latexmk -pdf
-main.tex` from `paper/`); it uses no non-standard packages.
+About five seconds; writes `fig1..fig9` to `figures/out/` as PDF and PNG and reproduces every
+number printed in them.
 
 File names carry the draft numbering, not the printed numbering:
 
@@ -41,7 +39,7 @@ File names carry the draft numbering, not the printed numbering:
 ## Layout
 
 ```
-paper/          manuscript, bibliography, figures, and the figure script
+figures/        the figure script; writes to figures/out/
 roamm/          analysis of the primary dataset
   build/            raw recordings -> per-fixation, per-word and per-page tables
   coupling/         the coupling instrument, the preserved-coupling tests, extended context
@@ -146,6 +144,11 @@ Two notes on provenance:
 - `roamm/selection_repair/results/neural_power.json` is a summary assembled from
   `neural_deepdive.json` and `neural_equivalence.json`; the assembling step was not kept as a
   script. Its inputs and the scripts that produce them are here.
+- `roamm/encoding/results/lm_layers.json` and `nonlinearity.json` were produced by the run the
+  reported numbers come from, rather than by a fresh execution of the scripts as they stand.
+  The scripts regenerate them, but only from the intermediates of that stage, which are too
+  large to redistribute. Every other result file in `roamm/encoding/` and all of
+  `roamm/omnibus/` was regenerated from a clean checkout and agrees with the record here.
 - Some linguistic annotations were produced by a language model, which is stated in the
   docstring of each script that did so (`roamm/localisation/scripts/01_annotate_importance.py`,
   `03_annotate_qwen.py`, `04_annotate_evidence.py`). `03_annotate_qwen.py` is the fully
@@ -153,10 +156,10 @@ Two notes on provenance:
 
 ## Citation
 
-The datasets are cited in `paper/refs.bib` as `roammdata` (ROAMM, OpenNeuro ds007629) and
-`hollenstein2018` (ZuCo 1.0). Please cite them alongside this repository.
+See `CITATION.cff`. Please cite the two datasets alongside this repository: ROAMM, OpenNeuro
+`ds007629` version 1.3.0 (doi:10.18112/openneuro.ds007629.v1.3.0), and ZuCo 1.0
+(Hollenstein et al., *Scientific Data* 5:180291, 2018; https://osf.io/2urht/).
 
 ## Licence
 
-Code is released under the MIT Licence (`LICENSE`). The manuscript text and figures in `paper/`
-are © the authors.
+Code is released under the MIT Licence (`LICENSE`).

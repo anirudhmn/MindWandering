@@ -26,7 +26,7 @@ import pandas as pd
 from scipy import stats
 import sys, pathlib
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
-from common import ART, COUP, RES, build_XtX, fit_ridge, predict_run, boot_ci
+from common import ART, COUP, RES, build_XtX, fit_ridge, predict_run, boot_ci, boot_ratio
 
 LAGS = np.arange(0, 129)
 NL = len(LAGS)
@@ -122,12 +122,13 @@ def main():
                         else np.nan for s in subs])
         ok = np.isfinite(don) & np.isfinite(dmw)
         gate = boot_ci(don)
-        diff = boot_ci(dmw[ok] - don[ok])
+        ret = boot_ratio(dmw[ok], don[ok])
         out[str(l)] = dict(evr=feats[l]["evr"], D_on=float(don.mean()),
                            D_mw=float(np.nanmean(dmw)), t=gate["t"], p=gate["p"],
                            readers_positive=int((don > 0).sum()),
-                           retention=float(np.nanmean(dmw) / don.mean()),
-                           mde80_pct=float(100 * 2.802 * diff["sd"] / abs(don.mean())),
+                           retention=ret["retention"], retention_ci=ret["ci"],
+                           one_sided_lower_95=ret["one_sided_lower_95"],
+                           mde80_pct=ret["mde80_pct"],
                            beats_word_properties=bool(don.mean() > ref))
         print(f"layer {l:2d}: D_on={don.mean():+.6f} (t={gate['t']:.1f}, "
               f"{int((don>0).sum())}/{len(subs)})  retention={out[str(l)]['retention']:+.3f}  "
