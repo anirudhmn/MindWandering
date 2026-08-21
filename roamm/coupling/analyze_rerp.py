@@ -4,7 +4,7 @@
 For each subject we have deconvolved kernels beta_p(tau, channel). Tests:
  1. Sanity: on-task surprisal kernel = N400 (centroparietal negativity ~300-450 ms),
     frequency kernel = occipitotemporal effect ~150-290 ms. Group one-sample tests.
- 2. LANDMARK FORK: surprisal:mw interaction kernel over the N400 ROI/window — does deep
+ 2. TIER-1 FORK: surprisal:mw interaction kernel over the N400 ROI/window — does deep
     semantic coupling selectively decouple during MW once overlap is removed?
     Reported with (a) a-priori ROI/window t-test, (b) cluster-based permutation across
     time on the ROI (sign-flip, 5000 perms), (c) fraction of on-task slope (equivalence).

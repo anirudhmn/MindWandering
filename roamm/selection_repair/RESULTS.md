@@ -176,7 +176,7 @@ midpoint isolates the two:
 | NR → TSR (headline) | task + session | 62.3% | 1.7e-4 | 62.7% | 7.4e-5 |
 | NR → SR-h1 | **materials, within session 1** | 110.5% | .054 | 134.2% | 2.0e-4 |
 
-Three consequences for the existing landmark:
+Three consequences for the existing coupling result:
 
 1. **There is a real session effect** — coupling drops ~15–17% from session 1 to session 2
    with task and materials held constant. `GATE_G7` therefore records a FAIL on its

@@ -1,0 +1,10 @@
+{
+  "n_transitions_all": 396202,
+  "n_transitions": 392766,
+  "window": 20,
+  "n_candidates": 41,
+  "target_agreement": 1.0,
+  "mw_rate": 0.07243498673510436,
+  "n_subjects": 44,
+  "n_words": 10839
+}

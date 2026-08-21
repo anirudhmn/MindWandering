@@ -21,3 +21,8 @@ paper/*.synctex.gz
 
 # stage figure side-outputs
 roamm/*/figures/
+
+# large rebuildable intermediates of the omnibus and encoding stages
+roamm/omnibus/artifacts/policy_cand_widx.npy
+roamm/omnibus/artifacts/policy_cand_prior.npy
+roamm/encoding/artifacts/

@@ -1,7 +1,7 @@
-# Keeping the words, losing the thread
+# Mind-wandering preserves word-level coupling
 
-Analysis code and derived tables for the manuscript *Keeping the words, losing the thread:
-word-level coupling survives mind-wandering while comprehension fails where the mind was*.
+Version 1.0. Analysis code and derived tables for the manuscript *Mind-wandering preserves
+word-level coupling but produces localized comprehension failure*.
 
 Two simultaneous eye-tracking and EEG datasets are used. The primary sample is
 **ROAMM** (OpenNeuro `ds007629`): 44 adults reading five Wikipedia articles page by page,
@@ -50,6 +50,8 @@ roamm/          analysis of the primary dataset
   localisation/     semantic importance, answer spans, and the localised MW cost
   topography/       reference-invariant scalp-field tests of the fixation response
   attention_index/  the label-free index of text-driven reading
+  omnibus/          the model-based omnibus coupling test; Table 1's omnibus rows and S10
+  encoding/         the pooled deconvolutional encoding model; S11
   artifacts/        derived tables shared across stages
 zuco/           control-dataset extraction and the instructed-goal contrast
 ```
@@ -59,6 +61,7 @@ Every script is run **from the repository root**, which is where its relative pa
 ```bash
 python roamm/coupling/lmm_coupling.py
 python roamm/selection_repair/scripts/02_g1_selection.py
+python roamm/omnibus/scripts/02_state_tests.py --tag real
 ```
 
 Each analysis stage keeps its own `results/` (machine-readable JSON and CSV, one file per test)
@@ -86,6 +89,19 @@ is the numeric record for the control sample, including the two gate results the
 that the shipped tables cannot regenerate (the cross-dataset frequency replication and the N400
 null, both of which need `frp_*.npy`).
 
+**The omnibus stage** (`roamm/omnibus/`) ships the per-transition read-outs, so
+`02_state_tests.py` and `03_robustness.py` reproduce every omnibus number in the manuscript with
+no raw data and no refitting. `00_build_transitions.py` rebuilds the candidate sets from the
+shared tables; `01_fit_policy.py` refits the twenty held-out models and wants an accelerator,
+taking a few minutes per fold. Run it with `--shuffle 1 --tag shuf1` for the negative control.
+
+**The encoding stage** (`roamm/encoding/`) is the one stage whose intermediates are too large to
+redistribute: a 12 GB preprocessed recording, a 6 GB residual cache and a 400 MB array of
+language-model states. Its `results/` files are included, and `01_cache_eeg.py` through
+`06_nonlinearity.py` regenerate them in order from the raw dataset. `00_validate_solver.py`
+should be run first: it checks the fast deconvolution against the frozen kernels in
+`roamm/artifacts/coupling/rerp_betas.npy`, and everything else depends on that holding.
+
 Order within `roamm/build/`: `word_features` → `surprisal_features` (GPT-2) →
 `extract_multiscale_surprisal` → `extract_fixations` → `extract_all_fixations` →
 `extract_frp_epochs` → `extract_frp_roi` → `build_reading_table` → `build_rerp` →
@@ -96,11 +112,13 @@ comprehension side. Stage scripts are numbered in their run order.
 
 Included: all analysis code behind the manuscript, the preregistration documents, the
 machine-readable result files, and the derived tables the figures and analyses need (about
-125 MB, mostly `reading_fixations.parquet`, `fixations_frp.parquet`, `all_fixations.parquet`,
-`fixations.parquet`, `rerp_betas.npy` and `attention_index.parquet`).
+250 MB, mostly `reading_fixations.parquet`, `fixations_frp.parquet`, `all_fixations.parquet`,
+`fixations.parquet`, `saccades.parquet`, `rerp_betas.npy`, `attention_index.parquet` and the two
+per-transition read-outs of the omnibus stage).
 
-Not included: the raw recordings of either dataset, single-trial EEG epochs, and analyses that
-are not reported in the manuscript.
+Not included: the raw recordings of either dataset, single-trial EEG epochs, the preprocessed
+continuous recording and residual cache of the encoding stage, the language-model state array,
+and analyses that are not reported in the manuscript.
 
 ## What has been checked
 
@@ -118,7 +136,7 @@ per-reader frequency slopes unstable between runs. It is fixed, and the affected
 figures in `roamm/localisation/RESULTS.md` are updated. No manuscript claim depended on them.
 
 Three analyses cannot be rerun here because they need inputs that are not redistributed:
-`roamm/coupling/landmark_equivalence_and_waveforms.py` needs the single-trial epoch array,
+`roamm/coupling/coupling_equivalence_and_waveforms.py` needs the single-trial epoch array,
 and `roamm/selection_repair/scripts/09_reviewer_checks.py`, `roamm/localisation/scripts/08*.py`
 and `roamm/comprehension/analyze_evidence_region.py` need the stimulus coordinate files from the
 dataset. Their stored outputs are included.

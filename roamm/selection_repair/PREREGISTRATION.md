@@ -6,7 +6,7 @@ treated here as an unvalidated pilot, not as evidence).
 
 ## Motivation
 
-The 2×2 landmark tests word→eye coupling in **fixation duration, conditional on the word
+The 2×2 coupling result tests word→eye coupling in **fixation duration, conditional on the word
 being fixated**. The mind-wandering literature (Mézière et al., 2025, *Memory & Cognition*
 meta-analysis; Reichle, Reineberg & Schooler, 2010; the cascade model of inattention)
 localises mindless-reading decoupling in two other channels:

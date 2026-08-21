@@ -43,7 +43,7 @@ dissociation that separates task-shallow reading from spontaneous MW.**
   larger (NR +0.139 -> TSR +0.193, p=0.23; 58% of subjects up). The brain still lexically registers each
   fixated word identically.
 
-## Synthesis (cross-dataset landmark framing — exploratory)
+## Synthesis (cross-dataset synthesis framing — exploratory)
 Two forms of reduced engagement, two signatures:
 - **Spontaneous MW (ROAMM):** purely ADDITIVE — uniform slowing; behavioral AND neural coupling slopes
   intact (freq×MW p=0.78, surprisal×MW p=0.28 n.s.).

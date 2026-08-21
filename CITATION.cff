@@ -1,0 +1,48 @@
+cff-version: 1.2.0
+title: >-
+  Analysis code for "Mind-wandering preserves word-level coupling but produces localized
+  comprehension failure"
+message: If you use this code, please cite the paper and both datasets.
+type: software
+version: "1.0"
+license: MIT
+repository-code: https://github.com/anirudhmn/MindWandering
+authors:
+  - family-names: Natarajan
+    given-names: Anirudh
+    affiliation: Department of Biomedical Engineering, Columbia University
+    email: amn2225@columbia.edu
+  - family-names: Sajda
+    given-names: Paul
+    affiliation: Department of Biomedical Engineering, Columbia University
+references:
+  - type: data
+    title: "ROAMM: Reading Observed At Mindless Moments"
+    version: 1.3.0
+    doi: 10.18112/openneuro.ds007629.v1.3.0
+    url: https://openneuro.org/datasets/ds007629/versions/1.3.0
+    authors:
+      - family-names: Sun
+        given-names: Haorui
+      - family-names: Olszko
+        given-names: Ardyn Vivienne
+      - family-names: Singh
+        given-names: Niharika
+      - family-names: Jangraw
+        given-names: David C.
+  - type: data
+    title: "ZuCo: Zurich Cognitive Language Processing Corpus"
+    url: https://osf.io/2urht/
+    authors:
+      - family-names: Hollenstein
+        given-names: Nora
+      - family-names: Rotsztejn
+        given-names: Jonathan
+      - family-names: Troendle
+        given-names: Marius
+      - family-names: Pedroni
+        given-names: Andreas
+      - family-names: Zhang
+        given-names: Ce
+      - family-names: Langer
+        given-names: Nicolas

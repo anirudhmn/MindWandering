@@ -12,14 +12,14 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from matplotlib.patches import FancyArrowPatch, Rectangle
 
-ROOT = Path(__file__).resolve().parents[1]
-COUP = ROOT / "roamm/artifacts/coupling"
-SEL  = ROOT / "roamm/selection_repair"
-LOC  = ROOT / "roamm/localisation"
-TOP  = ROOT / "roamm/topography"
-ATT  = ROOT / "roamm/attention_index"
-ZA   = ROOT / "zuco/artifacts"
-OUT  = ROOT / "paper/figs"
+ROOT = Path("/Users/anirudh/Desktop/PhD/ROAMM")
+COUP = ROOT / "roamm_research/artifacts/coupling"
+IT59 = ROOT / "roamm_research/iteration59_selection_channel"
+IT60 = ROOT / "roamm_research/iteration60_importance"
+IT63 = ROOT / "roamm_research/iteration63_neuroscience"
+IT64 = ROOT / "roamm_research/iteration64_detect_vs_harm"
+ZA = ROOT / "zuco/analysis/artifacts"
+OUT = ROOT / "paper/figs"
 OUT.mkdir(parents=True, exist_ok=True)
 
 plt.rcParams.update({
@@ -29,7 +29,7 @@ plt.rcParams.update({
     "xtick.labelsize": 7.5, "ytick.labelsize": 7.5, "legend.fontsize": 7,
     "axes.titlesize": 8.5, "axes.labelsize": 8,
 })
-ON, MW, GOAL, GREY = "#3B6EA5", "#C0392B", "#7D3C98", "#7F8C8D"
+ON, MW, GOAL, GRAY = "#3B6EA5", "#C0392B", "#7D3C98", "#7F8C8D"
 CM = 1 / 2.54
 
 
@@ -49,30 +49,30 @@ def _auc(y, score):
     return (r[y].sum() - n1 * (n1 + 1) / 2) / (n1 * n0)
 
 
-g0 = json.load(open(SEL / "results/g0_skip_audit.json"))
-g0b = json.load(open(SEL / "results/g0b_traversal.json"))
-g1 = json.load(open(SEL / "results/g1_selection.json"))
-g4 = json.load(open(SEL / "results/g4_repair.json"))
-g56 = json.load(open(SEL / "results/g5_g6_duration.json"))
-g7 = json.load(open(SEL / "results/g7_zuco_session.json"))
-neq = json.load(open(SEL / "results/neural_equivalence.json"))
+g0 = json.load(open(IT59 / "results/g0_skip_audit.json"))
+g0b = json.load(open(IT59 / "results/g0b_traversal.json"))
+g1 = json.load(open(IT59 / "results/g1_selection.json"))
+g4 = json.load(open(IT59 / "results/g4_repair.json"))
+g56 = json.load(open(IT59 / "results/g5_g6_duration.json"))
+g7 = json.load(open(IT59 / "results/g7_zuco_session.json"))
+neq = json.load(open(IT59 / "results/neural_equivalence.json"))
 isc = json.load(open(COUP / "isc_report.json"))
 iscv = json.load(open(COUP / "isc_verify_report.json"))
 rerp = json.load(open(COUP / "rerp_report.json"))
 lmm = json.load(open(COUP / "lmm_report.json"))
-land = json.load(open(COUP / "landmark_summary.json"))
-Dsom = pd.read_csv(SEL / "artifacts/somersD_primary.csv")
-rev = json.load(open(SEL / "results/reviewer_checks.json"))
-npow = json.load(open(SEL / "results/neural_power.json"))
-mech = json.load(open(SEL / "results/mechanism_tests.json"))
-mctl = json.load(open(SEL / "results/mechanism_controls.json"))
+land = json.load(open(COUP / "coupling_summary.json"))
+Dsom = pd.read_csv(IT59 / "artifacts/somersD_primary.csv")
+rev = json.load(open(IT59 / "results/reviewer_checks.json"))
+npow = json.load(open(IT59 / "results/neural_power.json"))
+mech = json.load(open(IT59 / "results/mechanism_tests.json"))
+mctl = json.load(open(IT59 / "results/mechanism_controls.json"))
 
 # ----------------------------------------------- artifacts for the 2026-08 sections
-topo = json.load(open(TOP / "results/topographic_rerp_report.json"))
-mwloc = json.load(open(LOC / "results/mw_localisation_deepen.json"))
-mwctl = json.load(open(LOC / "results/mw_localisation_control.json"))
-outc = json.load(open(LOC / "results/outcome.json"))
-GRAD = pd.read_csv(LOC / "results/mw_overlap_gradient.csv")
+topo = json.load(open(IT63 / "results/topographic_rerp_report.json"))
+mwloc = json.load(open(IT60 / "results/mw_localisation_deepen.json"))
+mwctl = json.load(open(IT60 / "results/mw_localisation_control.json"))
+outc = json.load(open(IT60 / "results/outcome.json"))
+GRAD = pd.read_csv(IT60 / "results/mw_overlap_gradient.csv")
 
 OCC_ROI = ["PO7", "PO8", "PO3", "PO4", "O1", "O2", "Oz", "POz", "P7", "P8", "P9", "P10", "Iz"]
 BOOT = 20000
@@ -106,7 +106,7 @@ _ZB = {}
 
 def zuco_behaviour():
     """Per-reader frequency slope on log gaze duration in ZuCo, normal reading vs
-    instructed relation search. Recomputed exactly as in the selection and repair analysis, script 05."""
+    instructed relation search. Recomputed exactly as in iteration 59, script 05."""
     if _ZB:
         return _ZB["NR"], _ZB["TSR"]
     recs = []
@@ -155,10 +155,10 @@ def zuco_occ_frequency():
 
 def attention_index():
     """The text-driven and level-based indices, one row per fixation."""
-    f = ATT / "results/attention_index.parquet"
+    f = IT64 / "results/attention_index.parquet"
     if not f.exists():
-        raise SystemExit(f"missing {f}: run roamm/attention_index/"
-                         "scripts/01_text_attention.py first")
+        raise SystemExit(f"missing {f}: run roamm_research/iteration64_detect_vs_harm/"
+                         "scripts/25_text_attention.py first")
     return pd.read_parquet(f)
 
 
@@ -206,7 +206,7 @@ def figure1():
     skipped = {2, 5, 7}
     for i, xx in enumerate(xs):
         if i in skipped:
-            ax.plot(xx, 0.55, "x", ms=5, color=GREY, mew=1.3)
+            ax.plot(xx, 0.55, "x", ms=5, color=GRAY, mew=1.3)
         else:
             ax.plot(xx, 0.55, "o", ms=4.5, color=ON, zorder=3)
     ax.annotate("", xy=(3.0, 0.95), xytext=(1.0, 0.95),
@@ -229,8 +229,8 @@ def figure1():
     ax.text(2.85, 0.36, "reported", fontsize=6.2, color=MW, ha="center")
     ax.text(0, 0.94, "ROAMM", fontsize=8, fontweight="bold")
     ax.text(2.3, 0.94, "44 readers, 5 articles", fontsize=6.8)
-    ax.text(0, 0.14, "continuous self-paced reading, retrospective spans", fontsize=6.4, color=GREY)
-    ax.text(0, -0.02, "64-channel EEG, 404,557 first-pass fixations", fontsize=6.4, color=GREY)
+    ax.text(0, 0.14, "continuous self-paced reading, retrospective spans", fontsize=6.4, color=GRAY)
+    ax.text(0, -0.02, "64-channel EEG, 404,557 first-pass fixations", fontsize=6.4, color=GRAY)
     ax.set_xlim(0, 10.2); ax.set_ylim(-0.12, 1.10); ax.axis("off")
     ax.set_title("Spontaneous disengagement", loc="left")
 
@@ -242,11 +242,11 @@ def figure1():
         ax.add_patch(Rectangle((i * 2.5, 0.46), 2.1, 0.34, fc=c, alpha=0.30, ec="k", lw=0.7))
         ax.text(i * 2.5 + 1.05, 0.68, t, ha="center", va="center", fontsize=7, fontweight="bold")
         ax.text(i * 2.5 + 1.05, 0.55, d, ha="center", va="center", fontsize=6.3)
-        ax.text(i * 2.5 + 1.05, 0.33, f"session {ss}", ha="center", fontsize=6.2, color=GREY)
+        ax.text(i * 2.5 + 1.05, 0.33, f"session {ss}", ha="center", fontsize=6.2, color=GRAY)
     ax.text(0, 0.94, "ZuCo", fontsize=8, fontweight="bold")
     ax.text(1.6, 0.94, "12 readers, isolated sentences, 105-channel EEG", fontsize=6.8)
     ax.text(0, 0.10, "task order fixed for every reader; sessions on separate days",
-            fontsize=6.4, color=GREY)
+            fontsize=6.4, color=GRAY)
     ax.set_xlim(-0.2, 10.2); ax.set_ylim(0.02, 1.10); ax.axis("off")
     ax.set_title("Instructed disengagement", loc="left")
 
@@ -307,7 +307,7 @@ def figure2():
             transform=ax.transAxes, fontsize=6.6, bbox=dict(fc="w", ec="none", pad=1.0))
     ax.set_xlim(-100, 500)
 
-    # (d) behaviour at the three levels
+    # (d) behavior at the three levels
     ax = fig.add_subplot(gs[1, 1]); panel_label(ax, "d", dx=-0.26)
     vals = [abs(Dsom.zipf_on.mean()), abs(Dsom.length_on.mean()), abs(Dsom.surprisal_on.mean())]
     rg = [abs(g4["regression_to_difficulty"][p]["D_on"]) for p in ["zipf", "length", "surprisal"]]
@@ -315,7 +315,7 @@ def figure2():
     x = np.arange(3); w = 0.27
     ax.bar(x - w, vals, w, color=ON, label="selection (skip)")
     ax.bar(x, cr, w, color="#B9770E", label="repair (corrective return)")
-    ax.bar(x + w, rg, w, color=GREY, label="repair (regression)")
+    ax.bar(x + w, rg, w, color=GRAY, label="repair (regression)")
     ax.set_xticks(x); ax.set_xticklabels(["freq.", "length", "surp."])
     ax.set_ylabel("|Somers' $D$|, on-task")
     ax.set_title("Eye decisions track words", loc="left")
@@ -357,7 +357,7 @@ def figure3():
     x = np.arange(len(fams)); w = 0.26
     for j, p in enumerate(props):
         v = [g4[k][p]["D_mw"] / g4[k][p]["D_on"] * 100 for _, k in fams]
-        ax.bar(x + (j - 1) * w, v, w, color=[ON, GREY, "#B9770E"][j], label=p)
+        ax.bar(x + (j - 1) * w, v, w, color=[ON, GRAY, "#B9770E"][j], label=p)
     ax.axhline(100, color="k", lw=0.7, ls="--")
     ax.set_xticks(x); ax.set_xticklabels([a for a, _ in fams], fontsize=6.2)
     ns = [g4[k]["zipf"]["n"] for _, k in fams]
@@ -371,7 +371,7 @@ def figure3():
     # (c) duration, across-word vs within-token
     ax = fig.add_subplot(gs[0, 2]); panel_label(ax, "c", dx=-0.22, dy=1.17)
     aw = g56["G5_across_word_signed_retention"]; fe = g56["G5"]["logGD"]
-    SL = pd.read_csv(SEL / "artifacts/duration_slopes_by_state.csv")
+    SL = pd.read_csv(IT59 / "artifacts/duration_slopes_by_state.csv")
     rng = np.random.default_rng(59)
     labs, est, lo_, hi_, cols = [], [], [], [], []
     for p in ["zipf", "surprisal", "length"]:
@@ -466,7 +466,7 @@ def figure4():
     ax.bar(x + 0.19, cor, 0.36, color=[ON, MW], edgecolor="k", lw=0.6)
     ax.set_xticks(x); ax.set_xticklabels(["on-task", "MW"])
     ax.set_ylabel("skipping rate"); ax.set_ylim(0, 0.93)
-    ax.text(0.5, 0.855, "+0.168, $p$ = 7×10$^{-11}$", ha="center", fontsize=6.3, color=GREY)
+    ax.text(0.5, 0.855, "+0.168, $p$ = 7×10$^{-11}$", ha="center", fontsize=6.3, color=GRAY)
     ax.text(0.5, 0.775, "−0.042, $p$ = 2×10$^{-6}$", ha="center", fontsize=6.3, fontweight="bold")
     ax.bar([np.nan], [np.nan], color="0.5", alpha=0.40, label="any unfixated word")
     ax.bar([np.nan], [np.nan], color="0.3", label="scan-path defined")
@@ -499,7 +499,7 @@ def figure4():
     ax.set_title("Large steps cross lines", loc="left")
 
     ax = fig.add_subplot(gs[1, 0]); panel_label(ax, "d", dx=-0.22, dy=1.17)
-    b = json.load(open(SEL / "results/blackout_anatomy.json"))
+    b = json.load(open(IT59 / "results/blackout_anatomy.json"))
     o = b["offword_fraction_same_page"]
     ax.bar([0, 1], [o["on_task"], o["mw"]], 0.5, color=[ON, MW], edgecolor="k", lw=0.6)
     ax.set_xticks([0, 1]); ax.set_xticklabels(["on-task", "MW"])
@@ -525,7 +525,7 @@ def figure4():
     ax.set_title("Independent of the criterion", loc="left")
 
     ax = fig.add_subplot(gs[1, 2]); panel_label(ax, "f", dx=-0.22, dy=1.17)
-    Tt = pd.read_parquet(SEL / "artifacts/words_traversal.parquet")
+    Tt = pd.read_parquet(IT59 / "artifacts/words_traversal.parquet")
     Tt = Tt[((Tt.skipped == 0) | (Tt.gap <= 4)) & Tt.state_agree]
     f = pd.read_parquet(COUP / "reading_fixations.parquet").sort_values(["subject", "run", "tStart"])
     gg = f.groupby(["subject", "run"], sort=False)
@@ -533,7 +533,7 @@ def figure4():
     f.loc[gg["pos"].shift(-1).isna(), "refix"] = np.nan
     Wd = f[f.is_firstpass == 1].groupby(["subject", "word_key"]).agg(
         GD=("fix_dur", "sum"), is_mw=("is_mw", "first")).reset_index()
-    C = pd.read_parquet(SEL / "artifacts/corrective_regressions.parquet")
+    C = pd.read_parquet(IT59 / "artifacts/corrective_regressions.parquet")
 
     def pc(df, col, log=False):
         if log:
@@ -552,7 +552,7 @@ def figure4():
     ax.barh(yy, v, 0.6, color=[MW if q > 0 else "#1E8449" for q in v], edgecolor="k", lw=0.6)
     ax.axvline(0, color="k", lw=0.7)
     for q, y0, (_, _, p) in zip(v, yy, items):
-        # negative bars are labelled inside the bar so the text cannot reach the tick labels
+        # negative bars are labeled inside the bar so the text cannot reach the tick labels
         ax.text(q + 1.4, y0, f"{q:+.1f}%", va="center", ha="left", fontsize=6.6,
                 color="k" if q > 0 else "w")
     ax.set_yticks(yy); ax.set_yticklabels([i[0] for i in items], fontsize=6.8)
@@ -570,7 +570,7 @@ def figure5():
     gs = fig.add_gridspec(2, 3, width_ratios=[1, 1, 1.42], wspace=0.68, hspace=0.95,
                           left=0.105, right=0.985, top=0.875, bottom=0.135)
 
-    SL = pd.read_csv(SEL / "artifacts/duration_slopes_by_state.csv")
+    SL = pd.read_csv(IT59 / "artifacts/duration_slopes_by_state.csv")
     r_on, r_mw = SL.zipf_on.to_numpy(), SL.zipf_mw.to_numpy()
     z_nr, z_tsr = zuco_behaviour()
     n_on, n_mw, n_int = roamm_occ_frequency()
@@ -579,14 +579,14 @@ def figure5():
     # (a, b) the eye-movement policy
     ax = fig.add_subplot(gs[0, 0]); panel_label(ax, "a", dx=-0.40, dy=1.30)
     paired_panel(ax, np.abs(r_on), np.abs(r_mw), ["on-task", "mind-\nwandering"], [ON, MW],
-                 "|frequency \u2192 log\ngaze duration|", "Behaviour, spontaneous")
+                 "|frequency \u2192 log\ngaze duration|", "Behavior, spontaneous")
     ax.set_ylim(0, 0.42)
     ax.text(0.5, 0.955, f"{g56['G5_across_word_signed_retention']['zipf']['retention_pct']:.0f}% retained",
             transform=ax.transAxes, fontsize=6.8, ha="center", va="top")
 
     ax = fig.add_subplot(gs[0, 1]); panel_label(ax, "b", dx=-0.30, dy=1.30)
     paired_panel(ax, np.abs(z_nr), np.abs(z_tsr), ["normal\nreading", "instructed\nsearch"],
-                 [ON, GOAL], "", "Behaviour, instructed")
+                 [ON, GOAL], "", "Behavior, instructed")
     ax.set_ylim(0, 0.42)
     ax.text(0.5, 0.955, f"{abs(z_tsr.mean() / z_nr.mean()) * 100:.0f}% retained",
             transform=ax.transAxes, fontsize=6.8, ha="center", va="top")
@@ -722,7 +722,7 @@ def figure6():
     lo, hi = np.percentile(null, [2.5, 97.5], axis=0)
     cl = topo["time_resolved_field_clusters"]["mw"]["significant"][0]
     ax.axvspan(cl["start_ms"], cl["end_ms"], color=MW, alpha=0.13, lw=0)
-    ax.fill_between(t, lo, hi, color=GREY, alpha=0.30, lw=0, label="sign-flip null, 95%")
+    ax.fill_between(t, lo, hi, color=GRAY, alpha=0.30, lw=0, label="sign-flip null, 95%")
     ax.plot(t, g, color=MW, lw=1.5, label="observed")
     ax.axvline(0, color="k", lw=0.6, ls=":")
     ax.set_xlim(-100, 500); ax.set_ylim(0, 0.132)
@@ -741,14 +741,14 @@ def figure6():
              ("residual after\nrescaling", P["group_mean_gfp_uV"], P["null_95"], P["p_signflip"])]
     for i, (lab, v, n95, pv) in enumerate(items):
         ax.add_patch(Rectangle((i - 0.32, n95[0]), 0.64, n95[1] - n95[0],
-                               fc=GREY, alpha=0.32, ec="none", zorder=1))
-        ax.bar(i, v, 0.44, color=MW if i == 0 else GREY, edgecolor="k", lw=0.6, zorder=2)
+                               fc=GRAY, alpha=0.32, ec="none", zorder=1))
+        ax.bar(i, v, 0.44, color=MW if i == 0 else GRAY, edgecolor="k", lw=0.6, zorder=2)
         ax.text(i, v + 0.004, f"$p$ = {pv:.4f}" if pv < 0.01 else f"$p$ = {pv:.2f}",
                 ha="center", fontsize=6.6, fontweight="bold" if pv < 0.05 else "normal")
     ax.set_xticks([0, 1]); ax.set_xticklabels([a for a, *_ in items], fontsize=6.8)
     ax.set_ylabel("global field power,\n150\u2013290 ms (\u00b5V)")
     ax.set_ylim(0, 0.092); ax.set_xlim(-0.75, 1.75)
-    ax.plot([], [], "s", color=GREY, alpha=0.45, ms=6, label="sign-flip null, 95%")
+    ax.plot([], [], "s", color=GRAY, alpha=0.45, ms=6, label="sign-flip null, 95%")
     ax.legend(frameon=False, loc="upper right", fontsize=6.2)
     ax.set_title("Nothing is left over", loc="left")
 
@@ -907,7 +907,7 @@ def figure8():
     t = D["t"]
 
     ax = fig.add_subplot(gs[0, 0]); panel_label(ax, "a")
-    for key, c, lab in [("on_pupil", MW, "MW onset"), ("pseudo_pupil", GREY, "matched control")]:
+    for key, c, lab in [("on_pupil", MW, "MW onset"), ("pseudo_pupil", GRAY, "matched control")]:
         Y = D[key]; m, s = np.nanmean(Y, 0), sem(Y)
         ax.fill_between(t, m - s, m + s, color=c, alpha=0.22, lw=0)
         ax.plot(t, m, color=c, lw=1.4, label=lab)
@@ -919,13 +919,13 @@ def figure8():
             ha="right", bbox=dict(fc="w", ec="none", pad=1.0))
 
     ax = fig.add_subplot(gs[0, 1]); panel_label(ax, "b")
-    for key, c, lab in [("on_beta", MW, "MW onset"), ("pseudo_beta", GREY, "matched control")]:
+    for key, c, lab in [("on_beta", MW, "MW onset"), ("pseudo_beta", GRAY, "matched control")]:
         Y = D[key]; m, s = np.nanmean(Y, 0), sem(Y)
         ax.fill_between(t, m - s, m + s, color=c, alpha=0.22, lw=0)
         ax.plot(t, m, color=c, lw=1.4, label=lab)
     ax.axvline(0, color="k", lw=0.7, ls=":")
     ax.set_xlabel("time from onset (s)"); ax.set_ylabel("central beta power (z)")
-    ax.set_title("Cortical desynchronisation", loc="left")
+    ax.set_title("Cortical desynchronization", loc="left")
     ax.text(0.97, 0.05, "−0.074 z, $p$ = 2.4×10$^{-4}$", transform=ax.transAxes, fontsize=6.5,
             ha="right", bbox=dict(fc="w", ec="none", pad=1.0))
 
@@ -943,7 +943,7 @@ def figure8():
     xs = np.arange(4) - 0.0
     lo = v0 + (nm - 1.96 * ns) * xs
     hi = v0 + (nm + 1.96 * ns) * xs
-    ax.fill_between(range(4), lo, hi, color=GREY, alpha=0.30, lw=0,
+    ax.fill_between(range(4), lo, hi, color=GRAY, alpha=0.30, lw=0,
                     label="matched control, 95%")
     ax.axhline(0, color="k", lw=0.7)
     ax.set_xticks(range(4)); ax.set_xticklabels(bl)
@@ -975,7 +975,7 @@ def figure8():
     ax = fig.add_subplot(gs[1, 1]); panel_label(ax, "e")
     for meas, c, lab in [("logdur", MW, "fixation duration"),
                          ("regression_out", "#B9770E", "regressions"),
-                         ("refix", GREY, "refixations")]:
+                         ("refix", GRAY, "refixations")]:
         q = np.array(mech["B_targeting"][meas]["per_quartile_delta"])
         ax.plot(range(4), q / q.mean(), "o-", color=c, ms=4, lw=1.4, label=lab)
     ax.axhline(1, color="k", lw=0.7, ls="--")
@@ -996,9 +996,9 @@ def figure8():
     ax.set_xticklabels(["NR\ns1", "SR h1\ns1", "SR h2\ns2", "TSR\ns2"], fontsize=6.6)
     ax.set_ylabel("|frequency → log gaze duration|"); ax.set_ylim(0, 0.175)
     c = g7["contrasts"]["zipf"]
-    ax.annotate("", xy=(1, 0.150), xytext=(2, 0.150), arrowprops=dict(arrowstyle="<->", color=GREY, lw=0.9))
+    ax.annotate("", xy=(1, 0.150), xytext=(2, 0.150), arrowprops=dict(arrowstyle="<->", color=GRAY, lw=0.9))
     ax.text(1.5, 0.154, f"session {c['session_effect_SR1_to_SR2']['retention_pct']:.0f}%",
-            ha="center", fontsize=6.3, color=GREY)
+            ha="center", fontsize=6.3, color=GRAY)
     ax.annotate("", xy=(2, 0.126), xytext=(3, 0.126), arrowprops=dict(arrowstyle="<->", color="k", lw=0.9))
     ax.text(2.5, 0.130, f"task {c['task_within_session2_SR2_to_TSR']['retention_pct']:.0f}%",
             ha="center", fontsize=6.3, fontweight="bold")
@@ -1038,7 +1038,7 @@ def figure9():
     # (b) the overlap gradient across 1000 random regions
     ax = fig.add_subplot(gs[0, 1]); panel_label(ax, "b", dx=-0.24)
     R3 = mwloc["R3_overlap_gradient"]
-    ax.plot(GRAD.overlap, GRAD.stat, "o", ms=2.6, color=GREY, alpha=0.42)
+    ax.plot(GRAD.overlap, GRAD.stat, "o", ms=2.6, color=GRAY, alpha=0.42)
     xs = np.linspace(0, max(GRAD.overlap.max(), 1.0), 50)
     ax.plot(xs, R3["intercept"] + R3["slope"] * xs, color="k", lw=1.5)
     ax.plot([1.0], [R3["observed_true_span"]], "*", ms=13, color=MW, zorder=4)
@@ -1058,7 +1058,7 @@ def figure9():
     ax.set_xlim(-0.05, 1.10)
     ax.set_title("Damage tracks distance from the answer", loc="left")
 
-    # (c) the mind localises, the eyes do not
+    # (c) the mind localizes, the eyes do not
     ax = fig.add_subplot(gs[0, 2]); panel_label(ax, "c", dx=-0.26)
     T2 = outc["T2_random_region_permutation"]
     rows = [("lapse on the span\n(the mind)", MW, mwctl["observed_evidence_stat"],
@@ -1069,7 +1069,7 @@ def figure9():
              T2["null_mean"], T2["percentile"], T2["p_one_sided"], "=")]
     for i, (lab, col, obs, lo, hi, med, pctl, pv, rel) in enumerate(rows):
         yy = 1 - i
-        ax.plot([lo, hi], [yy, yy], color=GREY, lw=6, alpha=0.45, solid_capstyle="butt",
+        ax.plot([lo, hi], [yy, yy], color=GRAY, lw=6, alpha=0.45, solid_capstyle="butt",
                 zorder=1)
         ax.plot([med], [yy], "|", ms=9, color="0.35", mew=1.2, zorder=2)
         ax.plot([obs], [yy], "o", ms=7, color=col, zorder=3)
@@ -1083,7 +1083,7 @@ def figure9():
     ax.set_ylim(-0.92, 1.42)
     ax.set_xlabel("effect on accuracy, against\nits random-region null")
     ax.set_xlim(-0.082, 0.082); ax.set_xticks([-0.05, 0, 0.05])
-    ax.plot([], [], "s", color=GREY, alpha=0.45, ms=6, label="random-region null, 95%")
+    ax.plot([], [], "s", color=GRAY, alpha=0.45, ms=6, label="random-region null, 95%")
     ax.legend(frameon=False, loc="lower left", fontsize=6.2, bbox_to_anchor=(-0.02, -0.02))
     ax.set_title("The mind, not the eyes", loc="left")
 

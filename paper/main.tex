@@ -22,14 +22,15 @@
 \linenumbers
 \onehalfspacing
 
-\title{\bfseries Keeping the words, losing the thread:\\
-word-level coupling survives mind-wandering while comprehension fails where the mind was}
+\title{\bfseries Mind-wandering preserves word-level coupling\\
+but produces localized comprehension failure}
 
-\author[1]{Author One}
-\author[1]{Author Two}
-\author[2]{Author Three}
-\affil[1]{Affiliation}
-\affil[2]{Affiliation}
+\author[1]{Anirudh Natarajan\thanks{Correspondence: \texttt{amn2225@columbia.edu}}}
+\author[1,2,3,4]{Paul Sajda}
+\affil[1]{Department of Biomedical Engineering, Columbia University, New York, NY 10027, USA}
+\affil[2]{Department of Electrical Engineering, Columbia University, New York, NY 10027, USA}
+\affil[3]{Department of Radiology, Columbia University Irving Medical Center, New York, NY 10032, USA}
+\affil[4]{The Data Science Institute, Columbia University, New York, NY 10027, USA}
 \date{}
 
 \begin{document}
@@ -37,32 +38,35 @@ word-level coupling survives mind-wandering while comprehension fails where the 
 
 \begin{abstract}
 \noindent
-Readers often report that their minds have wandered while their eyes kept moving over the page.
-The standard explanation is perceptual decoupling. Attention withdraws from the text, so word
-properties stop guiding the eyes. That account has been tested almost entirely through one
-measure, the duration of a fixation. Reading involves at least three separable decisions about
-each word: whether to fixate it, how long to stay, and whether to come back. We tested all
-three, together with fixation-locked brain responses, in 44 readers of connected articles
-recorded with simultaneous eye tracking and electroencephalography.
-The eyes went on doing word-sensitive reading. What failed was what the reader built from the
-words.
-Word sensitivity was intact throughout mind-wandering. The influence of frequency, length and
-contextual surprisal on skipping was statistically equivalent to its on-task value within
-$\pm$10\%. Refixation and regression selectivity were preserved. Duration slopes survived a
-model that held word identity constant. The occipitotemporal frequency response was preserved to
-within 8.2\%. The centroparietal response to contextual surprisal could not be tested usefully
-here, so the semantic channel remains open. These measures do register a change when one is
-present. An instructed shallow-reading goal in an independent sample attenuated behavioural
-coupling by about a third.
-The most cited behavioural marker of mindless reading, an increase in skipping, is an artefact
-of how skipping is scored in continuous reading. Under a scan-path definition readers skip
-18.5\% \emph{fewer} words and work harder on each one.
-Comprehension failed even so, and it failed where the mind was rather than where the eyes were.
-Accuracy fell from 0.68 with no lapse to 0.41 when a reported lapse covered the sentences
-carrying the answer. That effect was more extreme than all of 1000 size-matched regions placed
-elsewhere on the same page. The same test run on where the eyes actually went predicted nothing.
-Mind-wandering, at least as readers themselves demarcate it, does not disconnect the eyes from
-the words. It leaves the words intact and costs the reader what is built from them.
+Mind-wandering during reading creates a familiar paradox: the eyes continue across the page, yet
+little is retained. This is commonly explained as perceptual decoupling, in which attention
+withdraws from the text and word processing no longer guides the eyes. We asked whether the
+failure instead occurs later, after individual words have been processed but before they are
+integrated into a coherent representation of the passage.
+
+Forty-four readers viewed connected articles while eye movements and electroencephalography were
+recorded, and afterwards identified the periods in which their minds had wandered. Sensitivity to
+word frequency, length and contextual predictability was preserved during these episodes across
+three separable decisions: whether to fixate a word, how long to remain, and whether to return.
+In each case it was statistically equivalent to on-task reading within $\pm$10\%. A
+fixation-locked occipitotemporal response indexing lexical processing was also preserved, to
+within 8\%. The centroparietal response to contextual predictability could not be estimated
+reliably here, so the semantic channel remains open. The same measures detected attenuated
+word-to-eye coupling under an instructed shallow-reading goal in an independent sample, so their
+stability during spontaneous episodes was not a failure of measurement.
+
+The most frequently cited marker of mindless reading, an increase in skipping, proved to be an
+artifact of how skipping is scored in continuous text. Under a scan-path criterion readers
+skipped 18.5\% \emph{fewer} words while mind-wandering, and read the remainder more effortfully.
+
+What changed was not sensitivity to individual words but the outcome of reading. Comprehension
+deteriorated specifically for the material covered by the reported lapse: accuracy fell from 0.68
+to 0.41, exceeding the effect of all 1000 size-matched regions elsewhere on the same page. Where
+attention had wandered predicted what was later lost; where the eyes had looked did not.
+
+Mind-wandering during sustained reading therefore need not disconnect the reader from the words
+themselves. The breakdown appears to occur downstream of word identification, in the processes
+that turn successive words into an enduring representation of the text.
 \end{abstract}
 
 \vspace{0.5em}
@@ -73,7 +77,7 @@ perceptual decoupling; equivalence testing
 
 \section{Introduction}
 
-Everyone who reads has had the experience of reaching the bottom of a page and realising that
+Everyone who reads has had the experience of reaching the bottom of a page and realizing that
 nothing has gone in. The eyes moved, the lines were traversed, and yet no meaning accumulated.
 Laboratory work has turned this ordinary failure into a tractable phenomenon: readers probed
 during self-paced reading report task-unrelated thought on a sizeable minority of trials, and
@@ -118,12 +122,12 @@ skipping in the sense the models mean, or because gaze and text were transiently
 register, which is not.
 
 A third gap is neural. Simultaneous eye tracking and electroencephalography now makes it
-possible to read out word processing directly, without inferring it from behaviour. Fixation-related
+possible to read out word processing directly, without inferring it from behavior. Fixation-related
 potentials in natural reading carry a graded occipitotemporal response to word frequency
 from roughly 150\,ms and a centroparietal N400 that scales with contextual surprisal
 \citep{dimigen2011,kutas2011,frank2015}. If mind-wandering gates the input, these responses
 should shrink. Almost all co-registered reading work has been conducted on-task, and almost
-all mind-wandering reading work has been behavioural. We are not aware of a well-powered test
+all mind-wandering reading work has been behavioral. We are not aware of a well-powered test
 at the intersection.
 
 We addressed all three gaps in a single design, and then asked what the reader actually loses,
@@ -144,7 +148,7 @@ informative.
 
 What we found is a single dissociation with two halves. During mind-wandering the eyes go on
 doing word-sensitive reading: every measure of how strongly word properties govern the reading
-system was preserved, in behaviour and in the fixation-locked brain response. What fails is what
+system was preserved, in behavior and in the fixation-locked brain response. What fails is what
 is built from those words: comprehension collapses, and it collapses specifically on the
 material the reader was absent for, while the record of where the eyes went carries no such
 information. The rest of the paper establishes those two halves. It also shows that the same measures do
@@ -168,264 +172,12 @@ which we exploit in Section~\ref{sec:goal}.}
 \label{fig:design}
 \end{figure}
 
-\section{Methods}
-
-\subsection{Datasets}
-
-\paragraph{Primary sample.} We analysed the ROAMM dataset \citep{roammdata}: 44 adults read
-five Wikipedia articles, each divided into ten pages of about 220 words, presented as
-monospaced text. Reading was self-paced and page-wise. After each article, readers marked the
-spans of text during which their minds had wandered, and answered one multiple-choice
-comprehension question per page. Electroencephalography was recorded with a 64-channel
-BioSemi ActiveTwo system at 256\,Hz and binocular eye movements with an EyeLink 1000 Plus.
-The released derivative provides fixation events mapped to corpus word identifiers. We used
-all 404{,}557 first-pass fixations; 7.2\% fell inside a reported mind-wandering span. The
-Comprehension scores are used in Section~\ref{sec:comp}.
-
-\paragraph{Positive-control sample.} We used ZuCo 1.0 \citep{hollenstein2018}: 12 adults read
-isolated sentences under three tasks, with 105 usable channels of EEG at 500\,Hz and
-simultaneous eye tracking. Task 2 is normal reading of encyclopedic sentences, task 3 is a
-search for a named semantic relation in encyclopedic sentences, and task 1 is sentiment
-reading of film-review sentences. Task order was fixed for every reader: session one contained
-task 2 followed by the first half of task 1, and session two contained task 3 followed by the
-second half of task 1. We exploit that structure to separate task from session, splitting task
-1 at its sentence-index midpoint.
-
-\subsection{Linguistic predictors}
-
-Word frequency was the Zipf value from a large subtitle- and web-derived corpus
-\citep{vanheuven2014,brysbaert2018}. Contextual surprisal was the negative log probability of
-each word under GPT-2 \citep{radford2019}, conditioned on the preceding text within the
-article and with the sentence-initial token conditioned on a beginning-of-sequence marker.
-Sub-word tokens were mapped to words by maximum character overlap; a containment rule
-undercounts words because of the model's leading-space convention. Word length was in
-characters.
-
-\subsection{Defining the three eye-movement decisions}
-
-Reading positions were assigned in corpus order within each article. For each reader and
-article we took the ordered sequence of first-pass fixation positions.
-
-\emph{Selection.} For each forward step from position $p_i$ to $p_{i+1}>p_i$, the words
-strictly between were treated as stepped over. A word was scored as skipped if it was stepped
-over in a step spanning at most $G$ intervening words and never fixated, and as fixated
-otherwise. Words falling only inside steps larger than $G$ were excluded from the analysis set,
-since the reader is not demonstrated to have scanned them. The primary analysis used $G=4$;
-results are reported for $G\in\{1,2,3,4,6,10\}$. The naive alternative, in which any word in
-the reading span without a first-pass fixation counts as skipped, corresponds to
-$G=\infty$. Mind-wandering state for a stepped-over word was taken from the bounding
-fixations, and steps whose bounding fixations disagreed were excluded (3.4\% of steps).
-
-We also used a criterion that makes no reference to gap size. Word bounding-box tops were
-clustered into text lines within each page, with a tolerance of 40 pixels against a line
-spacing of about 90 pixels, because tops jitter by a few pixels with glyph height. A word was
-analysable if the reader fixated at least one word on the same line both before and after it.
-This yields the same conclusions and is reported alongside the gap criterion.
-
-Only fixations that the dataset providers could map to a word are present in the released
-derivative. We can therefore measure the interval between successive mapped fixations, but we
-cannot observe a fixation that fell outside every word bounding box. Our claim about off-text
-gaze is an inference from elapsed time: a fixation we cannot see would still occupy time, and
-the intervals we observe are too short to contain one.
-
-\emph{Duration.} Gaze duration was the sum of first-pass fixations on a word; first-fixation
-duration was the first of them. Analyses used the natural logarithm, with raw milliseconds
-reported alongside where the scale matters.
-
-\emph{Repair.} A corrective return was defined for every forward step that stepped over exactly
-one word: the event was coded 1 if any of the next five fixations landed on that word. We also
-computed the overall rate of backward steps and the rate of immediate refixation.
-
-\subsection{Coupling measures and inference}
-
-For the two binary decisions we used Somers' $D$, computed as $2A-1$ where $A$ is the
-probability that a randomly chosen positive case has a higher predictor value than a randomly
-chosen negative case \citep{somers1962}. It is invariant to monotone transformations of the
-predictor and to the base rate of the outcome, which matters here because the base rates
-differ between states. For duration we used ordinary least-squares slopes on standardised
-predictors, computed within reader and within state.
-
-Reader is the unit of inference throughout. We report the mean, a 95\% percentile interval
-from 10{,}000 reader-level bootstrap resamples, a paired $t$ test, and the number of readers
-showing the effect. Families of three tests were corrected by the Holm procedure
-\citep{holm1979}. Retention is the mind-wandering estimate divided by the on-task estimate,
-always computed on signed rather than absolute values, since ratios of absolute values are
-inflated when the underlying slopes are noisy.
-
-Nulls were supported rather than merely reported. We ran two one-sided tests against bounds of
-10\% and 20\% of the on-task effect \citep{lakens2017} and computed default Bayes factors for
-the paired difference with a Cauchy prior of scale $1/\sqrt{2}$ \citep{rouder2009}.
-
-\subsection{Within-token fixed-effects model}
-
-Because the same corpus token is read by many readers, mind-wandering status varies within
-token. We fitted
-\[
-\log(\text{gaze duration})_{ij}
-= \alpha_i + \gamma_j + \delta\,m_{ij} + \sum_k \theta_k\,m_{ij}z_{k,i} + \varepsilon_{ij},
-\]
-where $i$ indexes token instance, $j$ indexes reader, $m$ is the mind-wandering indicator and
-$z_k$ are standardised word properties. Token and reader effects were absorbed by alternating
-within-transformation, and standard errors were clustered on reader
-\citep{cameron2011}. Main effects of word properties are absorbed by the token effects, which
-is the point: the interaction is identified purely from readers who differ in state on the
-same physical word in the same position of the same page.
-
-\subsection{Control analyses}
-
-A relocation control tested whether the observed contrasts are specific to reported spans. For
-each reader we recorded the number and length of their mind-wandering spans, relocated each to
-a random on-task position within the same run, and recomputed the whole analysis. Two hundred
-relocations gave a null distribution for each contrast. We also repeated the primary analysis
-within tertiles of position through a run, restricted to spans marked as fully off-task, and
-leaving out each article in turn.
-
-For the interpretation of large positional gaps we computed, for every consecutive fixation
-pair, the interval between the end of one fixation and the start of the next, and tabulated it
-against gap size, state, and whether the pair crossed a page boundary.
-
-\subsection{Electrophysiology}
-
-Fixation-related potentials were epoched from $-100$ to $+500$\,ms around fixation onset. In
-natural reading successive fixations overlap, and the overlap is correlated with word
-properties because difficult words are fixated longer, so naive averages are not
-interpretable \citep{dimigen2011,dimigen2021}. We therefore estimated overlap-corrected
-kernels by linear deconvolution: a sparse finite-impulse-response design matrix was built over
-the epoch for an intercept and for each predictor, including the interactions with
-mind-wandering state, and solved by ridge-regularised normal equations for all channels at
-once \citep{smith2015,ehinger2019}.
-
-Regions of interest were fixed a priori: an occipitotemporal set analysed from 150 to 290\,ms
-for frequency, and a centroparietal set analysed from 300 to 450\,ms for surprisal. Beyond the
-regions of interest we ran cluster-based permutation tests over the full epoch and all channels
-with sign-flipping at the reader level \citep{maris2007}. Split-half reliability of the
-fixation-related potential was computed with trial counts matched between states.
-
-\subsection{Comprehension outcomes and answer spans}
-
-The released dataset records one four-option comprehension question per page. We parsed
-2{,}200 per-page outcomes and validated them against the shipped accuracy fields and against the
-item keys. One item was found to be mis-keyed and is excluded everywhere. The mapping between
-the physiology subject index and the released subject identifiers was recovered from a 50-page
-reading-duration fingerprint rather than assumed, and is bijective.
-
-Each item was localised to its answer-bearing sentences by a large language model
-\citep{claudeopus5} reading the full page alongside the question and its four options, and
-returning the page-local indices of the sentences a reader must have encoded in order to answer.
-The model also classified each item. A \emph{single-fact} item is stated by one sentence or two
-adjacent ones; an \emph{inferential} item follows from a few sentences without being stated in
-any; an \emph{integrative} item requires combining several; and a \emph{negated} item asks which
-option is not supported, so its answer span is the union of the sentences supporting the three
-true options. The annotation was run after the text-importance ratings used elsewhere had been
-frozen, so the question wording could not leak into them.
-
-The negated items are a built-in control on the whole approach. For them the prediction inverts:
-performance should track broad coverage of the page rather than dwell on any one span, because
-the reader has to check three separate statements. If the spans were noise, single-fact and
-negated items could not behave differently, and they do.
-
-Two checks bear on the annotation. A local language model scoring from the annotated sentences
-alone recovers the gold answer at 0.859, against 0.848 from the whole page, so the spans carry
-the answers. An independent annotation of the same 50 items, built automatically from sentence
-embeddings and inverse-document-frequency overlap with the question and its options and then
-hand-corrected where a fact is split across sentences, agrees with the model's spans on 32 items
-exactly and at a mean Jaccard overlap of 0.825; it reproduces the central null for \emph{reading}
-the answer span at the 39th percentile of the random-region distribution against the 38th
-reported here. The two annotations and the item-by-item comparison are included with the code.
-
-Trial-level models are linear probability models absorbing reader and item, with standard errors
-clustered by reader and confidence intervals from a reader-level bootstrap. The random-region
-control draws 1000 contiguous regions of the same word count from the same page and repeats the
-analysis on each. The overlap gradient regresses the effect obtained for each random region on
-that region's word overlap with the true answer span. The attributable fraction is a
-counterfactual from the fitted model with the answer-span mind-wandering term set to zero,
-bootstrapped over readers.
-
-\subsection{Topographic rescaling analysis}
-
-To ask whether mind-wandering changes the pattern or the size of the fixation-evoked response we
-computed, per reader, overlap-corrected fixation responses for on-task and mind-wandering
-fixations matched on frequency, length, surprisal and fixation duration. The difference field was
-tested with a sign-flip test on global field power, and its spatial pattern was correlated with
-the on-task fixation field over the same interval, with a bootstrap over readers.
-
-The proportional model estimates a single scalar $\alpha$ such that the difference field equals
-$-\alpha$ times the on-task field. It is fit leave-one-reader-out to avoid using a reader's own
-data in their own estimate. We report the variance of the group difference map that the rescaled
-on-task map accounts for, and we test the residual field after subtracting it with the same
-sign-flip procedure. Time-resolved differences use a familywise cluster correction across the
-epoch. Polarity is not retained when comparing topographies, because a polarity-preserving
-comparison confounds a change in sign with a change in configuration.
-
-\subsection{Index of text-driven reading}
-
-The index is fit only on on-task fixations and never sees a mind-wandering report. We regress log
-fixation duration on Zipf frequency, word length and contextual surprisal, with reader effects,
-over fixations of 50 to 1000\,ms with a mapped word and finite predictors. This yields, for each
-fixation, a duration predicted from the text alone.
-
-For each reader and run we then take a centred rolling window of 25 fixations and compute the
-slope of observed log duration on predicted log duration, with both quantities centred inside the
-window. Centring removes any additive change in reading speed, so the slope reflects only the
-degree to which word properties are currently governing behaviour. Windows with insufficient
-variance in the predicted values are dropped. Slopes are winsorised at the 1st and 99th
-percentiles and converted to a within-reader percentile, giving a 0 to 100 score. The comparison
-index is the within-reader percentile of raw log fixation duration over the same fixations.
-State contrasts are computed per reader and tested with a reader-level bootstrap.
-
-\subsection{Episode time course and effort targeting}
-
-Episodes were the maximal runs of consecutive fixations carrying a mind-wandering label. For
-each fixation we recorded elapsed time since the first fixation of its episode and binned it
-into 0--2, 2--5, 5--10 and beyond 10 seconds. Each reader's values were expressed relative to
-their own on-task mean and a linear trend across bins was fitted per reader. The null came from
-300 sets of matched on-task stretches drawn at random positions with lengths sampled from the
-observed episode-length distribution, analysed identically. Time on task was controlled by
-regressing each reader's regression indicator on their position through the run before binning.
-
-For the targeting analysis, words were split into quartiles of contextual surprisal within
-reader, and the mind-wandering minus on-task difference in each effort measure was computed per
-quartile, with a linear trend across quartiles fitted per reader. Extended-context integration
-was tested by decomposing GPT-2 surprisal into a within-sentence component and the additional
-reduction contributed by the preceding passage, then testing the interaction of the latter with
-mind-wandering.
-
-\subsection{State dynamics and inter-subject correlation}
-
-Peri-onset trajectories were computed over $\pm 8$\,s around the onset and offset of each
-reported span, z-scored within run, for pupil diameter and for band-limited power. Control
-onsets were drawn from on-task reading and matched on position within the run. Inter-subject
-correlation used a leave-one-reader-out group template of the response to each word. The
-template for a given reader was the mean over the other readers' \emph{on-task} readings of that
-word, requiring at least five contributors, so that it represents a normative response rather
-than a mixture of states. The target reader's words were then correlated with the template
-separately for each state, subsampling on-task words to match the mind-wandering count. Three
-versions of the response were used: raw log gaze duration, the same z-scored within reader and
-state, and the residual after regressing out frequency, length and surprisal. Specificity was
-tested by permuting the mind-wandering labels within reader at matched count.
-
-\subsection{Software}
-
-Analyses were run in Python with NumPy, SciPy, pandas, statsmodels and scikit-learn. Word
-frequencies came from \texttt{wordfreq} and contextual surprisal from GPT-2 as distributed with
-the \texttt{transformers} library. Scalp-field handling used MNE-Python.
-
-\subsection{Preregistration status}
-
-The analyses of the selection and repair channels were specified in a written plan, with gates
-and directional predictions taken from the published literature, before the corresponding
-analyses were run; that plan is included with the code. They are nevertheless exploratory with
-respect to this dataset, which has been analysed by us for other purposes. The comparison in
-the control sample was gate-declared. We report equivalence tests and Bayes factors for every
-null and regard preregistered replication as necessary.
-
-
 \section{Results}
 
 The order below follows that dissociation. The first two subsections establish the instrument
 and show that the reported spans behave like mind-wandering. The next four establish its first half. Word sensitivity is preserved at all three levels of
 eye-movement control and in the lexical brain response. The canonical contrary marker does not
-survive a scan-path definition of skipping. The corrected behavioural profile is one of more
+survive a scan-path definition of skipping. The corrected behavioral profile is one of more
 effort rather than less. An instructed shallow goal moves the same measures that mind-wandering
 leaves alone. The last two subsections establish the second half. What does change is global and
 word-independent, and comprehension fails on the specific content the reader was absent for.
@@ -465,7 +217,7 @@ the sample size, so the semantic channel is carried by the primary dataset alone
 \caption{\textbf{The measures respond to word properties during engaged reading.}
 (a) Overlap-corrected regression-ERP kernel for word frequency at occipitotemporal sensors.
 (b) Kernel for contextual surprisal at centroparietal sensors. Shading is the standard error
-across 44 readers; grey bands mark the a priori analysis windows. (c) The frequency kernel in
+across 44 readers; gray bands mark the a priori analysis windows. (c) The frequency kernel in
 an independent 12-reader sample recorded with different hardware. (d) Rank-based association
 between word properties and each of the three eye-movement decisions during on-task reading.}
 \label{fig:instrument}
@@ -474,7 +226,7 @@ between word properties and each of the three eye-movement decisions during on-t
 \subsection{The reported spans behave like mind-wandering}
 
 Because the primary sample uses retrospective span marking rather than probes, we checked that
-the labels track the canonical behavioural signature before treating any null based on them as
+the labels track the canonical behavioral signature before treating any null based on them as
 informative. All 44 readers marked at least one span, per-reader rates ranged from 0.2\% to
 24.2\% of fixations, and fixations inside a reported span were 5.0\% longer than the same
 reader's on-task fixations (95\% CI $[3.3, 6.6]$, $p=7.9\times10^{-7}$, 39 of 44 readers). The
@@ -509,7 +261,7 @@ These nulls survived every control we ran. They were stable across skip-definiti
 from one to ten intervening words, unchanged when restricted to spans the reader marked as
 fully off-task, present within each tertile of position through a run, and stable when any one
 article was dropped. A relocation control, in which each reader's mind-wandering spans were
-moved to random on-task positions of matched length and re-analysed 200 times, reproduced the
+moved to random on-task positions of matched length and re-analyzed 200 times, reproduced the
 observed values ($p_{\text{perm}}=0.81$, $0.28$ and $0.31$), so even the small numerical
 trends are not specific to mind-wandering. For context on sensitivity, the width of the
 frequency interval means that an attenuation of the size the instructed-goal condition produces
@@ -540,6 +292,43 @@ $\beta=+0.0087$, $p=0.27$; $n=234{,}800$ word observations). The additive compon
 and highly reliable in the same model ($\beta=+0.103$, SE $=0.011$, $p=1.6\times10^{-11}$).
 Mind-wandering moved the intercept, not the slope.
 
+\paragraph{Beyond three chosen measures.} Each test above fixes a decision and a word
+property in advance, which leaves open the possibility that we chose the measures that do not
+move. We therefore replaced the choice with a model. For every fixation a network predicted
+which of the 41 words within twenty positions the reader would move to next, and how long the
+current fixation would last, from two blocks of information held apart: page geometry and
+reading history on one side, the word properties of the candidates on the other. Networks of
+this kind now predict reading scan paths well \citep{deng2023eyettention,bolliger2025scandl} and
+have been used to model task effects \citep{hahn2023task}; we use one only as a measuring
+device. It was fitted on on-task fixations alone and evaluated in cells where both the reader
+and the article were held out. The read-out is how much the word-property block improves
+held-out prediction, in bits. This is a different instrument from fitting a mechanistic model of
+eye-movement control to an instructed mindless condition and reading decoupling off a parameter
+\citep{nuthmann2009}: it commits to no mechanism, and it returns a bound.
+
+On-task, knowing the words was worth $0.144$ bits per movement (all 44 readers positive,
+$p=1.8\times10^{-25}$) against a geometry-only baseline of $2.70$ bits out of the $5.36$
+available from the candidate set, so the probability the model places on the word actually
+fixated next rises by about a tenth. Permuting which word occupies which position within a
+page, leaving layout, timing and the reader's own movements untouched, removes the gain entirely
+($-0.013$ bits, 4 of 44 readers). What the model uses is word identity and not geometry under
+another name.
+
+During mind-wandering this measure retained $0.911$ of its on-task value ($95\%$ CI
+$[0.822, 0.995]$), with a change of $12\%$ detectable at 80\% power; the duration head retained
+$1.071$ $[0.737, 1.430]$ and is far less informative (Table~\ref{tab:equiv}). The $9\%$
+shortfall in target choice is the only contrast in this study whose interval excludes zero, and
+we do not present it as established. It survives every geometry control we can absorb, including
+launch line, word identity and reader by page ($\beta$ from $-0.015$ to $-0.013$, $p=0.019$ at
+the strictest rung), and that same ladder recovers the known additive lengthening of fixations
+($+4.2\%$ falling to $+2.9\%$, all $p<10^{-9}$). It does not survive an episode-preserving
+permutation in which each reader's spans are replaced by another reader's at the same positions
+in the same text ($z=-1.84$, $p=0.067$, 2000 draws), and the most outlier-resistant estimator
+returns $0.942$ $[0.878, 1.005]$. The shortfall is also uniform across kinds of movement: in
+bits it is $-0.012$ for forward saccades and $-0.011$ for regressions and refixations, and the
+interaction between state and movement kind is null ($p=0.94$). Section~S10 reports eleven
+further exclusions, across which retention stays between $0.88$ and $0.97$.
+
 \paragraph{Brain.} The two neural channels differ sharply in what they can support, and we
 separate them.
 
@@ -547,8 +336,8 @@ The occipitotemporal frequency response was preserved. In the overlap-corrected 
 frequency by mind-wandering interaction was $+0.024$\,\si{\micro\volt} ($p=0.30$, $n=44$),
 which is $+16.0\%$ of the on-task effect with a 95\% interval of $[-12.5, +45.9]\%$. Because
 the decoupling account predicts a reduction, the informative bound is one-sided: attenuations
-greater than 8.2\% are excluded (BF$_{01}=3.6$). This response therefore behaves like the
-behavioural measures.
+greater than 8\% are excluded (BF$_{01}=3.6$). This response therefore behaves like the
+behavioral measures.
 
 The centroparietal surprisal response could not be tested usefully. The interaction was
 $+0.005$\,\si{\micro\volt} ($p=0.79$), which is $-13.4\%$ of the on-task effect, but with a
@@ -561,7 +350,7 @@ SD), so a 30\% modulation of it lies far below what 44 readers can resolve. A cl
 permutation test over the whole epoch and all sensors returned no cluster for either
 interaction ($\min p=1.0$), which is consistent with both conclusions and decisive for neither.
 
-The additive pattern seen in behaviour appeared in the neural data as well: a uniform
+The additive pattern seen in behavior appeared in the neural data as well: a uniform
 occipitotemporal amplitude offset of $+0.087$\,\si{\micro\volt} ($p=3.4\times10^{-5}$) with the
 slope unchanged. Split-half reliability of the fixation-related potential was identical in the
 two states when trial counts were matched (0.888 versus 0.889, $p=0.91$), so neither neural
@@ -573,8 +362,8 @@ result reflects noisier data during mind-wandering.
 \caption{\textbf{Mind-wandering spares word sensitivity at every level measured.}
 (a) Rank-based association between word properties and skipping, per reader, on-task versus
 mind-wandering; black lines join condition means, percentages give retention.
-(b) Retention of selectivity for the three repair behaviours.
-(c) Change in the fixation-duration slope, estimated across words (coloured) and within token
+(b) Retention of selectivity for the three repair behaviors.
+(c) Change in the fixation-duration slope, estimated across words (colored) and within token
 instance with reader and token fixed effects (black). Bars are 95\% intervals; the shaded band
 is the $\pm$20\% equivalence region.
 (d, e) Overlap-corrected kernels by state.
@@ -589,21 +378,25 @@ contrasts each exclude attenuations of more than a few percent.}
 \small
 \caption{Every coupling contrast, with what it can and cannot rule out. $\Delta$ is the change
 during mind-wandering as a percentage of the on-task effect, positive meaning stronger coupling.
-``Attenuation excluded'' is the one-sided 95\% bootstrap bound, that is, the smallest
-reduction inconsistent with the data. The last column is the smallest change the contrast could have
-detected at 80\% power. Neural rows use the overlap-corrected kernels from all 44 readers.}
+``Attenuation excluded'' is the one-sided 95\% bound, that is, the smallest reduction
+inconsistent with the data. The last column is the smallest change the contrast could have
+detected at 80\% power. Neural rows use the overlap-corrected kernels from all 44 readers. The
+two omnibus rows are model-based and place no restriction on which word properties may be used;
+they are the only rows whose predictor is not chosen in advance.}
 \label{tab:equiv}
 \begin{tabular}{llrrrr}
 \toprule
 Level & Predictor & Readers & $\Delta$ (\% of on-task) & Attenuation excluded & Detectable at 80\% \\
 \midrule
-Selection & frequency  & 36 & $+0.5$ $[-3.3, +4.2]$     & $>2.7\%$  & 6\% \\
-Selection & length     & 36 & $+1.8$ $[-1.7, +5.2]$     & $>1.2\%$  & 5\% \\
-Selection & surprisal  & 36 & $+3.1$ $[-2.7, +8.4]$     & $>1.7\%$  & 8\% \\
-Duration  & surprisal  & 38 & $+5.2$ $[-2.0, +12.5]$    & $>0.9\%$  & 11\% \\
-Duration  & frequency  & 38 & $+14.6$ $[+6.8, +22.4]$   & none      & 12\% \\
-Neural    & frequency  & 44 & $+16.0$ $[-12.5, +45.9]$  & $>8.2\%$  & 43\% \\
-Neural    & surprisal  & 44 & $-13.4$ $[-112.2, +81.6]$ & $>96.6\%$ & 144\% \\
+Selection & frequency  & 36 & $+0.5$ $[-3.3, +4.2]$     & $>3\%$  & 6\% \\
+Selection & length     & 36 & $+1.8$ $[-1.7, +5.2]$     & $>1\%$  & 5\% \\
+Selection & surprisal  & 36 & $+3.1$ $[-2.7, +8.5]$     & $>2\%$  & 8\% \\
+Duration  & surprisal  & 38 & $+5.2$ $[-2.1, +12.4]$    & $>1\%$  & 11\% \\
+Duration  & frequency  & 38 & $+14.6$ $[+6.7, +22.5]$   & none    & 12\% \\
+Omnibus   & target choice & 43 & $-8.9$ $[-17.8, -0.5]$ & $>16\%$ & 12\% \\
+Omnibus   & duration      & 43 & $+7.1$ $[-26.3, +43.0]$ & $>21\%$ & 49\% \\
+Neural    & frequency  & 44 & $+16.0$ $[-12.5, +45.9]$  & $>8\%$  & 43\% \\
+Neural    & surprisal  & 44 & $-13.4$ $[-112.2, +81.6]$ & $>97\%$ & 144\% \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -613,14 +406,18 @@ in the study: each excludes attenuations above a few percent and could have dete
 about 5 to 8\%. The duration rows are comparable, except that the frequency contrast is displaced
 in the direction of stronger coupling, which the within-token model in
 Fig.~\ref{fig:preserved}c attributes largely to which words readers happened to encounter. The
-neural frequency row is looser but still useful, excluding attenuations above 8.2\%. The neural
+neural frequency row is looser but still useful, excluding attenuations above 8\%. The neural
 surprisal row excludes nothing: it could not have detected the complete disappearance of the
-effect, and no conclusion should be drawn from it in either direction.
+effect, and no conclusion should be drawn from it in either direction. The two omnibus rows sit between these
+extremes and carry a different kind of weight, because nothing about them was chosen: they bound
+the attenuation of everything a high-capacity model can extract from the text at 16 and 21\%.
+Both lie inside the 20\% threshold set above from the literature, and far inside the third to one
+half that \citet{schad2012} report at their deeper level.
 
 \subsection{Reconciling this with the reported increase in skipping}
 
 One result stands against the first half of the dissociation, and it is the most consistent
-behavioural marker in the meta-analytic literature: readers skip more words when their minds
+behavioral marker in the meta-analytic literature: readers skip more words when their minds
 wander \citep{meziere2025}. Our data reproduce it, and then overturn it
 (Fig.~\ref{fig:measurement}).
 
@@ -660,10 +457,10 @@ words excluded during mind-wandering were slightly more frequent ($\Delta=+0.16$
 $p=1.7\times10^{-4}$), shorter ($\Delta=-0.29$ characters, $p=1.7\times10^{-6}$) and less
 surprising ($\Delta=-0.35$ bits, $p=0.023$). We therefore repeated the primary analysis in two
 ways that do not rely on the gap criterion. Using a purely layout-based rule, in which a word is
-analysable if the reader fixated at least one word on the same text line both before and after
+analyzable if the reader fixated at least one word on the same text line both before and after
 it, skipping still fell during mind-wandering (0.268 to 0.252, $\Delta=-0.035$,
 $p=1.1\times10^{-5}$) and selectivity was still preserved (retention 96.9\%, 97.6\% and 99.1\%;
-all $p>0.11$; Fig.~\ref{fig:measurement}e). Matching the exclusion rate across states within reader gave the same answer for selectivity
+all $p>0.12$; Fig.~\ref{fig:measurement}e). Matching the exclusion rate across states within reader gave the same answer for selectivity
 (99.4\%, 98.6\% and 101.0\%; all $p>0.4$). That procedure distorts the composition of the retained
 set, so we do not read a rate contrast from it.
 
@@ -706,14 +503,14 @@ change. They do not (Fig.~\ref{fig:states}).
 
 In the independent sample, readers read the same kind of sentences either for comprehension or
 while searching for a specific semantic relation. The instructed search made reading shallower
-on every behavioural measure. Total reading time fell by 20\%, and readers fixated 30\% fewer
+on every behavioral measure. Total reading time fell by 20\%, and readers fixated 30\% fewer
 words. Coupling fell with it. The frequency slope on gaze duration dropped to 62.3\% of its
 value in normal reading ($p=1.7\times10^{-4}$), and surprisal behaved identically (62.7\%,
 $p=7.4\times10^{-5}$).
 
-The neural response did not follow. The occipital frequency kernel changed by $+32.0\%$
-($[-31.9, +88.1]\%$, $p=0.33$, $n=12$), and attenuations greater than 20\% are excluded, against
-a behavioural attenuation of 34 to 44\%. With twelve readers this is a weak constraint, but it
+The neural response did not follow. The occipital frequency kernel changed by $+32.2\%$
+($[-30.6, +88.4]\%$, $p=0.33$, $n=12$), and attenuations greater than 20\% are excluded, against
+a behavioral attenuation of 34 to 44\%. With twelve readers this is a weak constraint, but it
 is a constraint, and it points the same way as the frequency result in the primary sample.
 
 This gives a three-way contrast that we think is the most informative comparison in the paper.
@@ -785,7 +582,7 @@ any reference to the reports, does not detect mind-wandering (AUC $0.506$, $p=0.
 index of how hard the reader is working does ($0.528$, $p<10^{-4}$). Detectors that appear to
 measure attention to text are measuring effort and arousal (SI~S4, Fig.~\ref{fig:index}).
 
-\subsection{Comprehension fails where the mind was, not where the eyes were}
+\subsection{Comprehension failure tracks the location of the lapse, not of the gaze}
 \label{sec:comp}
 
 Word processing is preserved, but comprehension is not. This is the second half of the
@@ -800,12 +597,9 @@ is 5.9 accuracy points ($p=0.006$), a within-cell permutation gives $p=0.014$, a
 graded with the amount of the page covered ($p=7.2\times10^{-4}$). It is specific to the page
 whose question is asked rather than to the rest of the story.
 
-The more informative question is where on the page it matters. A large language model read each
-page against its question and marked the answer-bearing sentences, a median of 21\% of the page.
-Two checks say the spans are real. A second language model scoring from those sentences alone
-recovers the gold answer at 0.859, against 0.848 from the whole page, so the spans carry the
-answers. A separate annotation of the same items, built automatically from question-to-sentence
-overlap, agrees with them exactly on 32 of 50 and at a mean overlap of 0.825.
+The more informative question is where on the page it matters. We annotated each item with its answer-bearing sentences, a median of 21\% of the page, and
+validated the annotation independently. A language model scoring from those sentences alone
+recovers the gold answer at 0.859, against 0.848 from the whole page. The spans really do carry the answers.
 
 Mind-wandering on the answer span cost $-0.073$ in accuracy (95\% CI $[-0.092, -0.053]$,
 $p=1.7\times10^{-13}$), with reader and item held constant. Mind-wandering elsewhere on the same
@@ -816,9 +610,9 @@ itself.
 \begin{figure}[!t]
 \centering
 \includegraphics[width=\textwidth]{fig9_comprehension.pdf}
-\caption{\textbf{Comprehension fails where the mind was, not where the eyes were.}
+\caption{\textbf{Comprehension failure tracks the location of the lapse, not of the gaze.}
 (a) Raw accuracy by where the reported lapse fell, with the no-passage answerability ceiling
-marked. These are unadjusted proportions; the modelled effect holding reader and item constant
+marked. These are unadjusted proportions; the modeled effect holding reader and item constant
 is smaller.
 (b) The effect of a lapse on accuracy for each of 1000 randomly placed regions of the same size
 on the same page, against how much each region overlaps the annotated answer span. Region size
@@ -863,7 +657,7 @@ considerably.
 This section carries a caveat that we would rather state than bury. The item bank was designed
 to encourage attentive reading rather than to measure it, and a language model with no passage
 at all answers 56\% of the items correctly. The reading-dependent range is therefore narrower
-than the raw accuracies suggest. Because the localisation effect is identified within item, item
+than the raw accuracies suggest. Because the localization effect is identified within item, item
 answerability is absorbed and cannot drive it, but the absolute sizes should be read with the
 ceiling in mind.
 
@@ -876,7 +670,7 @@ sensitivity during self-reported mind-wandering, and the same held for the lexic
 the fixation-locked brain response. The
 strongest of these nulls is the one that matters most for the decoupling account. Whether a
 word is skipped is decided on parafoveal information before the word is fixated, and it is the
-decision the meta-analytic literature identifies as the most consistent behavioural marker of
+decision the meta-analytic literature identifies as the most consistent behavioral marker of
 mindless reading \citep{meziere2025}. In our data the lexical control of that decision was
 statistically equivalent to its on-task value within $\pm$10\%, several times tighter than the
 attenuations the decoupling account predicts and than the one our own instructed-goal condition
@@ -900,7 +694,7 @@ and, we think, more useful. The marker is definition-sensitive in continuous rea
 definitions can differ in sign, and the diagnostic that separates them is cheap to run.
 
 A second part of the answer may be paradigm. \citet{reichle2010} used self-caught reports
-during sentence-by-sentence reading of a novel, and analysed the intervals leading up to a
+during sentence-by-sentence reading of a novel, and analyzed the intervals leading up to a
 report. Our spans are retrospective, and their onsets are correspondingly imprecise. It is
 possible that a brief decoupled interval exists immediately before a reader notices the lapse,
 and that our labels smear across it. That is a real limitation, but it cuts both ways. It
@@ -939,12 +733,12 @@ withdrawing the eyes from the words.
 Taken with the finding that inter-reader alignment falls only in the component that word
 properties do not explain, the account we would put forward is that the reader loses the thread
 rather than the words. Word identification continues and the eyes keep responding to it. What degrades is the higher-order representation that makes one word follow from the last. Its
-behavioural expression is a reader who goes back more and more as the episode runs on, without
-knowing quite where to go back to. We stress that this is the account our data are consistent with rather than one they establish. What the data localise is the level at which reading fails: downstream of word identification and of the eye-movement policies that word identification drives. We cannot say which downstream process fails. Integration into a situation model, its maintenance
+behavioral expression is a reader who goes back more and more as the episode runs on, without
+knowing quite where to go back to. We stress that this is the account our data are consistent with rather than one they establish. What the data localize is the level at which reading fails: downstream of word identification and of the eye-movement policies that word identification drives. We cannot say which downstream process fails. Integration into a situation model, its maintenance
 in working memory, and the selection that keeps it updated are all candidates, and this design
 does not separate them. The two measures that would test it directly,
 the N400 and the contribution of extended context, are respectively unmeasurable here and null. The state changes we observed, a pupil dilation
-and a cortical desynchronisation time-locked to onset and absent at matched control onsets,
+and a cortical desynchronization time-locked to onset and absent at matched control onsets,
 are consistent with that reading, though neither is diagnostic of a specific mechanism on its
 own \citep{smallwood2011pupil,kam2011,braboszcz2011}.
 
@@ -958,16 +752,24 @@ change.
 
 The neural side of this study is asymmetric and we would not want that glossed over. The
 frequency response is measured well enough to constrain the question: an attenuation of more
-than 8.2\% is excluded, which is tighter than the effect an instructed goal produces. The
+than 8\% is excluded, which is tighter than the effect an instructed goal produces. The
 surprisal response is not. Its amplitude is small enough relative to trial noise that 44 readers
 and 400,000 fixations cannot detect even its complete abolition, so the semantic channel remains
 open. Closing it will need either a paradigm that produces a larger N400, such as strongly
-constraining sentence contexts, or a great deal more data per reader. We say this plainly
+constraining sentence contexts, or a great deal more data per reader. We checked whether the
+limit is instead the analysis. Aggregating evidence over all 64 sensors and the whole $0$ to
+$500$\,\si{\milli\second} window, with a text kernel fitted across readers and evaluated on a
+reader and an article it had never seen, yields a model that predicts held-out
+electroencephalography well ($p=1.6\times10^{-7}$ occipitotemporally) and recovers the additive
+mind-wandering offset, yet resolves the surprisal channel no better than the single-window
+contrast does: 127\% of the on-task effect detectable rather than 144\%. Substituting language
+model representations for the word properties does not help either (Section~S11). The limit is
+the signal, not the model. We say this plainly
 because a reader skimming the figures could otherwise take the two neural rows to carry equal
 weight, and they do not.
 
 Two further limitations deserve statement. The mind-wandering and instructed-goal comparisons
-come from different samples, so the contrast between them generalises across laboratories but
+come from different samples, so the contrast between them generalizes across laboratories but
 does not identify the goal as the causal switch. And the corrected skipping analysis conditions on the reader having scanned the local region.
 That is a state-dependent selection, and although the conclusion survived a layout-based rule
 and an exclusion-matched analysis, no version of this measurement is free of the choice
@@ -976,12 +778,12 @@ entirely.
 \paragraph{What is established and what is inferred.} The levels of this argument are not
 equally supported, and the vocabulary this literature uses for them is loose enough that they
 can be run together. We separate them explicitly. Word identification and the sensitivity of eye-movement policy to word properties are preserved,
-and preserved with stated bounds. Those bounds are $\pm$10\% on selection and 8.2\% on the
+and preserved with stated bounds. Those bounds are $\pm$10\% on selection and 8\% on the
 occipitotemporal frequency response, and an instructed goal produces a larger attenuation than
 either admits. That is the established part.
 Contextual integration is unresolved in either direction; the N400 test here is uninformative,
-and the behavioural evidence bearing on it is indirect. Global state clearly changes: pupil
-dilation, cortical desynchronisation, and a proportional reduction of the fixation response.
+and the behavioral evidence bearing on it is indirect. Global state clearly changes: pupil
+dilation, cortical desynchronization, and a proportional reduction of the fixation response.
 Comprehension clearly fails, and fails on the specific content the reader was absent for. The
 step from those facts to a failure in constructing and maintaining a passage-level
 representation is an inference we think is the most plausible available, not a measurement.
@@ -1005,23 +807,325 @@ still be useful, but it is a different quantity, and the distinction matters as 
 is asked to decide whether a reader has understood something rather than whether they are
 tired.
 
-\section*{Acknowledgements}
+\section{Methods}
 
-[To be completed.]
+\subsection{Datasets}
 
-\section*{Author contributions}
+\paragraph{Primary sample.} We analyzed the ROAMM dataset \citep{roammdata}: 44 adults read
+five Wikipedia articles, each divided into ten pages of about 220 words, presented as
+monospaced text. Reading was self-paced and page-wise. After each article, readers marked the
+spans of text during which their minds had wandered, and answered one multiple-choice
+comprehension question per page. Electroencephalography was recorded with a 64-channel
+BioSemi ActiveTwo system at 256\,Hz and binocular eye movements with an EyeLink 1000 Plus.
+The released derivative provides fixation events mapped to corpus word identifiers. We used
+all 404{,}557 first-pass fixations; 7.2\% fell inside a reported mind-wandering span. The
+Comprehension scores are used in Section~\ref{sec:comp}.
 
-[To be completed.]
+\paragraph{Positive-control sample.} We used ZuCo 1.0 \citep{hollenstein2018}: 12 adults read
+isolated sentences under three tasks, with 105 usable channels of EEG at 500\,Hz and
+simultaneous eye tracking. Task 2 is normal reading of encyclopedic sentences, task 3 is a
+search for a named semantic relation in encyclopedic sentences, and task 1 is sentiment
+reading of film-review sentences. Task order was fixed for every reader: session one contained
+task 2 followed by the first half of task 1, and session two contained task 3 followed by the
+second half of task 1. We exploit that structure to separate task from session, splitting task
+1 at its sentence-index midpoint.
 
-\section*{Competing interests}
+\subsection{Linguistic predictors}
 
-The authors declare no competing interests.
+Word frequency was the Zipf value from a large subtitle- and web-derived corpus
+\citep{vanheuven2014,brysbaert2018}. Contextual surprisal was the negative log probability of
+each word under GPT-2 \citep{radford2019}, conditioned on the preceding text within the
+article and with the sentence-initial token conditioned on a beginning-of-sequence marker.
+Sub-word tokens were mapped to words by maximum character overlap; a containment rule
+undercounts words because of the model's leading-space convention. Word length was in
+characters.
 
-\section*{Data and code availability}
+\subsection{Defining the three eye-movement decisions}
 
-The primary dataset is openly available \citep{roammdata} and the control dataset is distributed
-by its authors \citep{hollenstein2018}. Analysis code, the preregistration documents, and the
-derived tables needed to reproduce every figure are available at [repository].
+Reading positions were assigned in corpus order within each article. For each reader and
+article we took the ordered sequence of first-pass fixation positions.
+
+\emph{Selection.} For each forward step from position $p_i$ to $p_{i+1}>p_i$, the words
+strictly between were treated as stepped over. A word was scored as skipped if it was stepped
+over in a step spanning at most $G$ intervening words and never fixated, and as fixated
+otherwise. Words falling only inside steps larger than $G$ were excluded from the analysis set,
+since the reader is not demonstrated to have scanned them. The primary analysis used $G=4$;
+results are reported for $G\in\{1,2,3,4,6,10\}$. The naive alternative, in which any word in
+the reading span without a first-pass fixation counts as skipped, corresponds to
+$G=\infty$. Mind-wandering state for a stepped-over word was taken from the bounding
+fixations, and steps whose bounding fixations disagreed were excluded (3.4\% of steps).
+
+We also used a criterion that makes no reference to gap size. Word bounding-box tops were
+clustered into text lines within each page, with a tolerance of 40 pixels against a line
+spacing of about 90 pixels, because tops jitter by a few pixels with glyph height. A word was
+analyzable if the reader fixated at least one word on the same line both before and after it.
+This yields the same conclusions and is reported alongside the gap criterion.
+
+Only fixations that the dataset providers could map to a word are present in the released
+derivative. We can therefore measure the interval between successive mapped fixations, but we
+cannot observe a fixation that fell outside every word bounding box. Our claim about off-text
+gaze is an inference from elapsed time: a fixation we cannot see would still occupy time, and
+the intervals we observe are too short to contain one.
+
+\emph{Duration.} Gaze duration was the sum of first-pass fixations on a word; first-fixation
+duration was the first of them. Analyses used the natural logarithm, with raw milliseconds
+reported alongside where the scale matters.
+
+\emph{Repair.} A corrective return was defined for every forward step that stepped over exactly
+one word: the event was coded 1 if any of the next five fixations landed on that word. We also
+computed the overall rate of backward steps and the rate of immediate refixation.
+
+\subsection{Coupling measures and inference}
+
+For the two binary decisions we used Somers' $D$, computed as $2A-1$ where $A$ is the
+probability that a randomly chosen positive case has a higher predictor value than a randomly
+chosen negative case \citep{somers1962}. It is invariant to monotone transformations of the
+predictor and to the base rate of the outcome, which matters here because the base rates
+differ between states. For duration we used ordinary least-squares slopes on standardized
+predictors, computed within reader and within state.
+
+Reader is the unit of inference throughout. We report the mean, a 95\% percentile interval
+from 10{,}000 reader-level bootstrap resamples, a paired $t$ test, and the number of readers
+showing the effect. Families of three tests were corrected by the Holm procedure
+\citep{holm1979}. Retention is the mind-wandering estimate divided by the on-task estimate,
+always computed on signed rather than absolute values, since ratios of absolute values are
+inflated when the underlying slopes are noisy.
+
+Nulls were supported rather than merely reported. We ran two one-sided tests against bounds of
+10\% and 20\% of the on-task effect \citep{lakens2017} and computed default Bayes factors for
+the paired difference with a Cauchy prior of scale $1/\sqrt{2}$ \citep{rouder2009}.
+
+\subsection{Within-token fixed-effects model}
+
+Because the same corpus token is read by many readers, mind-wandering status varies within
+token. We fitted
+\[
+\log(\text{gaze duration})_{ij}
+= \alpha_i + \gamma_j + \delta\,m_{ij} + \sum_k \theta_k\,m_{ij}z_{k,i} + \varepsilon_{ij},
+\]
+where $i$ indexes token instance, $j$ indexes reader, $m$ is the mind-wandering indicator and
+$z_k$ are standardized word properties. Token and reader effects were absorbed by alternating
+within-transformation, and standard errors were clustered on reader
+\citep{cameron2011}. Main effects of word properties are absorbed by the token effects, which
+is the point: the interaction is identified purely from readers who differ in state on the
+same physical word in the same position of the same page.
+
+\subsection{Omnibus model-based coupling test}
+
+The unit is one fixation-to-fixation transition with both words mapped inside the page's genuine
+reading interval (392,766 transitions; the 0.9\% whose target falls outside the candidate window
+are dropped). The candidate set for each transition is the words at page positions $\pm20$ from
+the currently fixated word, which contains the true target on 99.1\% of transitions.
+
+Two heads are fitted. The target head scores every candidate and is trained with a softmax over
+the set; the duration head predicts log fixation duration. Each head receives a geometry block
+and, in the compared model, a text block. The geometry block holds page progress, line, position
+in line, distance to the line end, gaze position and its offset from the word center, incoming
+saccade amplitude, previous fixation duration, first-pass status, ordinal position in the run,
+and the number of times this reader has already fixated the candidate on this page. The text
+block holds Zipf frequency, length, within-sentence surprisal and the two extended-context
+terms, taken at the candidate and at the currently fixated word for the target head, and at the
+fixated word and $w-1$, $w+1$, $w+2$ for the duration head.
+
+Both heads are trained on on-task transitions only. Evaluation is a $5\times4$ design of five
+article folds crossed with four reader groups, so each of the 20 fitted models is tested on
+transitions from an article and from readers it never saw. The target head is compared as two
+separately trained models and read out per transition as
+$\log_2 p_{\text{text}} - \log_2 p_{\text{no text}}$ on the word actually fixated. The duration
+head is two-stage: a geometry network is fitted first and the text block is fitted to its
+held-out residual, because the lexical contribution to duration is about 0.2\% of the variance
+while the seed-to-seed variability of two independently trained networks exceeds it. Replacing
+the ridge text stage with a network made the duration read-out three times smaller (24 of 44
+readers positive against 41), so the text-to-duration mapping is treated as linear.
+
+Inference is at the reader level: per-reader means in each state, a 10,000-draw bootstrap over
+readers for intervals, and the same fixed-effect ladder and episode-preserving permutation used
+elsewhere in this paper. The permutation replaces each reader's mind-wandering labels with
+another reader's, transferred by article, page and word position, which preserves episode
+length, contiguity and where in the text episodes fall while breaking the link between a
+reader's own lapses and their own eye movements.
+
+\subsection{Control analyses}
+
+A relocation control tested whether the observed contrasts are specific to reported spans. For
+each reader we recorded the number and length of their mind-wandering spans, relocated each to
+a random on-task position within the same run, and recomputed the whole analysis. Two hundred
+relocations gave a null distribution for each contrast. We also repeated the primary analysis
+within tertiles of position through a run, restricted to spans marked as fully off-task, and
+leaving out each article in turn.
+
+For the interpretation of large positional gaps we computed, for every consecutive fixation
+pair, the interval between the end of one fixation and the start of the next, and tabulated it
+against gap size, state, and whether the pair crossed a page boundary.
+
+\subsection{Electrophysiology}
+
+Fixation-related potentials were epoched from $-100$ to $+500$\,ms around fixation onset. In
+natural reading successive fixations overlap, and the overlap is correlated with word
+properties because difficult words are fixated longer, so naive averages are not
+interpretable \citep{dimigen2011,dimigen2021}. We therefore estimated overlap-corrected
+kernels by linear deconvolution: a sparse finite-impulse-response design matrix was built over
+the epoch for an intercept and for each predictor, including the interactions with
+mind-wandering state, and solved by ridge-regularized normal equations for all channels at
+once \citep{smith2015,ehinger2019}.
+
+Regions of interest were fixed a priori: an occipitotemporal set analyzed from 150 to 290\,ms
+for frequency, and a centroparietal set analyzed from 300 to 450\,ms for surprisal. Beyond the
+regions of interest we ran cluster-based permutation tests over the full epoch and all channels
+with sign-flipping at the reader level \citep{maris2007}. Split-half reliability of the
+fixation-related potential was computed with trial counts matched between states.
+
+\subsection{Comprehension outcomes and answer spans}
+
+The released dataset records one four-option comprehension question per page. We parsed
+2{,}200 per-page outcomes and validated them against the shipped accuracy fields and against the
+item keys. One item was found to be mis-keyed and is excluded everywhere. The mapping between
+the physiology subject index and the released subject identifiers was recovered from a 50-page
+reading-duration fingerprint rather than assumed, and is bijective.
+
+Each item was localized to its answer-bearing sentences using sentence embeddings and
+inverse-document-frequency overlap with the question and its options, over the candidate
+sentences of that page. Seven items were hand-corrected where a fact is split across sentences.
+Items phrased with a negation were handled by taking the union of the sources of the true
+options. The annotation was validated by scoring a local language model on the evidence
+sentences alone and comparing with the full page.
+
+Trial-level models are linear probability models absorbing reader and item, with standard errors
+clustered by reader and confidence intervals from a reader-level bootstrap. The random-region
+control draws 1000 contiguous regions of the same word count from the same page and repeats the
+analysis on each. The overlap gradient regresses the effect obtained for each random region on
+that region's word overlap with the true answer span. The attributable fraction is a
+counterfactual from the fitted model with the answer-span mind-wandering term set to zero,
+bootstrapped over readers.
+
+\subsection{Topographic rescaling analysis}
+
+To ask whether mind-wandering changes the pattern or the size of the fixation-evoked response we
+computed, per reader, overlap-corrected fixation responses for on-task and mind-wandering
+fixations matched on frequency, length, surprisal and fixation duration. The difference field was
+tested with a sign-flip test on global field power, and its spatial pattern was correlated with
+the on-task fixation field over the same interval, with a bootstrap over readers.
+
+The proportional model estimates a single scalar $\alpha$ such that the difference field equals
+$-\alpha$ times the on-task field. It is fit leave-one-reader-out to avoid using a reader's own
+data in their own estimate. We report the variance of the group difference map that the rescaled
+on-task map accounts for, and we test the residual field after subtracting it with the same
+sign-flip procedure. Time-resolved differences use a familywise cluster correction across the
+epoch. Polarity is not retained when comparing topographies, because a polarity-preserving
+comparison confounds a change in sign with a change in configuration.
+
+\subsection{Index of text-driven reading}
+
+The index is fit only on on-task fixations and never sees a mind-wandering report. We regress log
+fixation duration on Zipf frequency, word length and contextual surprisal, with reader effects,
+over fixations of 50 to 1000\,ms with a mapped word and finite predictors. This yields, for each
+fixation, a duration predicted from the text alone.
+
+For each reader and run we then take a centered rolling window of 25 fixations and compute the
+slope of observed log duration on predicted log duration, with both quantities centered inside the
+window. Centering removes any additive change in reading speed, so the slope reflects only the
+degree to which word properties are currently governing behavior. Windows with insufficient
+variance in the predicted values are dropped. Slopes are winsorized at the 1st and 99th
+percentiles and converted to a within-reader percentile, giving a 0 to 100 score. The comparison
+index is the within-reader percentile of raw log fixation duration over the same fixations.
+State contrasts are computed per reader and tested with a reader-level bootstrap.
+
+\subsection{Episode time course and effort targeting}
+
+Episodes were the maximal runs of consecutive fixations carrying a mind-wandering label. For
+each fixation we recorded elapsed time since the first fixation of its episode and binned it
+into 0--2, 2--5, 5--10 and beyond 10 seconds. Each reader's values were expressed relative to
+their own on-task mean and a linear trend across bins was fitted per reader. The null came from
+300 sets of matched on-task stretches drawn at random positions with lengths sampled from the
+observed episode-length distribution, analyzed identically. Time on task was controlled by
+regressing each reader's regression indicator on their position through the run before binning.
+
+For the targeting analysis, words were split into quartiles of contextual surprisal within
+reader, and the mind-wandering minus on-task difference in each effort measure was computed per
+quartile, with a linear trend across quartiles fitted per reader. Extended-context integration
+was tested by decomposing GPT-2 surprisal into a within-sentence component and the additional
+reduction contributed by the preceding passage, then testing the interaction of the latter with
+mind-wandering.
+
+\subsection{State dynamics and inter-subject correlation}
+
+Peri-onset trajectories were computed over $\pm 8$\,s around the onset and offset of each
+reported span, z-scored within run, for pupil diameter and for band-limited power. Control
+onsets were drawn from on-task reading and matched on position within the run. Inter-subject
+correlation used a leave-one-reader-out group template of the response to each word. The
+template for a given reader was the mean over the other readers' \emph{on-task} readings of that
+word, requiring at least five contributors, so that it represents a normative response rather
+than a mixture of states. The target reader's words were then correlated with the template
+separately for each state, subsampling on-task words to match the mind-wandering count. Three
+versions of the response were used: raw log gaze duration, the same z-scored within reader and
+state, and the residual after regressing out frequency, length and surprisal. Specificity was
+tested by permuting the mind-wandering labels within reader at matched count.
+
+\subsection{Software and availability}
+
+Analyses were run in Python with NumPy, SciPy, pandas, scikit-learn and PyTorch. Both datasets
+are public and neither was collected for this study. The primary dataset is ROAMM, OpenNeuro
+\texttt{ds007629} version 1.3.0 \citep{roammdata}, released under CC0; the control dataset is
+ZuCo 1.0 \citep{hollenstein2018}, distributed through the Open Science Framework
+\citep{zucodata}. Analysis code and the derived tables needed to reproduce every figure and
+table are available at the repository given in the code availability statement.
+
+\subsection{Preregistration status}
+
+The analyses of the selection and repair channels were specified in a written plan, with gates
+and directional predictions taken from the published literature, before the corresponding
+analyses were run; that plan is included with the code. They are nevertheless exploratory with
+respect to this dataset, which has been analyzed by us for other purposes. The comparison in
+the control sample was gate-declared. We report equivalence tests and Bayes factors for every
+null and regard preregistered replication as necessary.
+
+\section*{Funding}
+
+This work was supported by funding from the Army Research Laboratory's Human-Guided Intelligent
+Systems (HGIS) Program (W911NF-23-2-0067), the Army Research Laboratory's STRONG Program
+(W911NF-19-2-0139, W911NF-19-2-0135, W911NF-21-2-0125), the Air Force Office of Scientific
+Research (FA9550-22-1-0337), and a Vannevar Bush Faculty Fellowship from the US Department of
+Defense (N00014-20-1-2027). The funders played no role in study design, data collection,
+analysis and interpretation of data, or the writing of this manuscript.
+
+\section*{Acknowledgments}
+
+We thank the authors of the ROAMM and ZuCo datasets for collecting and openly releasing the
+recordings analysed here. Neither dataset was collected for this study and neither group of
+authors bears responsibility for the analyses or conclusions.
+
+\section*{Data availability}
+
+Both datasets analysed here are publicly available and were collected by others. ROAMM is
+distributed by OpenNeuro as \texttt{ds007629} under a CC0 licence and this study used version
+1.3.0 (\url{https://openneuro.org/datasets/ds007629/versions/1.3.0}); the version matters
+because word-to-fixation mapping changed between releases. ZuCo 1.0 is distributed through the
+Open Science Framework (\url{https://osf.io/2urht/}). The derived tables that the figures and
+tables of this paper are computed from are included with the analysis code, so every reported
+number can be checked without reprocessing the raw recordings.
+
+\section*{Code availability}
+
+All analysis code is openly available at \url{https://github.com/anirudhmn/MindWandering}
+(version 1.0) under the MIT licence. The repository contains the preprocessing and
+deconvolution pipelines, the scripts that produce every figure and table in this paper and its
+supplementary information, the machine-readable result file behind each reported test, and the
+preregistration documents referred to in the preregistration statement. It also ships the
+derived tables the analyses read, so every reported number can be recomputed without the raw
+recordings; model fitting is seeded per reader, fold and repetition. The raw recordings are
+obtained separately from the sources given above.
+
+\section*{Ethical statement}
+
+The analyses in this manuscript use two previously collected, publicly available datasets
+\citep{roammdata,hollenstein2018}. No new data were collected. The original data collections
+were approved by the institutional review boards of the institutions that carried them out, and
+written informed consent was obtained from all participants prior to those experiments.
+
+\section*{Conflict of interest statement}
+
+The authors declare that they have no known competing financial interests or personal
+relationships that could have appeared to influence the work reported in this paper.
 
 \bibliography{refs}
 
@@ -1032,7 +1136,7 @@ derived tables needed to reproduce every figure are available at [repository].
 
 These analyses are reported in full here rather than in the main text because each
 supports the argument without being part of its spine. Sections S1 to S4 describe what
-does change during mind-wandering, summarised in Section~\ref{sec:state}. Sections S5 to
+does change during mind-wandering, summarized in Section~\ref{sec:state}. Sections S5 to
 S7 concern the control sample. Sections S8 and S9 record two reliable but peripheral
 observations.
 
@@ -1069,7 +1173,7 @@ in amplitude applies equally to every word. It cannot carry information about wh
 change in the frequency or surprisal kernel would. The neural signature of mind-wandering is
 real, and it is uninformative about content by construction.
 
-These are sensor-level results. We do not interpret the scalp map as source localisation.
+These are sensor-level results. We do not interpret the scalp map as source localization.
 
 \begin{figure}[t]
 \centering
@@ -1077,7 +1181,7 @@ These are sensor-level results. We do not interpret the scalp map as source loca
 \caption{\textbf{Mind-wandering rescales the fixation response rather than reconfiguring it.}
 (a) The overlap-corrected response to a fixated word on task, averaged over 150 to 290\,ms,
 as a scalp field.
-(b) The mind-wandering minus on-task difference field over the same window, on its own colour
+(b) The mind-wandering minus on-task difference field over the same window, on its own color
 scale.
 (c) What a single proportional scaling of panel a predicts, using the leave-one-reader-out
 factor of $-25.8$\%. One free parameter.
@@ -1087,7 +1191,7 @@ line is the fitted proportional model.
 (f) Global field power of the difference field through the epoch, against a sign-flip null over
 readers. Shading marks the familywise-corrected cluster.
 (g) Global field power in the analysis window before and after the rescaling, each against its
-own sign-flip null. Panels are sensor-level and are not interpreted as source localisation.}
+own sign-flip null. Panels are sensor-level and are not interpreted as source localization.}
 \label{fig:gain}
 \end{figure}
 
@@ -1101,7 +1205,12 @@ extended-context integration we can run: comparing surprisal computed over the w
 passage against surprisal computed within the sentence alone, the contribution of extended
 context to reading time and to the N400 was unchanged during mind-wandering ($p=0.37$ and
 $p=0.28$). Whatever is failing, it is not showing up as a selective loss of context-based
-prediction.
+prediction. The strongest available version of this test is model-based. Taking the
+residual left after the geometry model and the on-task text model of Section~S10, and asking
+whether any word property predicts the additional dwell during mind-wandering, cross-validated
+by reader, the held-out $R^2$ is $-0.005$ on mind-wandering transitions ($n=28{,}450$) and
+$-0.003$ on on-task transitions ($n=364{,}316$). Nothing a model can read from the text explains
+where the extra looking goes.
 
 The three effort measures do, however, behave differently over time. Fixation duration and
 refixation are step changes: fully present in the first two seconds of an episode and flat
@@ -1139,7 +1248,7 @@ mind-wandering labels within reader at matched count never reproduced it
 these data ($\Delta=-0.028$, $p=0.025$) is consistent with this once the difference in template
 construction is taken into account.
 
-So the loss of alignment is confined to the part of gaze behaviour that word properties do not
+So the loss of alignment is confined to the part of gaze behavior that word properties do not
 explain. Readers keep responding to the same words in the same way. What diverges is everything
 else.
 
@@ -1168,11 +1277,11 @@ whatever the reports capture. We built an index that is never shown the reports,
 it does (Fig.~\ref{fig:index}).
 
 The logic is the first principle the paper started from. If a reader is attending to the text,
-properties of the words should be governing behaviour. We fit that relationship on on-task
+properties of the words should be governing behavior. We fit that relationship on on-task
 fixations only, predicting log fixation duration from frequency, length and surprisal with
 reader effects (Zipf $-0.0128$, length $-0.0014$, surprisal $+0.0028$). Every fixation then has
 a duration that the text alone predicts. In a rolling window of 25 fixations we regressed
-observed duration on predicted duration, with both centred inside the window. The centring is
+observed duration on predicted duration, with both centered inside the window. The centering is
 what makes the index specific. It removes any overall speeding or slowing, and leaves only the
 question of whether harder and rarer words are currently getting proportionally longer looks.
 We scored the result as a within-reader percentile, so the index runs from 0 to 100.
@@ -1187,7 +1296,7 @@ percentile of raw fixation duration, that index rises from 49.8 on task to 52.8 
 spans ($+3.1$ points, 95\% CI $[+2.1, +4.0]$, $p<10^{-4}$, area under the curve 0.528).
 
 The two indices differ in one respect. One tracks the slope relating word properties to
-behaviour. The other tracks the level of behaviour. Mind-wandering moves the level and leaves
+behavior. The other tracks the level of behavior. Mind-wandering moves the level and leaves
 the slope alone. This is the same conclusion as the rest of the paper, expressed as a signal
 that runs continuously through a reading session rather than as a set of interaction terms.
 
@@ -1196,7 +1305,7 @@ that runs continuously through a reading session rather than as a set of interac
 \includegraphics[width=\textwidth]{fig7_index.pdf}
 \caption{\textbf{A continuous index of text-driven reading does not move; a level index does.}
 (a) Both indices through one reader's session. The text-driven index is the rolling slope of
-observed on text-predicted log fixation duration, centred within the window; the level index is
+observed on text-predicted log fixation duration, centered within the window; the level index is
 the within-reader percentile of raw fixation duration. Shading marks reported mind-wandering.
 The session is the one whose two state contrasts fall closest to the group means among sessions
 with at least five reported spans, and the traces are smoothed over 101 fixations for display
@@ -1259,5 +1368,81 @@ stronger for film-review sentences than for encyclopedic sentences (110.5\% and 
 respectively, within the first session). We report this because it bears on how the
 deep-reading conditions of that dataset should be compared, not because we can explain it.
 
+
+
+\subsection*{S10. Robustness of the omnibus coupling test}
+
+The per-transition read-out is heavy-tailed, with a standard deviation of $0.68$ bits against a
+mean of $0.138$ and a median above the mean, and retention is a ratio of means. We therefore
+re-derived retention under eleven exclusions and two robust estimators. No refitting is
+involved; every variant reads the same frozen per-transition values.
+
+\begin{center}
+\small
+\begin{tabular}{lrrr}
+\toprule
+Variant & Transitions & Retention & 95\% CI \\
+\midrule
+All transitions & 392,766 & 0.911 & $[0.822, 0.995]$ \\
+Trimmed outside the 1st and 99th percentile & 384,862 & 0.897 & $[0.813, 0.978]$ \\
+Trimmed outside the 5th and 95th percentile & 353,448 & 0.926 & $[0.852, 0.995]$ \\
+Winsorized at the 1st and 99th percentile & 392,766 & 0.908 & $[0.822, 0.990]$ \\
+Winsorized at the 5th and 95th percentile & 392,766 & 0.909 & $[0.828, 0.986]$ \\
+Median rather than mean per reader & 392,766 & 0.942 & $[0.878, 1.005]$ \\
+Saccades of ten words or fewer & 355,495 & 0.881 & $[0.785, 0.972]$ \\
+Saccades of five words or fewer & 347,252 & 0.911 & $[0.814, 1.005]$ \\
+Fixations of 80 to 800\,\si{\milli\second} & 382,711 & 0.902 & $[0.810, 0.990]$ \\
+Episode interiors only & 384,421 & 0.903 & $[0.815, 0.990]$ \\
+Forward saccades only & 249,929 & 0.965 & $[0.877, 1.056]$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Retention never leaves $0.88$ to $0.97$. The most outlier-resistant estimator returns the
+smallest shortfall, so the tails contribute to it but do not produce it.
+
+Retention appears higher for forward saccades ($0.965$) than for regressions and refixations
+($0.899$), but that difference is in the denominator rather than the effect. In bits the
+shortfall is $-0.0121$ for forward saccades and $-0.0110$ for the rest, against on-task baselines
+of $0.163$ and $0.108$; the within-reader difference of differences is $+0.0012$
+$[-0.026, +0.029]$, $p=0.94$, with 20 of 40 readers in each direction. Forward saccades simply
+have more text-driven signal to lose. The shortfall is uniform across kinds of movement, which
+is the shape of a small global change rather than of one mechanism failing.
+
+\subsection*{S11. A richer neural model does not rescue the surprisal response}
+
+We asked whether the uninformative surprisal contrast reflects the analysis rather than the
+data. The fixation kernels were refitted so that the text kernel is pooled across readers and
+every evaluated cell is held out on both the reader and the article, and the read-out became the
+improvement in held-out prediction of the continuous recording over the whole $0$ to
+$500$\,\si{\milli\second} window at all 64 sensors, rather than a coefficient in one window at
+one region.
+
+The model works. It predicts held-out data occipitotemporally ($p=1.6\times10^{-7}$, 36 of 44
+readers) and centroparietally ($p=6.3\times10^{-7}$, 37 of 44); permuting words within a page
+drives the same quantity below zero across two independent draws; and the mind-wandering kernel
+reproduces the additive occipitotemporal offset reported in the main text
+($+0.070$\,\si{\micro\volt}, $p=7.8\times10^{-4}$).
+
+It does not buy power. The smallest detectable change is 82\% of the on-task effect for the
+frequency channel against 43\% for the single-window contrast, and 127\% against 144\% for the
+surprisal channel. A held-out prediction gain is a noisier statistic than a directly estimated
+coefficient, and that loss outweighs what is gained by aggregating over sensors and latencies.
+Allowing the mapping from word properties to the kernel to be nonlinear changes nothing
+($+0.0006$\,\si{\micro\volt\squared}, $p=0.47$, 24 of 44 readers), which matches the behavioral
+result that a nonlinear text stage is worse than a linear one.
+
+Replacing the word properties with GPT-2 layer representations does not help either. The best
+layer, the fourth, reaches a held-out gain of $0.0068$\,\si{\micro\volt\squared} against
+$0.0069$ for the four word properties; prediction falls with depth, and the final layer falls
+below the word-permutation control. No layer detects a change smaller than twice the on-task
+effect, so the depth profile cannot address the question.
+
+One caution follows from this analysis and applies beyond it. When the text block is restricted
+to word length, the held-out gain is larger at right lateral frontal sensors
+($0.0175$\,\si{\micro\volt\squared}) than occipitotemporally ($0.0075$), the signature of
+residual ocular contamination, because length drives saccade amplitude. Removing length restores
+the occipitotemporal sensors to the top. Any predictor correlated with saccade amplitude can
+produce apparent coupling that survives amplitude nuisance regressors.
 
 \end{document}
