@@ -1,6 +1,6 @@
 # Mind-wandering preserves word-level coupling
 
-Version 1.1. Analysis code and derived tables for the manuscript *Mind-wandering preserves
+Version 1.2. Analysis code and derived tables for the manuscript *Mind-wandering preserves
 word-level coupling but produces localized comprehension failure*. This repository holds the
 code and the numeric record only; the manuscript itself is not distributed here.
 
@@ -29,7 +29,7 @@ File names carry the draft numbering, not the printed numbering:
 | `fig1_design` | 1 | design and datasets |
 | `fig2_instrument` | 2 | coupling at all three levels |
 | `fig3_preserved` | 3 | selection, repair, duration, brain |
-| `fig4_measurement` | 4 | the skipping artefact |
+| `fig4_measurement` | 4 | the definition-dependence of skipping |
 | `fig5_states` | 5 | skimming versus mind-wandering |
 | `fig9_comprehension` | 6 | answer-span localisation |
 | `fig6_gain` | S1 | amplitude rescaling of the fixation response |
@@ -50,6 +50,8 @@ roamm/          analysis of the primary dataset
   attention_index/  the label-free index of text-driven reading
   omnibus/          the model-based omnibus coupling test; Table 1's omnibus rows and S10
   encoding/         the pooled deconvolutional encoding model; S11
+  bridge/           the alignment decomposition against Sun & Jangraw (2026); S12
+  southwell/        rebuild of the Southwell et al. (2020) global gaze model; S13
   artifacts/        derived tables shared across stages
 zuco/           control-dataset extraction and the instructed-goal contrast
 ```
@@ -100,6 +102,14 @@ language-model states. Its `results/` files are included, and `01_cache_eeg.py` 
 should be run first: it checks the fast deconvolution against the frozen kernels in
 `roamm/artifacts/coupling/rerp_betas.npy`, and everything else depends on that holding.
 
+**The bridge stage** (`roamm/bridge/`) has the same constraint for the same reason.
+`bridge_alignment.py` reads the single-trial fixation epochs written by
+`roamm/build/extract_frp_epochs.py` and the language-model state array written by
+`roamm/encoding/scripts/05a_extract_lm_states.py`, neither of which is redistributed. Its
+`results/bridge_alignment.json` is included and holds every number quoted in S12, including all
+fourteen layer-by-dimensionality specifications. A full run takes about five minutes on a
+many-core machine.
+
 Order within `roamm/build/`: `word_features` → `surprisal_features` (GPT-2) →
 `extract_multiscale_surprisal` → `extract_fixations` → `extract_all_fixations` →
 `extract_frp_epochs` → `extract_frp_roi` → `build_reading_table` → `build_rerp` →
@@ -116,12 +126,35 @@ per-transition read-outs of the omnibus stage).
 
 Not included: the raw recordings of either dataset, single-trial EEG epochs, the preprocessed
 continuous recording and residual cache of the encoding stage, the language-model state array,
-and analyses that are not reported in the manuscript.
+and analyses that are not reported in the manuscript. The encoding and bridge stages are the two
+that cannot run from a clean checkout for this reason; their `results/` files are included in
+full. `roamm/southwell/` has no such constraint: it reads only `all_fixations.parquet` and
+`pages_full.parquet`, both shipped, and reproduces `southwell_replication.json` byte-identically
+in about five seconds.
+
+## Changes in version 1.2
+
+Two stages were added, both answering papers that appeared after version 1.1 and both post hoc
+with respect to this dataset. Neither changes any result that was already here.
+
+- `roamm/bridge/` decomposes the loss of embedding-to-EEG alignment that Sun & Jangraw (2026)
+  report on ROAMM into a response-gain term, a stimulus term and a noise term. The gain term
+  carries essentially all of it and matches the rescaling factor `roamm/topography/` estimates
+  from different features, so the two papers' apparently opposite conclusions are the same
+  measurement seen twice. Manuscript SI S12.
+- `roamm/southwell/` rebuilds the global page-level gaze model of comprehension from Southwell
+  et al. (2020) on these readers. It replicates (held-out r = 0.338 against their 0.384, 0.362
+  and 0.372), which fixes the level at which the manuscript's gaze null holds: gaze predicts how
+  well a reader read and not which content they lost. Manuscript Table 2 and SI S13.
+
+`roamm/southwell/` was verified on addition in the same way as everything below: run from a clean
+checkout, output compared byte-for-byte against the record here. `roamm/bridge/` cannot be, for
+the reason given above, and ships its result file instead.
 
 ## What has been checked
 
 Every result file in this repository was regenerated from a fresh checkout and compared against
-the version recorded here. All 37 scripts that can run without the raw recordings succeed, and
+the version recorded here. All 38 scripts that can run without the raw recordings succeed, and
 their outputs agree to floating-point noise; the nine figures regenerate byte-identically. Every
 number in the manuscript was then traced to the result file that produces it.
 

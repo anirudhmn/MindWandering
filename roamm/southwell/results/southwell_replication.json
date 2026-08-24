@@ -1,0 +1,98 @@
+{
+ "n_pages": 2187,
+ "n_readers": 44,
+ "observed_accuracy": 0.619570187471422,
+ "southwell_reference_r": [
+  0.384,
+  0.362,
+  0.372
+ ],
+ "features": [
+  "mean_fix_dur",
+  "n_fixations",
+  "regression_fix_prop",
+  "mean_saccade_len",
+  "horiz_saccade_prop",
+  "fix_dispersion",
+  "reading_time"
+ ],
+ "n_folds": 4,
+ "n_reps": 100,
+ "eye_movements_plus_reading_time": {
+  "median_r": 0.33813730432567757,
+  "range": [
+   0.14778562817880023,
+   0.4683151548986926
+  ],
+  "ci95_across_reps": [
+   0.1786291951172755,
+   0.4370260875364472
+  ],
+  "median_p": 0.024781375797850766
+ },
+ "reading_time_only": {
+  "median_r": 0.10846847084768625,
+  "range": [
+   -0.1620869169103752,
+   0.2125525726117193
+  ],
+  "ci95_across_reps": [
+   -0.10296199940756658,
+   0.20916388617833237
+  ],
+  "median_p": 0.4642187978264676
+ },
+ "shuffled_control": {
+  "median_r": 0.008623356401574741,
+  "range": [
+   -0.5651643576655131,
+   0.4081366243687355
+  ]
+ },
+ "between_reader_head_to_head": {
+  "note": "standardised; predictors are the gaze model's prediction and the reader's self-caught mind-wandering rate",
+  "n_readers": 44,
+  "gaze_prediction": {
+   "beta": 0.2391792677154018,
+   "ci95": [
+    -0.1486400441878535,
+    0.6269985796186571
+   ],
+   "t": 1.2455087088389156,
+   "p": 0.22001595803059007
+  },
+  "mind_wandering_rate": {
+   "beta": -0.15531809100654018,
+   "ci95": [
+    -0.5431374029097955,
+    0.23250122089671513
+   ],
+   "t": -0.8088077066071891,
+   "p": 0.42329446526218684
+  },
+  "r2": 0.12973284762853543,
+  "southwell_dataset2": {
+   "gaze_beta": 0.4,
+   "gaze_ci": [
+    0.23,
+    0.57
+   ],
+   "mw_beta": 0.13,
+   "mw_ci": [
+    -0.04,
+    0.3
+   ],
+   "mw_p": 0.13
+  }
+ },
+ "within_reader_page_level": {
+  "pred": {
+   "partial_r_within_reader": 0.12974197952531927,
+   "p": 1.131096925024086e-09
+  },
+  "mw": {
+   "partial_r_within_reader": -0.10110762008594046,
+   "p": 2.1607512283180365e-06
+  }
+ }
+}
