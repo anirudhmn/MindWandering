@@ -212,7 +212,8 @@ behavioural partner to the existing additive-state and ISC results.
 
 ## Limits
 
-- ROAMM MW labels are retrospective and span-level; onset timing is imprecise, so the
+- ROAMM MW labels are self-caught and span-level; the reader marks the onset word after
+  catching the lapse, so onset timing carries some imprecision, and the
   onset-enrichment result is descriptive.
 - Exploratory with respect to ROAMM. G1 and G4 test directions predicted a priori by
   published literature, which is the strongest available framing short of new data.

@@ -1,13 +1,13 @@
 # Mind-wandering preserves word-level coupling
 
-Version 1.0. Analysis code and derived tables for the manuscript *Mind-wandering preserves
+Version 1.1. Analysis code and derived tables for the manuscript *Mind-wandering preserves
 word-level coupling but produces localized comprehension failure*. This repository holds the
 code and the numeric record only; the manuscript itself is not distributed here.
 
 Two simultaneous eye-tracking and EEG datasets are used. The primary sample is
 **ROAMM** (OpenNeuro `ds007629`): 44 adults reading five Wikipedia articles page by page,
-marking afterwards the spans over which their minds had wandered, and answering one
-multiple-choice question per page. The control sample is **ZuCo 1.0**, which contributes an
+reporting each lapse as they caught it and marking the span of text it covered, and
+answering one multiple-choice question per page. The control sample is **ZuCo 1.0**, which contributes an
 instructed shallow-reading condition.
 
 ## Reproducing the figures

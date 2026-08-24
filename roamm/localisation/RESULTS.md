@@ -290,9 +290,9 @@ on the important parts" is not a person, it is a trial.
 
 ## 7. What confirmation would require
 
-The localised-MW result is strong internally but rests on one dataset, retrospective self-report,
+The localised-MW result is strong internally but rests on one dataset, self-caught self-report,
 and one item per page. Confirmation needs: independent data (ZuCo has no comparable
-per-page items — this needs a new collection); probe-caught rather than retrospective MW so lapse
+per-page items — this needs a new collection); probe-caught rather than self-caught MW so lapse
 timing is not reconstructed; several items per page so the same lapse can be scored against hit and
 missed content within a trial; and ideally gaze-contingent manipulation of *when* content is
 presented relative to a detected lapse, which would turn the quasi-experiment into an experiment.
