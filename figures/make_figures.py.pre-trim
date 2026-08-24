@@ -328,9 +328,9 @@ def figure2():
 
 # =============================================================== FIGURE 3
 def figure3():
-    fig = plt.figure(figsize=(18 * CM, 5.9 * CM))
-    gs = fig.add_gridspec(1, 3, wspace=0.62, left=0.105, right=0.985,
-                          top=0.84, bottom=0.235)
+    fig = plt.figure(figsize=(18 * CM, 10.4 * CM))
+    gs = fig.add_gridspec(2, 3, wspace=0.62, hspace=0.66, left=0.105, right=0.985,
+                          top=0.90, bottom=0.135)
 
     # (a) selection
     ax = fig.add_subplot(gs[0, 0]); panel_label(ax, "a", dx=-0.31, dy=1.17)
@@ -350,8 +350,26 @@ def figure3():
     ax.plot([], [], "o", color=ON, ms=3, label="on-task"); ax.plot([], [], "o", color=MW, ms=3, label="MW")
     ax.legend(frameon=False, loc="lower left", ncol=2, columnspacing=0.8)
 
-    # (b) duration, across-word vs within-token
+    # (b) repair
     ax = fig.add_subplot(gs[0, 1]); panel_label(ax, "b", dx=-0.22, dy=1.17)
+    fams = [("corrective\nreturn", "corrective_selectivity"), ("refixation", "refixation_selectivity"),
+            ("regression", "regression_to_difficulty")]
+    x = np.arange(len(fams)); w = 0.26
+    for j, p in enumerate(props):
+        v = [g4[k][p]["D_mw"] / g4[k][p]["D_on"] * 100 for _, k in fams]
+        ax.bar(x + (j - 1) * w, v, w, color=[ON, GRAY, "#B9770E"][j], label=p)
+    ax.axhline(100, color="k", lw=0.7, ls="--")
+    ax.set_xticks(x); ax.set_xticklabels([a for a, _ in fams], fontsize=6.2)
+    ns = [g4[k]["zipf"]["n"] for _, k in fams]
+    for xi, nn in zip(x, ns):
+        ax.text(xi, 4, f"$n$={nn}", ha="center", fontsize=5.8, color="0.35")
+    ax.set_ylabel("retention of selectivity (%)"); ax.set_ylim(0, 155)
+    ax.set_title("Repair", loc="left")
+    ax.legend(frameon=False, ncol=3, columnspacing=0.5, loc="upper center", fontsize=6.0,
+              handlelength=1.0, handletextpad=0.4)
+
+    # (c) duration, across-word vs within-token
+    ax = fig.add_subplot(gs[0, 2]); panel_label(ax, "c", dx=-0.22, dy=1.17)
     aw = g56["G5_across_word_signed_retention"]; fe = g56["G5"]["logGD"]
     SL = pd.read_csv(IT59 / "artifacts/duration_slopes_by_state.csv")
     rng = np.random.default_rng(59)
@@ -380,11 +398,12 @@ def figure3():
     ax.set_xlabel("change in coupling during MW\n(% of on-task)")
     ax.set_title("Duration", loc="left"); ax.set_xlim(-24, 26)
 
-    # (c) neural frequency kernel split by state
+    # (d) neural kernels split by state
     K = np.load(COUP / "rerp_kernels.npz"); t = K["t"] * 1000 if np.max(np.abs(K["t"])) < 10 else K["t"]
     for j, (base, inter, roi, ttl, w) in enumerate([
-            ("freq_occ", "freqmw_occ", "occipitotemporal", "Frequency kernel", (150, 290))]):
-        ax = fig.add_subplot(gs[0, 2]); panel_label(ax, "c", dx=-0.22, dy=1.17)
+            ("freq_occ", "freqmw_occ", "occipitotemporal", "Frequency kernel", (150, 290)),
+            ("surp_cp", "surpmw_cp", "centroparietal", "Surprisal kernel", (300, 450))]):
+        ax = fig.add_subplot(gs[1, j]); panel_label(ax, "de"[j], dx=-0.22, dy=1.17)
         B = K[base] * (1e6 if np.nanmax(np.abs(K[base])) < 1e-3 else 1)
         I = K[inter] * (1e6 if np.nanmax(np.abs(K[inter])) < 1e-3 else 1)
         for Y, c, lab in [(B, ON, "on-task"), (B + I, MW, "mind-wandering")]:
@@ -400,14 +419,44 @@ def figure3():
         ax.text(0.97, 0.05, f"interaction $p$ = {pv:.2f}\nno cluster in epoch",
                 transform=ax.transAxes, fontsize=6.2, ha="right")
 
+    # (f) equivalence summary
+    ax = fig.add_subplot(gs[1, 2]); panel_label(ax, "f", dx=-0.22, dy=1.17)
+    rows = [("selection, frequency", "skip_selectivity_zipf"),
+            ("selection, length", "skip_selectivity_length"),
+            ("selection, surprisal", "skip_selectivity_surprisal"),
+            ("duration, surprisal", "duration_surprisal"),
+            ("duration, frequency", "duration_zipf"),
+            ("neural, frequency", "NP:frequency (occipitotemporal)"),
+            ("neural, surprisal", "NP:surprisal (centroparietal N400)")]
+    y = np.arange(len(rows))[::-1]
+    for (lab, k), yy in zip(rows, y):
+        if k.startswith("NP:"):
+            e = npow[k[3:]]
+            m, c0, c1 = e["change_pct"], e["ci95"][0], e["ci95"][1]
+            col = "#1E8449" if e["MDE_pct_80power"] < 50 else "#B9770E"
+        else:
+            e = neq["equivalence"][k]
+            sg = np.sign(e["on_task_effect"])
+            m = e["pct"]["mean"] * sg
+            c0, c1 = sorted([e["pct"]["ci"][0] * sg, e["pct"]["ci"][1] * sg])
+            col = "#1E8449"
+        ax.errorbar([m], [yy], xerr=[[m - c0], [c1 - m]], fmt="o", ms=4,
+                    color=col, ecolor=col, lw=1.1, capsize=1.8)
+    ax.axvspan(-20, 20, color="k", alpha=0.07, lw=0)
+    ax.axvline(0, color="k", lw=0.7)
+    ax.set_yticks(y); ax.set_yticklabels([r[0] for r in rows], fontsize=6.6)
+    ax.set_xlabel("change in coupling during MW\n(% of on-task effect)")
+    ax.set_title("Precision of each contrast", loc="left"); ax.set_xlim(-125, 125)
+    ax.set_xticks([-100, -50, 0, 50, 100])
+
     fig.savefig(OUT / "fig3_preserved.pdf"); fig.savefig(OUT / "fig3_preserved.png", dpi=300)
     plt.close(fig); print("fig3 done")
 
 
 # =============================================================== FIGURE 4
 def figure4():
-    fig = plt.figure(figsize=(13.2 * CM, 10.6 * CM))
-    gs = fig.add_gridspec(2, 2, wspace=0.62, hspace=0.62, left=0.145, right=0.985, top=0.91, bottom=0.085)
+    fig = plt.figure(figsize=(18 * CM, 10.6 * CM))
+    gs = fig.add_gridspec(2, 3, wspace=0.58, hspace=0.62, left=0.105, right=0.985, top=0.91, bottom=0.085)
 
     ax = fig.add_subplot(gs[0, 0]); panel_label(ax, "a", dx=-0.22, dy=1.17)
     raw = [g0["skip_rate"]["on_task"], g0["skip_rate"]["mw"]]
@@ -425,8 +474,19 @@ def figure4():
               bbox_to_anchor=(0.0, 0.80))
     ax.set_title("Definition decides the sign", loc="left")
 
-    # (b) large steps are line transitions
     ax = fig.add_subplot(gs[0, 1]); panel_label(ax, "b", dx=-0.22, dy=1.17)
+    Gs = [1, 2, 3, 4, 6, 10]
+    d = [g0b["skip_rate_by_G"][str(G)]["diff"]["mean"] for G in Gs]
+    lo = [g0b["skip_rate_by_G"][str(G)]["diff"]["ci"][0] for G in Gs]
+    hi = [g0b["skip_rate_by_G"][str(G)]["diff"]["ci"][1] for G in Gs]
+    ax.errorbar(Gs, d, yerr=[np.array(d) - lo, np.array(hi) - np.array(d)], fmt="o-",
+                color=MW, ms=4, lw=1.2, capsize=2)
+    ax.axhline(0, color="k", lw=0.7)
+    ax.set_xlabel("maximum stepped-over words"); ax.set_ylabel("skip rate, MW − on-task")
+    ax.set_title("Robust to the threshold", loc="left")
+
+    # (c) large steps are line transitions
+    ax = fig.add_subplot(gs[0, 2]); panel_label(ax, "c", dx=-0.22, dy=1.17)
     R1 = pd.DataFrame(rev["R1_gap_vs_line"])
     order = ["0", "1", "2-4", ">4"]
     xg = np.arange(len(order)); w = 0.36
@@ -438,8 +498,18 @@ def figure4():
     ax.set_ylim(0, 112); ax.legend(frameon=False, loc="upper left", fontsize=6.4)
     ax.set_title("Large steps cross lines", loc="left")
 
-    # (c) layout-based replication
-    ax = fig.add_subplot(gs[1, 0]); panel_label(ax, "c", dx=-0.22, dy=1.17)
+    ax = fig.add_subplot(gs[1, 0]); panel_label(ax, "d", dx=-0.22, dy=1.17)
+    b = json.load(open(IT59 / "results/blackout_anatomy.json"))
+    o = b["offword_fraction_same_page"]
+    ax.bar([0, 1], [o["on_task"], o["mw"]], 0.5, color=[ON, MW], edgecolor="k", lw=0.6)
+    ax.set_xticks([0, 1]); ax.set_xticklabels(["on-task", "MW"])
+    ax.set_ylabel("off-word fraction\nof within-page time")
+    ax.set_ylim(0, 0.26)
+    ax.text(0.5, 0.215, f"$p$ = {o['diff']['p']:.2f}", ha="center", fontsize=7)
+    ax.set_title("Interval between fixations", loc="left")
+
+    # (e) layout-based replication
+    ax = fig.add_subplot(gs[1, 1]); panel_label(ax, "e", dx=-0.22, dy=1.17)
     props3 = ["zipf", "length", "surprisal"]
     xg = np.arange(3); w = 0.38
     for k, c, lab in [("G1", ON, "gap criterion"), ("R3_selectivity", "#1E8449", "line-interior only")]:
@@ -454,7 +524,7 @@ def figure4():
               columnspacing=0.8, handlelength=1.0, handletextpad=0.4)
     ax.set_title("Independent of the criterion", loc="left")
 
-    ax = fig.add_subplot(gs[1, 1]); panel_label(ax, "d", dx=-0.22, dy=1.17)
+    ax = fig.add_subplot(gs[1, 2]); panel_label(ax, "f", dx=-0.22, dy=1.17)
     Tt = pd.read_parquet(IT59 / "artifacts/words_traversal.parquet")
     Tt = Tt[((Tt.skipped == 0) | (Tt.gap <= 4)) & Tt.state_agree]
     f = pd.read_parquet(COUP / "reading_fixations.parquet").sort_values(["subject", "run", "tStart"])
@@ -496,9 +566,9 @@ def figure4():
 # =============================================================== FIGURE 5
 def figure5():
     """Skimming and mind-wandering are different states (Section: sec:goal)."""
-    fig = plt.figure(figsize=(18 * CM, 6.6 * CM))
-    gs = fig.add_gridspec(1, 3, width_ratios=[1, 1, 1.42], wspace=0.68,
-                          left=0.105, right=0.985, top=0.80, bottom=0.235)
+    fig = plt.figure(figsize=(18 * CM, 11.4 * CM))
+    gs = fig.add_gridspec(2, 3, width_ratios=[1, 1, 1.42], wspace=0.68, hspace=0.95,
+                          left=0.105, right=0.985, top=0.875, bottom=0.135)
 
     SL = pd.read_csv(IT59 / "artifacts/duration_slopes_by_state.csv")
     r_on, r_mw = SL.zipf_on.to_numpy(), SL.zipf_mw.to_numpy()
@@ -521,8 +591,25 @@ def figure5():
     ax.text(0.5, 0.955, f"{abs(z_tsr.mean() / z_nr.mean()) * 100:.0f}% retained",
             transform=ax.transAxes, fontsize=6.8, ha="center", va="top")
 
+    # (d, e) the response to a fixated word
+    ax = fig.add_subplot(gs[1, 0]); panel_label(ax, "d", dx=-0.40, dy=1.30)
+    paired_panel(ax, n_on, n_mw, ["on-task", "mind-\nwandering"], [ON, MW],
+                 "occipital frequency\nresponse (\u00b5V/SD)", "Brain, spontaneous")
+    ax.axhline(0, color="k", lw=0.6, ls=":")
+    ax.set_ylim(-0.30, 0.90)
+    ax.text(0.5, 0.955, f"{n_mw.mean() / n_on.mean() * 100:.0f}% retained",
+            transform=ax.transAxes, fontsize=6.8, ha="center", va="top")
+
+    ax = fig.add_subplot(gs[1, 1]); panel_label(ax, "e", dx=-0.30, dy=1.30)
+    paired_panel(ax, zn_nr, zn_tsr, ["normal\nreading", "instructed\nsearch"], [ON, GOAL],
+                 "", "Brain, instructed")
+    ax.axhline(0, color="k", lw=0.6, ls=":")
+    ax.set_ylim(-0.16, 0.48)
+    ax.text(0.5, 0.955, f"{zn_tsr.mean() / zn_nr.mean() * 100:.0f}% retained",
+            transform=ax.transAxes, fontsize=6.8, ha="center", va="top")
+
     # (c) the dissociation, one estimator for all four cells
-    ax = fig.add_subplot(gs[0, 2]); panel_label(ax, "c", dx=-0.36, dy=1.16)
+    ax = fig.add_subplot(gs[:, 2]); panel_label(ax, "c", dx=-0.36, dy=1.10)
     rows = [
         ("mind-wandering", MW, pct_of_base(r_mw - r_on, r_on.mean())),
         ("instructed search", GOAL, pct_of_base(z_tsr - z_nr, z_nr.mean())),

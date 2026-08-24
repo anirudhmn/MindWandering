@@ -20,21 +20,30 @@ python figures/make_figures.py
 ```
 
 About five seconds; writes `fig1..fig9` to `figures/out/` as PDF and PNG and reproduces every
-number printed in them.
+number printed in them. The file names still carry the draft numbering; the table below maps
+them to the printed numbers.
 
 File names carry the draft numbering, not the printed numbering:
 
 | file | printed as | subject |
 |---|---|---|
 | `fig1_design` | 1 | design and datasets |
-| `fig2_instrument` | 2 | coupling at all three levels |
-| `fig3_preserved` | 3 | selection, repair, duration, brain |
-| `fig4_measurement` | 4 | the definition-dependence of skipping |
-| `fig5_states` | 5 | skimming versus mind-wandering |
-| `fig9_comprehension` | 6 | answer-span localisation |
-| `fig6_gain` | S1 | amplitude rescaling of the fixation response |
-| `fig8_changes` | S2 | what does change during mind-wandering |
-| `fig7_index` | S3 | the continuous index of text-driven reading |
+| `fig3_preserved` | 2 | selection, duration, frequency kernel |
+| `fig4_measurement` | 3 | the definition-dependence of skipping |
+| `fig5_states` | 4 | skimming versus mind-wandering |
+| `fig9_comprehension` | 5 | answer-span localisation |
+| `fig2_instrument` | S1 | baseline coupling during engaged reading |
+| `fig7_index` | S2 | the continuous index of text-driven reading |
+| `fig6_gain` | S3 | amplitude rescaling of the fixation response |
+| `fig8_changes` | S4 | what does change during mind-wandering |
+
+Updated 2026-08-24, when the manuscript was cut for length. `fig3_preserved` went from six
+panels to three, `fig4_measurement` from six to four, and `fig5_states` from five to three; the
+panels removed are the repair breakdown, the surprisal kernel, the equivalence forest plot, the
+threshold sweep, the off-word-time diagnostic and the two neural paired panels, all of which now
+appear as numbers in the text or in the Supplementary Information rather than as panels.
+`fig2_instrument` moved from the Results to SI S1. The previous panel layouts are recoverable
+from `figures/make_figures.py.pre-trim`.
 
 ## Layout
 
@@ -50,7 +59,7 @@ roamm/          analysis of the primary dataset
   attention_index/  the label-free index of text-driven reading
   omnibus/          the model-based omnibus coupling test; Table 1's omnibus rows and S10
   encoding/         the pooled deconvolutional encoding model; S11
-  bridge/           the alignment decomposition against Sun & Jangraw (2026); S12
+  bridge/           the alignment decomposition against Sun & Jangraw (2026); S11
   southwell/        rebuild of the Southwell et al. (2020) global gaze model; S13
   artifacts/        derived tables shared across stages
 zuco/           control-dataset extraction and the instructed-goal contrast
@@ -106,7 +115,7 @@ should be run first: it checks the fast deconvolution against the frozen kernels
 `bridge_alignment.py` reads the single-trial fixation epochs written by
 `roamm/build/extract_frp_epochs.py` and the language-model state array written by
 `roamm/encoding/scripts/05a_extract_lm_states.py`, neither of which is redistributed. Its
-`results/bridge_alignment.json` is included and holds every number quoted in S12, including all
+`results/bridge_alignment.json` is included and holds every number quoted in S11, including all
 fourteen layer-by-dimensionality specifications. A full run takes about five minutes on a
 many-core machine.
 
@@ -141,11 +150,11 @@ with respect to this dataset. Neither changes any result that was already here.
   report on ROAMM into a response-gain term, a stimulus term and a noise term. The gain term
   carries essentially all of it and matches the rescaling factor `roamm/topography/` estimates
   from different features, so the two papers' apparently opposite conclusions are the same
-  measurement seen twice. Manuscript SI S12.
+  measurement seen twice. Manuscript SI S11.
 - `roamm/southwell/` rebuilds the global page-level gaze model of comprehension from Southwell
   et al. (2020) on these readers. It replicates (held-out r = 0.338 against their 0.384, 0.362
   and 0.372), which fixes the level at which the manuscript's gaze null holds: gaze predicts how
-  well a reader read and not which content they lost. Manuscript Table 2 and SI S13.
+  well a reader read and not which content they lost. Manuscript Table S1 and SI S13.
 
 `roamm/southwell/` was verified on addition in the same way as everything below: run from a clean
 checkout, output compared byte-for-byte against the record here. `roamm/bridge/` cannot be, for
@@ -157,6 +166,11 @@ Every result file in this repository was regenerated from a fresh checkout and c
 the version recorded here. All 38 scripts that can run without the raw recordings succeed, and
 their outputs agree to floating-point noise; the nine figures regenerate byte-identically. Every
 number in the manuscript was then traced to the result file that produces it.
+
+That check predates the 2026-08-24 length trim. The trim changed which panels
+`make_figures.py` draws for three figures, so those three PDFs no longer match the ones checked
+byte-for-byte then; the data each panel reads is unchanged, and the script still regenerates
+reproducibly from a clean checkout.
 
 Five values in the manuscript were stale relative to the current code and were corrected to match
 it: three confidence intervals in Table 1, the equivalence-bound column of Table 1, one
