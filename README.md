@@ -33,8 +33,8 @@ File names carry the draft numbering, not the printed numbering:
 | `fig5_states` | 5 | skimming versus mind-wandering |
 | `fig9_comprehension` | 6 | answer-span localisation |
 | `fig6_gain` | S1 | amplitude rescaling of the fixation response |
-| `fig7_index` | S2 | the continuous index of text-driven reading |
-| `fig8_changes` | S3 | what does change during mind-wandering |
+| `fig8_changes` | S2 | what does change during mind-wandering |
+| `fig7_index` | S3 | the continuous index of text-driven reading |
 
 ## Layout
 
