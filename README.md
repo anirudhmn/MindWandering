@@ -1,6 +1,6 @@
 # Mind-wandering preserves word-level coupling
 
-Version 1.2. Analysis code and derived tables for the manuscript *Mind-wandering preserves
+Version 1.2.1. Analysis code and derived tables for the manuscript *Mind-wandering preserves
 word-level coupling but produces localized comprehension failure*. This repository holds the
 code and the numeric record only; the manuscript itself is not distributed here.
 
