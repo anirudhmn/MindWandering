@@ -665,7 +665,10 @@ def figure6():
     ax.legend(frameon=False, loc="upper right", fontsize=6.2)
     ax.set_title("Nothing is left over", loc="left")
 
-    fig.savefig(OUT / "fig6_gain.pdf"); fig.savefig(OUT / "fig6_gain.png", dpi=300)
+    # The scalp maps are the only raster elements in any figure: matplotlib resamples them
+    # to the device resolution even in a vector PDF, so the PDF needs an explicit dpi too or
+    # they land at the 100 dpi default.
+    fig.savefig(OUT / "fig6_gain.pdf", dpi=600); fig.savefig(OUT / "fig6_gain.png", dpi=600)
     plt.close(fig); print("fig6 done")
 
 
