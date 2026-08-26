@@ -53,7 +53,7 @@ roamm/          analysis of the primary dataset
   build/            raw recordings -> per-fixation, per-word and per-page tables
   coupling/         the coupling instrument, the preserved-coupling tests, extended context
   comprehension/    page-level comprehension outcomes and inter-subject alignment
-  selection_repair/ selection, repair and duration channels; the skipping audit
+  selection_repair/ selection, repair and duration channels; the skipping audit; S14
   localisation/     semantic importance, answer spans, and the localised MW cost
   topography/       reference-invariant scalp-field tests of the fixation response
   attention_index/  the label-free index of text-driven reading

@@ -110,6 +110,57 @@ for long words — is **not supported**; the rate moves in the opposite directio
 
 ---
 
+### G4b — is five fixations the right window? (`results/repair_window.json`, script 14)
+
+A corrective return is scored inside a window, and the window is a choice. Audited on the fully
+word-mapped sequence (`artifacts/coupling/saccades.parquet`, 402,082 fixations including the
+69,445 refixations and 78,417 regressions that `reading_fixations.parquet` cannot express),
+80,812 single-skip events, same page, 44 readers.
+
+**Where returns land.** 23.0% of stepped-over words are ever returned to. Median latency is
+**1 fixation / 0.30 s**; 55.6% of returners come back on the very next fixation. Cumulative
+capture: K=1 55.6%, K=3 70.3%, **K=5 75.2%**, K=10 82.8%, K=20 94.1%, K=40 97.9%. Hard mode at
+lag 1 with a long thin tail, so K=5 is where the mass is rather than an arbitrary cut.
+
+**The contrast depends on K.** Reader-level mean difference over the on-task mean:
+
+| window | on-task | MW | change | p |
+|---|---:|---:|---:|---:|
+| 1 fixation | .1240 | .1314 | +5.9% | .37 |
+| 3 fixations | .1564 | .1663 | +6.3% | .28 |
+| **5 fixations** | .1672 | .1824 | +9.1% | .16 |
+| 10 fixations | .1849 | .1991 | +7.7% | .19 |
+| 20 fixations | .2108 | .2379 | +12.8% | **.030** |
+| 40 fixations | .2192 | .2525 | +15.2% | **.010** |
+| rest of page | .2240 | .2631 | +17.5% | **.0038** |
+
+(The +12.6% in the G4 table above is the same effect under `pct_change` — the mean of each
+reader's ratio — and without the same-page constraint; both carry p = .13-.16.)
+
+**Why the fixation-count window is not matched across states.** Two imbalances, opposite in
+direction:
+
+- **window width.** The nominal 5 fixations spans 7.15 fixations / 1.81 s on-task but
+  **12.07 fixations / 3.21 s during MW** (+1.92 s [1.05, 3.03], p = 5.3e-4, 34/44), once the
+  fixations carrying no word identity — off-text gaze and re-reading of already-visited words —
+  are counted back in. MW gets ~2x the wall-clock opportunity.
+- **page remaining.** MW single-skips sit later on the page: median **27 fixations / 7.1 s**
+  left versus **103 / 26.0 s** on-task. Widening the window converts this into the first.
+
+**The matched test.** Window defined in seconds, event kept only if the page has at least that
+much left. Null at every width: +1.8% (0.5 s, p = .76), +5.1% (1 s, p = .38), +6.4% (2 s,
+p = .29), +10.8% (3 s, p = .11), +3.6% (5 s, p = .61), +17.0% (10 s, p = .056, by which point
+21% of events and 5 readers are dropped for want of page).
+
+**Verdict.** The preserved-repair result is **not** an artifact of a window chosen too short —
+no window, matched or unmatched, shows repair *falling* during MW, which is the direction the
+literature predicts. But the unbounded +17.5% is **opportunity, not repair**, and the defence of
+the null is the opportunity match, not the choice of K. Same failure mode as the G0 skipping
+reversal and the iteration-62 launch-location artifact: a state contrast produced by where and
+when events sit rather than by the process the measure names.
+
+---
+
 ## G5 — within-token identification of the duration result (`results/g5_g6_duration.json`)
 
 `word_key` is a unique corpus token instance; 7,264 of 10,183 tokens (71.3%) were read both
