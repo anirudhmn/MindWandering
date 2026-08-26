@@ -110,7 +110,7 @@ for long words — is **not supported**; the rate moves in the opposite directio
 
 ---
 
-### G4b — is five fixations the right window? (`results/repair_window.json`, script 14)
+### G4b: is five fixations the right window? (`results/repair_window.json`, script 14)
 
 A corrective return is scored inside a window, and the window is a choice. Audited on the fully
 word-mapped sequence (`artifacts/coupling/saccades.parquet`, 402,082 fixations including the
@@ -134,15 +134,15 @@ lag 1 with a long thin tail, so K=5 is where the mass is rather than an arbitrar
 | 40 fixations | .2192 | .2525 | +15.2% | **.010** |
 | rest of page | .2240 | .2631 | +17.5% | **.0038** |
 
-(The +12.6% in the G4 table above is the same effect under `pct_change` — the mean of each
-reader's ratio — and without the same-page constraint; both carry p = .13-.16.)
+(The +12.6% in the G4 table above is the same effect under `pct_change`, the mean of each
+reader's ratio, and without the same-page constraint; both carry p = .13-.16.)
 
 **Why the fixation-count window is not matched across states.** Two imbalances, opposite in
 direction:
 
 - **window width.** The nominal 5 fixations spans 7.15 fixations / 1.81 s on-task but
   **12.07 fixations / 3.21 s during MW** (+1.92 s [1.05, 3.03], p = 5.3e-4, 34/44), once the
-  fixations carrying no word identity — off-text gaze and re-reading of already-visited words —
+  fixations carrying no word identity (off-text gaze and re-reading of already-visited words)
   are counted back in. MW gets ~2x the wall-clock opportunity.
 - **page remaining.** MW single-skips sit later on the page: median **27 fixations / 7.1 s**
   left versus **103 / 26.0 s** on-task. Widening the window converts this into the first.
@@ -152,8 +152,8 @@ much left. Null at every width: +1.8% (0.5 s, p = .76), +5.1% (1 s, p = .38), +6
 p = .29), +10.8% (3 s, p = .11), +3.6% (5 s, p = .61), +17.0% (10 s, p = .056, by which point
 21% of events and 5 readers are dropped for want of page).
 
-**Verdict.** The preserved-repair result is **not** an artifact of a window chosen too short —
-no window, matched or unmatched, shows repair *falling* during MW, which is the direction the
+**Verdict.** The preserved-repair result is **not** an artifact of a window chosen too short.
+No window, matched or unmatched, shows repair *falling* during MW, which is the direction the
 literature predicts. But the unbounded +17.5% is **opportunity, not repair**, and the defence of
 the null is the opportunity match, not the choice of K. Same failure mode as the G0 skipping
 reversal and the iteration-62 launch-location artifact: a state contrast produced by where and

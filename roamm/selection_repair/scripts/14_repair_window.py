@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""G4 addendum — is the five-fixation lookahead the right window for a corrective return?
+"""G4 addendum: is the five-fixation lookahead the right window for a corrective return?
 
 Script 03 counts a corrective return if any of the next five fixations lands on the word the
 reader stepped over. Three questions that choice raises, answered here:
@@ -7,7 +7,7 @@ reader stepped over. Three questions that choice raises, answered here:
   1. Where do returns actually land?  (the empirical justification for K=5)
   2. Does the MW contrast depend on K?  (it does)
   3. Is a window counted in FIXATIONS matched across states?  (it is not, in two opposite
-     directions — so the K dependence is exposure, not repair)
+     directions, so the K dependence is exposure, not repair)
 
 The fixation-count window is not opportunity-matched: the nominal five fixations spans about
 twice as much wall-clock time during mind-wandering, while MW single-skips sit later on the
