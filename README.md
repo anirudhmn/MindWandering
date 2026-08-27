@@ -1,6 +1,6 @@
 # Mind-wandering preserves word-level coupling
 
-Version 1.2.1. Analysis code and derived tables for the manuscript *Mind-wandering preserves
+Version 1.3.0. Analysis code and derived tables for the manuscript *Mind-wandering preserves
 word-level coupling but produces localized comprehension failure*. This repository holds the
 code and the numeric record only; the manuscript itself is not distributed here.
 
@@ -45,6 +45,11 @@ appear as numbers in the text or in the Supplementary Information rather than as
 `fig2_instrument` moved from the Results to SI S1. The previous panel layouts are recoverable
 from `figures/make_figures.py.pre-trim`.
 
+As of version 1.3.0 this script is the same one that drew the figures printed in the manuscript,
+so a clean checkout reproduces the printed panels rather than an earlier layout of them. Through
+version 1.2.1 the two had drifted apart in panel titles, annotation wording and axis limits; no
+plotted value differed, because both read the same result files.
+
 ## Layout
 
 ```
@@ -82,6 +87,10 @@ corresponding analyses were run.
 
 Most analysis scripts run against the derived tables included here. The extraction scripts in
 `roamm/build/` and `zuco/` do not: they read the raw recordings, which are not redistributed.
+Neither do the answer-span analyses in `roamm/localisation/` and `roamm/comprehension/`, which
+need the stimulus word-coordinate tables and the comprehension scores; both ship with the
+primary dataset, so downloading `ds007629` into `data/` is enough. See *What has been checked*
+for the full list of what needs which.
 
 **ROAMM.** Download `ds007629` from OpenNeuro into `data/`. `roamm/build/extract_fixations.py`
 and `extract_all_fixations.py` read the synchronised 256 Hz frame (`data/derivatives/features_df.pkl`,
@@ -141,6 +150,18 @@ full. `roamm/southwell/` has no such constraint: it reads only `all_fixations.pa
 `pages_full.parquet`, both shipped, and reproduces `southwell_replication.json` byte-identically
 in about five seconds.
 
+## Changes in version 1.3
+
+- `roamm/selection_repair/scripts/14_repair_window.py` audits the window a corrective return is
+  scored in. The mind-wandering contrast grows as the window widens, from null at one fixation
+  to +17.5% over the rest of the page, and the growth is unequal opportunity rather than repair:
+  a nominal five fixations spans twice the wall-clock time during mind-wandering, and defining
+  the window in seconds makes the contrast null at every width. Manuscript SI S14.
+- `figures/make_figures.py` is now the script that drew the printed figures; see the note under
+  *Reproducing the figures*.
+- The version numbers here, in `CITATION.cff` and in the manuscript now agree. Through 1.2.1 the
+  manuscript cited a tag that did not contain the code for SI S14.
+
 ## Changes in version 1.2
 
 Two stages were added, both answering papers that appeared after version 1.1 and both post hoc
@@ -163,28 +184,52 @@ the reason given above, and ships its result file instead.
 ## What has been checked
 
 Every result file in this repository was regenerated from a fresh checkout and compared against
-the version recorded here. All 38 scripts that can run without the raw recordings succeed, and
-their outputs agree to floating-point noise; the nine figures regenerate byte-identically. Every
-number in the manuscript was then traced to the result file that produces it.
+the version recorded here, most recently on **2026-08-27** for version 1.3.0. Of the 54 scripts
+that read only the tables shipped here, 45 run to completion and their outputs agree with the
+record to floating-point noise: the largest relative difference anywhere was 5e-4, and that was
+on a p-value of order 1e-131. The nine figures regenerate from the same script that drew the
+printed ones. Every number in the manuscript was then traced to the result file that produces it.
 
-That check predates the 2026-08-24 length trim. The trim changed which panels
-`make_figures.py` draws for three figures, so those three PDFs no longer match the ones checked
-byte-for-byte then; the data each panel reads is unchanged, and the script still regenerates
-reproducibly from a clean checkout.
+The other nine scripts fail only for want of inputs that are not redistributed here, listed
+below; none fails for a reason internal to the code.
 
-Five values in the manuscript were stale relative to the current code and were corrected to match
-it: three confidence intervals in Table 1, the equivalence-bound column of Table 1, one
-significance threshold in the skipping section, and the neural cell of the instructed-goal
-contrast. One analysis was wrong rather than stale: in `10_readers.py` the predictor of interest
-also appeared in its own covariate list, which made the normal equations singular and the
-per-reader frequency slopes unstable between runs. It is fixed, and the affected reliability
+That audit corrected five values in the manuscript that had gone stale relative to the code. Four
+were bootstrap confidence intervals — the omnibus duration retention interval, quoted twice, and
+eight of the eleven rows of the SI S5 robustness table — where the point estimate, the one-sided
+bound and the minimum detectable effect were all still correct and only the interval was old. The
+fifth was a cross-reference. Two significance thresholds stated as `p > 0.12` and `p < 1e-9` were
+loosened to `p > 0.11` and `p < 1e-8`, which is what the stored values support. **The lesson worth
+recording is that a point estimate and the interval printed beside it can go stale
+independently**, so checking the estimate does not certify the interval.
+
+An earlier audit corrected five further values and one analysis: in `10_readers.py` the predictor
+of interest also appeared in its own covariate list, which made the normal equations singular and
+the per-reader frequency slopes unstable between runs. It is fixed, and the affected reliability
 figures in `roamm/localisation/RESULTS.md` are updated. No manuscript claim depended on them.
 
-Three analyses cannot be rerun here because they need inputs that are not redistributed:
-`roamm/coupling/coupling_equivalence_and_waveforms.py` needs the single-trial epoch array,
-and `roamm/selection_repair/scripts/09_reviewer_checks.py`, `roamm/localisation/scripts/08*.py`
-and `roamm/comprehension/analyze_evidence_region.py` need the stimulus coordinate files from the
-dataset. Their stored outputs are included.
+Eleven scripts cannot be rerun from this repository alone. Their stored outputs are all
+included, and they fall into three groups by what they are missing.
+
+**Need the primary dataset downloaded** (`ds007629`, public). The stimulus word-coordinate
+tables and the trial-level comprehension scores are distributed with the dataset rather than
+here, so these run once `data/` is populated:
+`roamm/localisation/scripts/05_build_word_table.py`, `08_outcome.py`,
+`08b_mw_localisation_control.py`, `08c_mw_localisation_deepen.py`,
+`roamm/comprehension/analyze_evidence_region.py` and
+`roamm/selection_repair/scripts/09_reviewer_checks.py`. Note that this group includes the
+1000-random-region permutation behind the manuscript's answer-span result, so anyone checking
+that control needs the dataset in place.
+
+**Need the control dataset downloaded** (ZuCo 1.0, public). `zuco/scripts/build_word_table.py`,
+`gate_a0.py` and `transfer_2x2_v2.py` read the per-subject `frp_*.npy` arrays that
+`parse_frp.py` writes from the MATLAB releases; those arrays are large and are not shipped.
+
+**Cannot be rerun even with the raw data to hand**, because the intermediates are too large to
+redistribute and regenerating them is a multi-hour job:
+`roamm/encoding/scripts/00_validate_solver.py` and the rest of that stage, the alignment
+decomposition in `roamm/bridge/`, and
+`roamm/coupling/coupling_equivalence_and_waveforms.py`, which needs the single-trial epoch
+array.
 
 Two notes on provenance:
 

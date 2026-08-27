@@ -329,7 +329,7 @@ def figure2():
 # =============================================================== FIGURE 3
 def figure3():
     fig = plt.figure(figsize=(18 * CM, 5.9 * CM))
-    gs = fig.add_gridspec(1, 3, wspace=0.62, left=0.105, right=0.985,
+    gs = fig.add_gridspec(1, 3, wspace=0.72, left=0.095, right=0.985,
                           top=0.84, bottom=0.235)
 
     # (a) selection
@@ -342,7 +342,7 @@ def figure3():
         ax.plot([i - .17] * len(on), on, "o", color=ON, ms=2.6, alpha=.85, zorder=2)
         ax.plot([i + .17] * len(mw), mw, "o", color=MW, ms=2.6, alpha=.85, zorder=2)
         ax.plot([i - .17, i + .17], [on.mean(), mw.mean()], "-", color="k", lw=1.8, zorder=3)
-        ax.text(i, 0.80, f"{g1['G1_primary'][p]['retention_pct']:.0f}%", ha="center",
+        ax.text(i + 0.05, 0.80, f"{g1['G1_primary'][p]['retention_pct']:.0f}%", ha="center",
                 fontsize=7.5, fontweight="bold")
     ax.set_xticks(range(3)); ax.set_xticklabels(["frequency", "length", "surprisal"])
     ax.set_ylabel("|Somers' $D$|, property→skip", fontsize=7.2); ax.set_ylim(0, 0.87)
@@ -375,7 +375,9 @@ def figure3():
     for e, yy, c in zip(est, y, cols):
         ax.plot(e, yy, "o", ms=4.5, color=c, zorder=3)
     ax.axvline(0, color="k", lw=0.7)
-    ax.set_yticks(y); ax.set_yticklabels([f"{l}, {'across words' if i%2==0 else 'within token'}"
+    # labels kept short so they clear panel (a)
+    nice = {"zipf": "frequency", "surprisal": "surprisal", "length": "length"}
+    ax.set_yticks(y); ax.set_yticklabels([f"{nice[l]}, {'across' if i%2==0 else 'within'}"
                                           for i, l in enumerate(labs)], fontsize=5.9)
     ax.set_xlabel("change in coupling during MW\n(% of on-task)")
     ax.set_title("Duration", loc="left"); ax.set_xlim(-24, 26)
@@ -416,13 +418,17 @@ def figure4():
     ax.bar(x - 0.19, raw, 0.36, color=[ON, MW], alpha=0.40, edgecolor="k", lw=0.6)
     ax.bar(x + 0.19, cor, 0.36, color=[ON, MW], edgecolor="k", lw=0.6)
     ax.set_xticks(x); ax.set_xticklabels(["on-task", "MW"])
-    ax.set_ylabel("skipping rate"); ax.set_ylim(0, 0.93)
-    ax.text(0.5, 0.855, "+0.168, $p$ = 7×10$^{-11}$", ha="center", fontsize=6.3, color=GRAY)
-    ax.text(0.5, 0.775, "−0.042, $p$ = 2×10$^{-6}$", ha="center", fontsize=6.3, fontweight="bold")
+    # headroom so the statistics and the legend clear the tallest bar (0.648)
+    ax.set_ylabel("skipping rate"); ax.set_ylim(0, 1.20)
+    ax.set_yticks([0.0, 0.2, 0.4, 0.6, 0.8])
+    ax.text(0.5, 1.15, "+0.168, $p$ = 7×10$^{-11}$", ha="center", va="top",
+            fontsize=6.3, color=GRAY)
+    ax.text(0.5, 1.065, "−0.042, $p$ = 2×10$^{-6}$", ha="center", va="top",
+            fontsize=6.3, fontweight="bold")
     ax.bar([np.nan], [np.nan], color="0.5", alpha=0.40, label="any unfixated word")
     ax.bar([np.nan], [np.nan], color="0.3", label="scan-path defined")
     ax.legend(frameon=False, loc="upper left", fontsize=6.0, handlelength=1.0,
-              bbox_to_anchor=(0.0, 0.80))
+              labelspacing=0.35, borderaxespad=0.0, bbox_to_anchor=(0.0, 0.77))
     ax.set_title("Definition decides the sign", loc="left")
 
     # (b) large steps are line transitions
@@ -959,19 +965,21 @@ def figure9():
     ax.plot(xs, R3["intercept"] + R3["slope"] * xs, color="k", lw=1.5)
     ax.plot([1.0], [R3["observed_true_span"]], "*", ms=13, color=MW, zorder=4)
     ax.plot([0], [R3["stat_at_zero_overlap"]], "o", ms=6, mfc="w", mec="k", mew=1.2, zorder=4)
-    ax.annotate(f"{R3['stat_at_zero_overlap']:+.3f} at zero overlap",
-                xy=(0, R3["stat_at_zero_overlap"]), xytext=(0.10, 0.016),
-                fontsize=6.2, arrowprops=dict(arrowstyle="->", lw=0.8, color="k"))
-    ax.text(0.46, -0.004, "1000 random regions,\nsize held constant", fontsize=6.2,
-            color="0.35", va="top")
-    ax.text(0.80, -0.033, f"slope {R3['slope']:.3f}\n$p$ = 1.5\u00d710$^{{-14}}$",
-            fontsize=6.4, ha="center")
-    ax.text(0.985, -0.0685, "the true\nanswer span", fontsize=6.4, ha="right", va="top",
+    # the four notes sit in the empty wedge above the fitted line, clear of the cloud;
+    # the zero-overlap value is labelled without a leader, which read as a second fit
+    ax.text(0.055, 0.032, f"open circle: zero-overlap fit, "
+                          f"{R3['stat_at_zero_overlap']:+.3f}",
+            fontsize=6.0, ha="left", va="center")
+    ax.text(0.52, 0.012, "1000 random regions,\nsize held constant", fontsize=6.2,
+            color="0.35", ha="left", va="top")
+    ax.text(0.52, -0.012, f"slope {R3['slope']:.3f}\n$p$ = 1.5\u00d710$^{{-14}}$",
+            fontsize=6.4, ha="left", va="top")
+    ax.text(1.08, -0.046, "the true\nanswer span", fontsize=6.4, ha="right", va="bottom",
             color=MW)
     ax.axhline(0, color="k", lw=0.7, ls=":")
     ax.set_xlabel("overlap of the region with the answer span")
     ax.set_ylabel("effect of a lapse in the region\non accuracy")
-    ax.set_xlim(-0.05, 1.10)
+    ax.set_xlim(-0.05, 1.10); ax.set_ylim(-0.086, 0.038)
     ax.set_title("Damage tracks distance from the answer", loc="left")
 
     # (c) the mind localizes, the eyes do not
