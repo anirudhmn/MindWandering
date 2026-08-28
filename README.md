@@ -58,7 +58,7 @@ roamm/          analysis of the primary dataset
   build/            raw recordings -> per-fixation, per-word and per-page tables
   coupling/         the coupling instrument, the preserved-coupling tests, extended context
   comprehension/    page-level comprehension outcomes and inter-subject alignment
-  selection_repair/ selection, repair and duration channels; the skipping audit; S14
+  selection_repair/ selection, repair and duration channels; the skipping audit; S2 and S14
   localisation/     semantic importance, answer spans, and the localised MW cost
   topography/       reference-invariant scalp-field tests of the fixation response
   attention_index/  the label-free index of text-driven reading
@@ -150,6 +150,17 @@ full. `roamm/southwell/` has no such constraint: it reads only `all_fixations.pa
 `pages_full.parquet`, both shipped, and reproduces `southwell_replication.json` byte-identically
 in about five seconds.
 
+## Unreleased
+
+- `roamm/selection_repair/scripts/15_position_within_episode.py` asks whether the selection null
+  is an average over a diluted episode. The shift control in S2 holds the number of
+  mind-wandering words fixed, so it tests displacement and not dilution. This script cuts each
+  marked span into position bins, by relative third and by absolute distance from each end, and
+  recomputes the three selection contrasts inside each against the same reader's on-task value.
+  Coupling does not vary with position: the first and last thirds differ for no property, and
+  pooled over readers the change in a property's influence on skipping from the start of a span
+  to its end is bounded at 17% in either direction. Manuscript SI S2.
+
 ## Changes in version 1.3
 
 - `roamm/selection_repair/scripts/14_repair_window.py` audits the window a corrective return is
@@ -194,8 +205,8 @@ The other nine scripts fail only for want of inputs that are not redistributed h
 below; none fails for a reason internal to the code.
 
 That audit corrected five values in the manuscript that had gone stale relative to the code. Four
-were bootstrap confidence intervals — the omnibus duration retention interval, quoted twice, and
-eight of the eleven rows of the SI S5 robustness table — where the point estimate, the one-sided
+were bootstrap confidence intervals (the omnibus duration retention interval, quoted twice, and
+eight of the eleven rows of the SI S5 robustness table), where the point estimate, the one-sided
 bound and the minimum detectable effect were all still correct and only the interval was old. The
 fifth was a cross-reference. Two significance thresholds stated as `p > 0.12` and `p < 1e-9` were
 loosened to `p > 0.11` and `p < 1e-8`, which is what the stored values support. **The lesson worth
