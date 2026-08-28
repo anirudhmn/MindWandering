@@ -68,6 +68,15 @@ print("\nR1  Are large forward steps line transitions?")
 print(tab.to_string())
 rep["R1_gap_vs_line"] = json.loads(tab.reset_index().to_json(orient="records"))
 
+# the same thing without bins: P(the step crosses a line boundary) at each step size
+curve = (S.assign(gap_c=S.gap.clip(upper=15))
+          .groupby(["gap_c", "mw"], observed=True)
+          .agg(n=("gap", "size"), p_line_change=("same_line", lambda x: float(1 - x.mean())))
+          .reset_index())
+print("\nR1b P(step crosses a line boundary) by step size")
+print(curve.pivot(index="gap_c", columns="mw", values="p_line_change").round(3).to_string())
+rep["R1_gap_curve"] = json.loads(curve.to_json(orient="records"))
+
 # ---- R2: composition of excluded vs retained words, by state ----
 T["retained"] = (T.skipped == 0) | (T.gap <= 4)
 T = T[T.state_agree]
