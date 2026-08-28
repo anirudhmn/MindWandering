@@ -1,6 +1,6 @@
 # Mind-wandering preserves word-level coupling
 
-Version 1.3.0. Analysis code and derived tables for the manuscript *Mind-wandering preserves
+Version 1.4.0. Analysis code and derived tables for the manuscript *Mind-wandering preserves
 word-level coupling but produces localized comprehension failure*. This repository holds the
 code and the numeric record only; the manuscript itself is not distributed here.
 
@@ -150,7 +150,7 @@ full. `roamm/southwell/` has no such constraint: it reads only `all_fixations.pa
 `pages_full.parquet`, both shipped, and reproduces `southwell_replication.json` byte-identically
 in about five seconds.
 
-## Unreleased
+## Changes in version 1.4
 
 - `roamm/selection_repair/scripts/15_position_within_episode.py` asks whether the selection null
   is an average over a diluted episode. The shift control in S2 holds the number of
@@ -160,6 +160,10 @@ in about five seconds.
   Coupling does not vary with position: the first and last thirds differ for no property, and
   pooled over readers the change in a property's influence on skipping from the start of a span
   to its end is bounded at 17% in either direction. Manuscript SI S2.
+- `roamm/selection_repair/scripts/09_reviewer_checks.py` also records the probability that a
+  forward step crosses a line boundary at every step size, not only in bins, as `R1_gap_curve`.
+  It needs the stimulus coordinate files, which ship with ds007629 and are not redistributed
+  here, so the key appears the next time the script runs against the public dataset.
 
 ## Changes in version 1.3
 
