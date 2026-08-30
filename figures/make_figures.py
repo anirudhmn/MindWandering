@@ -431,18 +431,31 @@ def figure4():
               labelspacing=0.35, borderaxespad=0.0, bbox_to_anchor=(0.0, 0.77))
     ax.set_title("Definition decides the sign", loc="left")
 
-    # (b) large steps are line transitions
+    # (b) line crossing as a continuous function of step size, over the step-size distribution
     ax = fig.add_subplot(gs[0, 1]); panel_label(ax, "b", dx=-0.22, dy=1.17)
-    R1 = pd.DataFrame(rev["R1_gap_vs_line"])
-    order = ["0", "1", "2-4", ">4"]
-    xg = np.arange(len(order)); w = 0.36
+    R1c = pd.DataFrame(rev["R1_gap_curve"])
+    # how common each step size is, on task: the trough is what makes the threshold safe
+    dist = R1c[R1c.mw == 0].sort_values("gap_c")
+    axd = ax.twinx()
+    axd.bar(dist.gap_c, dist.n / dist.n.sum() * 100, 0.82, color="0.87",
+            edgecolor="none", zorder=0)
+    axd.set_yscale("log"); axd.set_ylim(0.05, 300)
+    axd.set_yticks([0.1, 1, 10]); axd.set_yticklabels(["0.1", "1", "10"], fontsize=6.0)
+    axd.tick_params(axis="y", colors="0.45", length=2)
+
     for st, c, lab in [(0, ON, "on-task"), (1, MW, "MW")]:
-        v = [float(R1[(R1.gap == g) & (R1.mw == st)].frac_line_change.iloc[0]) * 100 for g in order]
-        ax.bar(xg + (st - 0.5) * w, v, w, color=c, edgecolor="k", lw=0.6, label=lab)
-    ax.set_xticks(xg); ax.set_xticklabels(order)
+        s = R1c[R1c.mw == st].sort_values("gap_c")
+        ax.plot(s.gap_c, s.p_line_change * 100, "-o", color=c, lw=1.1, ms=2.6,
+                label=lab, zorder=3)
+    ax.axvspan(3.5, 8.5, color="#C0392B", alpha=0.10, zorder=1)
+    ax.axvline(4, color="#C0392B", lw=0.9, ls="--", zorder=2)
+    ax.text(6.2, 8, "1.7% of all steps", fontsize=6.0, color="#C0392B", ha="center")
+    ax.set_zorder(axd.get_zorder() + 1); ax.patch.set_visible(False)
     ax.set_xlabel("words stepped over"); ax.set_ylabel("steps crossing a text line (%)")
-    ax.set_ylim(0, 112); ax.legend(frameon=False, loc="upper left", fontsize=6.4)
-    ax.set_title("Large steps cross lines", loc="left")
+    ax.set_xlim(-0.7, 15.7); ax.set_ylim(0, 112)
+    ax.set_xticks([0, 4, 8, 12, 15]); ax.set_xticklabels(["0", "4", "8", "12", "15+"])
+    ax.legend(frameon=False, loc="lower right", fontsize=6.4)
+    ax.set_title("The threshold sits in a trough", loc="left")
 
     # (c) layout-based replication
     ax = fig.add_subplot(gs[1, 0]); panel_label(ax, "c", dx=-0.22, dy=1.17)

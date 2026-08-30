@@ -161,9 +161,13 @@ in about five seconds.
   pooled over readers the change in a property's influence on skipping from the start of a span
   to its end is bounded at 17% in either direction. Manuscript SI S2.
 - `roamm/selection_repair/scripts/09_reviewer_checks.py` also records the probability that a
-  forward step crosses a line boundary at every step size, not only in bins, as `R1_gap_curve`.
-  It needs the stimulus coordinate files, which ship with ds007629 and are not redistributed
-  here, so the key appears the next time the script runs against the public dataset.
+  forward step crosses a line boundary at every step size, not only in bins, as `R1_gap_curve`,
+  and Figure 4b now plots it. Resolving the function changed a claim: the crossing probability
+  rises smoothly rather than stepping at four words, so the four-word threshold is not a
+  boundary in that function. What defends it is where it sits in the step-size distribution,
+  which is bimodal, with 89.2% of on-task forward steps spanning at most three words, 9.1%
+  spanning nine or more, and only 1.7% in the trough between. Running this script needs the
+  stimulus coordinate files, which ship with ds007629 and are not redistributed here.
 
 ## Changes in version 1.3
 
