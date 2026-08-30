@@ -152,6 +152,12 @@ in about five seconds.
 
 ## Changes in version 1.4
 
+- `roamm/selection_repair/scripts/16_difficulty_gradient.py` asks the S8 targeting question
+  continuously instead of over quartiles: per reader, each effort measure on word difficulty,
+  state and their interaction, for three difficulty variables. Eight of nine interactions are
+  null and none survives Holm. The ninth, regressions against rarity, is nominal at p=0.024 and
+  runs the wrong way for repair, weakening by 56% rather than strengthening. Manuscript SI S8.
+
 - `roamm/selection_repair/scripts/15_position_within_episode.py` asks whether the selection null
   is an average over a diluted episode. The shift control in S2 holds the number of
   mind-wandering words fixed, so it tests displacement and not dilution. This script cuts each
